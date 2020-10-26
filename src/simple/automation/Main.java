@@ -3,15 +3,13 @@ package simple.automation;
 import java.util.*;
 
 public class Main {
-    private static final User EXISTED_USER = new User("existed", "");
-    private static final User NOT_EXISTED_USER = new User("wrong", "");
 
     public static void main(String[] args) {
 
         List<String> strings = Arrays.asList("два", "один", "три");
 
         Map<String, Integer> digestMap = new HashMap<>();
-        digestMap.put("master", 1);
+        digestMap.put("десять", 10);
         digestMap.put("два", 2);
         digestMap.put("три", 3);
 
