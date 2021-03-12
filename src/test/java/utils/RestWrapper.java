@@ -2,7 +2,7 @@ package utils;
 
 import io.restassured.http.ContentType;
 import io.restassured.http.Cookies;
-import pojos.UserLogin;
+import rest.pojos.UserLogin;
 import utils.services.OrderService;
 import utils.services.UserService;
 

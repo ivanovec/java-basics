@@ -1,6 +1,6 @@
 package utils;
 
-import pojos.UserRequest;
+import rest.pojos.UserRequest;
 
 public class UserGenerator {
 

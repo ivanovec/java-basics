@@ -1,9 +1,9 @@
 package utils.services;
 
 import io.restassured.http.Cookies;
-import pojos.UserRequest;
-import pojos.CreateUserResponse;
-import pojos.UserPojoFull;
+import rest.pojos.UserRequest;
+import rest.pojos.CreateUserResponse;
+import rest.pojos.UserPojoFull;
 
 import java.util.List;
 

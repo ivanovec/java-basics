@@ -1,7 +1,7 @@
 package utils.services;
 
 import io.restassured.http.Cookies;
-import pojos.UserPojoFull;
+import rest.pojos.UserPojoFull;
 
 import java.util.List;
 
