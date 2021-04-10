@@ -12,6 +12,7 @@ import java.util.stream.Stream;
 import static org.junit.jupiter.params.provider.Arguments.arguments;
 
 @Smoke
+@Tag("pseudo")
 public class OrderTests {
 
     @BeforeEach

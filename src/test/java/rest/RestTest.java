@@ -25,6 +25,7 @@ public class RestTest {
     }
 
     @Test public void createUser(){
+        assertThat(false).isTrue();
         UserRequest rq = UserGenerator.getSimpleUser();
         CreateUserResponse rs = api.user.createUser(rq);
 
