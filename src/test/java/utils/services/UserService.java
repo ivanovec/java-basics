@@ -3,7 +3,7 @@ package utils.services;
 import io.restassured.http.Cookies;
 import rest.pojos.UserRequest;
 import rest.pojos.CreateUserResponse;
-import rest.pojos.UserPojoFull;
+import rest.pojos.UserPojo;
 
 import java.util.List;
 
@@ -24,9 +24,9 @@ public class UserService extends RestService{
         return given().spec(REQ_SPEC).body(rq).post().as(CreateUserResponse.class);
     }
 
-    public List<UserPojoFull> getUsers(){
+    public List<UserPojo> getUsers(){
         return given().spec(REQ_SPEC)
                 .get()
-                .jsonPath().getList("data", UserPojoFull.class);
+                .jsonPath().getList("data", UserPojo.class);
     }
 }

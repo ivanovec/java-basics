@@ -1,5 +1,10 @@
 package web.simple.page;
 
+import com.codeborne.selenide.Condition;
+import com.codeborne.selenide.Configuration;
+import com.codeborne.selenide.SelenideElement;
+import com.codeborne.selenide.WebDriverRunner;
+import com.google.common.io.Resources;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -7,29 +12,29 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
+import java.time.temporal.ChronoUnit;
+
+import static com.codeborne.selenide.Selenide.switchTo;
 
 public abstract class BasePage {
     protected static final String BASE_URL = "https://www.rambler.ru";
-    private static final Duration DEFAULT_TIMEOUT_SECONDS = Duration.ofSeconds(10);
-
-    protected WebDriver driver;
-    protected WebDriverWait wait;
-
-    public BasePage(WebDriver driver){
-        this.driver = driver;
-        this.wait = new WebDriverWait(driver, DEFAULT_TIMEOUT_SECONDS);
+    public BasePage(){
+        Configuration.timeout = Duration.of(1, ChronoUnit.MINUTES).toMillis();
+//        System.setProperty("browser", "firefox");
+//        System.setProperty("webdriver.chrome.driver", Resources.getResource("chromedriver").getPath());
     }
 
-    protected void waitAndClick(By locator){
-        wait.until(ExpectedConditions.elementToBeClickable(locator)).click();
+    protected void waitAndClick(SelenideElement element){
+        element.shouldBe(Condition.enabled).click();
     }
 
-    protected WebElement waitVisibility(By locator){
-        return wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
+    protected SelenideElement waitVisibility(SelenideElement element){
+        return element.shouldBe(Condition.visible);
     }
 
     public void switchToAnotherTab(){
-        driver.switchTo().window(
+        WebDriver driver = WebDriverRunner.getWebDriver();
+        switchTo().window(
                 driver.getWindowHandles().stream()
                         .filter(h -> !h.equals(driver.getWindowHandle()))
                         .findFirst().get()

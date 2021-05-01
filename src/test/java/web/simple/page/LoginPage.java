@@ -1,40 +1,37 @@
 package web.simple.page;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.support.ui.ExpectedConditions;
+import com.codeborne.selenide.Condition;
+import com.codeborne.selenide.SelenideElement;
+
+import static com.codeborne.selenide.Selenide.*;
 
 public class LoginPage extends BasePage{
-    private By openLogin = By.xpath("//*[text()='Вход']");
-    private By loginIFrame = By.xpath("//div[@data-id-frame]/iframe");
-    private By loginBox = By.id("login");
-    private By passwordBox = By.id("password");
-    private By processLogin = By.xpath("//*[text()='Войти']");
+    private SelenideElement openLogin = $x("//*[text()='Вход']");
+    private SelenideElement loginIFrame = $x("//div[@data-id-frame]/iframe");
+    private SelenideElement loginBox = $("#login");
+    private SelenideElement passwordBox = $("#password");
+    private SelenideElement processLogin = $x("//*[text()='Войти']");
 
-    public LoginPage(WebDriver driver) {
-        super(driver);
-        driver.get(BASE_URL);
+    public LoginPage() {
+        open(BASE_URL);
         waitAndClick(openLogin);
-
-        wait.until(ExpectedConditions.presenceOfElementLocated(loginIFrame));
-        driver.switchTo().frame(driver.findElement(loginIFrame));
-
+        switchTo().frame(loginIFrame.shouldBe(Condition.visible));
         waitVisibility(loginBox);
     }
 
     public LoginPage typeLogin(String email){
-        driver.findElement(loginBox).sendKeys(email);
+        loginBox.sendKeys(email);
         return this;
     }
 
     public LoginPage typePassword(String password){
-        driver.findElement(passwordBox).sendKeys(password);
+        passwordBox.sendKeys(password);
         return this;
     }
 
     public SearchPage clickLogin(){
-        driver.findElement(processLogin).click();
-        return new SearchPage(driver);
+        processLogin.click();
+        return new SearchPage();
     }
 
     public SearchPage loginAs(String email, String password){

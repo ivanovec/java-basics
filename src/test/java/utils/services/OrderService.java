@@ -1,7 +1,7 @@
 package utils.services;
 
 import io.restassured.http.Cookies;
-import rest.pojos.UserPojoFull;
+import rest.pojos.UserPojo;
 
 import java.util.List;
 
@@ -18,9 +18,9 @@ public class OrderService extends RestService{
         super(cookies);
     }
 
-    public List<UserPojoFull> getOrders(){
+    public List<UserPojo> getOrders(){
         return given().spec(REQ_SPEC)
                 .get()
-                .jsonPath().getList("data", UserPojoFull.class);
+                .jsonPath().getList("data", UserPojo.class);
     }
 }

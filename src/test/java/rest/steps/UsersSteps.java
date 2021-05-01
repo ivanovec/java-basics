@@ -5,7 +5,7 @@ import io.restassured.http.ContentType;
 import io.restassured.specification.RequestSpecification;
 import rest.pojos.UserRequest;
 import rest.pojos.CreateUserResponse;
-import rest.pojos.UserPojoFull;
+import rest.pojos.UserPojo;
 
 import java.util.List;
 
@@ -25,17 +25,17 @@ public class UsersSteps {
         return user;
     }
 
-    public UserPojoFull getUser(){
-        return  given().spec(REQ_SPEC).get("/" + user.getId()).as(UserPojoFull.class);
+    public UserPojo getUser(){
+        return  given().spec(REQ_SPEC).get("/" + user.getId()).as(UserPojo.class);
     }
 
-    public static List<UserPojoFull> getUsers(){
+    public static List<UserPojo> getUsers(){
         return given().spec(REQ_SPEC)
                 .get()
-                .jsonPath().getList("data", UserPojoFull.class);
+                .jsonPath().getList("data", UserPojo.class);
     }
 
-    public static UserPojoFull getUser(int id){
-        return  given().spec(REQ_SPEC).get("/" + id).as(UserPojoFull.class);
+    public static UserPojo getUser(int id){
+        return  given().spec(REQ_SPEC).get("/" + id).as(UserPojo.class);
     }
 }

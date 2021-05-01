@@ -1,16 +1,13 @@
 package web.simple.page;
 
-import org.openqa.selenium.By;
+import com.codeborne.selenide.SelenideElement;
 import org.openqa.selenium.NoSuchElementException;
-import org.openqa.selenium.WebDriver;
+
+import static com.codeborne.selenide.Selenide.$x;
 
 public class BaseLoggedInPage extends BasePage{
-    private By loggedInEmail = By.xpath("//span[contains(text(), '@rambler.ru')]");
-    private By profileLink = By.xpath("//a[text()='Мой профиль']");
-
-    public BaseLoggedInPage(WebDriver driver) {
-        super(driver);
-    }
+    private SelenideElement loggedInEmail = $x("//span[contains(text(), '@rambler.ru')]");
+    private SelenideElement profileLink = $x("//a[text()='Мой профиль']");
 
     public boolean isLoggedIn(String email){
         try {
@@ -26,6 +23,6 @@ public class BaseLoggedInPage extends BasePage{
         waitAndClick(profileLink);
         switchToAnotherTab();
 
-        return new ProfilePage(driver);
+        return new ProfilePage();
     }
 }

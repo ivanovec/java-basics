@@ -4,7 +4,7 @@ import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 import rest.pojos.UserRequest;
 import rest.pojos.CreateUserResponse;
-import rest.pojos.UserPojoFull;
+import rest.pojos.UserPojo;
 import utils.RestWrapper;
 import utils.UserGenerator;
 
@@ -21,11 +21,10 @@ public class RestTest {
 
     @Test
     public void getUsers(){
-        assertThat(api.user.getUsers()).extracting(UserPojoFull::getEmail).contains("george.bluth@reqres.in");
+        assertThat(api.user.getUsers()).extracting(UserPojo::getEmail).contains("george.bluth@reqres.in");
     }
 
     @Test public void createUser(){
-        assertThat(false).isTrue();
         UserRequest rq = UserGenerator.getSimpleUser();
         CreateUserResponse rs = api.user.createUser(rq);
 
