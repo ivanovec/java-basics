@@ -1,5 +1,6 @@
 package web.simple.page;
 
+import io.qameta.allure.Step;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -24,10 +25,12 @@ public abstract class BasePage {
         wait.until(ExpectedConditions.elementToBeClickable(locator)).click();
     }
 
+    @Step("Ожидание элемента с локатором {locator}")
     protected WebElement waitVisibility(By locator){
         return wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
     }
 
+    @Step("Переключение на другой tab")
     public void switchToAnotherTab(){
         driver.switchTo().window(
                 driver.getWindowHandles().stream()

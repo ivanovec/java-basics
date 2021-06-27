@@ -1,5 +1,6 @@
 package web.simple.page;
 
+import io.qameta.allure.Step;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -22,21 +23,25 @@ public class LoginPage extends BasePage{
         waitVisibility(loginBox);
     }
 
+    @Step("Ввод логина {email}")
     public LoginPage typeLogin(String email){
         driver.findElement(loginBox).sendKeys(email);
         return this;
     }
 
+    @Step("Ввод Пароля {password}")
     public LoginPage typePassword(String password){
         driver.findElement(passwordBox).sendKeys(password);
         return this;
     }
 
+    @Step("Нажатие кнопки логина")
     public SearchPage clickLogin(){
         driver.findElement(processLogin).click();
         return new SearchPage(driver);
     }
 
+    @Step("Логин как {0}:{1}")
     public SearchPage loginAs(String email, String password){
         typeLogin(email);
         typePassword(password);

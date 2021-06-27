@@ -11,6 +11,7 @@
     <properties>
         <junit.platform.version>1.7.0</junit.platform.version>
         <junit.jupiter.version>5.7.0</junit.jupiter.version>
+        <allure.version>2.14.0</allure.version>
     </properties>
 
     <dependencies>
@@ -74,6 +75,24 @@
             <artifactId>config</artifactId>
             <version>1.4.1</version>
         </dependency>
+        <dependency>
+            <groupId>io.qameta.allure</groupId>
+            <artifactId>allure-junit5</artifactId>
+            <version>${allure.version}</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>io.qameta.allure</groupId>
+            <artifactId>allure-rest-assured</artifactId>
+            <version>${allure.version}</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>io.qameta.allure</groupId>
+            <artifactId>allure-assertj</artifactId>
+            <version>${allure.version}</version>
+            <scope>test</scope>
+        </dependency>
     </dependencies>
 
     <build>
@@ -97,6 +116,34 @@
                         <include>*/**</include>
                     </includes>
                     <groups>create</groups>
+                    <testFailureIgnore>false</testFailureIgnore>
+                    <argLine>
+                        -javaagent:"${settings.localRepository}/org/aspectj/aspectjweaver/1.9.6/aspectjweaver-1.9.6.jar"
+                    </argLine>
+                    <systemProperties>
+                        <property>
+                            <name>junit.jupiter.extensions.autodetection.enabled</name>
+                            <value>true</value>
+                        </property>
+                    </systemProperties>
+                    <systemPropertyVariables>
+                        <allure.results.directory>target/allure-results</allure.results.directory>
+                    </systemPropertyVariables>
+                </configuration>
+                <dependencies>
+                    <dependency>
+                        <groupId>org.aspectj</groupId>
+                        <artifactId>aspectjweaver</artifactId>
+                        <version>1.9.6</version>
+                    </dependency>
+                </dependencies>
+            </plugin>
+            <plugin>
+                <groupId>io.qameta.allure</groupId>
+                <artifactId>allure-maven</artifactId>
+                <version>2.10.0</version>
+                <configuration>
+                    <allureDownloadUrl>https://github.com/allure-framework/allure2/releases/download/2.14.0/allure-2.14.0.zip</allureDownloadUrl>
                 </configuration>
             </plugin>
         </plugins>

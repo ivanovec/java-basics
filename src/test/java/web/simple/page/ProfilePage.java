@@ -1,5 +1,6 @@
 package web.simple.page;
 
+import io.qameta.allure.Step;
 import org.openqa.selenium.By;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
@@ -11,6 +12,7 @@ public class ProfilePage extends BaseLoggedInPage{
         super(driver);
     }
 
+    @Step("Проверка, что открыта страница профиля")
     public boolean isProfileOpened(){
         try {
             return waitVisibility(profilePageTitle).isDisplayed();

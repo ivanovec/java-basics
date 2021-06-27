@@ -1,0 +1,139 @@
+plugins {
+    id 'java'
+    id "io.freefair.lombok" version "5.3.0"
+    id 'io.qameta.allure' version "2.8.1"
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'org.junit.platform:junit-platform-launcher:1.7.0'
+    implementation 'org.junit.jupiter:junit-jupiter-engine:5.7.0'
+    implementation 'org.junit.jupiter:junit-jupiter-params:5.7.0'
+    implementation 'org.assertj:assertj-core:3.19.0'
+    implementation 'org.seleniumhq.selenium:selenium-java:4.0.0-beta-1'
+    implementation 'com.typesafe:config:1.4.1'
+
+    testImplementation 'io.rest-assured:rest-assured:4.3.2'
+    testImplementation 'com.fasterxml.jackson.core:jackson-annotations:2.10.4'
+    testImplementation 'com.fasterxml.jackson.core:jackson-core:2.10.4'
+    testImplementation 'com.fasterxml.jackson.core:jackson-databind:2.10.4'
+    testImplementation 'org.projectlombok:lombok:1.18.16'
+    testAnnotationProcessor 'org.projectlombok:lombok:1.18.16'
+}
+
+
+test{
+    useJUnitPlatform()
+    enabled = false
+}
+
+tasks.withType(Test){
+    useJUnitPlatform()
+    outputs.upToDateWhen {false}
+}
+
+tasks.register('webtests', Test).configure(){
+    filter{
+        includeTestsMatching("simpleautomation.web.simple*")
+    }
+}
+
+tasks.register('resttests', Test).configure(){
+    filter{
+        includeTestsMatching("simpleautomation.rest*")
+    }
+}
+
+tasks.register('regress', Test){
+    dependsOn 'resttests'
+    dependsOn 'webtests'
+    webtests.mustRunAfter(resttests)
+}
+
+//sourceSets{
+//    tst{
+//        java{
+//            compileClasspath += main.output
+//            runtimeClasspath += main.output
+//            srcDir file('src/main/java/simpleautomation')
+//        }
+//    }
+//}
+//
+//configurations{
+//    tstImplementation.extendsFrom(testImplementation)
+//    tstRuntimeOnly.extendsFrom(testRuntimeOnly)
+//}
+//
+//tasks.register('pseudotests', Test).configure(){
+//    testClassesDirs = sourceSets.tst.output.classesDirs
+//    classpath = sourceSets.tst.runtimeClasspath
+//    useJUnitPlatform{
+//        includeTags "pseudo"
+//    }
+//}
+
+def ourTask = tasks.register('grtest', customTask)
+ourTask.configure(){
+    println 'from task root'
+    testInput = "custom input"
+    inputs
+    doFirst {
+        println 'from do first'
+    }
+    doLast {
+        println 'from do last'
+    }
+}
+
+tasks.register("2", customTask){
+    println "from 2"
+}
+
+def printFiles(String header, FileCollection files) {
+    logger.lifecycle(header)
+    files.forEach { f -> logger.lifecycle(" -> $f") }
+}
+
+class customTask extends DefaultTask{
+    @Input
+    String testInput = "defaultInput"
+
+    @TaskAction
+    def action1(){
+        println "custom action1 with input $testInput"
+    }
+    @TaskAction
+    def action2(){
+        println 'custom action2'
+    }
+}
+println 'from build root'
+
+jar {
+    manifest{
+        attributes 'Main-Class':'simpleautomation.Main'
+    }
+    from {
+        configurations.compile.collect { it.isDirectory() ? it : zipTree(it) }
+    }
+}
+
+tasks.register('zipReport', Zip).configure(){
+    archiveFileName = 'reports.zip'
+    destinationDirectory = file("$buildDir/reports")
+    from "$buildDir/reports/tests"
+}
+
+tasks.register('copyReport', Copy).configure{
+    from file("$buildDir/reports/reports.zip")
+    into file("out")
+}
+
+allure{
+    autoconfigure = true
+    aspectjweaver = true
+}

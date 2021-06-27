@@ -1,5 +1,6 @@
 package web.simple.page;
 
+import io.qameta.allure.Step;
 import org.openqa.selenium.By;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
@@ -12,6 +13,7 @@ public class BaseLoggedInPage extends BasePage{
         super(driver);
     }
 
+    @Step("Проверка, что произошел логин под пользователем {0}")
     public boolean isLoggedIn(String email){
         try {
             return waitVisibility(loggedInEmail).getText().equals(email);
@@ -21,6 +23,7 @@ public class BaseLoggedInPage extends BasePage{
         }
     }
 
+    @Step("Открытие профиля")
     public ProfilePage openProfile(){
         waitAndClick(loggedInEmail);
         waitAndClick(profileLink);

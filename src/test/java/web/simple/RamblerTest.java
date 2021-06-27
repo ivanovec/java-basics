@@ -1,12 +1,15 @@
 package web.simple;
 
-import com.google.common.io.Resources;
+import io.qameta.allure.Feature;
 import org.junit.jupiter.api.*;
+import org.junit.jupiter.api.extension.ExtendWith;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
-import web.simple.WebDriverFactory;
 import web.simple.page.LoginPage;
 
+import static org.assertj.core.api.Assertions.assertThat;
+
+@DisplayName("Базовые тесты Rambler")
+@ExtendWith(ScreenshotExtension.class)
 public class RamblerTest {
 
     private static final String email = "simpleautomation@rambler.ru";
@@ -18,14 +21,15 @@ public class RamblerTest {
         driver.set(WebDriverFactory.getWebDriver());
     }
 
-    @AfterEach
-    public void disposeDriver(){
-        if(driver.get() != null){
-            driver.get().quit();
-        }
-    }
+//    @AfterEach
+//    public void disposeDriver(){
+//        if(driver.get() != null){
+//            driver.get().quit();
+//        }
+//    }
 
     @Test
+    @DisplayName("Проверка логина")
     public void login(){
         Assertions.assertTrue(
                 new LoginPage(driver.get())
@@ -35,6 +39,7 @@ public class RamblerTest {
     }
 
     @Test
+    @DisplayName("Открытие профиля")
     public void openProfile(){
         Assertions.assertTrue(
                 new LoginPage(driver.get())
