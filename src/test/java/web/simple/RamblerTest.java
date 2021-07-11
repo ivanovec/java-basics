@@ -1,12 +1,12 @@
 package web.simple;
 
-import io.qameta.allure.Feature;
-import org.junit.jupiter.api.*;
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.openqa.selenium.WebDriver;
 import web.simple.page.LoginPage;
-
-import static org.assertj.core.api.Assertions.assertThat;
 
 @DisplayName("Базовые тесты Rambler")
 @ExtendWith(ScreenshotExtension.class)
