@@ -5,6 +5,7 @@ import io.qameta.allure.Feature;
 import io.qameta.allure.Story;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 import rest.pojos.UserRequest;
 import rest.pojos.CreateUserResponse;
@@ -16,6 +17,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 
 @DisplayName("Тесты работы с API клиента")
 @Feature("Api for users")
+@Tag("rest")
 public class RestTest {
 
     private static RestWrapper api;
