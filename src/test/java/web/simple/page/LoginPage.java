@@ -38,6 +38,7 @@ public class LoginPage extends BasePage{
     @Step("Нажатие кнопки логина")
     public SearchPage clickLogin(){
         driver.findElement(processLogin).click();
+        driver.switchTo().window(driver.getWindowHandles().stream().findFirst().get());
         return new SearchPage(driver);
     }
 
