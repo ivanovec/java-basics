@@ -41,6 +41,7 @@ public class WebDriverFactory {
             }
             System.out.println("binary name " + chromeBinaryName);
 
+            if(Resources.getResource(chromeBinaryName).equals(null)) throw  new RuntimeException(chromeBinaryName + " not found");
             System.setProperty("webdriver.chrome.driver", Resources.getResource(chromeBinaryName).getPath());
         }
 
