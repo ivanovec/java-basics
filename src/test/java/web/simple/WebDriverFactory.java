@@ -25,19 +25,21 @@ public class WebDriverFactory {
     }
 
     private static ChromeDriver getChromeDriver(){
-        String chromeBinaryName;
+        if(System.getProperty("webdriver.chrome.driver").isEmpty()) {
+            String chromeBinaryName;
+            switch (System.getProperty("os.name").toLowerCase()) {
+                case "mac os x":
+                default:
+                    chromeBinaryName = "chromedriver";
+                    break;
+                case "windows 7":
+                    chromeBinaryName = "chromedriver.exe";
+                    break;
+            }
 
-        switch(System.getProperty("os.name").toLowerCase()){
-            case "mac os x":
-            default:
-                chromeBinaryName = "chromedriver";
-                break;
-            case "windows 7":
-                chromeBinaryName = "chromedriver.exe";
-                break;
+            System.setProperty("webdriver.chrome.driver", Resources.getResource(chromeBinaryName).getPath());
         }
 
-        System.setProperty("webdriver.chrome.driver", Resources.getResource(chromeBinaryName).getPath());
         return new ChromeDriver();
     }
 }
