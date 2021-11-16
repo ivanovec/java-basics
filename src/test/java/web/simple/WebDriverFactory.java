@@ -39,6 +39,7 @@ public class WebDriverFactory {
                     chromeBinaryName = "chromedriver_linux";
                     break;
             }
+            System.out.println(chromeBinaryName);
 
             System.setProperty("webdriver.chrome.driver", Resources.getResource(chromeBinaryName).getPath());
         }
