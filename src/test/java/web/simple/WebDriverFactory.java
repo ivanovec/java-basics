@@ -1,11 +1,14 @@
 package web.simple;
 
 import com.google.common.io.Resources;
+import io.qameta.allure.Allure;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import web.simple.config.TestConfigFactory;
+
+import java.nio.charset.StandardCharsets;
 
 public class WebDriverFactory {
     private static TestConfigFactory config = TestConfigFactory.getInstance();
@@ -34,8 +37,9 @@ public class WebDriverFactory {
                 case "windows 7":
                     chromeBinaryName = "chromedriver.exe";
                     break;
-                case "Linux":
+                case "linux":
                 default:
+                    Allure.getLifecycle().addAttachment("os", "plain/text", "txt", System.getProperty("os.name").getBytes(StandardCharsets.UTF_8));
                     chromeBinaryName = "chromedriver_linux";
                     break;
             }
