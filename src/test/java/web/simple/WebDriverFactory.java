@@ -29,7 +29,7 @@ public class WebDriverFactory {
     }
 
     private static ChromeDriver getChromeDriver(){
-        if(System.getProperty("webdriver.chrome.driver").isEmpty()) {
+//        if(System.getProperty("webdriver.chrome.driver").isEmpty()) {
             String chromeBinaryName;
             switch (System.getProperty("os.name").toLowerCase()) {
                 case "mac os x":
@@ -43,10 +43,9 @@ public class WebDriverFactory {
                     chromeBinaryName = "chromedriver_linux";
                     break;
             }
-            System.out.println("binary name " + chromeBinaryName);
 
             System.setProperty("webdriver.chrome.driver", Resources.getResource( chromeBinaryName).getPath());
-        }
+//        }
 
         ChromeOptions chromeOptions = new ChromeOptions();
         chromeOptions.addArguments("--headless", "--disable-gpu", "--no-sandbox");
