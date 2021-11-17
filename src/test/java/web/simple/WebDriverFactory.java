@@ -29,33 +29,24 @@ public class WebDriverFactory {
     }
 
     private static ChromeDriver getChromeDriver(){
-//        if(System.getProperty("webdriver.chrome.driver").isEmpty()) {
-//            String chromeBinaryName;
-//            switch (System.getProperty("os.name").toLowerCase()) {
-//                case "mac os x":
-//                    chromeBinaryName = "chromedriver";
-//                    break;
-//                case "windows 7":
-//                    chromeBinaryName = "chromedriver.exe";
-//                    break;
-//                case "linux":
-//                default:
-//                    Allure.getLifecycle().addAttachment("os", "plain/text", "txt", System.getProperty("os.name").getBytes(StandardCharsets.UTF_8));
-//                    chromeBinaryName = "chromedriver_linux";
-//                    break;
-//            }
-//            System.out.println("binary name " + chromeBinaryName);
-//
-//            System.setProperty("webdriver.chrome.driver", Resources.getResource("chromedriver_linux").getPath());
-//        }
-//
-//        ChromeOptions chromeOptions = new ChromeOptions();
-//        chromeOptions.addArguments("--headless", "--disable-gpu", "--no-sandbox");
-//
-//        return new ChromeDriver(chromeOptions);
+        if(System.getProperty("webdriver.chrome.driver").isEmpty()) {
+            String chromeBinaryName;
+            switch (System.getProperty("os.name").toLowerCase()) {
+                case "mac os x":
+                    chromeBinaryName = "chromedriver";
+                    break;
+                case "windows 7":
+                    chromeBinaryName = "chromedriver.exe";
+                    break;
+                case "linux":
+                default:
+                    chromeBinaryName = "chromedriver_linux";
+                    break;
+            }
+            System.out.println("binary name " + chromeBinaryName);
 
-        String chromeBinaryName = "chromedriver_linux";
-        System.setProperty("webdriver.chrome.driver", Resources.getResource( chromeBinaryName).getPath());
+            System.setProperty("webdriver.chrome.driver", Resources.getResource( chromeBinaryName).getPath());
+        }
 
         ChromeOptions chromeOptions = new ChromeOptions();
         chromeOptions.addArguments("--headless", "--disable-gpu", "--no-sandbox");
