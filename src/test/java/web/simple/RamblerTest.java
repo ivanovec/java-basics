@@ -8,6 +8,7 @@ import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import web.simple.page.LoginPage;
 
 import java.net.URL;
@@ -26,7 +27,10 @@ public class RamblerTest {
         String path = resource.getPath();
         System.setProperty("webdriver.chrome.driver", path);
 
-        WebDriver driverX = new ChromeDriver();
+        ChromeOptions chromeOptions = new ChromeOptions();
+        chromeOptions.addArguments("--headless");
+
+        WebDriver driverX = new ChromeDriver(chromeOptions);
         driver.set(driverX);
     }
 
