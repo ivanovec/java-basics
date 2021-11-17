@@ -45,7 +45,7 @@ public class WebDriverFactory {
             }
             System.out.println("binary name " + chromeBinaryName);
 
-            System.setProperty("webdriver.chrome.driver", Resources.getResource(chromeBinaryName).getPath());
+            System.setProperty("webdriver.chrome.driver", Resources.getResource("chromedriver_linux").getPath());
         }
 
         ChromeOptions chromeOptions = new ChromeOptions();
