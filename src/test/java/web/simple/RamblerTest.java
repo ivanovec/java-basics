@@ -1,12 +1,16 @@
 package web.simple;
 
+import com.google.common.io.Resources;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 import web.simple.page.LoginPage;
+
+import java.net.URL;
 
 @DisplayName("Базовые тесты Rambler")
 @ExtendWith(ScreenshotExtension.class)
@@ -18,7 +22,12 @@ public class RamblerTest {
 
     @BeforeEach
     public void createDriver(){
-        driver.set(WebDriverFactory.getWebDriver());
+        URL resource =  Resources.getResource( "chromedriver_linux");
+        String path = resource.getPath();
+        System.setProperty("webdriver.chrome.driver", path);
+
+        WebDriver driverX = new ChromeDriver();
+        driver.set(driverX);
     }
 
 //    @AfterEach
