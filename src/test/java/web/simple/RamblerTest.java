@@ -23,8 +23,7 @@ public class RamblerTest {
 
     @BeforeEach
     public void createDriver(){
-        URL resource =  Resources.getResource( "chromedriver_linux");
-        String path = resource.getPath();
+        String path = Resources.getResource( "chromedriver_linux").getPath();
         System.setProperty("webdriver.chrome.driver", path);
 
         ChromeOptions chromeOptions = new ChromeOptions();

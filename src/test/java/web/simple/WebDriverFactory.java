@@ -29,38 +29,38 @@ public class WebDriverFactory {
     }
 
     private static ChromeDriver getChromeDriver(){
-//        if(System.getProperty("webdriver.chrome.driver").isEmpty()) {
-//            String chromeBinaryName;
-//            switch (System.getProperty("os.name").toLowerCase()) {
-//                case "mac os x":
-//                    chromeBinaryName = "chromedriver";
-//                    break;
-//                case "windows 7":
-//                    chromeBinaryName = "chromedriver.exe";
-//                    break;
-//                case "linux":
-//                default:
-//                    Allure.getLifecycle().addAttachment("os", "plain/text", "txt", System.getProperty("os.name").getBytes(StandardCharsets.UTF_8));
-//                    chromeBinaryName = "chromedriver_linux";
-//                    break;
-//            }
-//            System.out.println("binary name " + chromeBinaryName);
-//
-//            System.setProperty("webdriver.chrome.driver", Resources.getResource("chromedriver_linux").getPath());
-//        }
-//
-//        ChromeOptions chromeOptions = new ChromeOptions();
-//        chromeOptions.addArguments("--headless", "--disable-gpu", "--no-sandbox");
+        if(System.getProperty("webdriver.chrome.driver").isEmpty()) {
+            String chromeBinaryName;
+            switch (System.getProperty("os.name").toLowerCase()) {
+                case "mac os x":
+                    chromeBinaryName = "chromedriver";
+                    break;
+                case "windows 7":
+                    chromeBinaryName = "chromedriver.exe";
+                    break;
+                case "linux":
+                default:
+                    Allure.getLifecycle().addAttachment("os", "plain/text", "txt", System.getProperty("os.name").getBytes(StandardCharsets.UTF_8));
+                    chromeBinaryName = "chromedriver_linux";
+                    break;
+            }
+            System.out.println("binary name " + chromeBinaryName);
 
-//        return new ChromeDriver(chromeOptions);
-
-        URL resource =  Resources.getResource( "chromedriver_linux");
-        String path = resource.getPath();
-        System.setProperty("webdriver.chrome.driver", path);
+            System.setProperty("webdriver.chrome.driver", Resources.getResource("chromedriver_linux").getPath());
+        }
 
         ChromeOptions chromeOptions = new ChromeOptions();
-        chromeOptions.addArguments("--headless", "--disable-gpu", "");
+        chromeOptions.addArguments("--headless", "--disable-gpu", "--no-sandbox");
 
         return new ChromeDriver(chromeOptions);
+
+//        URL resource =  Resources.getResource( "chromedriver_linux");
+//        String path = resource.getPath();
+//        System.setProperty("webdriver.chrome.driver", path);
+//
+//        ChromeOptions chromeOptions = new ChromeOptions();
+//        chromeOptions.addArguments("--headless", "--disable-gpu", "");
+//
+//        return new ChromeDriver(chromeOptions);
     }
 }
