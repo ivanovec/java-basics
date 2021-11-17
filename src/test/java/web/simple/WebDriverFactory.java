@@ -29,13 +29,13 @@ public class WebDriverFactory {
             String chromeBinaryName;
             switch (System.getProperty("os.name").toLowerCase()) {
                 case "mac os x":
-                default:
                     chromeBinaryName = "chromedriver";
                     break;
                 case "windows 7":
                     chromeBinaryName = "chromedriver.exe";
                     break;
                 case "Linux":
+                default:
                     chromeBinaryName = "chromedriver_linux";
                     break;
             }
