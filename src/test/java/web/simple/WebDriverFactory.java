@@ -47,9 +47,9 @@ public class WebDriverFactory {
             System.setProperty("webdriver.chrome.driver", Resources.getResource( chromeBinaryName).getPath());
 //        }
 
-        ChromeOptions chromeOptions = new ChromeOptions();
-        chromeOptions.addArguments("--headless", "--disable-gpu", "--no-sandbox");
+//        ChromeOptions chromeOptions = new ChromeOptions();
+//        chromeOptions.addArguments("--headless", "--disable-gpu", "--no-sandbox");
 
-        return new ChromeDriver(chromeOptions);
+        return new ChromeDriver();//chromeOptions);
     }
 }
