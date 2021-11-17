@@ -23,8 +23,7 @@ public class RamblerTest {
 
     @BeforeEach
     public void createDriver(){
-        String path = Resources.getResource( "chromedriver_linux").getPath();
-        System.setProperty("webdriver.chrome.driver", path);
+        System.setProperty("webdriver.chrome.driver", Resources.getResource( "chromedriver_linux").getPath());
 
         ChromeOptions chromeOptions = new ChromeOptions();
         chromeOptions.addArguments("--headless", "--disable-gpu", "--no-sandbox");
