@@ -35,18 +35,18 @@ public class WebDriverFactory {
                 case "windows 7":
                     chromeBinaryName = "chromedriver.exe";
                     break;
-                case "linux":
+                case "Linux":
                     chromeBinaryName = "chromedriver_linux";
                     break;
             }
             System.out.println("binary name " + chromeBinaryName);
 
-            if(Resources.getResource(chromeBinaryName).equals(null)) throw new RuntimeException(chromeBinaryName + " not found");
-            else throw new RuntimeException("binary is" + chromeBinaryName);
-
-//            System.setProperty("webdriver.chrome.driver", Resources.getResource(chromeBinaryName).getPath());
+            System.setProperty("webdriver.chrome.driver", Resources.getResource(chromeBinaryName).getPath());
         }
 
-        return new ChromeDriver();
+        ChromeOptions chromeOptions = new ChromeOptions();
+        chromeOptions.addArguments("--headless", "--disable-gpu", "--no-sandbox");
+
+        return new ChromeDriver(chromeOptions);
     }
 }
