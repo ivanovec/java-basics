@@ -61,7 +61,7 @@ public class WebDriverFactory {
 
         ChromeOptions chromeOptions = new ChromeOptions();
 //        chromeOptions.addArguments("--headless", "--disable-gpu", "--no-sandbox");
-        chromeOptions.addArguments("--no-sandbox", "--disable-dev-shm-usage");
+        chromeOptions.addArguments("--no-sandbox", "--disable-dev-shm-usage", "--disable-gpu");
 
         return new ChromeDriver(chromeOptions);
     }
