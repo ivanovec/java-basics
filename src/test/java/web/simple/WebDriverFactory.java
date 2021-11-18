@@ -60,6 +60,9 @@ public class WebDriverFactory {
 //        ChromeOptions chromeOptions = new ChromeOptions();
 //        chromeOptions.addArguments("--headless", "--disable-gpu", "--no-sandbox");
 
-        return new ChromeDriver();//chromeOptions);
+        ChromeDriver driver = new ChromeDriver();
+        log.info("driver is " + driver);
+        return driver;
+//        return new ChromeDriver();//chromeOptions);
     }
 }
