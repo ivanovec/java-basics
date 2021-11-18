@@ -36,6 +36,8 @@ public class WebDriverFactory {
 //        if(System.getProperty("webdriver.chrome.driver").isEmpty()) {
             String chromeBinaryName;
         log.info("OS is " + System.getProperty("os.name"));
+        System.setProperty("webdriver.chrome.verboseLogging", "true");
+
 
         switch (System.getProperty("os.name").toLowerCase()) {
                 case "mac os x":
