@@ -2,6 +2,8 @@ package web.simple;
 
 import com.google.common.io.Resources;
 import io.qameta.allure.Allure;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -13,8 +15,10 @@ import java.nio.charset.StandardCharsets;
 
 public class WebDriverFactory {
     private static TestConfigFactory config = TestConfigFactory.getInstance();
+    static Logger log = LogManager.getLogger(WebDriverFactory.class);
 
     public static WebDriver getWebDriver(){
+        log.info("getting browser");
         switch (config.getWebConfig().getBrowser()){
             case FIREFOX:
                 return new FirefoxDriver();
@@ -31,7 +35,9 @@ public class WebDriverFactory {
     private static ChromeDriver getChromeDriver(){
 //        if(System.getProperty("webdriver.chrome.driver").isEmpty()) {
             String chromeBinaryName;
-            switch (System.getProperty("os.name").toLowerCase()) {
+        log.info("OS is " + System.getProperty("os.name"));
+
+        switch (System.getProperty("os.name").toLowerCase()) {
                 case "mac os x":
                     chromeBinaryName = "chromedriver";
                     break;
@@ -44,7 +50,11 @@ public class WebDriverFactory {
                     break;
             }
 
-            System.setProperty("webdriver.chrome.driver", Resources.getResource( chromeBinaryName).getPath());
+        log.info("chromedriver binary is " + chromeBinaryName);
+
+        System.setProperty("webdriver.chrome.driver", Resources.getResource( chromeBinaryName).getPath());
+        log.info("webdriver.chrome.driver is set");
+
 //        }
 
 //        ChromeOptions chromeOptions = new ChromeOptions();
