@@ -4,14 +4,19 @@ import com.google.common.io.Resources;
 import io.qameta.allure.Allure;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.openqa.selenium.Capabilities;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.remote.DesiredCapabilities;
 import web.simple.config.TestConfigFactory;
 
 import java.net.URL;
 import java.nio.charset.StandardCharsets;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Map;
 
 public class WebDriverFactory {
     private static TestConfigFactory config = TestConfigFactory.getInstance();
@@ -59,10 +64,24 @@ public class WebDriverFactory {
 
 //        }
 
-        ChromeOptions chromeOptions = new ChromeOptions();
-//        chromeOptions.addArguments("--headless", "--disable-gpu", "--no-sandbox");
-        chromeOptions.addArguments("--no-sandbox", "--disable-dev-shm-usage", "--disable-gpu", "--disable-dev-shm-usage");
 
-        return new ChromeDriver(chromeOptions);
+
+//        ChromeOptions chromeOptions = new ChromeOptions();
+//        chromeOptions.addArguments("--headless", "--disable-gpu", "--no-sandbox");
+//        chromeOptions.addArguments("--no-sandbox", "--disable-dev-shm-usage", "--disable-gpu", "");
+
+
+        Map<String, Object> options = new HashMap<String, Object>();
+        ArrayList<String> args = new ArrayList<String>();
+        args.add("no-sandbox");
+        args.add("disable-dev-shm-usage");
+        args.add("disable-gpu");
+
+        options.put("args", args);
+
+        DesiredCapabilities capabilities = new DesiredCapabilities();
+        capabilities.setCapability(ChromeOptions.CAPABILITY, options);
+
+        return new ChromeDriver(capabilities);
     }
 }
