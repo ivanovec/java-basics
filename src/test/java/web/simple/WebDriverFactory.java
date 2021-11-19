@@ -68,19 +68,8 @@ public class WebDriverFactory {
 
         ChromeOptions chromeOptions = new ChromeOptions();
 //        chromeOptions.addArguments("--headless", "--disable-gpu", "--no-sandbox");
-        chromeOptions.addArguments("--no-sandbox", "--disable-dev-shm-usage", "--disable-gpu", "");
-        chromeOptions.setExperimentalOption("excludeSwitches", new String[] {"enable-automation"});
-        chromeOptions.setExperimentalOption("useAutomationExtension", false);
-//        Map<String, Object> options = new HashMap<String, Object>();
-//        ArrayList<String> args = new ArrayList<String>();
-//        args.add("no-sandbox");
-//        args.add("disable-dev-shm-usage");
-//        args.add("disable-gpu");
-//
-//        options.put("args", args);
-//
-//        DesiredCapabilities capabilities = new DesiredCapabilities();
-//        capabilities.setCapability(ChromeOptions.CAPABILITY, options);
+        chromeOptions.addArguments("--no-sandbox", "--disable-dev-shm-usage", "--disable-gpu", "--disable-extensions");
+
 
         return new ChromeDriver(chromeOptions);
     }
