@@ -68,9 +68,7 @@ public class WebDriverFactory {
 
 
         ChromeOptions chromeOptions = new ChromeOptions();
-//        chromeOptions.addArguments("--headless", "--disable-gpu", "--no-sandbox");
-//        chromeOptions.addArguments("--no-sandbox", "--disable-dev-shm-usage");
-        chromeOptions.addArguments("--start-maximized");
+        chromeOptions.addArguments("--headless", "--disable-gpu", "--no-sandbox");
         ChromeDriver driver = new ChromeDriver(chromeOptions);
         driver.manage().timeouts().implicitlyWait(Duration.ofMinutes(5));
         return driver;
