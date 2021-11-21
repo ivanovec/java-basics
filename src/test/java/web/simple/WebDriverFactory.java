@@ -14,6 +14,7 @@ import web.simple.config.TestConfigFactory;
 
 import java.net.URL;
 import java.nio.charset.StandardCharsets;
+import java.time.Duration;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
@@ -70,7 +71,8 @@ public class WebDriverFactory {
 //        chromeOptions.addArguments("--headless", "--disable-gpu", "--no-sandbox");
 //        chromeOptions.addArguments("--no-sandbox", "--disable-dev-shm-usage");
         chromeOptions.addArguments("--start-maximized");
-
-        return new ChromeDriver(chromeOptions);
+        ChromeDriver driver = new ChromeDriver(chromeOptions);
+        driver.manage().timeouts().implicitlyWait(Duration.ofMinutes(5));
+        return driver;
     }
 }
