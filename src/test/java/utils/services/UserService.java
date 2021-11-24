@@ -32,6 +32,6 @@ public class UserService extends RestService{
     public List<UserPojoFull> getUsers(){
         return given().spec(REQ_SPEC)
                 .get()
-                .jsonPath().getList("dat", UserPojoFull.class);
+                .jsonPath().getList("data", UserPojoFull.class);
     }
 }
