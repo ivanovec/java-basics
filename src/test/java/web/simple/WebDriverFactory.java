@@ -6,6 +6,8 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import web.simple.config.TestConfigFactory;
 
+import java.time.Duration;
+
 public class WebDriverFactory {
     private static TestConfigFactory config = TestConfigFactory.getInstance();
 
@@ -37,6 +39,8 @@ public class WebDriverFactory {
         }
 
         System.setProperty("webdriver.chrome.driver", Resources.getResource(chromeBinaryName).getPath());
-        return new ChromeDriver();
+        ChromeDriver driver = new ChromeDriver();
+        driver.manage().timeouts().implicitlyWait(Duration.ofMinutes(2));
+        return driver;
     }
 }
