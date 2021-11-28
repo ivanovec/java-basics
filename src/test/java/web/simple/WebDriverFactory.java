@@ -3,6 +3,7 @@ package web.simple;
 import com.google.common.io.Resources;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import web.simple.config.TestConfigFactory;
 
@@ -42,7 +43,11 @@ public class WebDriverFactory {
         }
 
         System.setProperty("webdriver.chrome.driver", Resources.getResource(chromeBinaryName).getPath());
-        ChromeDriver driver = new ChromeDriver();
+
+        ChromeOptions options = new ChromeOptions();
+        options.addArguments("--headless", "--no-gpu");
+
+        ChromeDriver driver = new ChromeDriver(options);
         driver.manage().timeouts().implicitlyWait(Duration.ofMinutes(2));
         return driver;
     }
