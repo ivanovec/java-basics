@@ -36,6 +36,9 @@ public class WebDriverFactory {
             case "windows 7":
                 chromeBinaryName = "chromedriver.exe";
                 break;
+            case "linux":
+                chromeBinaryName = "chromedriver_linux";
+                break;
         }
 
         System.setProperty("webdriver.chrome.driver", Resources.getResource(chromeBinaryName).getPath());
