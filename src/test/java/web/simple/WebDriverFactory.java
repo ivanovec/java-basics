@@ -45,10 +45,10 @@ public class WebDriverFactory {
         System.setProperty("webdriver.chrome.driver", Resources.getResource(chromeBinaryName).getPath());
 
         ChromeOptions options = new ChromeOptions();
-        options.addArguments("--headless", "--no-gpu");
+//        options.addArguments("--headless", "--no-gpu");
 
         ChromeDriver driver = new ChromeDriver(options);
-        driver.manage().timeouts().implicitlyWait(Duration.ofMinutes(2));
+        driver.manage().timeouts().implicitlyWait(Duration.ofMinutes(5));
         return driver;
     }
 }
