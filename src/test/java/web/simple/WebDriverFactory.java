@@ -49,7 +49,6 @@ public class WebDriverFactory {
 //        options.addArguments("--headless", "--no-gpu");
 
         ChromeDriver driver = new ChromeDriver(options);
-        driver.manage().timeouts().implicitlyWait(Duration.ofMinutes(5));
         return driver;
     }
 }

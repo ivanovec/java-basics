@@ -11,7 +11,7 @@ import java.time.Duration;
 
 public abstract class BasePage {
     protected static final String BASE_URL = "https://www.rambler.ru";
-    private static final Duration DEFAULT_TIMEOUT_SECONDS = Duration.ofSeconds(10);
+    private static final Duration DEFAULT_TIMEOUT_SECONDS = Duration.ofMinutes(5);
 
     protected WebDriver driver;
     protected WebDriverWait wait;
