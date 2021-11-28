@@ -45,7 +45,7 @@ public class WebDriverFactory {
         System.setProperty("webdriver.chrome.driver", Resources.getResource(chromeBinaryName).getPath());
 
         ChromeOptions options = new ChromeOptions();
-        options.addArguments("--disable-features=VizDisplayCompositor");
+        options.addArguments("--disable-features=NetworkService");
 //        options.addArguments("--headless", "--no-gpu");
 
         ChromeDriver driver = new ChromeDriver(options);
