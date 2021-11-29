@@ -45,10 +45,11 @@ public class WebDriverFactory {
         System.setProperty("webdriver.chrome.driver", Resources.getResource(chromeBinaryName).getPath());
 
         ChromeOptions options = new ChromeOptions();
-        options.addArguments("--disable-features=NetworkService");
+        options.addArguments("--disable-features=VizDisplayCompositor");
 //        options.addArguments("--headless", "--no-gpu");
 
         ChromeDriver driver = new ChromeDriver(options);
+        driver.manage().timeouts().pageLoadTimeout(Duration.ofMinutes(5));
         return driver;
     }
 }
