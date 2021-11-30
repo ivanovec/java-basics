@@ -63,7 +63,7 @@ public class WebDriverFactory {
         log.info("webdriver.chrome.driver is set");
 
         ChromeOptions chromeOptions = new ChromeOptions();
-        chromeOptions.addArguments("--headless", "--disable-gpu");
+//        chromeOptions.addArguments("--headless", "--disable-gpu");
         ChromeDriver driver = new ChromeDriver(chromeOptions);
         driver.manage().timeouts().implicitlyWait(Duration.ofMinutes(5));
         return driver;
