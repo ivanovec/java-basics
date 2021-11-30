@@ -16,7 +16,7 @@ public class TestConfigFactory {
 
     public synchronized WebConfig getWebConfig(){
         if(webConfig == null){
-            webConfig = ConfigBeanFactory.create(config.getConfig("web"), WebConfig.class);
+            webConfig = ConfigBeanFactory.create(config.getConfig("webconfig"), WebConfig.class);
         }
         return webConfig;
     }

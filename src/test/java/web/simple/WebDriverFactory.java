@@ -39,7 +39,6 @@ public class WebDriverFactory {
     }
 
     private static ChromeDriver getChromeDriver(){
-//        if(System.getProperty("webdriver.chrome.driver").isEmpty()) {
             String chromeBinaryName;
         log.info("OS is " + System.getProperty("os.name"));
         System.setProperty("webdriver.chrome.verboseLogging", "true");
@@ -62,10 +61,6 @@ public class WebDriverFactory {
 
         System.setProperty("webdriver.chrome.driver", Resources.getResource( chromeBinaryName).getPath());
         log.info("webdriver.chrome.driver is set");
-
-//        }
-
-
 
         ChromeOptions chromeOptions = new ChromeOptions();
         chromeOptions.addArguments("--headless", "--disable-gpu");
