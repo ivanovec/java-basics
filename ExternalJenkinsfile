@@ -1,0 +1,16 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('run tests') {
+            steps{
+                build job: 'mpipeline',
+                parameters: [
+                    [$class: 'ExtendedChoiceParameterValue', name: 'server', value: 'server1' ]
+                    [$class: 'StringParameterValue', name: 'rest', value: 'true' ]
+                    [$class: 'StringParameterValue', name: 'web', value: 'false' ]
+                ]
+            }
+        }
+    }
+}
