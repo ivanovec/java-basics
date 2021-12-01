@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('run tests') {
             steps{
-                build job: 'mpipeline',
+                build job: 'mpipeline', wait: false
                 parameters: [
                     string(name: 'server', value: "server1"),
                     string(name: 'rest', value: "true"),
