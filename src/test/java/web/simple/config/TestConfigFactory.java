@@ -9,14 +9,17 @@ public class TestConfigFactory {
     private volatile WebConfig webConfig;
 
     private TestConfigFactory(){
-        config = ConfigFactory.systemProperties()
-                .withFallback(ConfigFactory.systemEnvironment())
-                .withFallback(ConfigFactory.parseResources("test.conf"));
+        if( config == null ) {
+            config = ConfigFactory.systemProperties()
+//                    .withFallback(ConfigFactory.systemEnvironment())
+                    .withFallback(ConfigFactory.parseResources("web.conf"))
+                    .resolve();
+        }
     }
 
     public synchronized WebConfig getWebConfig(){
         if(webConfig == null){
-            webConfig = ConfigBeanFactory.create(config.getConfig("webconfig"), WebConfig.class);
+            webConfig = ConfigBeanFactory.create(config.getConfig("web"), WebConfig.class);
         }
         return webConfig;
     }

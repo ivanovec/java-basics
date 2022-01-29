@@ -11,7 +11,7 @@ public class TestConfigFactory {
     private TestConfigFactory(){
         config = ConfigFactory.systemProperties()
                 .withFallback(ConfigFactory.systemEnvironment())
-                .withFallback(ConfigFactory.parseResources("test.conf"));
+                .withFallback(ConfigFactory.parseResources("web.conf"));
     }
 
     public synchronized WebConfig getWebConfig(){
