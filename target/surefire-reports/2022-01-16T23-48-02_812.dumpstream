@@ -1,0 +1,15 @@
+# Created at 2022-01-16T23:48:03.633
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+
+# Created at 2022-01-16T23:48:03.634
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+
+# Created at 2022-01-16T23:48:03.634
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+
+# Created at 2022-01-16T23:48:03.925
+Jan 16, 2022 11:48:03 PM org.junit.platform.launcher.core.LauncherConfigurationParameters loadClasspathResource
+
+# Created at 2022-01-16T23:48:03.925
+INFO: Loading JUnit Platform configuration parameters from classpath resource [file:/Users/vnvc/IdeaProjects/java-basics/target/classes/junit-platform.properties].
+

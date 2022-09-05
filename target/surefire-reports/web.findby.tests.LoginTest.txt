@@ -1,0 +1,7 @@
+-------------------------------------------------------------------------------
+Test set: web.findby.tests.LoginTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.019 s <<< FAILURE! - in web.findby.tests.LoginTest
+login  Time elapsed: 0.009 s  <<< ERROR!
+com.typesafe.config.ConfigException$Missing: merge of system properties,env variables,web.conf @ file:/Users/vnvc/IdeaProjects/java-basics/target/test-classes/web.conf: 1: No configuration setting found for key 'webconfig'
+

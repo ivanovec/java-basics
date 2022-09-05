@@ -1,0 +1,12 @@
+-------------------------------------------------------------------------------
+Test set: web.simple.RamblerTest
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 0.459 s <<< FAILURE! - in web.simple.RamblerTest
+openProfile  Time elapsed: 0.408 s  <<< ERROR!
+java.lang.IllegalStateException: The path to the driver executable The path to the driver executable must be set by the webdriver.chrome.driver system property; for more information, see https://github.com/SeleniumHQ/selenium/wiki/ChromeDriver. The latest version can be downloaded from http://chromedriver.storage.googleapis.com/index.html
+	at web.simple.RamblerTest.createDriver(RamblerTest.java:21)
+
+login  Time elapsed: 0.01 s  <<< ERROR!
+java.lang.IllegalStateException: The path to the driver executable The path to the driver executable must be set by the webdriver.chrome.driver system property; for more information, see https://github.com/SeleniumHQ/selenium/wiki/ChromeDriver. The latest version can be downloaded from http://chromedriver.storage.googleapis.com/index.html
+	at web.simple.RamblerTest.createDriver(RamblerTest.java:21)
+

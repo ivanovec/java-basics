@@ -1,0 +1,372 @@
+# Created at 2022-05-21T21:37:17.173
+[AppClassLoader@18b4aac2] error Cannot register 'web.WebDriverLogger' because the type found with that name is not an aspect
+
+# Created at 2022-05-21T21:37:17.754
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+
+# Created at 2022-05-21T21:37:17.755
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+
+# Created at 2022-05-21T21:37:17.847
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+
+# Created at 2022-05-21T21:37:18.477
+May 21, 2022 9:37:18 PM org.junit.platform.launcher.core.LauncherConfigurationParameters loadClasspathResource
+
+# Created at 2022-05-21T21:37:18.477
+WARNING: Discovered 2 'junit-platform.properties' configuration files in the classpath; only the first will be used.
+
+# Created at 2022-05-21T21:37:18.482
+May 21, 2022 9:37:18 PM org.junit.platform.launcher.core.LauncherConfigurationParameters loadClasspathResource
+
+# Created at 2022-05-21T21:37:18.482
+INFO: Loading JUnit Platform configuration parameters from classpath resource [file:/Users/vnvc/IdeaProjects/java-basics/target/test-classes/junit-platform.properties].
+
+# Created at 2022-05-21T21:37:18.579
+May 21, 2022 9:37:18 PM org.junit.platform.launcher.core.LauncherConfigurationParameters loadClasspathResource
+
+# Created at 2022-05-21T21:37:18.579
+WARNING: Discovered 2 'junit-platform.properties' configuration files in the classpath; only the first will be used.
+
+# Created at 2022-05-21T21:37:18.931
+May 21, 2022 9:37:18 PM org.junit.platform.launcher.core.LauncherConfigurationParameters loadClasspathResource
+
+# Created at 2022-05-21T21:37:18.932
+WARNING: Discovered 2 'junit-platform.properties' configuration files in the classpath; only the first will be used.
+
+# Created at 2022-05-21T21:37:18.936
+May 21, 2022 9:37:18 PM org.junit.platform.launcher.core.LauncherConfigurationParameters loadClasspathResource
+
+# Created at 2022-05-21T21:37:18.937
+WARNING: Discovered 2 'junit-platform.properties' configuration files in the classpath; only the first will be used.
+
+# Created at 2022-05-21T21:37:18.949
+May 21, 2022 9:37:18 PM org.junit.platform.launcher.core.LauncherConfigurationParameters loadClasspathResource
+
+# Created at 2022-05-21T21:37:18.949
+WARNING: Discovered 2 'junit-platform.properties' configuration files in the classpath; only the first will be used.
+
+# Created at 2022-05-21T21:37:18.956
+May 21, 2022 9:37:18 PM org.junit.platform.launcher.core.LauncherConfigurationParameters loadClasspathResource
+
+# Created at 2022-05-21T21:37:18.957
+WARNING: Discovered 2 'junit-platform.properties' configuration files in the classpath; only the first will be used.
+
+# Created at 2022-05-21T21:37:18.961
+May 21, 2022 9:37:18 PM org.junit.platform.launcher.core.LauncherConfigurationParameters loadClasspathResource
+
+# Created at 2022-05-21T21:37:18.962
+WARNING: Discovered 2 'junit-platform.properties' configuration files in the classpath; only the first will be used.
+
+# Created at 2022-05-21T21:37:18.978
+May 21, 2022 9:37:18 PM org.junit.platform.launcher.core.LauncherConfigurationParameters loadClasspathResource
+
+# Created at 2022-05-21T21:37:18.978
+WARNING: Discovered 2 'junit-platform.properties' configuration files in the classpath; only the first will be used.
+
+# Created at 2022-05-21T21:37:18.984
+May 21, 2022 9:37:18 PM org.junit.platform.launcher.core.LauncherConfigurationParameters loadClasspathResource
+
+# Created at 2022-05-21T21:37:18.984
+WARNING: Discovered 2 'junit-platform.properties' configuration files in the classpath; only the first will be used.
+
+# Created at 2022-05-21T21:37:19.039
+May 21, 2022 9:37:19 PM org.junit.platform.launcher.core.LauncherConfigurationParameters loadClasspathResource
+
+# Created at 2022-05-21T21:37:19.040
+WARNING: Discovered 2 'junit-platform.properties' configuration files in the classpath; only the first will be used.
+
+# Created at 2022-05-21T21:37:20.650
+May 21, 2022 9:37:20 PM org.junit.jupiter.engine.descriptor.MethodBasedTestDescriptor lambda$invokeTestWatchers$3
+
+# Created at 2022-05-21T21:37:20.651
+WARNING: Failed to invoke TestWatcher [web.simple.ScreenshotExtension] for method [web.simple.RamblerTest#openProfile()] with display name [Открытие профиля]
+
+# Created at 2022-05-21T21:37:20.652
+java.lang.NullPointerException
+
+# Created at 2022-05-21T21:37:20.652
+	at web.simple.ScreenshotExtension.testFailed(ScreenshotExtension.java:24)
+
+# Created at 2022-05-21T21:37:20.653
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$nodeFinished$14(TestMethodTestDescriptor.java:299)
+
+# Created at 2022-05-21T21:37:20.653
+	at org.junit.jupiter.engine.descriptor.MethodBasedTestDescriptor.lambda$invokeTestWatchers$3(MethodBasedTestDescriptor.java:134)
+
+# Created at 2022-05-21T21:37:20.653
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+
+# Created at 2022-05-21T21:37:20.654
+	at org.junit.jupiter.engine.descriptor.MethodBasedTestDescriptor.invokeTestWatchers(MethodBasedTestDescriptor.java:132)
+
+# Created at 2022-05-21T21:37:20.654
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.nodeFinished(TestMethodTestDescriptor.java:290)
+
+# Created at 2022-05-21T21:37:20.655
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.nodeFinished(TestMethodTestDescriptor.java:65)
+
+# Created at 2022-05-21T21:37:20.655
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.reportCompletion(NodeTestTask.java:176)
+
+# Created at 2022-05-21T21:37:20.656
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:89)
+
+# Created at 2022-05-21T21:37:20.656
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+
+# Created at 2022-05-21T21:37:20.657
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:38)
+
+# Created at 2022-05-21T21:37:20.657
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:143)
+
+# Created at 2022-05-21T21:37:20.659
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+
+# Created at 2022-05-21T21:37:20.660
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:129)
+
+# Created at 2022-05-21T21:37:20.660
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+
+# Created at 2022-05-21T21:37:20.661
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:127)
+
+# Created at 2022-05-21T21:37:20.661
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+
+# Created at 2022-05-21T21:37:20.662
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:126)
+
+# Created at 2022-05-21T21:37:20.663
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:84)
+
+# Created at 2022-05-21T21:37:20.664
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+
+# Created at 2022-05-21T21:37:20.664
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:38)
+
+# Created at 2022-05-21T21:37:20.664
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:143)
+
+# Created at 2022-05-21T21:37:20.665
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+
+# Created at 2022-05-21T21:37:20.665
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:129)
+
+# Created at 2022-05-21T21:37:20.666
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+
+# Created at 2022-05-21T21:37:20.666
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:127)
+
+# Created at 2022-05-21T21:37:20.667
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+
+# Created at 2022-05-21T21:37:20.667
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:126)
+
+# Created at 2022-05-21T21:37:20.668
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:84)
+
+# Created at 2022-05-21T21:37:20.668
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:32)
+
+# Created at 2022-05-21T21:37:20.669
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+
+# Created at 2022-05-21T21:37:20.669
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:51)
+
+# Created at 2022-05-21T21:37:20.670
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:108)
+
+# Created at 2022-05-21T21:37:20.670
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:88)
+
+# Created at 2022-05-21T21:37:20.671
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:54)
+
+# Created at 2022-05-21T21:37:20.671
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:67)
+
+# Created at 2022-05-21T21:37:20.672
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:52)
+
+# Created at 2022-05-21T21:37:20.672
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:96)
+
+# Created at 2022-05-21T21:37:20.673
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:75)
+
+# Created at 2022-05-21T21:37:20.673
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invokeAllTests(JUnitPlatformProvider.java:150)
+
+# Created at 2022-05-21T21:37:20.674
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invoke(JUnitPlatformProvider.java:124)
+
+# Created at 2022-05-21T21:37:20.674
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+
+# Created at 2022-05-21T21:37:20.675
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+
+# Created at 2022-05-21T21:37:20.676
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+
+# Created at 2022-05-21T21:37:20.676
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+
+# Created at 2022-05-21T21:37:20.677
+
+
+# Created at 2022-05-21T21:37:20.698
+May 21, 2022 9:37:20 PM org.junit.jupiter.engine.descriptor.MethodBasedTestDescriptor lambda$invokeTestWatchers$3
+
+# Created at 2022-05-21T21:37:20.699
+WARNING: Failed to invoke TestWatcher [web.simple.ScreenshotExtension] for method [web.simple.RamblerTest#login()] with display name [Проверка логина]
+
+# Created at 2022-05-21T21:37:20.699
+java.lang.NullPointerException
+
+# Created at 2022-05-21T21:37:20.700
+	at web.simple.ScreenshotExtension.testFailed(ScreenshotExtension.java:24)
+
+# Created at 2022-05-21T21:37:20.700
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$nodeFinished$14(TestMethodTestDescriptor.java:299)
+
+# Created at 2022-05-21T21:37:20.701
+	at org.junit.jupiter.engine.descriptor.MethodBasedTestDescriptor.lambda$invokeTestWatchers$3(MethodBasedTestDescriptor.java:134)
+
+# Created at 2022-05-21T21:37:20.701
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+
+# Created at 2022-05-21T21:37:20.701
+	at org.junit.jupiter.engine.descriptor.MethodBasedTestDescriptor.invokeTestWatchers(MethodBasedTestDescriptor.java:132)
+
+# Created at 2022-05-21T21:37:20.702
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.nodeFinished(TestMethodTestDescriptor.java:290)
+
+# Created at 2022-05-21T21:37:20.702
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.nodeFinished(TestMethodTestDescriptor.java:65)
+
+# Created at 2022-05-21T21:37:20.703
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.reportCompletion(NodeTestTask.java:176)
+
+# Created at 2022-05-21T21:37:20.703
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:89)
+
+# Created at 2022-05-21T21:37:20.704
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+
+# Created at 2022-05-21T21:37:20.704
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:38)
+
+# Created at 2022-05-21T21:37:20.704
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:143)
+
+# Created at 2022-05-21T21:37:20.705
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+
+# Created at 2022-05-21T21:37:20.705
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:129)
+
+# Created at 2022-05-21T21:37:20.706
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+
+# Created at 2022-05-21T21:37:20.706
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:127)
+
+# Created at 2022-05-21T21:37:20.706
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+
+# Created at 2022-05-21T21:37:20.707
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:126)
+
+# Created at 2022-05-21T21:37:20.707
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:84)
+
+# Created at 2022-05-21T21:37:20.707
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+
+# Created at 2022-05-21T21:37:20.708
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:38)
+
+# Created at 2022-05-21T21:37:20.708
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:143)
+
+# Created at 2022-05-21T21:37:20.710
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+
+# Created at 2022-05-21T21:37:20.710
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:129)
+
+# Created at 2022-05-21T21:37:20.711
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+
+# Created at 2022-05-21T21:37:20.712
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:127)
+
+# Created at 2022-05-21T21:37:20.712
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+
+# Created at 2022-05-21T21:37:20.712
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:126)
+
+# Created at 2022-05-21T21:37:20.713
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:84)
+
+# Created at 2022-05-21T21:37:20.713
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:32)
+
+# Created at 2022-05-21T21:37:20.714
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+
+# Created at 2022-05-21T21:37:20.714
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:51)
+
+# Created at 2022-05-21T21:37:20.714
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:108)
+
+# Created at 2022-05-21T21:37:20.715
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:88)
+
+# Created at 2022-05-21T21:37:20.715
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:54)
+
+# Created at 2022-05-21T21:37:20.715
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:67)
+
+# Created at 2022-05-21T21:37:20.716
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:52)
+
+# Created at 2022-05-21T21:37:20.716
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:96)
+
+# Created at 2022-05-21T21:37:20.717
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:75)
+
+# Created at 2022-05-21T21:37:20.717
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invokeAllTests(JUnitPlatformProvider.java:150)
+
+# Created at 2022-05-21T21:37:20.717
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invoke(JUnitPlatformProvider.java:124)
+
+# Created at 2022-05-21T21:37:20.718
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+
+# Created at 2022-05-21T21:37:20.718
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+
+# Created at 2022-05-21T21:37:20.719
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+
+# Created at 2022-05-21T21:37:20.719
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+
+# Created at 2022-05-21T21:37:20.719
+
+

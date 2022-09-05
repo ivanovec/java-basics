@@ -1,0 +1,63 @@
+# Created at 2022-01-16T23:51:34.071
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+
+# Created at 2022-01-16T23:51:34.072
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+
+# Created at 2022-01-16T23:51:34.072
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+
+# Created at 2022-01-16T23:51:34.839
+Jan 16, 2022 11:51:34 PM org.junit.platform.launcher.core.LauncherConfigurationParameters loadClasspathResource
+
+# Created at 2022-01-16T23:51:34.840
+INFO: Loading JUnit Platform configuration parameters from classpath resource [file:/Users/vnvc/IdeaProjects/java-basics/target/classes/junit-platform.properties].
+
+# Created at 2022-01-16T23:51:43.466
+Jan 16, 2022 11:51:43 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+
+# Created at 2022-01-16T23:51:43.467
+INFO: Detected dialect: W3C
+
+# Created at 2022-01-16T23:51:43.858
+Jan 16, 2022 11:51:43 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+
+# Created at 2022-01-16T23:51:43.858
+WARNING: Unable to find an exact match for CDP version 97, so returning the closest version found: a no-op implementation
+
+# Created at 2022-01-16T23:51:43.859
+Jan 16, 2022 11:51:43 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+
+# Created at 2022-01-16T23:51:43.860
+INFO: Unable to find CDP implementation matching 97.
+
+# Created at 2022-01-16T23:51:43.861
+Jan 16, 2022 11:51:43 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$0
+
+# Created at 2022-01-16T23:51:43.862
+WARNING: Unable to find version of CDP to use for . You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.0.0-beta-1` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+
+# Created at 2022-01-16T23:52:09.691
+Jan 16, 2022 11:52:09 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+
+# Created at 2022-01-16T23:52:09.706
+INFO: Detected dialect: W3C
+
+# Created at 2022-01-16T23:52:09.818
+Jan 16, 2022 11:52:09 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+
+# Created at 2022-01-16T23:52:09.827
+WARNING: Unable to find an exact match for CDP version 97, so returning the closest version found: a no-op implementation
+
+# Created at 2022-01-16T23:52:09.831
+Jan 16, 2022 11:52:09 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+
+# Created at 2022-01-16T23:52:09.840
+INFO: Unable to find CDP implementation matching 97.
+
+# Created at 2022-01-16T23:52:09.841
+Jan 16, 2022 11:52:09 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$0
+
+# Created at 2022-01-16T23:52:09.842
+WARNING: Unable to find version of CDP to use for . You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.0.0-beta-1` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+
