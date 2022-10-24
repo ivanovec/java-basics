@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="rest.KuberTest" tests="1" skipped="0" failures="1" errors="0" timestamp="2022-09-05T21:34:30" hostname="Ivans-MacBook-Air.local" time="12.812">
+<testsuite name="rest.KuberTest" tests="1" skipped="0" failures="1" errors="0" timestamp="2022-09-10T13:50:36" hostname="Ivans-MacBook-Air.local" time="21.115">
   <properties/>
-  <testcase name="testHappiness()" classname="rest.KuberTest" time="12.812">
+  <testcase name="testHappiness()" classname="rest.KuberTest" time="21.115">
     <failure message="java.net.ConnectException: Connection refused (Connection refused)" type="java.net.ConnectException">java.net.ConnectException: Connection refused (Connection refused)
 	at java.net.PlainSocketImpl.socketConnect(Native Method)
 	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
