@@ -3,6 +3,8 @@ package rest;
 import io.qameta.allure.Description;
 import io.qameta.allure.Feature;
 import io.qameta.allure.Story;
+import io.restassured.http.ContentType;
+import io.restassured.module.jsv.JsonSchemaValidator;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
@@ -13,7 +15,11 @@ import rest.pojos.UserPojoFull;
 import utils.RestWrapper;
 import utils.UserGenerator;
 
+import java.util.List;
+
+import static io.restassured.RestAssured.given;
 import static org.assertj.core.api.Assertions.assertThat;
+import static org.hamcrest.Matchers.isA;
 
 @DisplayName("Тесты работы с API клиента")
 @Feature("Api for users")
@@ -31,7 +37,9 @@ public class RestTest {
     @DisplayName("Получение пользователей")
     @Story("List all users")
     public void getUsers(){
-        assertThat(api.user.getUsers()).extracting(UserPojoFull::getEmail).contains("george.bluth@reqres.in");
+        RestResponse<List<UserPojoFull>> usersResponse = api.user.getUsers();
+        usersResponse.validate("UsersTemplate.json");
+        assertThat(usersResponse.extract()).extracting(UserPojoFull::getEmail).contains("george.bluth@reqres.in");
     }
 
     @DisplayName("Создание пользователя")

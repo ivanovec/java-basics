@@ -3,6 +3,9 @@ package utils.services;
 import io.qameta.allure.Attachment;
 import io.qameta.allure.Step;
 import io.restassured.http.Cookies;
+import io.restassured.module.jsv.JsonSchemaValidator;
+import io.restassured.response.Response;
+import rest.RestResponse;
 import rest.pojos.UserRequest;
 import rest.pojos.CreateUserResponse;
 import rest.pojos.UserPojoFull;
@@ -29,9 +32,9 @@ public class UserService extends RestService{
 
     @Step("Получение списка пользователей")
     @Attachment
-    public List<UserPojoFull> getUsers(){
-        return given().spec(REQ_SPEC)
-                .get()
-                .jsonPath().getList("data", UserPojoFull.class);
+    public RestResponse<List<UserPojoFull>> getUsers(){
+        return new RestResponse<>(
+                given().spec(REQ_SPEC).get(),
+                resp -> resp.body().jsonPath().getList("data", UserPojoFull.class));
     }
 }
