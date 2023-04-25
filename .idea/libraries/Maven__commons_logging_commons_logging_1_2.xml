@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="Maven: commons-logging:commons-logging:1.2" type="java-imported" external-system-id="Maven">
+    <properties groupId="commons-logging" artifactId="commons-logging" version="1.2" />
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/commons-logging/commons-logging/1.2/commons-logging-1.2.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/commons-logging/commons-logging/1.2/commons-logging-1.2-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/commons-logging/commons-logging/1.2/commons-logging-1.2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

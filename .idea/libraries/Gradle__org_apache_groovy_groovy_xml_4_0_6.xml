@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: org.apache.groovy:groovy-xml:4.0.6" type="java-imported" external-system-id="GRADLE">
+    <properties groupId="org.apache.groovy" artifactId="groovy-xml" version="4.0.6" />
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.groovy/groovy-xml/4.0.6/a05e4f0e902b43764ff1161797f5079d3608143/groovy-xml-4.0.6.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.groovy/groovy-xml/4.0.6/d7f742c97164a3aace85ef3cc42eab8c5c99d044/groovy-xml-4.0.6-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

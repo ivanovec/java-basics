@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: org.seleniumhq.selenium:selenium-json:4.0.0-beta-1" type="java-imported" external-system-id="GRADLE">
+    <properties groupId="org.seleniumhq.selenium" artifactId="selenium-json" version="4.0.0-beta-1" />
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.seleniumhq.selenium/selenium-json/4.0.0-beta-1/dd8fd2378153bd6ac55cc5c14ae0f9e2de3ad49f/selenium-json-4.0.0-beta-1.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.seleniumhq.selenium/selenium-json/4.0.0-beta-1/1b678d1ddef11feea46dc0a7844b6857bf7d348c/selenium-json-4.0.0-beta-1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: org.apache.groovy:groovy-json:4.0.6" type="java-imported" external-system-id="GRADLE">
+    <properties groupId="org.apache.groovy" artifactId="groovy-json" version="4.0.6" />
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.groovy/groovy-json/4.0.6/14fa2997f9164cf5171cc0d8ef82f59ec82039fa/groovy-json-4.0.6.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.groovy/groovy-json/4.0.6/1b73497a8c9435ebbfd861dd45566759867bc7c3/groovy-json-4.0.6-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

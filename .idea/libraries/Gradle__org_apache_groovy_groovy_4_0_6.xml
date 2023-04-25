@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: org.apache.groovy:groovy:4.0.6" type="java-imported" external-system-id="GRADLE">
+    <properties groupId="org.apache.groovy" artifactId="groovy" version="4.0.6" />
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.groovy/groovy/4.0.6/559fc0d1ea7f82f0974712dfe33a16fd84fc71de/groovy-4.0.6.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.groovy/groovy/4.0.6/5ed7dd1532f9008679a187381291d6bfabeace18/groovy-4.0.6-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

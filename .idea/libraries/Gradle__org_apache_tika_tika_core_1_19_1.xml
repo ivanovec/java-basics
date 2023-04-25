@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: org.apache.tika:tika-core:1.19.1" type="java-imported" external-system-id="GRADLE">
+    <properties groupId="org.apache.tika" artifactId="tika-core" version="1.19.1" />
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.tika/tika-core/1.19.1/c1f075aa01586c2c28a249ad60bcfb733b69b866/tika-core-1.19.1.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.tika/tika-core/1.19.1/bcae4e48ac0ecdfc5f6f29c4a1ce8e56b00c8767/tika-core-1.19.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
