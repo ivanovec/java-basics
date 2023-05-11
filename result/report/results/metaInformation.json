@@ -1,0 +1,19 @@
+{
+  "total": 17,
+  "tools inspection": {
+    "Code Inspection": 17
+  },
+  "linter": "QDJVM",
+  "attributes": {
+    "vcs": {
+      "sarifIdea": {
+        "repositoryUri": "ssh://git@github.com/ivanovec/java-basics.git",
+        "revisionId": "c50035a239274a6572117886033e69b4fb017ddf",
+        "branch": "develop"
+      }
+    },
+    "deviceId": "200820300000000-7e8e-dd43-0398-011583a885dd",
+    "jobUrl": "",
+    "repoUrl": ""
+  }
+}

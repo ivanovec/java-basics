@@ -1,0 +1,885 @@
+{
+  "gradleJvm": "#USE_PROJECT_JDK",
+  "libraries": [
+    {
+      "ideaName": "Gradle: org.junit.jupiter:junit-jupiter-engine:5.7.0",
+      "gradleName": "org.junit.jupiter:junit-jupiter-engine:5.7.0",
+      "unresolved": false,
+      "groupId": "org.junit.jupiter",
+      "artifactId": "junit-jupiter-engine",
+      "version": "5.7.0"
+    },
+    {
+      "ideaName": "Gradle: org.junit.jupiter:junit-jupiter-params:5.7.0",
+      "gradleName": "org.junit.jupiter:junit-jupiter-params:5.7.0",
+      "unresolved": false,
+      "groupId": "org.junit.jupiter",
+      "artifactId": "junit-jupiter-params",
+      "version": "5.7.0"
+    },
+    {
+      "ideaName": "Gradle: org.junit.platform:junit-platform-launcher:1.7.0",
+      "gradleName": "org.junit.platform:junit-platform-launcher:1.7.0",
+      "unresolved": false,
+      "groupId": "org.junit.platform",
+      "artifactId": "junit-platform-launcher",
+      "version": "1.7.0"
+    },
+    {
+      "ideaName": "Gradle: org.assertj:assertj-core:3.19.0",
+      "gradleName": "org.assertj:assertj-core:3.19.0",
+      "unresolved": false,
+      "groupId": "org.assertj",
+      "artifactId": "assertj-core",
+      "version": "3.19.0"
+    },
+    {
+      "ideaName": "Gradle: org.seleniumhq.selenium:selenium-java:4.0.0-beta-1",
+      "gradleName": "org.seleniumhq.selenium:selenium-java:4.0.0-beta-1",
+      "unresolved": false,
+      "groupId": "org.seleniumhq.selenium",
+      "artifactId": "selenium-java",
+      "version": "4.0.0-beta-1"
+    },
+    {
+      "ideaName": "Gradle: com.typesafe:config:1.4.1",
+      "gradleName": "com.typesafe:config:1.4.1",
+      "unresolved": false,
+      "groupId": "com.typesafe",
+      "artifactId": "config",
+      "version": "1.4.1"
+    },
+    {
+      "ideaName": "Gradle: io.qameta.allure:allure-rest-assured:2.8.0",
+      "gradleName": "io.qameta.allure:allure-rest-assured:2.8.0",
+      "unresolved": false,
+      "groupId": "io.qameta.allure",
+      "artifactId": "allure-rest-assured",
+      "version": "2.8.0"
+    },
+    {
+      "ideaName": "Gradle: org.aspectj:aspectjrt:1.9.6",
+      "gradleName": "org.aspectj:aspectjrt:1.9.6",
+      "unresolved": false,
+      "groupId": "org.aspectj",
+      "artifactId": "aspectjrt",
+      "version": "1.9.6"
+    },
+    {
+      "ideaName": "Gradle: org.projectlombok:lombok:1.18.16",
+      "gradleName": "org.projectlombok:lombok:1.18.16",
+      "unresolved": false,
+      "groupId": "org.projectlombok",
+      "artifactId": "lombok",
+      "version": "1.18.16"
+    },
+    {
+      "ideaName": "Gradle: io.rest-assured:rest-assured:5.3.0",
+      "gradleName": "io.rest-assured:rest-assured:5.3.0",
+      "unresolved": false,
+      "groupId": "io.rest-assured",
+      "artifactId": "rest-assured",
+      "version": "5.3.0"
+    },
+    {
+      "ideaName": "Gradle: io.rest-assured:json-schema-validator:5.3.0",
+      "gradleName": "io.rest-assured:json-schema-validator:5.3.0",
+      "unresolved": false,
+      "groupId": "io.rest-assured",
+      "artifactId": "json-schema-validator",
+      "version": "5.3.0"
+    },
+    {
+      "ideaName": "Gradle: com.fasterxml.jackson.core:jackson-databind:2.11.0",
+      "gradleName": "com.fasterxml.jackson.core:jackson-databind:2.11.0",
+      "unresolved": false,
+      "groupId": "com.fasterxml.jackson.core",
+      "artifactId": "jackson-databind",
+      "version": "2.11.0"
+    },
+    {
+      "ideaName": "Gradle: com.fasterxml.jackson.core:jackson-annotations:2.11.0",
+      "gradleName": "com.fasterxml.jackson.core:jackson-annotations:2.11.0",
+      "unresolved": false,
+      "groupId": "com.fasterxml.jackson.core",
+      "artifactId": "jackson-annotations",
+      "version": "2.11.0"
+    },
+    {
+      "ideaName": "Gradle: com.fasterxml.jackson.core:jackson-core:2.11.0",
+      "gradleName": "com.fasterxml.jackson.core:jackson-core:2.11.0",
+      "unresolved": false,
+      "groupId": "com.fasterxml.jackson.core",
+      "artifactId": "jackson-core",
+      "version": "2.11.0"
+    },
+    {
+      "ideaName": "Gradle: org.junit.platform:junit-platform-engine:1.7.0",
+      "gradleName": "org.junit.platform:junit-platform-engine:1.7.0",
+      "unresolved": false,
+      "groupId": "org.junit.platform",
+      "artifactId": "junit-platform-engine",
+      "version": "1.7.0"
+    },
+    {
+      "ideaName": "Gradle: org.junit.jupiter:junit-jupiter-api:5.7.0",
+      "gradleName": "org.junit.jupiter:junit-jupiter-api:5.7.0",
+      "unresolved": false,
+      "groupId": "org.junit.jupiter",
+      "artifactId": "junit-jupiter-api",
+      "version": "5.7.0"
+    },
+    {
+      "ideaName": "Gradle: org.apiguardian:apiguardian-api:1.1.0",
+      "gradleName": "org.apiguardian:apiguardian-api:1.1.0",
+      "unresolved": false,
+      "groupId": "org.apiguardian",
+      "artifactId": "apiguardian-api",
+      "version": "1.1.0"
+    },
+    {
+      "ideaName": "Gradle: org.seleniumhq.selenium:selenium-chrome-driver:4.0.0-beta-1",
+      "gradleName": "org.seleniumhq.selenium:selenium-chrome-driver:4.0.0-beta-1",
+      "unresolved": false,
+      "groupId": "org.seleniumhq.selenium",
+      "artifactId": "selenium-chrome-driver",
+      "version": "4.0.0-beta-1"
+    },
+    {
+      "ideaName": "Gradle: org.seleniumhq.selenium:selenium-devtools-v86:4.0.0-beta-1",
+      "gradleName": "org.seleniumhq.selenium:selenium-devtools-v86:4.0.0-beta-1",
+      "unresolved": false,
+      "groupId": "org.seleniumhq.selenium",
+      "artifactId": "selenium-devtools-v86",
+      "version": "4.0.0-beta-1"
+    },
+    {
+      "ideaName": "Gradle: org.seleniumhq.selenium:selenium-devtools-v87:4.0.0-beta-1",
+      "gradleName": "org.seleniumhq.selenium:selenium-devtools-v87:4.0.0-beta-1",
+      "unresolved": false,
+      "groupId": "org.seleniumhq.selenium",
+      "artifactId": "selenium-devtools-v87",
+      "version": "4.0.0-beta-1"
+    },
+    {
+      "ideaName": "Gradle: org.seleniumhq.selenium:selenium-devtools-v88:4.0.0-beta-1",
+      "gradleName": "org.seleniumhq.selenium:selenium-devtools-v88:4.0.0-beta-1",
+      "unresolved": false,
+      "groupId": "org.seleniumhq.selenium",
+      "artifactId": "selenium-devtools-v88",
+      "version": "4.0.0-beta-1"
+    },
+    {
+      "ideaName": "Gradle: org.seleniumhq.selenium:selenium-devtools-v89:4.0.0-beta-1",
+      "gradleName": "org.seleniumhq.selenium:selenium-devtools-v89:4.0.0-beta-1",
+      "unresolved": false,
+      "groupId": "org.seleniumhq.selenium",
+      "artifactId": "selenium-devtools-v89",
+      "version": "4.0.0-beta-1"
+    },
+    {
+      "ideaName": "Gradle: org.seleniumhq.selenium:selenium-edge-driver:4.0.0-beta-1",
+      "gradleName": "org.seleniumhq.selenium:selenium-edge-driver:4.0.0-beta-1",
+      "unresolved": false,
+      "groupId": "org.seleniumhq.selenium",
+      "artifactId": "selenium-edge-driver",
+      "version": "4.0.0-beta-1"
+    },
+    {
+      "ideaName": "Gradle: org.seleniumhq.selenium:selenium-firefox-xpi-driver:4.0.0-beta-1",
+      "gradleName": "org.seleniumhq.selenium:selenium-firefox-xpi-driver:4.0.0-beta-1",
+      "unresolved": false,
+      "groupId": "org.seleniumhq.selenium",
+      "artifactId": "selenium-firefox-xpi-driver",
+      "version": "4.0.0-beta-1"
+    },
+    {
+      "ideaName": "Gradle: org.seleniumhq.selenium:selenium-ie-driver:4.0.0-beta-1",
+      "gradleName": "org.seleniumhq.selenium:selenium-ie-driver:4.0.0-beta-1",
+      "unresolved": false,
+      "groupId": "org.seleniumhq.selenium",
+      "artifactId": "selenium-ie-driver",
+      "version": "4.0.0-beta-1"
+    },
+    {
+      "ideaName": "Gradle: org.seleniumhq.selenium:selenium-opera-driver:4.0.0-beta-1",
+      "gradleName": "org.seleniumhq.selenium:selenium-opera-driver:4.0.0-beta-1",
+      "unresolved": false,
+      "groupId": "org.seleniumhq.selenium",
+      "artifactId": "selenium-opera-driver",
+      "version": "4.0.0-beta-1"
+    },
+    {
+      "ideaName": "Gradle: org.seleniumhq.selenium:selenium-firefox-driver:4.0.0-beta-1",
+      "gradleName": "org.seleniumhq.selenium:selenium-firefox-driver:4.0.0-beta-1",
+      "unresolved": false,
+      "groupId": "org.seleniumhq.selenium",
+      "artifactId": "selenium-firefox-driver",
+      "version": "4.0.0-beta-1"
+    },
+    {
+      "ideaName": "Gradle: org.seleniumhq.selenium:selenium-safari-driver:4.0.0-beta-1",
+      "gradleName": "org.seleniumhq.selenium:selenium-safari-driver:4.0.0-beta-1",
+      "unresolved": false,
+      "groupId": "org.seleniumhq.selenium",
+      "artifactId": "selenium-safari-driver",
+      "version": "4.0.0-beta-1"
+    },
+    {
+      "ideaName": "Gradle: org.seleniumhq.selenium:selenium-support:4.0.0-beta-1",
+      "gradleName": "org.seleniumhq.selenium:selenium-support:4.0.0-beta-1",
+      "unresolved": false,
+      "groupId": "org.seleniumhq.selenium",
+      "artifactId": "selenium-support",
+      "version": "4.0.0-beta-1"
+    },
+    {
+      "ideaName": "Gradle: org.seleniumhq.selenium:selenium-remote-driver:4.0.0-beta-1",
+      "gradleName": "org.seleniumhq.selenium:selenium-remote-driver:4.0.0-beta-1",
+      "unresolved": false,
+      "groupId": "org.seleniumhq.selenium",
+      "artifactId": "selenium-remote-driver",
+      "version": "4.0.0-beta-1"
+    },
+    {
+      "ideaName": "Gradle: org.seleniumhq.selenium:selenium-api:4.0.0-beta-1",
+      "gradleName": "org.seleniumhq.selenium:selenium-api:4.0.0-beta-1",
+      "unresolved": false,
+      "groupId": "org.seleniumhq.selenium",
+      "artifactId": "selenium-api",
+      "version": "4.0.0-beta-1"
+    },
+    {
+      "ideaName": "Gradle: io.qameta.allure:allure-attachments:2.8.0",
+      "gradleName": "io.qameta.allure:allure-attachments:2.8.0",
+      "unresolved": false,
+      "groupId": "io.qameta.allure",
+      "artifactId": "allure-attachments",
+      "version": "2.8.0"
+    },
+    {
+      "ideaName": "Gradle: io.rest-assured:xml-path:5.3.0",
+      "gradleName": "io.rest-assured:xml-path:5.3.0",
+      "unresolved": false,
+      "groupId": "io.rest-assured",
+      "artifactId": "xml-path",
+      "version": "5.3.0"
+    },
+    {
+      "ideaName": "Gradle: io.rest-assured:json-path:5.3.0",
+      "gradleName": "io.rest-assured:json-path:5.3.0",
+      "unresolved": false,
+      "groupId": "io.rest-assured",
+      "artifactId": "json-path",
+      "version": "5.3.0"
+    },
+    {
+      "ideaName": "Gradle: org.apache.groovy:groovy-xml:4.0.6",
+      "gradleName": "org.apache.groovy:groovy-xml:4.0.6",
+      "unresolved": false,
+      "groupId": "org.apache.groovy",
+      "artifactId": "groovy-xml",
+      "version": "4.0.6"
+    },
+    {
+      "ideaName": "Gradle: org.apache.groovy:groovy:4.0.6",
+      "gradleName": "org.apache.groovy:groovy:4.0.6",
+      "unresolved": false,
+      "groupId": "org.apache.groovy",
+      "artifactId": "groovy",
+      "version": "4.0.6"
+    },
+    {
+      "ideaName": "Gradle: org.apache.httpcomponents:httpmime:4.5.13",
+      "gradleName": "org.apache.httpcomponents:httpmime:4.5.13",
+      "unresolved": false,
+      "groupId": "org.apache.httpcomponents",
+      "artifactId": "httpmime",
+      "version": "4.5.13"
+    },
+    {
+      "ideaName": "Gradle: org.apache.httpcomponents:httpclient:4.5.13",
+      "gradleName": "org.apache.httpcomponents:httpclient:4.5.13",
+      "unresolved": false,
+      "groupId": "org.apache.httpcomponents",
+      "artifactId": "httpclient",
+      "version": "4.5.13"
+    },
+    {
+      "ideaName": "Gradle: org.hamcrest:hamcrest:2.1",
+      "gradleName": "org.hamcrest:hamcrest:2.1",
+      "unresolved": false,
+      "groupId": "org.hamcrest",
+      "artifactId": "hamcrest",
+      "version": "2.1"
+    },
+    {
+      "ideaName": "Gradle: org.ccil.cowan.tagsoup:tagsoup:1.2.1",
+      "gradleName": "org.ccil.cowan.tagsoup:tagsoup:1.2.1",
+      "unresolved": false,
+      "groupId": "org.ccil.cowan.tagsoup",
+      "artifactId": "tagsoup",
+      "version": "1.2.1"
+    },
+    {
+      "ideaName": "Gradle: com.github.java-json-tools:json-schema-validator:2.2.14",
+      "gradleName": "com.github.java-json-tools:json-schema-validator:2.2.14",
+      "unresolved": false,
+      "groupId": "com.github.java-json-tools",
+      "artifactId": "json-schema-validator",
+      "version": "2.2.14"
+    },
+    {
+      "ideaName": "Gradle: org.junit.platform:junit-platform-commons:1.7.0",
+      "gradleName": "org.junit.platform:junit-platform-commons:1.7.0",
+      "unresolved": false,
+      "groupId": "org.junit.platform",
+      "artifactId": "junit-platform-commons",
+      "version": "1.7.0"
+    },
+    {
+      "ideaName": "Gradle: org.opentest4j:opentest4j:1.2.0",
+      "gradleName": "org.opentest4j:opentest4j:1.2.0",
+      "unresolved": false,
+      "groupId": "org.opentest4j",
+      "artifactId": "opentest4j",
+      "version": "1.2.0"
+    },
+    {
+      "ideaName": "Gradle: org.seleniumhq.selenium:selenium-chromium-driver:4.0.0-beta-1",
+      "gradleName": "org.seleniumhq.selenium:selenium-chromium-driver:4.0.0-beta-1",
+      "unresolved": false,
+      "groupId": "org.seleniumhq.selenium",
+      "artifactId": "selenium-chromium-driver",
+      "version": "4.0.0-beta-1"
+    },
+    {
+      "ideaName": "Gradle: org.seleniumhq.selenium:selenium-devtools:4.0.0-beta-1",
+      "gradleName": "org.seleniumhq.selenium:selenium-devtools:4.0.0-beta-1",
+      "unresolved": false,
+      "groupId": "org.seleniumhq.selenium",
+      "artifactId": "selenium-devtools",
+      "version": "4.0.0-beta-1"
+    },
+    {
+      "ideaName": "Gradle: org.seleniumhq.selenium:selenium-http:4.0.0-beta-1",
+      "gradleName": "org.seleniumhq.selenium:selenium-http:4.0.0-beta-1",
+      "unresolved": false,
+      "groupId": "org.seleniumhq.selenium",
+      "artifactId": "selenium-http",
+      "version": "4.0.0-beta-1"
+    },
+    {
+      "ideaName": "Gradle: org.seleniumhq.selenium:selenium-json:4.0.0-beta-1",
+      "gradleName": "org.seleniumhq.selenium:selenium-json:4.0.0-beta-1",
+      "unresolved": false,
+      "groupId": "org.seleniumhq.selenium",
+      "artifactId": "selenium-json",
+      "version": "4.0.0-beta-1"
+    },
+    {
+      "ideaName": "Gradle: com.google.auto.service:auto-service:1.0-rc7",
+      "gradleName": "com.google.auto.service:auto-service:1.0-rc7",
+      "unresolved": false,
+      "groupId": "com.google.auto.service",
+      "artifactId": "auto-service",
+      "version": "1.0-rc7"
+    },
+    {
+      "ideaName": "Gradle: com.google.auto.service:auto-service-annotations:1.0-rc7",
+      "gradleName": "com.google.auto.service:auto-service-annotations:1.0-rc7",
+      "unresolved": false,
+      "groupId": "com.google.auto.service",
+      "artifactId": "auto-service-annotations",
+      "version": "1.0-rc7"
+    },
+    {
+      "ideaName": "Gradle: com.google.guava:guava:30.1-jre",
+      "gradleName": "com.google.guava:guava:30.1-jre",
+      "unresolved": false,
+      "groupId": "com.google.guava",
+      "artifactId": "guava",
+      "version": "30.1-jre"
+    },
+    {
+      "ideaName": "Gradle: org.asynchttpclient:async-http-client:2.12.2",
+      "gradleName": "org.asynchttpclient:async-http-client:2.12.2",
+      "unresolved": false,
+      "groupId": "org.asynchttpclient",
+      "artifactId": "async-http-client",
+      "version": "2.12.2"
+    },
+    {
+      "ideaName": "Gradle: io.netty:netty-codec-http:4.1.58.Final",
+      "gradleName": "io.netty:netty-codec-http:4.1.58.Final",
+      "unresolved": false,
+      "groupId": "io.netty",
+      "artifactId": "netty-codec-http",
+      "version": "4.1.58.Final"
+    },
+    {
+      "ideaName": "Gradle: io.netty:netty-transport-native-epoll:4.1.58.Final",
+      "gradleName": "io.netty:netty-transport-native-epoll:4.1.58.Final",
+      "unresolved": false,
+      "groupId": "io.netty",
+      "artifactId": "netty-transport-native-epoll",
+      "version": "4.1.58.Final"
+    },
+    {
+      "ideaName": "Gradle: io.netty:netty-transport-native-epoll:linux-x86_64:4.1.58.Final",
+      "gradleName": "io.netty:netty-transport-native-epoll:linux-x86_64:4.1.58.Final",
+      "unresolved": false,
+      "groupId": "io.netty",
+      "artifactId": "netty-transport-native-epoll",
+      "version": "4.1.58.Final"
+    },
+    {
+      "ideaName": "Gradle: io.netty:netty-transport-native-kqueue:4.1.58.Final",
+      "gradleName": "io.netty:netty-transport-native-kqueue:4.1.58.Final",
+      "unresolved": false,
+      "groupId": "io.netty",
+      "artifactId": "netty-transport-native-kqueue",
+      "version": "4.1.58.Final"
+    },
+    {
+      "ideaName": "Gradle: io.netty:netty-transport-native-kqueue:osx-x86_64:4.1.58.Final",
+      "gradleName": "io.netty:netty-transport-native-kqueue:osx-x86_64:4.1.58.Final",
+      "unresolved": false,
+      "groupId": "io.netty",
+      "artifactId": "netty-transport-native-kqueue",
+      "version": "4.1.58.Final"
+    },
+    {
+      "ideaName": "Gradle: io.netty:netty-transport-native-unix-common:4.1.58.Final",
+      "gradleName": "io.netty:netty-transport-native-unix-common:4.1.58.Final",
+      "unresolved": false,
+      "groupId": "io.netty",
+      "artifactId": "netty-transport-native-unix-common",
+      "version": "4.1.58.Final"
+    },
+    {
+      "ideaName": "Gradle: io.netty:netty-transport:4.1.58.Final",
+      "gradleName": "io.netty:netty-transport:4.1.58.Final",
+      "unresolved": false,
+      "groupId": "io.netty",
+      "artifactId": "netty-transport",
+      "version": "4.1.58.Final"
+    },
+    {
+      "ideaName": "Gradle: io.netty:netty-buffer:4.1.58.Final",
+      "gradleName": "io.netty:netty-buffer:4.1.58.Final",
+      "unresolved": false,
+      "groupId": "io.netty",
+      "artifactId": "netty-buffer",
+      "version": "4.1.58.Final"
+    },
+    {
+      "ideaName": "Gradle: io.netty:netty-common:4.1.58.Final",
+      "gradleName": "io.netty:netty-common:4.1.58.Final",
+      "unresolved": false,
+      "groupId": "io.netty",
+      "artifactId": "netty-common",
+      "version": "4.1.58.Final"
+    },
+    {
+      "ideaName": "Gradle: io.opentelemetry:opentelemetry-exporter-logging:0.14.1",
+      "gradleName": "io.opentelemetry:opentelemetry-exporter-logging:0.14.1",
+      "unresolved": false,
+      "groupId": "io.opentelemetry",
+      "artifactId": "opentelemetry-exporter-logging",
+      "version": "0.14.1"
+    },
+    {
+      "ideaName": "Gradle: io.opentelemetry:opentelemetry-sdk:0.14.1",
+      "gradleName": "io.opentelemetry:opentelemetry-sdk:0.14.1",
+      "unresolved": false,
+      "groupId": "io.opentelemetry",
+      "artifactId": "opentelemetry-sdk",
+      "version": "0.14.1"
+    },
+    {
+      "ideaName": "Gradle: io.opentelemetry:opentelemetry-sdk-trace:0.14.1",
+      "gradleName": "io.opentelemetry:opentelemetry-sdk-trace:0.14.1",
+      "unresolved": false,
+      "groupId": "io.opentelemetry",
+      "artifactId": "opentelemetry-sdk-trace",
+      "version": "0.14.1"
+    },
+    {
+      "ideaName": "Gradle: io.opentelemetry:opentelemetry-sdk-common:0.14.1",
+      "gradleName": "io.opentelemetry:opentelemetry-sdk-common:0.14.1",
+      "unresolved": false,
+      "groupId": "io.opentelemetry",
+      "artifactId": "opentelemetry-sdk-common",
+      "version": "0.14.1"
+    },
+    {
+      "ideaName": "Gradle: io.opentelemetry:opentelemetry-semconv:0.14.1",
+      "gradleName": "io.opentelemetry:opentelemetry-semconv:0.14.1",
+      "unresolved": false,
+      "groupId": "io.opentelemetry",
+      "artifactId": "opentelemetry-semconv",
+      "version": "0.14.1"
+    },
+    {
+      "ideaName": "Gradle: io.opentelemetry:opentelemetry-api:0.14.1",
+      "gradleName": "io.opentelemetry:opentelemetry-api:0.14.1",
+      "unresolved": false,
+      "groupId": "io.opentelemetry",
+      "artifactId": "opentelemetry-api",
+      "version": "0.14.1"
+    },
+    {
+      "ideaName": "Gradle: io.opentelemetry:opentelemetry-context:0.14.1",
+      "gradleName": "io.opentelemetry:opentelemetry-context:0.14.1",
+      "unresolved": false,
+      "groupId": "io.opentelemetry",
+      "artifactId": "opentelemetry-context",
+      "version": "0.14.1"
+    },
+    {
+      "ideaName": "Gradle: net.bytebuddy:byte-buddy:1.10.19",
+      "gradleName": "net.bytebuddy:byte-buddy:1.10.19",
+      "unresolved": false,
+      "groupId": "net.bytebuddy",
+      "artifactId": "byte-buddy",
+      "version": "1.10.19"
+    },
+    {
+      "ideaName": "Gradle: org.apache.commons:commons-exec:1.3",
+      "gradleName": "org.apache.commons:commons-exec:1.3",
+      "unresolved": false,
+      "groupId": "org.apache.commons",
+      "artifactId": "commons-exec",
+      "version": "1.3"
+    },
+    {
+      "ideaName": "Gradle: io.qameta.allure:allure-java-commons:2.8.0",
+      "gradleName": "io.qameta.allure:allure-java-commons:2.8.0",
+      "unresolved": false,
+      "groupId": "io.qameta.allure",
+      "artifactId": "allure-java-commons",
+      "version": "2.8.0"
+    },
+    {
+      "ideaName": "Gradle: org.freemarker:freemarker:2.3.28",
+      "gradleName": "org.freemarker:freemarker:2.3.28",
+      "unresolved": false,
+      "groupId": "org.freemarker",
+      "artifactId": "freemarker",
+      "version": "2.3.28"
+    },
+    {
+      "ideaName": "Gradle: io.rest-assured:rest-assured-common:5.3.0",
+      "gradleName": "io.rest-assured:rest-assured-common:5.3.0",
+      "unresolved": false,
+      "groupId": "io.rest-assured",
+      "artifactId": "rest-assured-common",
+      "version": "5.3.0"
+    },
+    {
+      "ideaName": "Gradle: org.apache.commons:commons-lang3:3.11",
+      "gradleName": "org.apache.commons:commons-lang3:3.11",
+      "unresolved": false,
+      "groupId": "org.apache.commons",
+      "artifactId": "commons-lang3",
+      "version": "3.11"
+    },
+    {
+      "ideaName": "Gradle: org.apache.groovy:groovy-json:4.0.6",
+      "gradleName": "org.apache.groovy:groovy-json:4.0.6",
+      "unresolved": false,
+      "groupId": "org.apache.groovy",
+      "artifactId": "groovy-json",
+      "version": "4.0.6"
+    },
+    {
+      "ideaName": "Gradle: org.apache.httpcomponents:httpcore:4.4.13",
+      "gradleName": "org.apache.httpcomponents:httpcore:4.4.13",
+      "unresolved": false,
+      "groupId": "org.apache.httpcomponents",
+      "artifactId": "httpcore",
+      "version": "4.4.13"
+    },
+    {
+      "ideaName": "Gradle: commons-logging:commons-logging:1.2",
+      "gradleName": "commons-logging:commons-logging:1.2",
+      "unresolved": false,
+      "groupId": "commons-logging",
+      "artifactId": "commons-logging",
+      "version": "1.2"
+    },
+    {
+      "ideaName": "Gradle: commons-codec:commons-codec:1.11",
+      "gradleName": "commons-codec:commons-codec:1.11",
+      "unresolved": false,
+      "groupId": "commons-codec",
+      "artifactId": "commons-codec",
+      "version": "1.11"
+    },
+    {
+      "ideaName": "Gradle: com.github.java-json-tools:json-schema-core:1.2.14",
+      "gradleName": "com.github.java-json-tools:json-schema-core:1.2.14",
+      "unresolved": false,
+      "groupId": "com.github.java-json-tools",
+      "artifactId": "json-schema-core",
+      "version": "1.2.14"
+    },
+    {
+      "ideaName": "Gradle: com.github.java-json-tools:jackson-coreutils-equivalence:1.0",
+      "gradleName": "com.github.java-json-tools:jackson-coreutils-equivalence:1.0",
+      "unresolved": false,
+      "groupId": "com.github.java-json-tools",
+      "artifactId": "jackson-coreutils-equivalence",
+      "version": "1.0"
+    },
+    {
+      "ideaName": "Gradle: com.sun.mail:mailapi:1.6.2",
+      "gradleName": "com.sun.mail:mailapi:1.6.2",
+      "unresolved": false,
+      "groupId": "com.sun.mail",
+      "artifactId": "mailapi",
+      "version": "1.6.2"
+    },
+    {
+      "ideaName": "Gradle: joda-time:joda-time:2.10.5",
+      "gradleName": "joda-time:joda-time:2.10.5",
+      "unresolved": false,
+      "groupId": "joda-time",
+      "artifactId": "joda-time",
+      "version": "2.10.5"
+    },
+    {
+      "ideaName": "Gradle: com.googlecode.libphonenumber:libphonenumber:8.11.1",
+      "gradleName": "com.googlecode.libphonenumber:libphonenumber:8.11.1",
+      "unresolved": false,
+      "groupId": "com.googlecode.libphonenumber",
+      "artifactId": "libphonenumber",
+      "version": "8.11.1"
+    },
+    {
+      "ideaName": "Gradle: com.google.code.findbugs:jsr305:3.0.2",
+      "gradleName": "com.google.code.findbugs:jsr305:3.0.2",
+      "unresolved": false,
+      "groupId": "com.google.code.findbugs",
+      "artifactId": "jsr305",
+      "version": "3.0.2"
+    },
+    {
+      "ideaName": "Gradle: net.sf.jopt-simple:jopt-simple:5.0.4",
+      "gradleName": "net.sf.jopt-simple:jopt-simple:5.0.4",
+      "unresolved": false,
+      "groupId": "net.sf.jopt-simple",
+      "artifactId": "jopt-simple",
+      "version": "5.0.4"
+    },
+    {
+      "ideaName": "Gradle: com.google.auto:auto-common:0.10",
+      "gradleName": "com.google.auto:auto-common:0.10",
+      "unresolved": false,
+      "groupId": "com.google.auto",
+      "artifactId": "auto-common",
+      "version": "0.10"
+    },
+    {
+      "ideaName": "Gradle: com.google.guava:failureaccess:1.0.1",
+      "gradleName": "com.google.guava:failureaccess:1.0.1",
+      "unresolved": false,
+      "groupId": "com.google.guava",
+      "artifactId": "failureaccess",
+      "version": "1.0.1"
+    },
+    {
+      "ideaName": "Gradle: com.google.guava:listenablefuture:9999.0-empty-to-avoid-conflict-with-guava",
+      "gradleName": "com.google.guava:listenablefuture:9999.0-empty-to-avoid-conflict-with-guava",
+      "unresolved": false,
+      "groupId": "com.google.guava",
+      "artifactId": "listenablefuture",
+      "version": "9999.0-empty-to-avoid-conflict-with-guava"
+    },
+    {
+      "ideaName": "Gradle: org.checkerframework:checker-qual:3.5.0",
+      "gradleName": "org.checkerframework:checker-qual:3.5.0",
+      "unresolved": false,
+      "groupId": "org.checkerframework",
+      "artifactId": "checker-qual",
+      "version": "3.5.0"
+    },
+    {
+      "ideaName": "Gradle: com.google.errorprone:error_prone_annotations:2.3.4",
+      "gradleName": "com.google.errorprone:error_prone_annotations:2.3.4",
+      "unresolved": false,
+      "groupId": "com.google.errorprone",
+      "artifactId": "error_prone_annotations",
+      "version": "2.3.4"
+    },
+    {
+      "ideaName": "Gradle: com.google.j2objc:j2objc-annotations:1.3",
+      "gradleName": "com.google.j2objc:j2objc-annotations:1.3",
+      "unresolved": false,
+      "groupId": "com.google.j2objc",
+      "artifactId": "j2objc-annotations",
+      "version": "1.3"
+    },
+    {
+      "ideaName": "Gradle: io.netty:netty-handler-proxy:4.1.53.Final",
+      "gradleName": "io.netty:netty-handler-proxy:4.1.53.Final",
+      "unresolved": false,
+      "groupId": "io.netty",
+      "artifactId": "netty-handler-proxy",
+      "version": "4.1.53.Final"
+    },
+    {
+      "ideaName": "Gradle: com.typesafe.netty:netty-reactive-streams:2.0.4",
+      "gradleName": "com.typesafe.netty:netty-reactive-streams:2.0.4",
+      "unresolved": false,
+      "groupId": "com.typesafe.netty",
+      "artifactId": "netty-reactive-streams",
+      "version": "2.0.4"
+    },
+    {
+      "ideaName": "Gradle: io.netty:netty-handler:4.1.58.Final",
+      "gradleName": "io.netty:netty-handler:4.1.58.Final",
+      "unresolved": false,
+      "groupId": "io.netty",
+      "artifactId": "netty-handler",
+      "version": "4.1.58.Final"
+    },
+    {
+      "ideaName": "Gradle: io.netty:netty-codec-socks:4.1.53.Final",
+      "gradleName": "io.netty:netty-codec-socks:4.1.53.Final",
+      "unresolved": false,
+      "groupId": "io.netty",
+      "artifactId": "netty-codec-socks",
+      "version": "4.1.53.Final"
+    },
+    {
+      "ideaName": "Gradle: org.asynchttpclient:async-http-client-netty-utils:2.12.2",
+      "gradleName": "org.asynchttpclient:async-http-client-netty-utils:2.12.2",
+      "unresolved": false,
+      "groupId": "org.asynchttpclient",
+      "artifactId": "async-http-client-netty-utils",
+      "version": "2.12.2"
+    },
+    {
+      "ideaName": "Gradle: org.reactivestreams:reactive-streams:1.0.3",
+      "gradleName": "org.reactivestreams:reactive-streams:1.0.3",
+      "unresolved": false,
+      "groupId": "org.reactivestreams",
+      "artifactId": "reactive-streams",
+      "version": "1.0.3"
+    },
+    {
+      "ideaName": "Gradle: org.slf4j:slf4j-api:1.7.30",
+      "gradleName": "org.slf4j:slf4j-api:1.7.30",
+      "unresolved": false,
+      "groupId": "org.slf4j",
+      "artifactId": "slf4j-api",
+      "version": "1.7.30"
+    },
+    {
+      "ideaName": "Gradle: com.sun.activation:jakarta.activation:1.2.2",
+      "gradleName": "com.sun.activation:jakarta.activation:1.2.2",
+      "unresolved": false,
+      "groupId": "com.sun.activation",
+      "artifactId": "jakarta.activation",
+      "version": "1.2.2"
+    },
+    {
+      "ideaName": "Gradle: io.netty:netty-codec:4.1.58.Final",
+      "gradleName": "io.netty:netty-codec:4.1.58.Final",
+      "unresolved": false,
+      "groupId": "io.netty",
+      "artifactId": "netty-codec",
+      "version": "4.1.58.Final"
+    },
+    {
+      "ideaName": "Gradle: io.netty:netty-resolver:4.1.58.Final",
+      "gradleName": "io.netty:netty-resolver:4.1.58.Final",
+      "unresolved": false,
+      "groupId": "io.netty",
+      "artifactId": "netty-resolver",
+      "version": "4.1.58.Final"
+    },
+    {
+      "ideaName": "Gradle: io.opentelemetry:opentelemetry-sdk-metrics:0.14.1-alpha",
+      "gradleName": "io.opentelemetry:opentelemetry-sdk-metrics:0.14.1-alpha",
+      "unresolved": false,
+      "groupId": "io.opentelemetry",
+      "artifactId": "opentelemetry-sdk-metrics",
+      "version": "0.14.1-alpha"
+    },
+    {
+      "ideaName": "Gradle: io.qameta.allure:allure-model:2.8.0",
+      "gradleName": "io.qameta.allure:allure-model:2.8.0",
+      "unresolved": false,
+      "groupId": "io.qameta.allure",
+      "artifactId": "allure-model",
+      "version": "2.8.0"
+    },
+    {
+      "ideaName": "Gradle: org.apache.tika:tika-core:1.19.1",
+      "gradleName": "org.apache.tika:tika-core:1.19.1",
+      "unresolved": false,
+      "groupId": "org.apache.tika",
+      "artifactId": "tika-core",
+      "version": "1.19.1"
+    },
+    {
+      "ideaName": "Gradle: org.jooq:joor-java-8:0.9.9",
+      "gradleName": "org.jooq:joor-java-8:0.9.9",
+      "unresolved": false,
+      "groupId": "org.jooq",
+      "artifactId": "joor-java-8",
+      "version": "0.9.9"
+    },
+    {
+      "ideaName": "Gradle: com.github.java-json-tools:uri-template:0.10",
+      "gradleName": "com.github.java-json-tools:uri-template:0.10",
+      "unresolved": false,
+      "groupId": "com.github.java-json-tools",
+      "artifactId": "uri-template",
+      "version": "0.10"
+    },
+    {
+      "ideaName": "Gradle: com.github.java-json-tools:jackson-coreutils:2.0",
+      "gradleName": "com.github.java-json-tools:jackson-coreutils:2.0",
+      "unresolved": false,
+      "groupId": "com.github.java-json-tools",
+      "artifactId": "jackson-coreutils",
+      "version": "2.0"
+    },
+    {
+      "ideaName": "Gradle: org.mozilla:rhino:1.7.7.2",
+      "gradleName": "org.mozilla:rhino:1.7.7.2",
+      "unresolved": false,
+      "groupId": "org.mozilla",
+      "artifactId": "rhino",
+      "version": "1.7.7.2"
+    },
+    {
+      "ideaName": "Gradle: io.opentelemetry:opentelemetry-api-metrics:0.14.1-alpha",
+      "gradleName": "io.opentelemetry:opentelemetry-api-metrics:0.14.1-alpha",
+      "unresolved": false,
+      "groupId": "io.opentelemetry",
+      "artifactId": "opentelemetry-api-metrics",
+      "version": "0.14.1-alpha"
+    },
+    {
+      "ideaName": "Gradle: com.github.java-json-tools:msg-simple:1.2",
+      "gradleName": "com.github.java-json-tools:msg-simple:1.2",
+      "unresolved": false,
+      "groupId": "com.github.java-json-tools",
+      "artifactId": "msg-simple",
+      "version": "1.2"
+    },
+    {
+      "ideaName": "Gradle: com.github.java-json-tools:btf:1.3",
+      "gradleName": "com.github.java-json-tools:btf:1.3",
+      "unresolved": false,
+      "groupId": "com.github.java-json-tools",
+      "artifactId": "btf",
+      "version": "1.3"
+    }
+  ]
+}

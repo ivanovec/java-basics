@@ -1,0 +1,16 @@
+{
+  "modules": [
+    {
+      "name": "java-basics",
+      "languageLevel": 8
+    },
+    {
+      "name": "java-basics.test",
+      "languageLevel": 13
+    },
+    {
+      "name": "java-basics.main",
+      "languageLevel": 13
+    }
+  ]
+}

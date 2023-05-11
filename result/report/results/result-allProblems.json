@@ -1,0 +1,528 @@
+{"version":"3","listProblem":[{
+  "tool": "Code Inspection",
+  "category": "Imports",
+  "type": "Single class import",
+  "tags": [
+    "JAVA"
+  ],
+  "severity": "High",
+  "comment": "Single class import 'import org.junit.jupiter.api.Tag;'",
+  "detailsInfo": "Reports `import` statements that import single classes (as opposed to entire packages).\n\nSome coding standards prohibit such `import` statements.\n\n\nYou can configure IntelliJ IDEA to detect and fix such statements with its **Optimize Imports** command. Go to\n[Settings \\| Editor \\| Code Style \\| Java \\| Imports](settings://preferences.sourceCode.Java?Use%20single%20class%20import)\nand clear the **Use single class import** checkbox. Thus this inspection is mostly useful for\noffline reporting on code bases that you don't intend to change.",
+  "sources": [
+    {
+      "type": "file",
+      "path": "src/main/java/simple/automation/Smoke.java",
+      "language": "JAVA",
+      "line": 3,
+      "offset": 1,
+      "length": 33,
+      "code": {
+        "startLine": 1,
+        "length": 33,
+        "offset": 28,
+        "surroundingCode": "package simple.automation;\n\nimport org.junit.jupiter.api.Tag;\n\nimport java.lang.annotation.ElementType;"
+      }
+    }
+  ],
+  "attributes": {
+    "module": "java-basics.main",
+    "inspectionName": "SingleClassImport"
+  },
+  "hash": "2a3a005fda487624bc682588968cbc4663173ec5dcff9fb0c437f3496a834336"
+},{
+  "tool": "Code Inspection",
+  "category": "Imports",
+  "type": "Single class import",
+  "tags": [
+    "JAVA"
+  ],
+  "severity": "High",
+  "comment": "Single class import 'import java.lang.annotation.ElementType;'",
+  "detailsInfo": "Reports `import` statements that import single classes (as opposed to entire packages).\n\nSome coding standards prohibit such `import` statements.\n\n\nYou can configure IntelliJ IDEA to detect and fix such statements with its **Optimize Imports** command. Go to\n[Settings \\| Editor \\| Code Style \\| Java \\| Imports](settings://preferences.sourceCode.Java?Use%20single%20class%20import)\nand clear the **Use single class import** checkbox. Thus this inspection is mostly useful for\noffline reporting on code bases that you don't intend to change.",
+  "sources": [
+    {
+      "type": "file",
+      "path": "src/main/java/simple/automation/Smoke.java",
+      "language": "JAVA",
+      "line": 5,
+      "offset": 1,
+      "length": 40,
+      "code": {
+        "startLine": 3,
+        "length": 40,
+        "offset": 35,
+        "surroundingCode": "import org.junit.jupiter.api.Tag;\n\nimport java.lang.annotation.ElementType;\nimport java.lang.annotation.Retention;\nimport java.lang.annotation.RetentionPolicy;"
+      }
+    }
+  ],
+  "attributes": {
+    "module": "java-basics.main",
+    "inspectionName": "SingleClassImport"
+  },
+  "hash": "8ab3f3d6a17e65e1dd99a332715a5ffa3f21aa617b2384bb33f7a51d87fa58d9"
+},{
+  "tool": "Code Inspection",
+  "category": "Imports",
+  "type": "Single class import",
+  "tags": [
+    "JAVA"
+  ],
+  "severity": "High",
+  "comment": "Single class import 'import java.lang.annotation.Retention;'",
+  "detailsInfo": "Reports `import` statements that import single classes (as opposed to entire packages).\n\nSome coding standards prohibit such `import` statements.\n\n\nYou can configure IntelliJ IDEA to detect and fix such statements with its **Optimize Imports** command. Go to\n[Settings \\| Editor \\| Code Style \\| Java \\| Imports](settings://preferences.sourceCode.Java?Use%20single%20class%20import)\nand clear the **Use single class import** checkbox. Thus this inspection is mostly useful for\noffline reporting on code bases that you don't intend to change.",
+  "sources": [
+    {
+      "type": "file",
+      "path": "src/main/java/simple/automation/Smoke.java",
+      "language": "JAVA",
+      "line": 6,
+      "offset": 1,
+      "length": 38,
+      "code": {
+        "startLine": 4,
+        "length": 38,
+        "offset": 42,
+        "surroundingCode": "\nimport java.lang.annotation.ElementType;\nimport java.lang.annotation.Retention;\nimport java.lang.annotation.RetentionPolicy;\nimport java.lang.annotation.Target;"
+      }
+    }
+  ],
+  "attributes": {
+    "module": "java-basics.main",
+    "inspectionName": "SingleClassImport"
+  },
+  "hash": "f15af694de08768e42992acccd48c6aa85b4257a6930fda84bbc95295237fb20"
+},{
+  "tool": "Code Inspection",
+  "category": "Imports",
+  "type": "Single class import",
+  "tags": [
+    "JAVA"
+  ],
+  "severity": "High",
+  "comment": "Single class import 'import java.lang.annotation.RetentionPolicy;'",
+  "detailsInfo": "Reports `import` statements that import single classes (as opposed to entire packages).\n\nSome coding standards prohibit such `import` statements.\n\n\nYou can configure IntelliJ IDEA to detect and fix such statements with its **Optimize Imports** command. Go to\n[Settings \\| Editor \\| Code Style \\| Java \\| Imports](settings://preferences.sourceCode.Java?Use%20single%20class%20import)\nand clear the **Use single class import** checkbox. Thus this inspection is mostly useful for\noffline reporting on code bases that you don't intend to change.",
+  "sources": [
+    {
+      "type": "file",
+      "path": "src/main/java/simple/automation/Smoke.java",
+      "language": "JAVA",
+      "line": 7,
+      "offset": 1,
+      "length": 44,
+      "code": {
+        "startLine": 5,
+        "length": 44,
+        "offset": 80,
+        "surroundingCode": "import java.lang.annotation.ElementType;\nimport java.lang.annotation.Retention;\nimport java.lang.annotation.RetentionPolicy;\nimport java.lang.annotation.Target;\n"
+      }
+    }
+  ],
+  "attributes": {
+    "module": "java-basics.main",
+    "inspectionName": "SingleClassImport"
+  },
+  "hash": "7201a5110a26a4868647fbb00345d33c25583924c78014554f43464ddcb30ac9"
+},{
+  "tool": "Code Inspection",
+  "category": "Imports",
+  "type": "Single class import",
+  "tags": [
+    "JAVA"
+  ],
+  "severity": "High",
+  "comment": "Single class import 'import java.lang.annotation.Target;'",
+  "detailsInfo": "Reports `import` statements that import single classes (as opposed to entire packages).\n\nSome coding standards prohibit such `import` statements.\n\n\nYou can configure IntelliJ IDEA to detect and fix such statements with its **Optimize Imports** command. Go to\n[Settings \\| Editor \\| Code Style \\| Java \\| Imports](settings://preferences.sourceCode.Java?Use%20single%20class%20import)\nand clear the **Use single class import** checkbox. Thus this inspection is mostly useful for\noffline reporting on code bases that you don't intend to change.",
+  "sources": [
+    {
+      "type": "file",
+      "path": "src/main/java/simple/automation/Smoke.java",
+      "language": "JAVA",
+      "line": 8,
+      "offset": 1,
+      "length": 35,
+      "code": {
+        "startLine": 6,
+        "length": 35,
+        "offset": 84,
+        "surroundingCode": "import java.lang.annotation.Retention;\nimport java.lang.annotation.RetentionPolicy;\nimport java.lang.annotation.Target;\n\n@Target({ElementType.TYPE, ElementType.METHOD})"
+      }
+    }
+  ],
+  "attributes": {
+    "module": "java-basics.main",
+    "inspectionName": "SingleClassImport"
+  },
+  "hash": "a0468923bdac3cfd183fa4e267043845711c298da9319348caba904cf657e04f"
+},{
+  "tool": "Code Inspection",
+  "category": "Imports",
+  "type": "Single class import",
+  "tags": [
+    "JAVA"
+  ],
+  "severity": "High",
+  "comment": "Single class import 'import org.junit.jupiter.params.ParameterizedTest;'",
+  "detailsInfo": "Reports `import` statements that import single classes (as opposed to entire packages).\n\nSome coding standards prohibit such `import` statements.\n\n\nYou can configure IntelliJ IDEA to detect and fix such statements with its **Optimize Imports** command. Go to\n[Settings \\| Editor \\| Code Style \\| Java \\| Imports](settings://preferences.sourceCode.Java?Use%20single%20class%20import)\nand clear the **Use single class import** checkbox. Thus this inspection is mostly useful for\noffline reporting on code bases that you don't intend to change.",
+  "sources": [
+    {
+      "type": "file",
+      "path": "src/main/java/simple/automation/OrderTests.java",
+      "language": "JAVA",
+      "line": 4,
+      "offset": 1,
+      "length": 50,
+      "code": {
+        "startLine": 2,
+        "length": 50,
+        "offset": 33,
+        "surroundingCode": "\nimport org.junit.jupiter.api.*;\nimport org.junit.jupiter.params.ParameterizedTest;\nimport org.junit.jupiter.params.provider.Arguments;\nimport org.junit.jupiter.params.provider.EnumSource;"
+      }
+    }
+  ],
+  "attributes": {
+    "module": "java-basics.main",
+    "inspectionName": "SingleClassImport"
+  },
+  "hash": "31bd97ab737ed387aeedaab5a2b6c69c557eabe6c7dce82a85d31bdaaab5329c"
+},{
+  "tool": "Code Inspection",
+  "category": "Imports",
+  "type": "Single class import",
+  "tags": [
+    "JAVA"
+  ],
+  "severity": "High",
+  "comment": "Single class import 'import org.junit.jupiter.params.provider.Arguments;'",
+  "detailsInfo": "Reports `import` statements that import single classes (as opposed to entire packages).\n\nSome coding standards prohibit such `import` statements.\n\n\nYou can configure IntelliJ IDEA to detect and fix such statements with its **Optimize Imports** command. Go to\n[Settings \\| Editor \\| Code Style \\| Java \\| Imports](settings://preferences.sourceCode.Java?Use%20single%20class%20import)\nand clear the **Use single class import** checkbox. Thus this inspection is mostly useful for\noffline reporting on code bases that you don't intend to change.",
+  "sources": [
+    {
+      "type": "file",
+      "path": "src/main/java/simple/automation/OrderTests.java",
+      "language": "JAVA",
+      "line": 5,
+      "offset": 1,
+      "length": 51,
+      "code": {
+        "startLine": 3,
+        "length": 51,
+        "offset": 83,
+        "surroundingCode": "import org.junit.jupiter.api.*;\nimport org.junit.jupiter.params.ParameterizedTest;\nimport org.junit.jupiter.params.provider.Arguments;\nimport org.junit.jupiter.params.provider.EnumSource;\nimport org.junit.jupiter.params.provider.MethodSource;"
+      }
+    }
+  ],
+  "attributes": {
+    "module": "java-basics.main",
+    "inspectionName": "SingleClassImport"
+  },
+  "hash": "32e7919fc71e9866d79247974c615db279cf05c1a3c04677a6f2321824d75ac3"
+},{
+  "tool": "Code Inspection",
+  "category": "Imports",
+  "type": "Single class import",
+  "tags": [
+    "JAVA"
+  ],
+  "severity": "High",
+  "comment": "Single class import 'import org.junit.jupiter.params.provider.EnumSource;'",
+  "detailsInfo": "Reports `import` statements that import single classes (as opposed to entire packages).\n\nSome coding standards prohibit such `import` statements.\n\n\nYou can configure IntelliJ IDEA to detect and fix such statements with its **Optimize Imports** command. Go to\n[Settings \\| Editor \\| Code Style \\| Java \\| Imports](settings://preferences.sourceCode.Java?Use%20single%20class%20import)\nand clear the **Use single class import** checkbox. Thus this inspection is mostly useful for\noffline reporting on code bases that you don't intend to change.",
+  "sources": [
+    {
+      "type": "file",
+      "path": "src/main/java/simple/automation/OrderTests.java",
+      "language": "JAVA",
+      "line": 6,
+      "offset": 1,
+      "length": 52,
+      "code": {
+        "startLine": 4,
+        "length": 52,
+        "offset": 103,
+        "surroundingCode": "import org.junit.jupiter.params.ParameterizedTest;\nimport org.junit.jupiter.params.provider.Arguments;\nimport org.junit.jupiter.params.provider.EnumSource;\nimport org.junit.jupiter.params.provider.MethodSource;\nimport org.junit.jupiter.params.provider.ValueSource;"
+      }
+    }
+  ],
+  "attributes": {
+    "module": "java-basics.main",
+    "inspectionName": "SingleClassImport"
+  },
+  "hash": "2576ae36d04f1da844e2547ef28f3f5d0098adb03cd7f9180ec6ed3a44a80fd2"
+},{
+  "tool": "Code Inspection",
+  "category": "Imports",
+  "type": "Single class import",
+  "tags": [
+    "JAVA"
+  ],
+  "severity": "High",
+  "comment": "Single class import 'import org.junit.jupiter.params.provider.MethodSource;'",
+  "detailsInfo": "Reports `import` statements that import single classes (as opposed to entire packages).\n\nSome coding standards prohibit such `import` statements.\n\n\nYou can configure IntelliJ IDEA to detect and fix such statements with its **Optimize Imports** command. Go to\n[Settings \\| Editor \\| Code Style \\| Java \\| Imports](settings://preferences.sourceCode.Java?Use%20single%20class%20import)\nand clear the **Use single class import** checkbox. Thus this inspection is mostly useful for\noffline reporting on code bases that you don't intend to change.",
+  "sources": [
+    {
+      "type": "file",
+      "path": "src/main/java/simple/automation/OrderTests.java",
+      "language": "JAVA",
+      "line": 7,
+      "offset": 1,
+      "length": 54,
+      "code": {
+        "startLine": 5,
+        "length": 54,
+        "offset": 105,
+        "surroundingCode": "import org.junit.jupiter.params.provider.Arguments;\nimport org.junit.jupiter.params.provider.EnumSource;\nimport org.junit.jupiter.params.provider.MethodSource;\nimport org.junit.jupiter.params.provider.ValueSource;\n"
+      }
+    }
+  ],
+  "attributes": {
+    "module": "java-basics.main",
+    "inspectionName": "SingleClassImport"
+  },
+  "hash": "013cbd0adb6097c026e55963efcd10d10391530359f389ab4441ac6acd7999e7"
+},{
+  "tool": "Code Inspection",
+  "category": "Imports",
+  "type": "Single class import",
+  "tags": [
+    "JAVA"
+  ],
+  "severity": "High",
+  "comment": "Single class import 'import org.junit.jupiter.params.provider.ValueSource;'",
+  "detailsInfo": "Reports `import` statements that import single classes (as opposed to entire packages).\n\nSome coding standards prohibit such `import` statements.\n\n\nYou can configure IntelliJ IDEA to detect and fix such statements with its **Optimize Imports** command. Go to\n[Settings \\| Editor \\| Code Style \\| Java \\| Imports](settings://preferences.sourceCode.Java?Use%20single%20class%20import)\nand clear the **Use single class import** checkbox. Thus this inspection is mostly useful for\noffline reporting on code bases that you don't intend to change.",
+  "sources": [
+    {
+      "type": "file",
+      "path": "src/main/java/simple/automation/OrderTests.java",
+      "language": "JAVA",
+      "line": 8,
+      "offset": 1,
+      "length": 53,
+      "code": {
+        "startLine": 6,
+        "length": 53,
+        "offset": 108,
+        "surroundingCode": "import org.junit.jupiter.params.provider.EnumSource;\nimport org.junit.jupiter.params.provider.MethodSource;\nimport org.junit.jupiter.params.provider.ValueSource;\n\nimport java.util.stream.Stream;"
+      }
+    }
+  ],
+  "attributes": {
+    "module": "java-basics.main",
+    "inspectionName": "SingleClassImport"
+  },
+  "hash": "ebeeab6a0d2f0ad94f9a173408fa1c82ee29b111f7f9c9833a4a432532bf1b26"
+},{
+  "tool": "Code Inspection",
+  "category": "Imports",
+  "type": "Single class import",
+  "tags": [
+    "JAVA"
+  ],
+  "severity": "High",
+  "comment": "Single class import 'import java.util.stream.Stream;'",
+  "detailsInfo": "Reports `import` statements that import single classes (as opposed to entire packages).\n\nSome coding standards prohibit such `import` statements.\n\n\nYou can configure IntelliJ IDEA to detect and fix such statements with its **Optimize Imports** command. Go to\n[Settings \\| Editor \\| Code Style \\| Java \\| Imports](settings://preferences.sourceCode.Java?Use%20single%20class%20import)\nand clear the **Use single class import** checkbox. Thus this inspection is mostly useful for\noffline reporting on code bases that you don't intend to change.",
+  "sources": [
+    {
+      "type": "file",
+      "path": "src/main/java/simple/automation/OrderTests.java",
+      "language": "JAVA",
+      "line": 10,
+      "offset": 1,
+      "length": 31,
+      "code": {
+        "startLine": 8,
+        "length": 31,
+        "offset": 55,
+        "surroundingCode": "import org.junit.jupiter.params.provider.ValueSource;\n\nimport java.util.stream.Stream;\n\nimport static org.junit.jupiter.params.provider.Arguments.arguments;"
+      }
+    }
+  ],
+  "attributes": {
+    "module": "java-basics.main",
+    "inspectionName": "SingleClassImport"
+  },
+  "hash": "cecd98236130ac83665018cb292e2a07e5c1de3ac926d517aadb2bd4e08b39ae"
+},{
+  "tool": "Code Inspection",
+  "category": "Imports",
+  "type": "Single class import",
+  "tags": [
+    "JAVA"
+  ],
+  "severity": "High",
+  "comment": "Single class import 'import org.junit.jupiter.api.Tag;'",
+  "detailsInfo": "Reports `import` statements that import single classes (as opposed to entire packages).\n\nSome coding standards prohibit such `import` statements.\n\n\nYou can configure IntelliJ IDEA to detect and fix such statements with its **Optimize Imports** command. Go to\n[Settings \\| Editor \\| Code Style \\| Java \\| Imports](settings://preferences.sourceCode.Java?Use%20single%20class%20import)\nand clear the **Use single class import** checkbox. Thus this inspection is mostly useful for\noffline reporting on code bases that you don't intend to change.",
+  "sources": [
+    {
+      "type": "file",
+      "path": "src/main/java/simple/automation/AuthorizationTests.java",
+      "language": "JAVA",
+      "line": 3,
+      "offset": 1,
+      "length": 33,
+      "code": {
+        "startLine": 1,
+        "length": 33,
+        "offset": 28,
+        "surroundingCode": "package simple.automation;\n\nimport org.junit.jupiter.api.Tag;\nimport org.junit.jupiter.api.Test;\n"
+      }
+    }
+  ],
+  "attributes": {
+    "module": "java-basics.main",
+    "inspectionName": "SingleClassImport"
+  },
+  "hash": "512357d54bbce96913487382da291f67cdda15ceeab334d526347fcc68543e5c"
+},{
+  "tool": "Code Inspection",
+  "category": "Imports",
+  "type": "Single class import",
+  "tags": [
+    "JAVA"
+  ],
+  "severity": "High",
+  "comment": "Single class import 'import org.junit.jupiter.api.Test;'",
+  "detailsInfo": "Reports `import` statements that import single classes (as opposed to entire packages).\n\nSome coding standards prohibit such `import` statements.\n\n\nYou can configure IntelliJ IDEA to detect and fix such statements with its **Optimize Imports** command. Go to\n[Settings \\| Editor \\| Code Style \\| Java \\| Imports](settings://preferences.sourceCode.Java?Use%20single%20class%20import)\nand clear the **Use single class import** checkbox. Thus this inspection is mostly useful for\noffline reporting on code bases that you don't intend to change.",
+  "sources": [
+    {
+      "type": "file",
+      "path": "src/main/java/simple/automation/AuthorizationTests.java",
+      "language": "JAVA",
+      "line": 4,
+      "offset": 1,
+      "length": 34,
+      "code": {
+        "startLine": 2,
+        "length": 34,
+        "offset": 35,
+        "surroundingCode": "\nimport org.junit.jupiter.api.Tag;\nimport org.junit.jupiter.api.Test;\n\n@Tag(\"pseudo\")"
+      }
+    }
+  ],
+  "attributes": {
+    "module": "java-basics.main",
+    "inspectionName": "SingleClassImport"
+  },
+  "hash": "bf3a35e9bac3dbf5758c4438413e34de8b1fa0f035e65e8a5995c056b299ba75"
+},{
+  "tool": "Code Inspection",
+  "category": "Class metrics",
+  "type": "Overly complex class",
+  "tags": [
+    "JAVA"
+  ],
+  "severity": "Critical",
+  "comment": "Overly complex class 'User' (cyclomatic complexity = 9)",
+  "detailsInfo": "Reports classes whose total complexity exceeds the specified maximum.\n\nThe total complexity of a class is the sum of cyclomatic complexities of all the methods\nand initializers the class declares. Inherited methods and initializers are not counted\ntoward the total complexity.\n\nToo high complexity indicates that the class should be refactored into several smaller classes.\n\nUse the **Cyclomatic complexity limit** field below to specify the maximum allowed complexity for a class.",
+  "sources": [
+    {
+      "type": "file",
+      "path": "src/main/java/simple/automation/User.java",
+      "language": "JAVA",
+      "line": 3,
+      "offset": 14,
+      "length": 4,
+      "code": {
+        "startLine": 1,
+        "length": 4,
+        "offset": 41,
+        "surroundingCode": "package simple.automation;\n\npublic class User {\n\n    private String login;"
+      }
+    }
+  ],
+  "attributes": {
+    "module": "java-basics.main",
+    "inspectionName": "ClassComplexity"
+  },
+  "hash": "2184bb83ec012fda87f06c50e062ff6d5385de6ae90aac3a5fddc1e04a19417c"
+},{
+  "tool": "Code Inspection",
+  "category": "Class metrics",
+  "type": "Overly complex class",
+  "tags": [
+    "JAVA"
+  ],
+  "severity": "Critical",
+  "comment": "Overly complex class 'Main' (cyclomatic complexity = 2)",
+  "detailsInfo": "Reports classes whose total complexity exceeds the specified maximum.\n\nThe total complexity of a class is the sum of cyclomatic complexities of all the methods\nand initializers the class declares. Inherited methods and initializers are not counted\ntoward the total complexity.\n\nToo high complexity indicates that the class should be refactored into several smaller classes.\n\nUse the **Cyclomatic complexity limit** field below to specify the maximum allowed complexity for a class.",
+  "sources": [
+    {
+      "type": "file",
+      "path": "src/main/java/simple/automation/Main.java",
+      "language": "JAVA",
+      "line": 5,
+      "offset": 14,
+      "length": 4,
+      "code": {
+        "startLine": 3,
+        "length": 4,
+        "offset": 34,
+        "surroundingCode": "import java.util.*;\n\npublic class Main {\n\n    public static void main(String[] args) {"
+      }
+    }
+  ],
+  "attributes": {
+    "module": "java-basics.main",
+    "inspectionName": "ClassComplexity"
+  },
+  "hash": "53a9ee066edb18e9d7399193d1b73f396c61296429fe47d9cb901e274ea78c2a"
+},{
+  "tool": "Code Inspection",
+  "category": "Class metrics",
+  "type": "Overly complex class",
+  "tags": [
+    "JAVA"
+  ],
+  "severity": "Critical",
+  "comment": "Overly complex class 'OrderTests' (cyclomatic complexity = 5)",
+  "detailsInfo": "Reports classes whose total complexity exceeds the specified maximum.\n\nThe total complexity of a class is the sum of cyclomatic complexities of all the methods\nand initializers the class declares. Inherited methods and initializers are not counted\ntoward the total complexity.\n\nToo high complexity indicates that the class should be refactored into several smaller classes.\n\nUse the **Cyclomatic complexity limit** field below to specify the maximum allowed complexity for a class.",
+  "sources": [
+    {
+      "type": "file",
+      "path": "src/main/java/simple/automation/OrderTests.java",
+      "language": "JAVA",
+      "line": 16,
+      "offset": 14,
+      "length": 10,
+      "code": {
+        "startLine": 14,
+        "length": 10,
+        "offset": 35,
+        "surroundingCode": "@Smoke\n@Tag(\"pseudo\")\npublic class OrderTests {\n\n    @BeforeEach"
+      }
+    }
+  ],
+  "attributes": {
+    "module": "java-basics.main",
+    "inspectionName": "ClassComplexity"
+  },
+  "hash": "ac44560b6ce32856146952ce8a05228e2082b6d1e8e42994050142252368a0cd"
+},{
+  "tool": "Code Inspection",
+  "category": "Class metrics",
+  "type": "Overly complex class",
+  "tags": [
+    "JAVA"
+  ],
+  "severity": "Critical",
+  "comment": "Overly complex class 'Roles' (cyclomatic complexity = 4)",
+  "detailsInfo": "Reports classes whose total complexity exceeds the specified maximum.\n\nThe total complexity of a class is the sum of cyclomatic complexities of all the methods\nand initializers the class declares. Inherited methods and initializers are not counted\ntoward the total complexity.\n\nToo high complexity indicates that the class should be refactored into several smaller classes.\n\nUse the **Cyclomatic complexity limit** field below to specify the maximum allowed complexity for a class.",
+  "sources": [
+    {
+      "type": "file",
+      "path": "src/main/java/simple/automation/OrderTests.java",
+      "language": "JAVA",
+      "line": 43,
+      "offset": 10,
+      "length": 5,
+      "code": {
+        "startLine": 41,
+        "length": 5,
+        "offset": 16,
+        "surroundingCode": "    }\n\n    enum Roles{\n        MANAGER(\"manager\"),\n        SENIOR_MANAGER(\"manager of managers\"),"
+      }
+    }
+  ],
+  "attributes": {
+    "module": "java-basics.main",
+    "inspectionName": "ClassComplexity"
+  },
+  "hash": "024c6648a4160eb64a888173d0e2f48ae5c45b8fc8b4577f3e034156f7a7f7da"
+}]}

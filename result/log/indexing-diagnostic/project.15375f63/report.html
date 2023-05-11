@@ -1,0 +1,259 @@
+<html>
+  <head>
+    <title>Indexing diagnostics of 'java-basics'</title>
+    <style>body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+}
+
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+table {
+  width: 80%;
+}
+
+table.two-columns td {
+  width: 50%;
+}
+
+th, td {
+  padding: 3px;
+}
+
+th {
+  background: lightgrey;
+}
+
+td {
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+        
+.stats-content {
+  margin-left: 20%;
+}
+
+.aggregate-report-content {
+  margin-left: 10%;
+}
+
+.navigation-bar {
+  width: 15%;
+  background-color: lightgrey;
+  position: fixed;
+  height: 100%;
+}
+
+div.navigation-bar ul {
+  list-style-type: none;
+  overflow: auto;
+  margin: 0;
+  padding: 0;
+  font-size: 24px;
+}
+
+div.navigation-bar ul li a, label {
+  display: block;
+  color: #000;
+  padding: 8px 20px;
+  text-decoration: none;
+}
+
+label input {
+  margin-left: 10px;
+  width: 20px;
+  height: 20px;
+}
+
+div.navigation-bar ul li a:hover {
+  background-color: #555;
+  color: white;
+}
+
+.minor-data {}
+
+.invisible {
+  display: none;
+}
+
+.jetbrains-logo {
+  width: 50%;
+  bottom: 5%;
+  position: absolute;
+  left: 20%;
+}
+
+.centered-text {
+  text-align: center;
+}
+
+.linkable-table-row:hover {
+  background: #f2f3ff;
+  outline: none;
+  cursor: pointer;
+}</style>
+    <script>document.addEventListener("DOMContentLoaded", () => {
+  const rows = document.getElementsByClassName("linkable-table-row")
+  for (const row of rows) {
+    const href = row.getAttribute("href")
+    row.addEventListener("click", () => {
+      window.open(href, "_blank");
+    });
+  }
+});</script>
+  </head>
+  <body>
+    <div class="aggregate-report-content">
+      <h1 class="Project name"></h1>
+java-basics
+      <div>
+        <h1 class="Indexing history"></h1>
+        <table class="centered-text"><caption style="caption-side: bottom; text-align: right; font-size: 14px">Hover for details</caption>
+          <thead>
+            <tr>
+              <th colspan="7">Time</th>
+              <th colspan="6">Files</th>
+              <th rowspan="2">IDE</th>
+              <th rowspan="2">Type</th>
+            </tr>
+            <tr>
+              <th>Started</th>
+              <th>Total</th>
+              <th>Creating iterators</th>
+              <th>Scanning</th>
+              <th>Indexing</th>
+              <th>Content loading</th>
+              <th>Finished</th>
+              <th>Providers</th>
+              <th>Scanned</th>
+              <th>Shared indexes (w/o content loading)</th>
+              <th>Scheduled for indexing</th>
+              <th>Shared indexes (content loaded)</th>
+              <th>Total indexed (shared indexes included)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="linkable-table-row" href="diagnostic-2023-05-03-17-20-04.049.html">
+              <td><strong class="On refresh of files in java-basics"></strong><br>17:19:59 03 May</td>
+              <td>4 s 868 ms</td>
+              <td>0</td>
+              <td>0</td>
+              <td>4 s 867 ms</td>
+              <td>414 ms</td>
+              <td>17:20:04 03 May</td>
+              <td>1</td>
+              <td>15600</td>
+              <td>0</td>
+              <td>15600</td>
+              <td>0</td>
+              <td>15600</td>
+              <td>QDJVM-231.8898.85</td>
+              <td>refresh</td>
+            </tr>
+            <tr class="linkable-table-row" href="diagnostic-2023-05-03-17-19-43.609.html">
+              <td><strong class="On refresh of files in java-basics"></strong><br>17:19:43 03 May</td>
+              <td>355 ms</td>
+              <td>0</td>
+              <td>0</td>
+              <td>350 ms</td>
+              <td>24 ms</td>
+              <td>17:19:43 03 May</td>
+              <td>1</td>
+              <td>21</td>
+              <td>0</td>
+              <td>21</td>
+              <td>0</td>
+              <td>21</td>
+              <td>QDJVM-231.8898.85</td>
+              <td>refresh</td>
+            </tr>
+            <tr class="linkable-table-row" href="diagnostic-2023-05-03-17-19-43.251.html">
+              <td><strong class="changes in: &quot;JDK azul-13 /root/.jdks/azul-13.0.14&quot;"></strong><br>17:19:42 03 May</td>
+              <td>421 ms</td>
+              <td>&lt; 1 ms</td>
+              <td>404 ms</td>
+              <td>0</td>
+              <td>0</td>
+              <td>17:19:43 03 May</td>
+              <td>1</td>
+              <td>43251</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>QDJVM-231.8898.85</td>
+              <td>partial</td>
+            </tr>
+            <tr class="linkable-table-row" href="diagnostic-2023-05-03-17-19-40.853.html">
+              <td><strong class="changes in: &quot;JDK azul-13 /root/.jdks/azul-13.0.14&quot;"></strong><br>17:19:40 03 May</td>
+              <td>509 ms</td>
+              <td>&lt; 1 ms</td>
+              <td>503 ms</td>
+              <td>0</td>
+              <td>0</td>
+              <td>17:19:40 03 May</td>
+              <td>1</td>
+              <td>43251</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>QDJVM-231.8898.85</td>
+              <td>partial</td>
+            </tr>
+            <tr class="linkable-table-row" href="diagnostic-2023-05-03-17-19-19.762.html">
+              <td><strong class="On project open"></strong><br>17:19:17 03 May</td>
+              <td>2 s 116 ms</td>
+              <td>51 ms</td>
+              <td>1 s 661 ms</td>
+              <td>0</td>
+              <td>0</td>
+              <td>17:19:19 03 May</td>
+              <td>225</td>
+              <td>72929</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>QDJVM-231.8898.85</td>
+              <td>full on project open</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div>
+        <h1 class="Scanning to push properties of changed files"></h1>
+        <table>
+          <thead>
+            <tr>
+              <th>Time</th>
+              <th>Reason</th>
+              <th>Full duration</th>
+              <th>Is cancelled</th>
+              <th>Number</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>17:19:44 03 May</td>
+              <td>Push on VFS changes</td>
+              <td>&lt; 1 ms</td>
+              <td>fully finished</td>
+              <td>3</td>
+            </tr>
+            <tr>
+              <td>17:19:19 03 May</td>
+              <td>Push on VFS changes</td>
+              <td>4 ms</td>
+              <td>fully finished</td>
+              <td>1</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>
