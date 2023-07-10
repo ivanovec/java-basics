@@ -13,7 +13,7 @@ import static org.junit.jupiter.params.provider.Arguments.arguments;
 
 @Smoke
 @Tag("pseudo")
-public class OrderTests {
+public class   OrderTests {
 
     @BeforeEach
     public void createOrder(){

@@ -1,7 +1,10 @@
 package utils.services;
 
+import io.qameta.allure.Step;
 import io.restassured.http.Cookies;
+import rest.pojos.CreateUserResponse;
 import rest.pojos.UserPojoFull;
+import rest.pojos.UserRequest;
 
 import java.util.List;
 
@@ -22,5 +25,10 @@ public class OrderService extends RestService{
         return given().spec(REQ_SPEC)
                 .get()
                 .jsonPath().getList("data", UserPojoFull.class);
+    }
+
+    @Step("Создание пользователя {rq.name}")
+    public CreateUserResponse createUser(UserRequest rq){
+        return given().spec(REQ_SPEC).body(rq).post().as(CreateUserResponse.class);
     }
 }
