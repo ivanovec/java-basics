@@ -1,0 +1,17 @@
+qodana:
+  only:
+    - develop
+    - master
+    - merge_requests
+  image:
+    name: jetbrains/qodana-jvm
+    entrypoint: [""]
+  variables:
+    QODANA_TOKEN: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJvcmdhbml6YXRpb24iOiIzam94cSIsInByb2plY3QiOiJ6RVdRYSIsInRva2VuIjoiMzFXMWEifQ.pzWQAOWoUROyv9Sv3UacNlU9UUFsVdAVXzBn3dxEvJY
+  script:
+    - qodana --save-report --baseline=qodana.sarif.json --results-dir=$CI_PROJECT_DIR/qodana
+      --report-dir=$CI_PROJECT_DIR/qodana/report
+  artifacts:
+    paths:
+      - qodana/report/
+    expose_as: 'Qodana report'
