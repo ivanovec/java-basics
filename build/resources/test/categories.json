@@ -1,7 +1,0 @@
-[
-  {
-    "name": "GetFail",
-    "matchedStatuses": ["failed"],
-    "traceRegex": ".*getUser.*"
-  }
-]
