@@ -1,0 +1,79 @@
+<?xml version="1.0" ?>
+<report name="Intellij Coverage Report">
+<package name="org/example">
+<class name="org/example/Calculator" sourcefilename="Calculator.java">
+<method name="divide" desc="(II)I">
+<counter type="INSTRUCTION" missed="0" covered="3"/>
+<counter type="BRANCH" missed="0" covered="0"/>
+<counter type="LINE" missed="0" covered="1"/>
+</method>
+<method name="multiply" desc="(II)I">
+<counter type="INSTRUCTION" missed="0" covered="3"/>
+<counter type="BRANCH" missed="0" covered="0"/>
+<counter type="LINE" missed="0" covered="1"/>
+</method>
+<method name="subtract" desc="(II)I">
+<counter type="INSTRUCTION" missed="0" covered="3"/>
+<counter type="BRANCH" missed="0" covered="0"/>
+<counter type="LINE" missed="0" covered="1"/>
+</method>
+<method name="&lt;init&gt;" desc="()V">
+<counter type="INSTRUCTION" missed="0" covered="2"/>
+<counter type="BRANCH" missed="0" covered="0"/>
+<counter type="LINE" missed="0" covered="1"/>
+</method>
+<method name="add" desc="(II)I">
+<counter type="INSTRUCTION" missed="0" covered="3"/>
+<counter type="BRANCH" missed="0" covered="0"/>
+<counter type="LINE" missed="0" covered="1"/>
+</method>
+<counter type="INSTRUCTION" missed="0" covered="14"/>
+<counter type="BRANCH" missed="0" covered="0"/>
+<counter type="LINE" missed="0" covered="5"/>
+<counter type="METHOD" missed="0" covered="5"/>
+</class>
+<class name="org/example/Main" sourcefilename="Main.java">
+<method name="main" desc="([Ljava/lang/String;)V">
+<counter type="INSTRUCTION" missed="3" covered="0"/>
+<counter type="BRANCH" missed="0" covered="0"/>
+<counter type="LINE" missed="1" covered="0"/>
+</method>
+<method name="&lt;init&gt;" desc="()V">
+<counter type="INSTRUCTION" missed="2" covered="0"/>
+<counter type="BRANCH" missed="0" covered="0"/>
+<counter type="LINE" missed="1" covered="0"/>
+</method>
+<counter type="INSTRUCTION" missed="5" covered="0"/>
+<counter type="BRANCH" missed="0" covered="0"/>
+<counter type="LINE" missed="2" covered="0"/>
+<counter type="METHOD" missed="2" covered="0"/>
+</class>
+<sourcefile name="Calculator.java">
+<line nr="4" mi="0" ci="2" mb="0" cb="0"/>
+<line nr="8" mi="0" ci="3" mb="0" cb="0"/>
+<line nr="12" mi="0" ci="3" mb="0" cb="0"/>
+<line nr="16" mi="0" ci="3" mb="0" cb="0"/>
+<line nr="20" mi="0" ci="3" mb="0" cb="0"/>
+<counter type="INSTRUCTION" missed="0" covered="14"/>
+<counter type="BRANCH" missed="0" covered="0"/>
+<counter type="LINE" missed="0" covered="5"/>
+</sourcefile>
+<sourcefile name="Main.java">
+<line nr="3" mi="2" ci="0" mb="0" cb="0"/>
+<line nr="5" mi="3" ci="0" mb="0" cb="0"/>
+<counter type="INSTRUCTION" missed="5" covered="0"/>
+<counter type="BRANCH" missed="0" covered="0"/>
+<counter type="LINE" missed="2" covered="0"/>
+</sourcefile>
+<counter type="INSTRUCTION" missed="5" covered="14"/>
+<counter type="BRANCH" missed="0" covered="0"/>
+<counter type="LINE" missed="2" covered="5"/>
+<counter type="METHOD" missed="2" covered="5"/>
+<counter type="CLASS" missed="1" covered="1"/>
+</package>
+<counter type="INSTRUCTION" missed="5" covered="14"/>
+<counter type="BRANCH" missed="0" covered="0"/>
+<counter type="LINE" missed="2" covered="5"/>
+<counter type="METHOD" missed="2" covered="5"/>
+<counter type="CLASS" missed="1" covered="1"/>
+</report>
