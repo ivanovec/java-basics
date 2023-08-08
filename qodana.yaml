@@ -1,8 +1,0 @@
-version: "1.0"
-profile:
-  name: qodana.starter
-include:
-  - name: Java8ListSort
-  - name: ComparatorCombinators
-  - name: FoldExpressionIntoStream
-  - name: Java8MapApi
