@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<report name="Intellij Coverage Report">
+<counter type="INSTRUCTION" missed="0" covered="0"/>
+<counter type="BRANCH" missed="0" covered="0"/>
+<counter type="LINE" missed="0" covered="0"/>
+<counter type="METHOD" missed="0" covered="0"/>
+<counter type="CLASS" missed="0" covered="0"/>
+</report>
