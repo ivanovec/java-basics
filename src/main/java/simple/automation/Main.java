@@ -1,11 +1,12 @@
 package simple.automation;
 
 import java.util.*;
+import org.junit.jupiter.api.Test;
 
 public class Main {
 
     public static void main(String[] args) {
-
+        String test = "123";
         List<String> strings = Arrays.asList("два", "один", "три");
 
         Map<String, Integer> digestMap = new HashMap<>();
