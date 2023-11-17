@@ -8,6 +8,7 @@ public class AuthorizationTests extends BaseTestWithAuthorization{
 
     @Test
     public void testLogin(){
+        boolean x = true;
         System.out.println("check success login");
         while (true);
     }
