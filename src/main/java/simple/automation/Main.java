@@ -1,7 +1,6 @@
 package simple.automation;
 
 import java.util.*;
-import org.junit.jupiter.api.Test;
 
 public class Main {
 

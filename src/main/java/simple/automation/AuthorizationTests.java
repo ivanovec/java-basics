@@ -1,7 +1,6 @@
 package simple.automation;
 
-import org.junit.jupiter.api.Tag;
-import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.*;
 
 @Tag("pseudo")
 public class AuthorizationTests extends BaseTestWithAuthorization{
