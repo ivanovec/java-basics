@@ -18,6 +18,6 @@ jobs:
       - name: 'Qodana Scan'
         uses: JetBrains/qodana-action@v2024.1.2
         env:
-          QODANA_TOKEN: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJvcmdhbml6YXRpb24iOiIzam94cSIsInByb2plY3QiOiIzNzFvVyIsInRva2VuIjoiQWdSWmsifQ.gPajyyBcvT80conwPsqEFPg6etSgUz2kVSSXknPlF4A
+          QODANA_TOKEN: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJvcmdhbml6YXRpb24iOiIzb0RycCIsInByb2plY3QiOiJwNDVhVyIsInRva2VuIjoicFF2TnIifQ.vB8jaIfLHdj3WklAZhfnMrMlXHE_Apgltvafyuo0DFQ
         with:
           args: --baseline,qodana.sarif.json
