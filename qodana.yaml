@@ -28,4 +28,3 @@ projectJDK: 1.8 (2) #(Applied in CI/CD pipeline)
 #  - id: <plugin.id> #(plugin id can be found at https://plugins.jetbrains.com)
 
 #Specify Qodana linter for analysis (Applied in CI/CD pipeline)
-linter: jetbrains/qodana-jvm
