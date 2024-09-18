@@ -25,6 +25,7 @@ public class OrderTests {
     @ParameterizedTest
     @MethodSource
     public void testListOrdersAsManager(Roles role, String orderType){
+        System.out.println("");
         System.out.println("list orders as " + role.getDescription());
         System.out.println("check that is displayed orders for " + orderType);
     }
