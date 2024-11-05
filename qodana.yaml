@@ -19,7 +19,7 @@ include:
 #      - <path/where/not/run/inspection>
 
 projectJDK: 1.8 (2) #(Applied in CI/CD pipeline)
-
+bootstrap: export QODANA_ENDPOINT=https://cloud.sssa-stgn.aws.intellij.net && export QODANA_TOKEN=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwcm9qZWN0IjoiVnozR1EiLCJvcmdhbml6YXRpb24iOiJRMjVwRyIsInRva2VuIjoiVmswWVEifQ.o4Lc7k-6GgjKoagMwgXiVjhNH3e4rhnazxv4HC7TXAE
 #Execute shell command before Qodana execution (Applied in CI/CD pipeline)
 #bootstrap: sh ./prepare-qodana.sh
 

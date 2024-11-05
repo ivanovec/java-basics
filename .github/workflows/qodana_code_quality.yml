@@ -20,6 +20,6 @@ jobs:
         with:
           pr-mode: true
         env:
-          QODANA_ENDPOINT: https://cloud.sssa-stgn.aws.intellij.net
-          QODANA_TOKEN: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwcm9qZWN0IjoiVnozR1EiLCJvcmdhbml6YXRpb24iOiJRMjVwRyIsInRva2VuIjoiVmswWVEifQ.o4Lc7k-6GgjKoagMwgXiVjhNH3e4rhnazxv4HC7TXAE
+#          QODANA_ENDPOINT: https://cloud.sssa-stgn.aws.intellij.net
+#          QODANA_TOKEN: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwcm9qZWN0IjoiVnozR1EiLCJvcmdhbml6YXRpb24iOiJRMjVwRyIsInRva2VuIjoiVmswWVEifQ.o4Lc7k-6GgjKoagMwgXiVjhNH3e4rhnazxv4HC7TXAE
           CLI_DIST: 242
