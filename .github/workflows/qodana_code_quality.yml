@@ -11,21 +11,17 @@ on:
 jobs:
   qodana:
     runs-on: ubuntu-latest
+    env:
+      QODANA_ENDPOINT: https://cloud.sssa-stgn.aws.intellij.net
+      QODANA_TOKEN: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwcm9qZWN0IjoiVnozR1EiLCJvcmdhbml6YXRpb24iOiJRMjVwRyIsInRva2VuIjoiVmswWVEifQ.o4Lc7k-6GgjKoagMwgXiVjhNH3e4rhnazxv4HC7TXAE
+      CLI_DIST: 242
     steps:
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0
       - name: 'Check env'
         run: echo ${{ env.QODANA_TOKEN }}
-        env:
-          QODANA_ENDPOINT: https://cloud.sssa-stgn.aws.intellij.net
-          QODANA_TOKEN: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwcm9qZWN0IjoiVnozR1EiLCJvcmdhbml6YXRpb24iOiJRMjVwRyIsInRva2VuIjoiVmswWVEifQ.o4Lc7k-6GgjKoagMwgXiVjhNH3e4rhnazxv4HC7TXAE
-          CLI_DIST: 242
       - name: 'Qodana Scan'
         uses: JetBrains/qodana-action@v2024.2
         with:
           pr-mode: true
-        env:
-          QODANA_ENDPOINT: https://cloud.sssa-stgn.aws.intellij.net
-          QODANA_TOKEN: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwcm9qZWN0IjoiVnozR1EiLCJvcmdhbml6YXRpb24iOiJRMjVwRyIsInRva2VuIjoiVmswWVEifQ.o4Lc7k-6GgjKoagMwgXiVjhNH3e4rhnazxv4HC7TXAE
-          CLI_DIST: 242
