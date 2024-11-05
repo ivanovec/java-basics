@@ -20,7 +20,9 @@ jobs:
         with:
           fetch-depth: 0
       - name: 'Check env'
-        run: echo ${{ env.QODANA_TOKEN }}
+        run: |
+          export QODANA_TOKEN=${{ env.QODANA_ENDPOINT }}
+          export QODANA_ENDPOINT=${{ env.QODANA_ENDPOINT }}
       - name: 'Qodana Scan'
         uses: JetBrains/qodana-action@v2024.2
         with:
