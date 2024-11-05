@@ -20,5 +20,6 @@ jobs:
         with:
           pr-mode: true
         env:
-          QODANA_TOKEN: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJvcmdhbml6YXRpb24iOiIzb0RycCIsInByb2plY3QiOiJwNDVhVyIsInRva2VuIjoicFF2TnIifQ.vB8jaIfLHdj3WklAZhfnMrMlXHE_Apgltvafyuo0DFQ
-          CLI_DIST: 241
+          QODANA_ENDPOINT: https://cloud.sssa-stgn.aws.intellij.net
+          QODANA_TOKEN: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwcm9qZWN0IjoiVnozR1EiLCJvcmdhbml6YXRpb24iOiJRMjVwRyIsInRva2VuIjoiVmswWVEifQ.o4Lc7k-6GgjKoagMwgXiVjhNH3e4rhnazxv4HC7TXAE
+          CLI_DIST: 242
