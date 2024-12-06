@@ -10,18 +10,15 @@ on:
 
 jobs:
   qodana:
-    runs-on: ubuntu-latest
-    env:
-      QODANA_ENDPOINT: https://cloud.sssa-stgn.aws.intellij.net
-      QODANA_TOKEN: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwcm9qZWN0IjoiVnozR1EiLCJvcmdhbml6YXRpb24iOiJRMjVwRyIsInRva2VuIjoiVmswWVEifQ.o4Lc7k-6GgjKoagMwgXiVjhNH3e4rhnazxv4HC7TXAE
-      CLI_DIST: 242
+    runs-on: self-hosted
     steps:
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0
-      - name: 'Check license'
-        run: "curl --location 'https://linters.sssa-stgn.aws.intellij.net/v1/linters/license-key' --header 'Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwcm9qZWN0IjoiVnozR1EiLCJvcmdhbml6YXRpb24iOiJRMjVwRyIsInRva2VuIjoiVmswWVEifQ.o4Lc7k-6GgjKoagMwgXiVjhNH3e4rhnazxv4HC7TXAE'"
       - name: 'Qodana Scan'
-        uses: JetBrains/qodana-action@v2024.2
+        uses: JetBrains/qodana-action@next
         with:
           pr-mode: true
+        env:
+          QODANA_ENDPOINT: https://public-web.self-hosted.sssa-stgn.aws.intellij.net
+          QODANA_TOKEN: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwcm9qZWN0IjoianZ5cEEiLCJvcmdhbml6YXRpb24iOiJWdjE3OSIsInRva2VuIjoiYUt6RXYifQ.fMCPeNYBif9lPsvX-a1qm9Ly3K1SIkjyL7yIB47zN3Q
