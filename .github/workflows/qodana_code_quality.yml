@@ -20,5 +20,4 @@ jobs:
         with:
           pr-mode: true
         env:
-          QODANA_ENDPOINT: https://public-web.self-hosted.sssa-stgn.aws.intellij.net
-          QODANA_TOKEN: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwcm9qZWN0IjoianZ5cEEiLCJvcmdhbml6YXRpb24iOiJWdjE3OSIsInRva2VuIjoiYUt6RXYifQ.fMCPeNYBif9lPsvX-a1qm9Ly3K1SIkjyL7yIB47zN3Q
+          QODANA_TOKEN: ${{ secrets.QODANA_TOKEN }}
