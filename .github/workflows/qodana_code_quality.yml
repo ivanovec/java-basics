@@ -16,7 +16,7 @@ jobs:
         with:
           fetch-depth: 0
       - name: 'Qodana Scan'
-        uses: JetBrains/qodana-action@next
+        uses: JetBrains/qodana-action@2024.3.3
         with:
           pr-mode: true
         env:
