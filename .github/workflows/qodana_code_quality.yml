@@ -6,15 +6,19 @@ on:
     branches:
       - develop
       - master
+      - qodana
 
 jobs:
   qodana:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
         with:
           fetch-depth: 0
       - name: 'Qodana Scan'
-        uses: JetBrains/qodana-action@v2023.3.2
+        uses: JetBrains/qodana-action@v2024.3.3
+        with:
+          pr-mode: true
+          cache-default-branch-only: true
         env:
           QODANA_TOKEN: ${{ secrets.QODANA_TOKEN }}
