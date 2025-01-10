@@ -17,8 +17,16 @@ jobs:
         with:
           fetch-depth: 0
       - name: 'Qodana Scan'
+        if: ${{ github.ref == 'refs/heads/default' }}
         uses: JetBrains/qodana-action@v2024.3.3
         with:
-          primary-cache-key: qodana-2024.3-refs/pull/2/merge
+          primary-cache-key: qodana-2024.3-refs/heads/default
+        env:
+          QODANA_TOKEN: ${{ secrets.QODANA_TOKEN }}
+      - name: 'Qodana Scan other'
+        if: ${{ github.ref != 'refs/heads/default' }}
+        uses: JetBrains/qodana-action@v2024.3.3
+        with:
+          cache-default-branch-only: true
         env:
           QODANA_TOKEN: ${{ secrets.QODANA_TOKEN }}
