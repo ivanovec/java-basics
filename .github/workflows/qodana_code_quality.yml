@@ -28,6 +28,5 @@ jobs:
         uses: JetBrains/qodana-action@v2024.3.3
         with:
           cache-default-branch-only: true
-          cache-dir: ""
         env:
           QODANA_TOKEN: ${{ secrets.QODANA_TOKEN }}
