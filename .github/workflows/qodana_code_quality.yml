@@ -19,6 +19,6 @@ jobs:
       - name: 'Qodana Scan'
         uses: JetBrains/qodana-action@v2024.3.3
         with:
-          cache-default-branch-only: true
+          primary-cache-key: qodana-2024.3-refs/heads/default
         env:
           QODANA_TOKEN: ${{ secrets.QODANA_TOKEN }}
