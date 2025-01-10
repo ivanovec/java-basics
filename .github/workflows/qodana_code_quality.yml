@@ -20,6 +20,7 @@ jobs:
         uses: JetBrains/qodana-action@v2024.3.3
         with:
 #          pr-mode: true
-          cache-default-branch-only: true
+#          cache-default-branch-only: true
+          primary-cache-key: 'qodana-2024.3-${{ github.ref }}
         env:
           QODANA_TOKEN: ${{ secrets.QODANA_TOKEN }}
