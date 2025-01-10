@@ -17,16 +17,8 @@ jobs:
         with:
           fetch-depth: 0
       - name: 'Qodana Scan'
-        if: ${{ github.ref_name == github.event.repository.default_branch }}
         uses: JetBrains/qodana-action@v2024.3.3
         with:
-          primary-cache-key: qodana-2024.3-${{ github.event.repository.default_branch }}
-        env:
-          QODANA_TOKEN: ${{ secrets.QODANA_TOKEN }}
-      - name: 'Qodana Scan other'
-        if: ${{ github.ref != github.event.repository.default_branch }}
-        uses: JetBrains/qodana-action@v2024.3.3
-        with:
-          cache-default-branch-only: true
+          primary-cache-key: qodana-2024.3-${{ github.ref }}
         env:
           QODANA_TOKEN: ${{ secrets.QODANA_TOKEN }}
