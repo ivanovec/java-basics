@@ -10,16 +10,18 @@ profile:
 
 #Enable inspections
 include:
-  - name: JvmCoverageInspection
+  - name: JvmTaintAnalysis
+  - name: ReplacePrintlnWithLogging
+  - name: WhenWithOnlyElse
   - name: VulnerableLibrariesGlobal
-
+  - name: HttpUrlsUsage
 #Disable inspections
 #exclude:
 #  - name: <SomeDisabledInspectionId>
 #    paths:
 #      - <path/where/not/run/inspection>
 
-projectJDK: 1.8 (2) #(Applied in CI/CD pipeline)
+projectJDK: corretto-21 #(Applied in CI/CD pipeline)
 #Execute shell command before Qodana execution (Applied in CI/CD pipeline)
 #bootstrap: sh ./prepare-qodana.sh
 
@@ -28,4 +30,4 @@ projectJDK: 1.8 (2) #(Applied in CI/CD pipeline)
 #  - id: <plugin.id> #(plugin id can be found at https://plugins.jetbrains.com)
 
 #Specify Qodana linter for analysis (Applied in CI/CD pipeline)
-linter: jetbrains/qodana-jvm
+linter: jetbrains/qodana-jvm:2024.3
