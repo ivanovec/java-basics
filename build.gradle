@@ -7,8 +7,8 @@ plugins {
 }
 
 compileJava {
-    sourceCompatibility = 'corretto-21'
-    targetCompatibility = 'corretto-21'
+    sourceCompatibility = '21'
+    targetCompatibility = '21'
 }
 
 repositories {
