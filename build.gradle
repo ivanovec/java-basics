@@ -6,6 +6,10 @@ plugins {
     id("org.jetbrains.kotlinx.kover") version "0.7.3"
 }
 
+compileJava {
+    sourceCompatibility = 'corretto-21'
+    targetCompatibility = 'corretto-21'
+}
 
 repositories {
     mavenCentral()
