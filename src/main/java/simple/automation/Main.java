@@ -1,6 +1,7 @@
 package simple.automation;
 
 import java.util.*;
+import java.util.stream.Collectors;
 
 public class Main {
 
