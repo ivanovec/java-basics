@@ -7,7 +7,7 @@ public class Main {
     public static void main(String[] args) {
         String test = "123";
         List<String> strings = Arrays.asList("два", "один", "три");
-
+        String ddffd = "34";
         Map<String, Integer> digestMap = new HashMap<>();
         digestMap.put("десять", 10);
         digestMap.put("два", 2);
