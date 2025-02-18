@@ -14,6 +14,7 @@ public class Main {
         digestMap.put("три", 3);
 
         strings.forEach(str -> System.out.println(digestMap.get(str)));
+        while (true){}
 
     }
 
