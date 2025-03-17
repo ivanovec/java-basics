@@ -55,6 +55,7 @@ object Build : BuildType({
                                 cp /data/project/ui.sarif.json /data/results/qodana.sarif.json 
                                 EOM
                             chmod 777 runner.sh
+                            ls -la ./
             """.trimIndent()
         }
         qodana {
