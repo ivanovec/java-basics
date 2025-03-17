@@ -48,7 +48,6 @@ object Build : BuildType({
                             /bin/cat <<EOM >runner.sh
                                 #!/bin/bash
                                 cp /data/project/ui.sarif.json /data/results/qodana.sarif.json 
-                                EOM
             """.trimIndent()
         }
         script {
