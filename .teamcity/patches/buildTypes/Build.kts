@@ -48,7 +48,7 @@ changeBuildType(RelativeId("Build")) {
         update<Qodana>(1) {
             clearConditions()
             inspectionProfile = default()
-            additionalDockerArguments = """--entrypoint="ls -la /""""
+            additionalDockerArguments = """--entrypoint="ls -la""""
             param("collect-anonymous-statistics", "")
             param("report-as-test-mode", "")
         }
