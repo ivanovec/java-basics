@@ -53,7 +53,7 @@ object Build : BuildType({
             """.trimIndent()
         }
         script {
-            id = "simpleRunner"
+            id = "simpleRunner2"
             scriptContent = """
                             ls -la ./
             """.trimIndent()
