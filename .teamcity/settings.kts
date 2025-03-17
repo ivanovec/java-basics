@@ -56,6 +56,7 @@ object Build : BuildType({
                             chmod 777 runner.sh
                             ls -la ./
                             cat ./runner.sh
+                            docker pull "jetbrains/qodana-jvm:2023.3"
             """.trimIndent()
         }
         qodana {
