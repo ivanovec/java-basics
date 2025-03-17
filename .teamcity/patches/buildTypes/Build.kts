@@ -47,6 +47,9 @@ changeBuildType(RelativeId("Build")) {
         }
         update<Qodana>(1) {
             clearConditions()
+            linter = customLinter {
+                image = ""
+            }
             inspectionProfile = default()
             additionalDockerArguments = """--entrypoint="/bin/bash""""
             additionalQodanaArguments = """-c "ls -la""""
