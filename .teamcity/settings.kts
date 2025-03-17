@@ -47,11 +47,10 @@ object Build : BuildType({
             scriptContent = """
                             #!/bin/bash
                             set -x
-                            
+                            ls -la /data/project
+                            ls -la /data/results
                             /bin/cat <<'EOM' >runner.sh
                                 #!/bin/bash
-                                ls -la /data/project
-                                ls -la /data/results
                                 cp /data/project/ui.sarif.json /data/results/qodana.sarif.json 
                                 EOM
                             chmod 777 runner.sh
