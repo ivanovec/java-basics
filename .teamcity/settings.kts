@@ -45,15 +45,16 @@ object Build : BuildType({
         script {
             id = "simpleRunner"
             scriptContent = """
-                            #!/bin/bash
-                            set -x
-                            ls -la /data/project
-                            ls -la /data/results
                             /bin/cat <<'EOM' >runner.sh
                                 #!/bin/bash
                                 cp /data/project/ui.sarif.json /data/results/qodana.sarif.json 
                                 EOM
                             chmod 777 runner.sh
+            """.trimIndent()
+        }
+        script {
+            id = "simpleRunner"
+            scriptContent = """
                             ls -la ./
             """.trimIndent()
         }
