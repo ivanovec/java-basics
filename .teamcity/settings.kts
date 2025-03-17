@@ -54,14 +54,15 @@ object Build : BuildType({
         }
         qodana {
             name = "qodana"
-            linter = jvm {
-                version = Qodana.JVMVersion.LATEST
+            linter = customLinter {
+                image = "jetbrains/qodana-jvm:2023.3"
             }
-            inspectionProfile = default()
-            additionalDockerArguments = """--entrypoint="/data/project/runner.sh""""
-            cloudToken = "credentialsJSON:84879d2a-f4fa-4bb1-8040-48d6419f8e1b"
-            param("code-inspection-profile-name", "qodana.recommended")
-            param("namesAndTagsCustom", "jetbrains/qodana")
+            additionalDockerArguments = """
+                --entrypoint="/data/project/runner.sh"
+            """.trimIndent()
+
+            reportAsTests = true
+            param("report-as-test-mode", "each-inspection-is-test")
         }
     }
 
