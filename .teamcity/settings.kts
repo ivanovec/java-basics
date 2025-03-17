@@ -45,7 +45,7 @@ object Build : BuildType({
         script {
             id = "simpleRunner"
             scriptContent = """
-                            /bin/cat <<'EOM' >runner.sh
+                            /bin/cat <<EOM >runner.sh
                                 #!/bin/bash
                                 cp /data/project/ui.sarif.json /data/results/qodana.sarif.json 
                                 EOM
