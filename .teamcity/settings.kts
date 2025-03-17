@@ -56,6 +56,7 @@ object Build : BuildType({
             scriptContent = """
                             chmod 777 runner.sh
                             ls -la ./
+                            cat ./runner.sh
             """.trimIndent()
         }
         qodana {
