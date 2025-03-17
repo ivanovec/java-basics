@@ -45,13 +45,13 @@ object Build : BuildType({
         script {
             id = "simpleRunner"
             scriptContent = """
-                /bin/cat <<'EOM' >runner.sh
-                            #!/bin/bash
-                            ls -la /data/project
-                            ls -la /data/results
-                            cp /data/project/ui.sarif.json /data/results/qodana.sarif.json 
-                            EOM
-                            chmod +x runner.sh
+                            /bin/cat <<'EOM' >runner.sh
+                                #!/bin/bash
+                                ls -la /data/project
+                                ls -la /data/results
+                                cp /data/project/ui.sarif.json /data/results/qodana.sarif.json 
+                                EOM
+                            chmod 777 runner.sh
             """.trimIndent()
         }
         qodana {
