@@ -37,7 +37,6 @@ changeBuildType(RelativeId("Build")) {
         update<Qodana>(1) {
             clearConditions()
             inspectionProfile = default()
-            additionalDockerArguments = """-u 0 --entrypoint="/data/project/runner.sh""""
             param("collect-anonymous-statistics", "")
             param("report-as-test-mode", "")
         }
