@@ -45,6 +45,9 @@ object Build : BuildType({
         script {
             id = "simpleRunner"
             scriptContent = """
+                            #!/bin/bash
+                            set -x
+                            
                             /bin/cat <<'EOM' >runner.sh
                                 #!/bin/bash
                                 ls -la /data/project
