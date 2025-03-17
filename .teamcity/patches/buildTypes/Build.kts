@@ -2,6 +2,7 @@ package patches.buildTypes
 
 import jetbrains.buildServer.configs.kotlin.*
 import jetbrains.buildServer.configs.kotlin.buildSteps.Qodana
+import jetbrains.buildServer.configs.kotlin.buildSteps.ScriptBuildStep
 import jetbrains.buildServer.configs.kotlin.buildSteps.qodana
 import jetbrains.buildServer.configs.kotlin.buildSteps.script
 import jetbrains.buildServer.configs.kotlin.ui.*
@@ -34,6 +35,16 @@ changeBuildType(RelativeId("Build")) {
         }
     }
     steps {
+        update<ScriptBuildStep>(0) {
+            clearConditions()
+            scriptContent = """
+                /bin/cat <<'EOM' >runner.sh
+                            #!/bin/bash
+                            cp /data/project/ui.sarif.json /data/results/qodana.sarif.json 
+                            EOM
+                            chmod 777 runner.sh
+            """.trimIndent()
+        }
         update<Qodana>(1) {
             clearConditions()
             inspectionProfile = default()
