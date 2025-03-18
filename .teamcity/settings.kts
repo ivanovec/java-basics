@@ -3,7 +3,6 @@ import jetbrains.buildServer.configs.kotlin.buildFeatures.perfmon
 import jetbrains.buildServer.configs.kotlin.buildSteps.Qodana
 import jetbrains.buildServer.configs.kotlin.buildSteps.qodana
 import jetbrains.buildServer.configs.kotlin.buildSteps.script
-import jetbrains.buildServer.configs.kotlin.buildSteps.*
 import jetbrains.buildServer.configs.kotlin.triggers.vcs
 
 /*
@@ -94,9 +93,11 @@ class Build : BuildType({
     }
 })
 
-internal fun BuildSteps.dockerTag(init: BuildStep.() -> Unit = {}) = ScriptBuildStep({
+internal fun BuildSteps.dockerTag(init: BuildStep.() -> Unit = {}) {
+    script {
         name = "Step"
         scriptContent = """
             echo "Hello world!"
             """.trimIndent()
-})
+    }
+}
