@@ -101,4 +101,4 @@ internal fun BuildSteps.dockerTag(init: BuildStep.() -> Unit = {}) = ScriptBuild
         scriptContent = """
             echo "Hello world!"
             """.trimIndent()
-}).also(::step)
+}).apply(block = init).also(::step)
