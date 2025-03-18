@@ -30,10 +30,10 @@ To debug in IntelliJ Idea, open the 'Maven Projects' tool window (View
 version = "2024.12"
 
 project {
-    buildType(Build)
+    buildType(Build())
 }
 
-object Build : BuildType({
+class Build : BuildType({
     name = "Build"
 
     params {
