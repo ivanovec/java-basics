@@ -30,12 +30,15 @@ To debug in IntelliJ Idea, open the 'Maven Projects' tool window (View
 version = "2024.12"
 
 project {
-
     buildType(Build)
 }
 
 object Build : BuildType({
     name = "Build"
+
+    params {
+        checkbox("parameter", false, "Tag as latest", "Add the tag 'latest', so the published version is default")
+    }
 
     vcs {
         root(DslContext.settingsRoot)
@@ -59,6 +62,12 @@ object Build : BuildType({
 //                            docker pull "jetbrains/qodana-jvm:2023.3"
 //            """.trimIndent()
 //        }
+        dockerTag() {
+            conditions{
+                equals("parameter", "true")
+            }
+            name = "Tag Latest in Docker Hub"
+        }
         qodana {
             name = "qodana"
             linter = customLinter {
@@ -83,3 +92,12 @@ object Build : BuildType({
         }
     }
 })
+
+internal fun BuildSteps.dockerTag(init: BuildStep.() -> Unit = {}) {
+    script {
+        name = "Step"
+        scriptContent = """
+            echo "Hello world!"
+            """.trimIndent()
+    }
+}
