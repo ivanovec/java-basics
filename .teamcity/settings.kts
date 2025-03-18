@@ -4,6 +4,8 @@ import jetbrains.buildServer.configs.kotlin.buildSteps.Qodana
 import jetbrains.buildServer.configs.kotlin.buildSteps.qodana
 import jetbrains.buildServer.configs.kotlin.buildSteps.script
 import jetbrains.buildServer.configs.kotlin.triggers.vcs
+import jetbrains.buildServer.configs.kotlin.buildSteps.ScriptBuildStep
+
 
 /*
 The settings script is an entry point for defining a TeamCity
@@ -93,11 +95,10 @@ class Build : BuildType({
     }
 })
 
-internal fun BuildSteps.dockerTag(init: BuildStep.() -> Unit = {}) {
-    script {
+internal fun BuildSteps.dockerTag(init: BuildStep.() -> Unit = {}) = ScriptBuildStep({
         name = "Step"
+        id = name.lowercase().replace(" ", "_").replace(",", "_")
         scriptContent = """
             echo "Hello world!"
             """.trimIndent()
-    }
-}
+}).also(::step)
