@@ -42,23 +42,23 @@ object Build : BuildType({
     }
 
     steps {
-        script {
-            id = "simpleRunner"
-            scriptContent = """
-                            /bin/cat <<EOM >runner.sh
-                                #!/bin/bash
-                                cp /data/project/ui.sarif.json /data/results/qodana.sarif.json 
-            """.trimIndent()
-        }
-        script {
-            id = "simpleRunner2"
-            scriptContent = """
-                            chmod 777 runner.sh
-                            ls -la ./
-                            cat ./runner.sh
-                            docker pull "jetbrains/qodana-jvm:2023.3"
-            """.trimIndent()
-        }
+//        script {
+//            id = "simpleRunner"
+//            scriptContent = """
+//                            /bin/cat <<EOM >runner.sh
+//                                #!/bin/bash
+//                                cp /data/project/ui.sarif.json /data/results/qodana.sarif.json
+//            """.trimIndent()
+//        }
+//        script {
+//            id = "simpleRunner2"
+//            scriptContent = """
+//                            chmod 777 runner.sh
+//                            ls -la ./
+//                            cat ./runner.sh
+//                            docker pull "jetbrains/qodana-jvm:2023.3"
+//            """.trimIndent()
+//        }
         qodana {
             name = "qodana"
             linter = customLinter {
