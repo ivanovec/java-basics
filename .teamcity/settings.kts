@@ -93,11 +93,9 @@ class Build : BuildType({
     }
 })
 
-internal fun BuildSteps.dockerTag(init: BuildStep.() -> Unit = {}) {
-    script {
+internal fun BuildSteps.dockerTag(init: BuildStep.() -> Unit = {}) = ScriptBuildStep({
         name = "Step"
         scriptContent = """
             echo "Hello world!"
             """.trimIndent()
-    }
-}
+})
