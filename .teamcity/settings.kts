@@ -98,7 +98,6 @@ class Build : BuildType({
 internal fun BuildSteps.dockerTag(init: BuildStep.() -> Unit = {}) {
     script {
         name = "Step"
-        id = name.lowercase().replace(" ", "_").replace(",", "_")
         scriptContent = """
             echo "Hello world!"
             """.trimIndent()
