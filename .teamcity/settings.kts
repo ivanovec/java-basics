@@ -37,7 +37,7 @@ object Build : BuildType({
     name = "Build"
 
     params {
-        checkbox("parameter", false, "Tag as latest", "Add the tag 'latest', so the published version is default")
+        checkbox("parameter", false.toString(), "Tag as latest", "Add the tag 'latest', so the published version is default")
     }
 
     vcs {
