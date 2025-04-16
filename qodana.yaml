@@ -8,10 +8,16 @@ version: "1.0"
 profile:
   name: qodana.recommended
 
-#bootstrap: /opt/idea/plugins/maven/lib/maven3/bin/mvn compile
+bootstrap: cat /etc/hosts
+
 #  cd /opt/idea/plugins/ && ls -l && mkdir ../backup && mv java ../backup/ && mv java-ide-customization ../backup/ && mv json ../backup/ && mv qodana ../backup && mv vcs-git ../backup && mv maven ../backup && rm -rf * &&  mv ../backup/* ./ && rm -rf ../backup && cd /data/project
+includeAbsent: false
+disableSanityInspections: false
+runPromoInspections: true
 #Enable inspections
 include:
+  - name: IncorrectFormatting
+  - name: InfiniteLoopStatement
   - name: ReplacePrintlnWithLogging
   - name: WhenWithOnlyElse
   - name: All
@@ -40,4 +46,5 @@ projectJDK: "21" #(Applied in CI/CD pipeline)
 #  - id: <plugin.id> #(plugin id can be found at https://plugins.jetbrains.com)
 
 #Specify Qodana linter for analysis (Applied in CI/CD pipeline)
-linter: jetbrains/qodana-jvm:2024.2
+#linter: registry.jetbrains.team/p/sa/containers/qodana-jvm:2025.1-nightly
+ide: QDJVM
