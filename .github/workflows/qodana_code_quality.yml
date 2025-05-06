@@ -31,7 +31,7 @@ jobs:
         uses: gradle/actions/setup-gradle@v4
 
       - name: 'Qodana Scan'
-        uses: JetBrains/qodana-action@v2024.3.3
+        uses: JetBrains/qodana-action@next
         with:
           upload-result: true
 #          primary-cache-key: qodana-2024.3-${{ github.ref }}
