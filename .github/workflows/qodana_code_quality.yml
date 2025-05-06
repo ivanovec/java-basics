@@ -9,6 +9,7 @@ on:
       - master
       - qodana
       - default
+      - incorrectformatting
 
 jobs:
   qodana:
