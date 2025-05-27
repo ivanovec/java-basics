@@ -1,8 +1,0 @@
-<aspectj>
-    <weaver>
-        <include within="web.*"/>
-    </weaver>
-    <aspects>
-        <aspect name = "web.WebDriverLogger"></aspect>
-    </aspects>
-</aspectj>
