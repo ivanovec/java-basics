@@ -10,6 +10,7 @@ on:
       - qodana
       - default
       - incorrectformatting
+      - ast
 
 jobs:
   qodana:
