@@ -10,7 +10,7 @@
     <list default="true" id="d9a6b539-6ba9-4727-b5dd-1a3b99523ef7" name="Changes" comment="123">
       <change afterPath="$PROJECT_DIR$/.qodana/plugins/stupid_inspection-2.0.0.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/java-basics.test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/qodana.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/qodana.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/rep/Example.java" beforeDir="false" afterPath="$PROJECT_DIR$/rep/Example.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/simple/automation/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/simple/automation/Main.java" afterDir="false" />
@@ -92,6 +92,7 @@
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.35517243",
+    "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -201,7 +202,15 @@
       <option name="project" value="LOCAL" />
       <updated>1749730962105</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="123">
+      <option name="closed" value="true" />
+      <created>1749731544226</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1749731544226</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
