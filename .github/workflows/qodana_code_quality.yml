@@ -35,7 +35,7 @@ jobs:
         uses: JetBrains/qodana-action@main
         with:
           upload-result: true
-        args: --ide,QDJVM
+          args: --ide,QDJVM
         #          primary-cache-key: qodana-2024.3-${{ github.ref }}
 #          additional-cache-key: qodana-2024.3-refs/heads/qodana
         #        with:
