@@ -818,7 +818,7 @@
         "PrintableReleaseType": null
       },
       {
-        "Date": "FIX-THE-DATE",
+        "Date": "2025-07-16",
         "Type": "eap",
         "Downloads": {
           "linux": {
@@ -846,7 +846,7 @@
             "ChecksumLink": "https://download.jetbrains.com/qodana/2025.2/qodana-QDGO-252.24399.39-aarch64.sit.sha256"
           }
         },
-        "Version": "2025.2.FIX_THE_VERSION",
+        "Version": "2025.2.1",
         "MajorVersion": "2025.2",
         "Build": "252.24399.39",
         "PrintableReleaseType": null
