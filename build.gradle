@@ -1,9 +1,10 @@
 plugins {
     id 'java'
     id "io.freefair.lombok" version "8.1.0"
-    id "io.qameta.allure" version "2.8.0"
+    id "io.qameta.allure" version "2.12.0"
     id "io.freefair.aspectj" version "5.1.1"
     id("org.jetbrains.kotlinx.kover") version "0.7.3"
+    id 'org.jetbrains.kotlin.jvm' version "2.2.10"
 }
 
 repositories {
@@ -15,14 +16,22 @@ dependencies {
     implementation 'org.junit.jupiter:junit-jupiter-engine:5.7.0'
     implementation 'org.junit.jupiter:junit-jupiter-params:5.7.0'
     implementation 'org.assertj:assertj-core:3.19.0'
+    implementation 'org.seleniumhq.selenium:selenium-java:4.0.0-beta-1'
     implementation 'com.typesafe:config:1.4.1'
     implementation "org.aspectj:aspectjrt:1.9.6"
+    implementation 'org.slf4j:slf4j-api:1.7.25'
+    implementation 'jakarta.servlet:jakarta.servlet-api:5.0.0'
 
     testImplementation 'org.assertj:assertj-core:3.11.1'
+    testImplementation 'io.rest-assured:rest-assured:5.3.0'
+    testImplementation 'io.rest-assured:json-schema-validator:5.3.0'
+    testImplementation 'io.qameta.allure:allure-rest-assured:2.8.0'
     testImplementation 'com.fasterxml.jackson.core:jackson-annotations:2.10.4'
     testImplementation 'com.fasterxml.jackson.core:jackson-core:2.10.4'
+    testImplementation 'com.fasterxml.jackson.core:jackson-databind:2.10.4'
     testImplementation 'org.projectlombok:lombok:1.18.16'
     testAnnotationProcessor 'org.projectlombok:lombok:1.18.16'
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8"
 }
 
 
@@ -35,6 +44,7 @@ tasks.withType(Test).configureEach {
     useJUnitPlatform()
     outputs.upToDateWhen { false }
     finalizedBy(tasks.koverXmlReport)
+    enabled = false
 }
 
 tasks.register('webtests', Test).configure(){
@@ -169,4 +179,7 @@ koverReport {
             setReportFile(layout.projectDirectory.file(".qodana/code-coverage/result.xml").asFile)
         }
     }
+}
+kotlin {
+    jvmToolchain(17)
 }
