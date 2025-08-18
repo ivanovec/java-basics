@@ -6,7 +6,7 @@ public class Main {
 
     public static void main(String[] args) {
 
-        while (true) {};
+//        while (true) {};
 
                 String test = "123";
         List<String> strings = Arrays.asList("два", "один", "три");
