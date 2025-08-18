@@ -19,6 +19,7 @@ jobs:
       contents: write
       pull-requests: write
       checks: write
+      security-events: write
     env:
       GRADLE_OPTS: "-Dfile.encoding=UTF-8"
 
