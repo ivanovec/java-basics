@@ -1,6 +1,9 @@
 package simple.automation.satests;
 
+import jakarta.servlet.ServletException;
+import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
 
 import java.io.IOException;
 import java.sql.*;
@@ -23,7 +26,7 @@ class ConstantUsernameProvider implements UsernameProvider {
     }
 }
 
-public class ContextSensitivityServletTest extends HttpServlet{
+public class ContextSensitivityServletTest extends HttpServlet {
     private UsernameProvider provider;
 
     public ContextSensitivityServletTest(UsernameProvider provider) {

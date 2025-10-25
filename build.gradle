@@ -18,6 +18,7 @@ dependencies {
     implementation 'org.seleniumhq.selenium:selenium-java:4.0.0-beta-1'
     implementation 'com.typesafe:config:1.4.1'
     implementation "org.aspectj:aspectjrt:1.9.6"
+    implementation "jakarta.servlet:jakarta.servlet-api:6.1.0"
 
     testImplementation 'org.assertj:assertj-core:3.11.1'
     testImplementation 'io.rest-assured:rest-assured:5.3.0'
