@@ -7,6 +7,9 @@ import java.util.stream.Stream;
 public class Main {
 
     public static void main(String[] args) {
+        String x = "123";
+        x.getBytes("23");
+        String y = "124";
         String test = "123";
         List<String> strings = Arrays.asList("два", "один", "три");
         String ddffd = "34";
