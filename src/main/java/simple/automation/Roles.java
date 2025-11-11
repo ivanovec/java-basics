@@ -14,4 +14,8 @@ public enum Roles{
     public String getDescription(){
         return description;
     }
+
+    public void stubMethod() {
+        // TODO: Implement stub method
+    }
 }
