@@ -18,4 +18,8 @@ public enum Roles{
     public void stubMethod() {
         // TODO: Implement stub method
     }
+
+    public void anotherStubMethod() {
+        // TODO: Implement another stub method
+    }
 }
