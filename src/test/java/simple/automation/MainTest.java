@@ -1,14 +1,18 @@
 package simple.automation;
 
-import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
-import org.junit.jupiter.api.BeforeAll;
 
-public class MainTest {
+import static org.junit.jupiter.api.Assertions.*;
+
+class MainTest {
 
     @Test
-    public void mainTest(){
+    void testObjectToString() {
         Main main = new Main();
-        Assertions.assertTrue(true);
+        // Test with various object types
+        assertEquals("123", main.objectToString(123));
+        assertEquals("true", main.objectToString(true));
+        assertEquals("test", main.objectToString("test"));
+        assertEquals("null", main.objectToString(null));
     }
 }
