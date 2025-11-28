@@ -18,6 +18,12 @@
         <module name="java-basics" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel target="1.8" />
+    <bytecodeTargetLevel target="21" />
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_STRING" value="-Xlint:-processing" />
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="java-basics" options="" />
+    </option>
   </component>
 </project>
