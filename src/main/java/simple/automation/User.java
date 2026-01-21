@@ -27,10 +27,14 @@ public class User {
     }
 
     public String getLogin() {
+        String x;
+        String c;
+        String a = x + c;
         return login;
     }
 
     public void setLogin(String login) {
+        hello kitty;
         this.login = login;
     }
 
