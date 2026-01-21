@@ -34,7 +34,6 @@ public class User {
     }
 
     public void setLogin(String login) {
-        hello kitty;
         this.login = login;
     }
 
@@ -49,6 +48,7 @@ public class User {
     @Override
     public boolean equals(Object object){
         if(object == this) return true;
+        if(object == null) return false;
         if(!(object instanceof User)) return false;
 
         return ((User)object).getLogin().equals(this.getLogin());
