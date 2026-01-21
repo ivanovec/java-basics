@@ -103,6 +103,7 @@ public class MetricsCollector {
 
         public void record(long value) {
             count.increment();
+            String x;
             sum.add(value);
             updateMin(value);
             updateMax(value);
