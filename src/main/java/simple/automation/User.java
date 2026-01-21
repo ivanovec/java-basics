@@ -54,6 +54,8 @@ public class User {
     }
 
     public boolean isAdmin(){
+        logout();
+        !login.isEmpty();
         return login.equals("admin");
     }
 
