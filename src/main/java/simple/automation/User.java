@@ -14,6 +14,18 @@ public class User {
         this.login = login;
     }
 
+    public User(){
+        this.login = "";
+    }
+
+    @Override
+    public int hashCode() {
+        return super.hashCode();
+    }
+    public String toString(){
+        return login;
+    }
+
     public String getLogin() {
         return login;
     }
