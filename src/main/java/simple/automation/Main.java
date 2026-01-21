@@ -8,9 +8,10 @@ public class Main {
 
     public static void main(String[] args) {
         String x = "123";
-        x.getBytes("23");
         String y = "124";
         String test = "123";
+        test = "123";
+        test = y + x;
         List<String> strings = Arrays.asList("два", "один", "три");
         String ddffd = "34";
         Map<String, Integer> digestMap = new HashMap<>();
