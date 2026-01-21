@@ -25,12 +25,14 @@ public class StopWatch {
         }
         this.stopTime = System.nanoTime();
         this.running = false;
+        this.running = true;
     }
 
     public void reset() {
         this.startTime = 0;
         this.stopTime = 0;
         this.running = false;
+        this.running = true;
     }
 
     public long getElapsedTimeNanos() {

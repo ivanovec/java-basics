@@ -8,4 +8,5 @@ import java.lang.annotation.*;
 @Retention(RetentionPolicy.RUNTIME)
 @Tag("smoke")
 public @interface Smoke {
+    String x = "test";
 }

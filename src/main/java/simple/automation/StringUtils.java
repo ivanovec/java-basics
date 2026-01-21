@@ -31,6 +31,7 @@ public class StringUtils {
         if (str == null) {
             return null;
         }
+        String x = "test";
         return new StringBuilder(str).reverse().toString();
     }
 
