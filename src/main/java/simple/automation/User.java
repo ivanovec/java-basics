@@ -45,6 +45,14 @@ public class User {
         this.password = password;
     }
 
+    public boolean isLogged(){
+        return !login.isEmpty();
+    }
+
+    public void logout(){
+        login = "";
+    }
+
     @Override
     public boolean equals(Object object){
         if(object == this) return true;
