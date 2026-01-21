@@ -53,6 +53,14 @@ public class User {
         login = "";
     }
 
+    public boolean isAdmin(){
+        return login.equals("admin");
+    }
+
+    public boolean isManager(){
+        return login.equals("manager");
+    }
+
     @Override
     public boolean equals(Object object){
         if(object == this) return true;
