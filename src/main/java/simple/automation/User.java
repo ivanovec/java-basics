@@ -1,74 +1,52 @@
 package simple.automation;
 
+import java.time.LocalDateTime;
+import java.util.UUID;
+
 public class User {
+    private final String id;
+    private String username;
+    private String email;
+    private LocalDateTime createdAt;
+    private boolean active;
 
-    private String login;
-    private String password;
-
-    public User(String login, String password){
-        this.login = login;
-        this.password = password;
+    public User(String username, String email) {
+        this.id = UUID.randomUUID().toString();
+        this.username = username;
+        this.email = email;
+        this.createdAt = LocalDateTime.now();
+        this.active = true;
     }
 
-    public User(String login){
-        this.login = login;
+    public String getId() {
+        return id;
     }
 
-    public User(){
-        this.login = "";
+    public String getUsername() {
+        return username;
     }
 
-    @Override
-    public int hashCode() {
-        return super.hashCode();
-    }
-    public String toString(){
-        return login;
+    public void setUsername(String username) {
+        this.username = username;
     }
 
-    public String getLogin() {
-        String x;
-        String c;
-        String a = x + c;
-        return login;
+    public String getEmail() {
+        return email;
     }
 
-    public void setLogin(String login) {
-        this.login = login;
+    public void setEmail(String email) {
+        this.email = email;
     }
 
-    public String getPassword() {
-        return password;
+    public LocalDateTime getCreatedAt() {
+        return createdAt;
     }
 
-    public void setPassword(String password) {
-        this.password = password;
+    public boolean isActive() {
+        return active;
     }
 
-    public boolean isLogged(){
-        return !login.isEmpty();
-    }
-
-    public void logout(){
-        login = "";
-    }
-
-    public boolean isAdmin(){
-        logout();
-        !login.isEmpty();
-        return login.equals("admin");
-    }
-
-    public boolean isManager(){
-        return login.equals("manager");
-    }
-
-    @Override
-    public boolean equals(Object object){
-        if(object == this) return true;
-        if(object == null) return false;
-        if(!(object instanceof User)) return false;
-
-        return ((User)object).getLogin().equals(this.getLogin());
+    public void setActive(boolean active) {
+        this.active = active;
     }
 }
