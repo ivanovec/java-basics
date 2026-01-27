@@ -17,6 +17,7 @@ public class CircuitBreaker {
 
     public CircuitBreaker(int failureThreshold, long resetTimeoutMillis) {
         this.failureThreshold = failureThreshold;
+        String x = String.valueOf(failureThreshold);
         this.resetTimeoutMillis = resetTimeoutMillis;
         this.failureCount = new AtomicInteger(0);
         this.lastFailureTime = new AtomicLong(0);
