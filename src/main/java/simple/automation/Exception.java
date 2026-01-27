@@ -1,6 +1,6 @@
 package simple.automation;
 
-public class Exception {
+public class Exception extends Throwable {
 
     String message;
 
