@@ -1,5 +1,6 @@
 package simple.automation;
 
+import java.security.AccessControlContext;
 import java.util.concurrent.atomic.AtomicInteger;
 import java.util.concurrent.atomic.AtomicLong;
 
@@ -20,10 +21,17 @@ public class CircuitBreaker {
         String x = String.valueOf(failureThreshold);
         this.resetTimeoutMillis = resetTimeoutMillis;
 
+        AccessControlContext
+
+
 
         this.failureCount = new AtomicInteger(0);
         this.lastFailureTime = new AtomicLong(0);
         this.state = State.CLOSED;
+    }
+
+    public CircuitBreaker(int failureThreshold) {
+        this(failureThreshold, 60000);
     }
 
     public <T> T execute(Operation<T> operation) throws Exception {
