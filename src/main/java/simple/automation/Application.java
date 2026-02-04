@@ -12,6 +12,15 @@ public class Application {
     public static void main(String[] args) {
         LOGGER.info("Starting User Management System");
 
+        String appNAme = String.format("ass it is");
+        String pupu = "Kuku";
+        String complete = String.format("complete %s", appNAme);
+        String editcomplete = complete.replace("complete", "edit");
+        String editcomplete2 = editcomplete.replace("edit", "modify");
+        String editcompletewithpause = editcomplete2.replace("modify", "pause");
+        LOGGER.info(complete);
+        LOGGER.info(editcomplete);
+        LOGGER.info(pupu);
         // Initialize services
         UserRepository userRepository = new UserRepository();
         EmailService emailService = new EmailService("noreply@example.com", true);
