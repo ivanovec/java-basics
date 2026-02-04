@@ -26,6 +26,9 @@ public class Application {
         String asd2 = "dfdf2";
         String asd3 = "dfdf3";
         String aaaa = "d";
+        String bbbb = "d";
+        String cccc = "d";
+        String dddd = "d";
         UserRepository userRepository = new UserRepository();
         EmailService emailService = new EmailService("noreply@example.com", true);
         UserService userService = new UserService(userRepository, emailService);
