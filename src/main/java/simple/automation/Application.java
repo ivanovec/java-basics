@@ -22,6 +22,10 @@ public class Application {
         LOGGER.info(editcomplete);
         LOGGER.info(pupu);
         // Initialize services
+        String asd = "dfdf";
+        String asd2 = "dfdf2";
+        String asd3 = "dfdf3";
+        String aaaa = "d";
         UserRepository userRepository = new UserRepository();
         EmailService emailService = new EmailService("noreply@example.com", true);
         UserService userService = new UserService(userRepository, emailService);
