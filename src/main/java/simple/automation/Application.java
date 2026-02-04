@@ -29,6 +29,9 @@ public class Application {
         String bbbb = "d";
         String cccc = "d";
         String dddd = "d";
+        String eeee = "d";
+        String rfff = "d";
+        String tggg = "d";
         UserRepository userRepository = new UserRepository();
         EmailService emailService = new EmailService("noreply@example.com", true);
         UserService userService = new UserService(userRepository, emailService);
