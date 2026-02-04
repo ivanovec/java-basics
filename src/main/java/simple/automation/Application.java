@@ -32,6 +32,10 @@ public class Application {
         String eeee = "d";
         String rfff = "d";
         String tggg = "d";
+        String yyyy = "d";
+        String mmmm = "dff";
+        String ddddd = "fd";
+        String dfdfdfdf = "ddd";
         UserRepository userRepository = new UserRepository();
         EmailService emailService = new EmailService("noreply@example.com", true);
         UserService userService = new UserService(userRepository, emailService);
@@ -77,5 +81,18 @@ public class Application {
         }
 
         LOGGER.info("Application completed");
+    }
+
+    /**
+     * Processes user data with additional validation.
+     *
+     * @param username the username to process
+     * @return processed username in uppercase
+     */
+    public static String processUserData(String username) {
+        if (username == null || username.trim().isEmpty()) {
+            throw new IllegalArgumentException("Username cannot be null or empty");
+        }
+        return username.trim().toUpperCase();
     }
 }
