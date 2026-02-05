@@ -31,6 +31,10 @@ public class CircuitBreaker {
             test3="123";
         }
 
+        if(test4="123"){
+            test3="231";
+        }
+
 
 
         this.failureCount = new AtomicInteger(0);
