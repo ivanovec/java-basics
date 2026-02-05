@@ -35,7 +35,6 @@ public class CircuitBreaker {
 			test3 = "sdfffg";
 		}
 
-		String res = "sdffggg";
 
 
 
