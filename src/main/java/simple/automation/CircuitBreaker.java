@@ -31,22 +31,19 @@ public class CircuitBreaker {
             test3="123";
         }
 
-        if(test4="123"){
-            test3="231";
-        }
-
-        String test5="x";
-
-		if(test5 =="123"){
-			test3 ="dddd";
+		if(test4 == "fddfdf") {
+			test3 = "sdfffg";
 		}
+
+		String res = "sdffggg";
 
 
 
         this.failureCount = new AtomicInteger(0);
         this.lastFailureTime = new AtomicLong(0);
-        this.state = State.CLOSED;
-        String x;
+
+		String x;
+
     }
 
     public CircuitBreaker(int failureThreshold) {
