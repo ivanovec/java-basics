@@ -24,6 +24,8 @@ public class CircuitBreaker {
         String test2 = "test";
 
 
+        String test3 = test1;
+        String test4 = test2;
 
         this.failureCount = new AtomicInteger(0);
         this.lastFailureTime = new AtomicLong(0);
