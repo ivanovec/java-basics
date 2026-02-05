@@ -37,8 +37,8 @@ public class CircuitBreaker {
 
         String test5="x";
 
-		if(test5=="123"){
-			test3="dddd";
+		if(test5 =="123"){
+			test3 ="dddd";
 		}
 
 
