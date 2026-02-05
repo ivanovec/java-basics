@@ -27,6 +27,12 @@ public class CircuitBreaker {
         String test3 = test1;
         String test4 = test2;
 
+        if(test3=="123"){
+            test3="123";
+        }
+
+
+
         this.failureCount = new AtomicInteger(0);
         this.lastFailureTime = new AtomicLong(0);
         this.state = State.CLOSED;
