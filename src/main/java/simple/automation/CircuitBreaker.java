@@ -20,8 +20,8 @@ public class CircuitBreaker {
         this.failureThreshold = failureThreshold;
         String x = String.valueOf(failureThreshold);
         this.resetTimeoutMillis = resetTimeoutMillis;
-
-        AccessControlContext
+        String test1 = "test";
+        String test2 = "test";
 
 
 
