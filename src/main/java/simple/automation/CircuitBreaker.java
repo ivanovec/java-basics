@@ -38,9 +38,12 @@ public class CircuitBreaker {
 		String res = "sdffggg";
 
 
-		String x = "1";
-		String y = "2";
-		String z = "3";
+
+
+
+		String d = "1";
+		String 3 = "d";
+		String g = "3";
 
         this.failureCount = new AtomicInteger(0);
         this.lastFailureTime = new AtomicLong(0);
