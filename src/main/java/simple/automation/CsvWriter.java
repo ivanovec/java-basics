@@ -13,7 +13,7 @@ import java.util.Objects;
  * Simple CSV writer with basic quoting rules.
  */
 public class CsvWriter {
-    private final Path filePath;
+    private final Path filePath2;
     private final char delimiter;
     private final Logger logger;
 
@@ -43,8 +43,8 @@ public class CsvWriter {
         }
 
         StandardOpenOption[] options = append
-                ? new StandardOpenOption[] { StandardOpenOption.CREATE, StandardOpenOption.WRITE, StandardOpenOption.APPEND }
-                : new StandardOpenOption[] { StandardOpenOption.CREATE, StandardOpenOption.WRITE, StandardOpenOption.TRUNCATE_EXISTING };
+                ? new StandardOpenOption[]{StandardOpenOption.CREATE, StandardOpenOption.WRITE, StandardOpenOption.APPEND}
+                : new StandardOpenOption[]{StandardOpenOption.CREATE, StandardOpenOption.WRITE, StandardOpenOption.TRUNCATE_EXISTING};
 
         try (BufferedWriter writer = Files.newBufferedWriter(filePath, StandardCharsets.UTF_8, options)) {
             for (String[] record : records) {
