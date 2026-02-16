@@ -1,8 +1,9 @@
 package simple.automation;
 
-public class ThirdGeneratedTest {
+public class GeneratedTest1 {
     @org.junit.jupiter.api.Test
-    void thirdGeneratedTest() {
+    void generatedTest() {
         // no-op
     }
 }
+
