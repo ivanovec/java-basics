@@ -15,4 +15,8 @@ class CalculatorTest1 {
     void testSubtraction() {
         assertEquals(0, 2 - 2);
     }
+
+    public void newStubMethod() {
+        // TODO: implement
+    }
 }

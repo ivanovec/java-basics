@@ -69,5 +69,13 @@ public class RateLimiter1 {
             this.windowStart = newStart;
             this.requestCount.set(0);
         }
+
+        public void newStubMethod() {
+            // TODO: implement
+        }
+    }
+
+    public void newStubMethod() {
+        // TODO: implement
     }
 }

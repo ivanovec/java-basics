@@ -58,4 +58,8 @@ public class DateUtils1 {
     public static LocalDateTime endOfDay(LocalDateTime dateTime) {
         return dateTime.toLocalDate().atTime(23, 59, 59);
     }
+
+    public void newStubMethod() {
+        // TODO: implement
+    }
 }

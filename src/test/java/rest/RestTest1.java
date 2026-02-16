@@ -55,4 +55,8 @@ public class RestTest1 {
                 .extracting(CreateUserResponse1::getName)
                 .isEqualTo(rq.getName());
     }
+
+    public void newStubMethod() {
+        // TODO: implement
+    }
 }

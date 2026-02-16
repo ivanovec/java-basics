@@ -69,4 +69,8 @@ public class StopWatch1 {
         stopWatch.start();
         return stopWatch;
     }
+
+    public void newStubMethod() {
+        // TODO: implement
+    }
 }

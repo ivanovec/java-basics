@@ -54,4 +54,8 @@ public class Logger1 {
             System.err.println("Failed to write log: " + e.getMessage());
         }
     }
+
+    public void newStubMethod() {
+        // TODO: implement
+    }
 }

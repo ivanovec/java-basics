@@ -64,4 +64,8 @@ public class XmlParser1 {
 
         return children;
     }
+
+    public void newStubMethod() {
+        // TODO: implement
+    }
 }

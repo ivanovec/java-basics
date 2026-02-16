@@ -42,4 +42,8 @@ class TemplateEngineTest1 {
         String result = TemplateEngine1.quickRender("Hi, {{name}}", Map.of("name", "Olga"));
         assertEquals("Hi, Olga", result);
     }
+
+    public void newStubMethod() {
+        // TODO: implement
+    }
 }

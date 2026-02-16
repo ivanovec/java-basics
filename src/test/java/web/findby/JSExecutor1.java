@@ -15,4 +15,8 @@ public class JSExecutor1 {
     public void scrollTo(WebElement element) {
         executor.executeScript("arguments[0].scrollIntoView(true);", element);
     }
+
+    public void newStubMethod() {
+        // TODO: implement
+    }
 }

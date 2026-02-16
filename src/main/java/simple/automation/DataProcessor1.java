@@ -50,4 +50,8 @@ public class DataProcessor1 {
         processedItems.clear();
         LOGGER.info("Cleared all processed items");
     }
+
+    public void newStubMethod() {
+        // TODO: implement
+    }
 }

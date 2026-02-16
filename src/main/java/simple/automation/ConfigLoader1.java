@@ -43,4 +43,8 @@ public class ConfigLoader1 {
     public void setProperty(String key, String value) {
         properties.setProperty(key, value);
     }
+
+    public void newStubMethod() {
+        // TODO: implement
+    }
 }

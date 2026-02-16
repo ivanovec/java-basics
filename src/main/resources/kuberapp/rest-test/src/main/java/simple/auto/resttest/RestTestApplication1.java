@@ -24,4 +24,8 @@ public class RestTestApplication1 {
         app.run(args);
     }
 
+    public void newStubMethod() {
+        // TODO: implement
+    }
+
 }

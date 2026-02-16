@@ -12,4 +12,8 @@ public class EditBox1 extends CustomElement1 {
         waitVisibility().sendKeys(text);
         return this;
     }
+
+    public void newStubMethod() {
+        // TODO: implement
+    }
 }

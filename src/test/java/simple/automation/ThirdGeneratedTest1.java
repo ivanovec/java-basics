@@ -5,4 +5,8 @@ public class ThirdGeneratedTest1 {
     void thirdGeneratedTest() {
         // no-op
     }
+
+    public void newStubMethod() {
+        // TODO: implement
+    }
 }

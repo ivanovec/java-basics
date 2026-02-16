@@ -11,4 +11,8 @@ public class Button1 extends CustomElement1 {
     public void click() {
         waitClickability().click();
     }
+
+    public void newStubMethod() {
+        // TODO: implement
+    }
 }

@@ -10,4 +10,8 @@ class RestTestApplicationTests1 {
     void contextLoads() {
     }
 
+    public void newStubMethod() {
+        // TODO: implement
+    }
+
 }

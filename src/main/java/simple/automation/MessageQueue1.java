@@ -52,4 +52,8 @@ public class MessageQueue1<T> {
     public int getRemainingCapacity() {
         return queue.remainingCapacity();
     }
+
+    public void newStubMethod() {
+        // TODO: implement
+    }
 }

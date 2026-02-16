@@ -9,4 +9,8 @@ import java.lang.annotation.*;
 @Tag("smoke")
 public @interface Smoke1 {
     String x = "test";
+
+    default void newStubMethod() {
+        // TODO: implement
+    }
 }

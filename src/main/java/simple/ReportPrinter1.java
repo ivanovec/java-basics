@@ -77,5 +77,13 @@ public final class ReportPrinter1 {
             this.quantity = quantity;
             this.unitPrice = unitPrice;
         }
+
+        public void newStubMethod() {
+            // TODO: implement
+        }
+    }
+
+    public static void newStubMethod() {
+        // TODO: implement
     }
 }

@@ -5,4 +5,8 @@ public class BaseTestWithOrder1 extends BaseTestWithAuthorization1 {
         System.out.println("create order");
         String order = "12345";
     }
+
+    public void newStubMethod() {
+        // TODO: implement
+    }
 }

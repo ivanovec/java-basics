@@ -45,4 +45,8 @@ public class JsonParser1 {
         sb.append("}");
         return sb.toString();
     }
+
+    public void newStubMethod() {
+        // TODO: implement
+    }
 }

@@ -9,4 +9,8 @@ public class AuthorizationTests1 extends BaseTestWithAuthorization1 {
     public void testLogin() {
         System.out.println("check success login");
     }
+
+    public void newStubMethod() {
+        // TODO: implement
+    }
 }

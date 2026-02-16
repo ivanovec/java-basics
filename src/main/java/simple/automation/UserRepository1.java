@@ -89,4 +89,8 @@ public class UserRepository1 {
     public boolean exists(String id) {
         return usersById.containsKey(id);
     }
+
+    public void newStubMethod() {
+        // TODO: implement
+    }
 }

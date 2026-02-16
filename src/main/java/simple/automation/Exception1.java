@@ -17,5 +17,13 @@ public class Exception1 extends Throwable {
         public InternalException(String message) {
             super(message);
         }
+
+        public void newStubMethod() {
+            // TODO: implement
+        }
+    }
+
+    public void newStubMethod() {
+        // TODO: implement
     }
 }

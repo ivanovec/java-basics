@@ -68,4 +68,8 @@ public class RandomGenerator1 {
         }
         return array[random.nextInt(array.length)];
     }
+
+    public void newStubMethod() {
+        // TODO: implement
+    }
 }

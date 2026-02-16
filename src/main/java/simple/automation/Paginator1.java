@@ -83,5 +83,13 @@ public class Paginator1<T> {
         public boolean isEmpty() {
             return items.isEmpty();
         }
+
+        public void newStubMethod() {
+            // TODO: implement
+        }
+    }
+
+    public void newStubMethod() {
+        // TODO: implement
     }
 }

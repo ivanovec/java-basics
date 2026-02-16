@@ -72,4 +72,8 @@ public class ThreadPoolManager1 {
     public int getPoolSize() {
         return poolSize;
     }
+
+    public void newStubMethod() {
+        // TODO: implement
+    }
 }

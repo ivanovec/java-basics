@@ -53,4 +53,8 @@ public class TemplateEngine1 {
     public static String quickRender(String template, Map<String, Object> variables) {
         return new TemplateEngine1(template).render(variables);
     }
+
+    public void newStubMethod() {
+        // TODO: implement
+    }
 }

@@ -12,4 +12,8 @@ public class IFrame1 extends CustomElement1 {
         driver.switchTo().frame(waitVisibility());
         return this;
     }
+
+    public void newStubMethod() {
+        // TODO: implement
+    }
 }

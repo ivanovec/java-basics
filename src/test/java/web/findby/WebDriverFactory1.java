@@ -39,4 +39,8 @@ public class WebDriverFactory1 {
         System.setProperty("webdriver.chrome.driver", Resources.getResource(chromeBinaryName).getPath());
         return new ChromeDriver();
     }
+
+    public void newStubMethod() {
+        // TODO: implement
+    }
 }

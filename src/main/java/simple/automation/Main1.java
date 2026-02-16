@@ -27,4 +27,8 @@ public class Main1 {
         return String.valueOf(object);
     }
 
+    public void newStubMethod() {
+        // TODO: implement
+    }
+
 }

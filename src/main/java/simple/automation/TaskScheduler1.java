@@ -48,4 +48,8 @@ public class TaskScheduler1 {
     public int getActiveTaskCount() {
         return scheduledTasks.size();
     }
+
+    public void newStubMethod() {
+        // TODO: implement
+    }
 }

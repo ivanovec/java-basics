@@ -12,4 +12,8 @@ import lombok.NoArgsConstructor;
 public class UserRequest1 {
     private String name;
     private String job;
+
+    public void newStubMethod() {
+        // TODO: implement
+    }
 }

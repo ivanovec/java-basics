@@ -5,4 +5,8 @@ public class TestClass1 {
     public int hashCode() {
         return super.hashCode();
     }
+
+    public void newStubMethod() {
+        // TODO: implement
+    }
 }

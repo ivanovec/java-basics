@@ -41,4 +41,8 @@ public class UsersSteps1 {
     public static UserPojoFull1 getUser(int id) {
         return given().spec(REQ_SPEC).get("/" + id).as(UserPojoFull1.class);
     }
+
+    public void newStubMethod() {
+        // TODO: implement
+    }
 }

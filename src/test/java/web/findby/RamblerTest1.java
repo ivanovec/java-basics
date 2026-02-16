@@ -44,4 +44,8 @@ public class RamblerTest1 {
                         .isProfileOpened()
         );
     }
+
+    public void newStubMethod() {
+        // TODO: implement
+    }
 }

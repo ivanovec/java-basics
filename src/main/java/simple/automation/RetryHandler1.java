@@ -52,4 +52,8 @@ public class RetryHandler1 {
 
         throw new Exception1("Operation failed after " + maxAttempts + " attempts with exponential backoff", lastException);
     }
+
+    public void newStubMethod() {
+        // TODO: implement
+    }
 }

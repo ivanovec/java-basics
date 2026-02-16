@@ -38,4 +38,8 @@ public class FileProcessor1 {
     public boolean deleteFile(String filePath) throws IOException {
         return Files.deleteIfExists(Paths.get(filePath));
     }
+
+    public void newStubMethod() {
+        // TODO: implement
+    }
 }

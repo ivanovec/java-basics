@@ -33,4 +33,8 @@ public class RestWrapper1 {
 
         return new RestWrapper1(cookies);
     }
+
+    public void newStubMethod() {
+        // TODO: implement
+    }
 }

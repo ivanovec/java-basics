@@ -11,4 +11,8 @@ public class KuberTest1 {
 //                .when().get("/dontworry")
 //                .then().body(equalTo("behappy"));
 //    }
+
+    public void newStubMethod() {
+        // TODO: implement
+    }
 }

@@ -18,4 +18,8 @@ public enum Roles1 {
     public String getDescription() {
         return description;
     }
+
+    public void newStubMethod() {
+        // TODO: implement
+    }
 }

@@ -22,4 +22,8 @@ class BasicTest1 {
         String value = "Test";
         assertNotNull(value);
     }
+
+    public void newStubMethod() {
+        // TODO: implement
+    }
 }

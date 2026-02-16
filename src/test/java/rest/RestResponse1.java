@@ -22,4 +22,8 @@ public class RestResponse1<T> {
     public T extract() {
         return extractor.apply(response);
     }
+
+    public void newStubMethod() {
+        // TODO: implement
+    }
 }

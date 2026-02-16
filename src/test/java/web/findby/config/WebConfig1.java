@@ -7,4 +7,8 @@ import web.findby.WebDriverFactory1;
 public class WebConfig1 {
     private String baseUrl;
     private WebDriverFactory1.Browser browser;
+
+    public void newStubMethod() {
+        // TODO: implement
+    }
 }

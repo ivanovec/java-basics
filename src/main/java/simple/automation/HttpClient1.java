@@ -51,4 +51,8 @@ public class HttpClient1 {
     public void setTimeout(int timeout) {
         this.timeout = timeout;
     }
+
+    public void newStubMethod() {
+        // TODO: implement
+    }
 }

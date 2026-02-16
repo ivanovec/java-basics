@@ -58,4 +58,8 @@ public class WebDriverLogger1 {
             getLifecycle().stopStep(uuid);
         }
     }
+
+    public void newStubMethod() {
+        // TODO: implement
+    }
 }

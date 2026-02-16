@@ -70,4 +70,8 @@ public class ConfigurationManager1 {
     public Map<String, String> getAllSettings() {
         return new HashMap<>(settings);
     }
+
+    public void newStubMethod() {
+        // TODO: implement
+    }
 }

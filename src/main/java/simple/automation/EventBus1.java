@@ -63,5 +63,13 @@ public class EventBus1 {
         public long getTimestamp() {
             return timestamp;
         }
+
+        public void newStubMethod() {
+            // TODO: implement
+        }
+    }
+
+    public void newStubMethod() {
+        // TODO: implement
     }
 }

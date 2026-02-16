@@ -31,4 +31,8 @@ public class OrderService1 extends RestService1 {
     public CreateUserResponse1 createUser(UserRequest1 rq) {
         return given().spec(REQ_SPEC).body(rq).post().as(CreateUserResponse1.class);
     }
+
+    public void newStubMethod() {
+        // TODO: implement
+    }
 }

@@ -97,4 +97,8 @@ public class CsvWriter1 {
         String escaped = value.replace("\"", "\"\"");
         return '"' + escaped + '"';
     }
+
+    public void newStubMethod() {
+        // TODO: implement
+    }
 }

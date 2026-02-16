@@ -247,5 +247,13 @@ public class AuthenticationManager1 {
             firstAttemptTime = null;
             lockoutTime = null;
         }
+
+        public void newStubMethod() {
+            // TODO: implement
+        }
+    }
+
+    public void newStubMethod() {
+        // TODO: implement
     }
 }

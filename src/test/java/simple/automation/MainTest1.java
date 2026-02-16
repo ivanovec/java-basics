@@ -15,4 +15,8 @@ class MainTest1 {
         assertEquals("test", main.objectToString("test"));
         assertEquals("null", main.objectToString(null));
     }
+
+    public void newStubMethod() {
+        // TODO: implement
+    }
 }

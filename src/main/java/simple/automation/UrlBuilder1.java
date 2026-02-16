@@ -75,4 +75,8 @@ public class UrlBuilder1 {
     public static UrlBuilder1 from(String baseUrl) {
         return new UrlBuilder1(baseUrl);
     }
+
+    public void newStubMethod() {
+        // TODO: implement
+    }
 }

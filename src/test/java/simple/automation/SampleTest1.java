@@ -10,4 +10,8 @@ class SampleTest1 {
     void alwaysPasses() {
         assertTrue(true);
     }
+
+    public void newStubMethod() {
+        // TODO: implement
+    }
 }

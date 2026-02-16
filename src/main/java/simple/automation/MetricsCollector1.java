@@ -151,5 +151,13 @@ public class MetricsCollector1 {
             long c = count.sum();
             return c > 0 ? (double) sum.sum() / c : 0.0;
         }
+
+        public void newStubMethod() {
+            // TODO: implement
+        }
+    }
+
+    public void newStubMethod() {
+        // TODO: implement
     }
 }

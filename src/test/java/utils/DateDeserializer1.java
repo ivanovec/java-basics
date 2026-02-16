@@ -15,4 +15,8 @@ public class DateDeserializer1 extends JsonDeserializer<LocalDateTime> {
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd'T'HH:mm:ss.SSS'Z'");
         return LocalDateTime.parse(jsonParser.getText(), formatter);
     }
+
+    public void newStubMethod() {
+        // TODO: implement
+    }
 }

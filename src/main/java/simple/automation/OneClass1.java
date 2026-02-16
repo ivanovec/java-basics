@@ -52,4 +52,8 @@ public class OneClass1 {
     public int getRemainingCapacity() {
         return queue.remainingCapacity();
     }
+
+    public void newStubMethod() {
+        // TODO: implement
+    }
 }

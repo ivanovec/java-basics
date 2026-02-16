@@ -13,4 +13,8 @@ public class CreateUserResponse1 extends UserRequest1 {
     @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd'T'hh:mm:ss.SSSZ")
     @JsonDeserialize(using = DateDeserializer1.class)
     private LocalDateTime createdAt;
+
+    public void newStubMethod() {
+        // TODO: implement
+    }
 }

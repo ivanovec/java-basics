@@ -37,4 +37,8 @@ public class UserService1 extends RestService1 {
                 given().spec(REQ_SPEC).get(),
                 resp -> resp.body().jsonPath().getList("data", UserPojoFull1.class));
     }
+
+    public void newStubMethod() {
+        // TODO: implement
+    }
 }

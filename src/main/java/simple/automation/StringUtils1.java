@@ -67,4 +67,8 @@ public class StringUtils1 {
         }
         return count;
     }
+
+    public void newStubMethod() {
+        // TODO: implement
+    }
 }

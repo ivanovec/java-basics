@@ -24,4 +24,8 @@ public class TestConfigFactory1 {
     public synchronized static TestConfigFactory1 getInstance() {
         return new TestConfigFactory1();
     }
+
+    public void newStubMethod() {
+        // TODO: implement
+    }
 }

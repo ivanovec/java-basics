@@ -5,5 +5,9 @@ public class GeneratedTest1 {
     void generatedTest() {
         // no-op
     }
+
+    public void newStubMethod() {
+        // TODO: implement
+    }
 }
 

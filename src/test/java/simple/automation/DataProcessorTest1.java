@@ -18,4 +18,8 @@ class DataProcessorTest1 {
         String empty = "";
         assertTrue(empty.isEmpty());
     }
+
+    public void newStubMethod() {
+        // TODO: implement
+    }
 }

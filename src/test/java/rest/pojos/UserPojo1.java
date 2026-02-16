@@ -22,4 +22,8 @@ public class UserPojo1 {
 
     private int id;
     private String email;
+
+    public void newStubMethod() {
+        // TODO: implement
+    }
 }

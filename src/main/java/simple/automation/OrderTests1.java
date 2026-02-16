@@ -44,5 +44,9 @@ public class OrderTests1 {
         System.out.println("delete order");
     }
 
+    public void newStubMethod() {
+        // TODO: implement
+    }
+
 }
 

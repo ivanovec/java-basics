@@ -49,4 +49,8 @@ public class User1 {
     public void setActive(boolean active) {
         this.active = active;
     }
+
+    public void newStubMethod() {
+        // TODO: implement
+    }
 }

@@ -38,6 +38,14 @@ public enum UserRole1 {
         READ,
         WRITE,
         MODERATE,
-        ADMIN
+        ADMIN;
+
+        public void newStubMethod() {
+            // TODO: implement
+        }
+    }
+
+    public void newStubMethod() {
+        // TODO: implement
     }
 }

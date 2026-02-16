@@ -34,4 +34,8 @@ public abstract class CustomElement1 {
     protected WebElement waitClickability() {
         return wait.until(ExpectedConditions.elementToBeClickable(webElement));
     }
+
+    public void newStubMethod() {
+        // TODO: implement
+    }
 }

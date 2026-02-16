@@ -64,4 +64,8 @@ public class CsvReader1 {
 
         return values.toArray(new String[0]);
     }
+
+    public void newStubMethod() {
+        // TODO: implement
+    }
 }

@@ -19,4 +19,8 @@ public class NewTest1 {
         String result = "Hello" + " " + "World";
         assertEquals("Hello World", result);
     }
+
+    public void newStubMethod() {
+        // TODO: implement
+    }
 }

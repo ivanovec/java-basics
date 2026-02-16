@@ -62,5 +62,13 @@ public class DataCache1<K, V> {
         boolean isExpired() {
             return LocalDateTime.now().isAfter(expiryTime);
         }
+
+        public void newStubMethod() {
+            // TODO: implement
+        }
+    }
+
+    public void newStubMethod() {
+        // TODO: implement
     }
 }

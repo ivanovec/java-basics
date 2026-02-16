@@ -120,4 +120,8 @@ public class UserService1 {
         // Simplified - in production use BCrypt
         return String.valueOf(password.hashCode());
     }
+
+    public void newStubMethod() {
+        // TODO: implement
+    }
 }

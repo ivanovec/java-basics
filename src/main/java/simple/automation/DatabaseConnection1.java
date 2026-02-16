@@ -26,4 +26,8 @@ public class DatabaseConnection1 {
     public Connection getConnection() {
         return connection;
     }
+
+    public void newStubMethod() {
+        // TODO: implement
+    }
 }

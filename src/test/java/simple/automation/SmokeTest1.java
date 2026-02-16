@@ -9,4 +9,8 @@ class SmokeTest1 {
     void basicMath() {
         assertThat(2 + 2).isEqualTo(4);
     }
+
+    public void newStubMethod() {
+        // TODO: implement
+    }
 }

@@ -65,4 +65,8 @@ class EmailValidatorTest1 {
         assertTrue(result.isValid());
         assertEquals("Valid email", result.getMessage());
     }
+
+    public void newStubMethod() {
+        // TODO: implement
+    }
 }

@@ -104,4 +104,8 @@ public class EmailService1 {
                 fromAddress, to, subject, body
         ));
     }
+
+    public void newStubMethod() {
+        // TODO: implement
+    }
 }

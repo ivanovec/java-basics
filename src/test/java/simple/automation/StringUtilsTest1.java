@@ -57,4 +57,8 @@ class StringUtilsTest1 {
         assertEquals(0, StringUtils1.countOccurrences("ababab", "aba"));
         assertEquals(0, StringUtils1.countOccurrences(null, "a"));
     }
+
+    public void newStubMethod() {
+        // TODO: implement
+    }
 }

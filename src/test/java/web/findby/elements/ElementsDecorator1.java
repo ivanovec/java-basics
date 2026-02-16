@@ -40,4 +40,8 @@ public class ElementsDecorator1 extends DefaultFieldDecorator {
             throw new AssertionError("Webelement can't be represented as " + clazz);
         }
     }
+
+    public void newStubMethod() {
+        // TODO: implement
+    }
 }

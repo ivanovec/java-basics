@@ -51,4 +51,8 @@ public class HashGenerator1 {
             return false;
         }
     }
+
+    public void newStubMethod() {
+        // TODO: implement
+    }
 }

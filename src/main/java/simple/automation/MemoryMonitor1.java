@@ -82,5 +82,13 @@ public class MemoryMonitor1 {
         public double getUsagePercent() {
             return (usedMemory * 100.0) / totalMemory;
         }
+
+        public void newStubMethod() {
+            // TODO: implement
+        }
+    }
+
+    public void newStubMethod() {
+        // TODO: implement
     }
 }

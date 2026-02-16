@@ -24,4 +24,8 @@ public abstract class RestService1 {
                 .setContentType(ContentType.JSON)
                 .build();
     }
+
+    public void newStubMethod() {
+        // TODO: implement
+    }
 }

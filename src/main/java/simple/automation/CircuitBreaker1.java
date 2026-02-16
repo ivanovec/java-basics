@@ -116,5 +116,13 @@ public class CircuitBreaker1 {
         public CircuitBreakerOpenException(String message) {
             super(message);
         }
+
+        public void newStubMethod() {
+            // TODO: implement
+        }
+    }
+
+    public void newStubMethod() {
+        // TODO: implement
     }
 }

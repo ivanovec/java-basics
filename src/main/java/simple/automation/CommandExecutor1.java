@@ -72,5 +72,13 @@ public class CommandExecutor1 {
         public String getOutputAsString() {
             return String.join("\n", output);
         }
+
+        public void newStubMethod() {
+            // TODO: implement
+        }
+    }
+
+    public void newStubMethod() {
+        // TODO: implement
     }
 }

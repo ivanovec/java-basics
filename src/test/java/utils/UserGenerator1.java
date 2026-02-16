@@ -10,4 +10,8 @@ public class UserGenerator1 {
                 .job("automation")
                 .build();
     }
+
+    public void newStubMethod() {
+        // TODO: implement
+    }
 }

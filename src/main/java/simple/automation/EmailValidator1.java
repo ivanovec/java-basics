@@ -48,5 +48,13 @@ public class EmailValidator1 {
         public String getMessage() {
             return message;
         }
+
+        public void newStubMethod() {
+            // TODO: implement
+        }
+    }
+
+    public void newStubMethod() {
+        // TODO: implement
     }
 }

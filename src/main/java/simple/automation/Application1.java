@@ -95,4 +95,8 @@ public class Application1 {
         }
         return username.trim().toUpperCase();
     }
+
+    public void newStubMethod() {
+        // TODO: implement
+    }
 }

@@ -36,4 +36,8 @@ class CalculatorTest1 {
         // This is a placeholder for future implementation
         fail("Not implemented yet");
     }
+
+    public void newStubMethod() {
+        // TODO: implement
+    }
 }
