@@ -7,6 +7,7 @@ public class Main {
     public static void main(String[] args) {
 
         while (true) {};
+                String stupid = "simpleautomation";
 
                 String test = "123";
         List<String> strings = Arrays.asList("два", "один", "три");
