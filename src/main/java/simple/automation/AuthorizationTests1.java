@@ -13,4 +13,8 @@ public class AuthorizationTests1 extends BaseTestWithAuthorization1 {
     public void newStubMethod() {
         // TODO: implement
     }
+
+    public void anotherStubMethod() {
+        // TODO: implement
+    }
 }
