@@ -25,6 +25,14 @@ public class Person {
         this.age = age;
     }
 
+    public static Person stub() {
+        throw new UnsupportedOperationException("Not implemented");
+    }
+
+    public static Person stub2() {
+        throw new UnsupportedOperationException("Not implemented");
+    }
+
     @Override
     public String toString() {
         return "Person{name='" + name + "', age=" + age + "}";
