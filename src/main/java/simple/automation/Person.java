@@ -3,6 +3,7 @@ package simple.automation;
 public class Person {
     private String name;
     private int age;
+    private String job;
 
     public Person(String name, int age) {
         this.name = name;
@@ -23,6 +24,11 @@ public class Person {
 
     public void setAge(int age) {
         this.age = age;
+    }
+
+    public void doSomething() {
+        // TODO: implement this method
+        throw new UnsupportedOperationException("Not implemented yet2");
     }
 
     @Override
