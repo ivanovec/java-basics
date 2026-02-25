@@ -39,7 +39,7 @@ jobs:
         uses: JetBrains/qodana-action@v2025.3
         with:
           use-nightly: true
-          args: --image,registry.jetbrains.team/p/sa/containers/qodana-jvm:2025.3-nightly,-v,$SSH_AUTH_SOCK:/tmp/ssh_agent.sock
+          args: --image,registry.jetbrains.team/p/sa/containers/qodana-jvm:2025.3-nightly,-v,/private/tmp/com.apple.launchd.IvhaOanPZV/Listeners:/tmp/ssh_agent.sock
           upload-result: true
           pr-mode: 'true'
         #        with:
