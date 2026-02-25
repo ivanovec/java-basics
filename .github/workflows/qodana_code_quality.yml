@@ -27,10 +27,10 @@ jobs:
           ref: ${{ github.event.pull_request.head.sha }}  # to check out the actual pull request commit, not the merge commit
           fetch-depth: 0  # a full history is required for pull request analysis
 
-#      - name: Setup SSH Agent
-#        uses: webfactory/ssh-agent@v0.9.0
-#        with:
-#            ssh-private-key: ${{ secrets.SUBMODULE_SSH_KEY }}
+      - name: Setup SSH Agent
+        uses: webfactory/ssh-agent@v0.9.0
+        with:
+            ssh-private-key: ${{ secrets.SUBMODULE_SSH_KEY }}
 
       - name: Setup Gradle
         uses: gradle/actions/setup-gradle@v4
@@ -39,7 +39,7 @@ jobs:
         uses: JetBrains/qodana-action@v2025.3
         with:
           use-nightly: true
-          args: --image,registry.jetbrains.team/p/sa/containers/qodana-jvm:2025.3-nightly
+          args: --image,registry.jetbrains.team/p/sa/containers/qodana-jvm:2025.3-nightly,-v,${{SSH_AUTH_SOCK}}:/tmp/ssh_agent.sock
           upload-result: true
           pr-mode: 'true'
         #        with:
@@ -47,5 +47,4 @@ jobs:
 #          use-caches: ${{ (github.ref_name == github.event.repository.default_branch) && 'true' || 'false' }}
         env:
           QODANA_TOKEN:  ${{ secrets.QODANA_TOKEN }}
-          QODANA_SSH_PRIVATE_KEY: ${{ secrets.SUBMODULE_SSH_KEY }}
-
+          SSH_AUTH_SOCK: /tmp/ssh_agent.sock
