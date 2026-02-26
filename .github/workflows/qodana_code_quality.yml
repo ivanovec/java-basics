@@ -22,6 +22,10 @@ jobs:
           ref: ${{ github.event.pull_request.head.sha }}
           fetch-depth: 0
 
+      - name: script
+        run: |
+            git checkout 4a9adc416cad8ae94032c645830bead6149d279c
+            git submodule update --init --recursive --force
       - name: Setup Gradle
         uses: gradle/actions/setup-gradle@v4
 
