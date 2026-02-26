@@ -49,5 +49,4 @@ jobs:
 #          use-caches: ${{ (github.ref_name == github.event.repository.default_branch) && 'true' || 'false' }}
         env:
           QODANA_TOKEN:  ${{ secrets.QODANA_TOKEN }}
-          SSH_AUTH_SOCK: ${{ SSH_AUTH_SOCK }}
           GIT_SSH_COMMAND: "ssh -o StrictHostKeyChecking=no"
