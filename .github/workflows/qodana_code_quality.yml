@@ -45,4 +45,3 @@ jobs:
           pr-mode: 'true'
         env:
           QODANA_TOKEN: ${{ secrets.QODANA_TOKEN }}
-          GIT_SSH_COMMAND: ssh -i /root/.ssh/id_rsa -o StrictHostKeyChecking=no
