@@ -22,15 +22,15 @@ jobs:
           ref: ${{ github.event.pull_request.head.sha }}
           fetch-depth: 0
 
-      - name: Setup SSH Agent
-        uses: webfactory/ssh-agent@v0.9.0
-        with:
-            ssh-private-key: ${{ secrets.SUBMODULE_SSH_KEY }}
-#      - name: Prepare SSH key
-#        run: |
-#          mkdir -p .ssh
-#          echo "${{ secrets.SUBMODULE_SSH_KEY}}" > .ssh/id_rsa
-#          chmod 600 .ssh/id_rsa
+#      - name: Setup SSH Agent
+#        uses: webfactory/ssh-agent@v0.9.0
+#        with:
+#            ssh-private-key: ${{ secrets.SUBMODULE_SSH_KEY }}
+      - name: Prepare SSH key
+        run: |
+          mkdir -p .ssh
+          echo "${{ secrets.SUBMODULE_SSH_KEY}}" > .ssh/id_rsa
+          chmod 600 .ssh/id_rsa
 
       # Run Qodana using Docker Desktop's built-in macOS SSH bridge
       - name: 'Qodana Scan'
@@ -40,10 +40,9 @@ jobs:
           # Bind mount the special macOS Docker Desktop SSH bridge
           args: |
             --image,registry.jetbrains.team/p/sa/containers/qodana-jvm:2025.3-nightly,
-            -v,${{ env.SSH_AUTH_SOCK }}:/tmp/ssh_agent.sock,
-            -e,SSH_AUTH_SOCK=/tmp/ssh_agent.sock,
-            -e,GIT_SSH_COMMAND=ssh -o StrictHostKeyChecking=no
+            -v,${{ github.workspace }}/.ssh:/root/.ssh
           upload-result: true
           pr-mode: 'true'
         env:
           QODANA_TOKEN: ${{ secrets.QODANA_TOKEN }}
+          GIT_SSH_COMMAND: ssh -i /root/.ssh/id_rsa -o StrictHostKeyChecking=no
