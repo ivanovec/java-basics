@@ -30,10 +30,10 @@ jobs:
           # Bind mount the special macOS Docker Desktop SSH bridge
           args: |
             --image,registry.jetbrains.team/p/sa/containers/qodana-jvm:2025.3-nightly,
-            -e,SSH_AUTH_SOCK=/tmp/ssh_agent.sock,
             -e,GIT_SSH_COMMAND=ssh -o StrictHostKeyChecking=no,
             -v,${{ env.SSH_AUTH_SOCK }}:/tmp/ssh_agent.sock
           upload-result: true
           pr-mode: 'true'
         env:
           QODANA_TOKEN: ${{ secrets.QODANA_TOKEN }}
+          SSH_AUTH_SOCK: /tmp/ssh_agent.sock
