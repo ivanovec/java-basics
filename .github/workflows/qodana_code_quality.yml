@@ -4,15 +4,11 @@ on:
   workflow_dispatch:
   pull_request:
   push:
-    branches:
-      - develop
-      - master
-      - qodana
-      - default
+    branches: [develop, master, qodana, default, qodana-2]
 
 jobs:
   qodana:
-    runs-on: ubuntu-latest
+    runs-on: self-hosted # Targets your macOS runner
     permissions:
       contents: write
       pull-requests: write
@@ -23,19 +19,29 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          ref: ${{ github.event.pull_request.head.sha }}  # to check out the actual pull request commit, not the merge commit
-          fetch-depth: 0  # a full history is required for pull request analysis
+          ref: ${{ github.event.pull_request.head.sha }}
+          fetch-depth: 0
 
-      - name: Setup Gradle
-        uses: gradle/actions/setup-gradle@v4
+#      - name: Setup SSH Agent
+#        uses: webfactory/ssh-agent@v0.9.0
+#        with:
+#            ssh-private-key: ${{ secrets.SUBMODULE_SSH_KEY }}
+      - name: Prepare SSH key
+        run: |
+          mkdir -p .ssh
+          echo "${{ secrets.SUBMODULE_SSH_KEY}}" > .ssh/id_rsa
+          chmod 600 .ssh/id_rsa
 
+      # Run Qodana using Docker Desktop's built-in macOS SSH bridge
       - name: 'Qodana Scan'
         uses: JetBrains/qodana-action@v2025.3
         with:
+          use-nightly: true
+          # Bind mount the special macOS Docker Desktop SSH bridge
+          args: |
+            --image,registry.jetbrains.team/p/sa/containers/qodana-jvm:2025.3-nightly,
+            -v,${{ github.workspace }}/.ssh:/root/.ssh
           upload-result: true
           pr-mode: 'true'
-        #        with:
-#          primary-cache-key: qodana-2024.3-${{ github.event.repository.default_branch }}
-#          use-caches: ${{ (github.ref_name == github.event.repository.default_branch) && 'true' || 'false' }}
         env:
-          QODANA_TOKEN:  ${{ secrets.QODANA_TOKEN }}
+          QODANA_TOKEN: ${{ secrets.QODANA_TOKEN }}
