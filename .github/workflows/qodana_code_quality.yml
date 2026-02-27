@@ -22,13 +22,6 @@ jobs:
           ref: ${{ github.event.pull_request.head.sha }}
           fetch-depth: 0
 
-      - name: script
-        run: |
-            git checkout 4a9adc416cad8ae94032c645830bead6149d279c
-            git submodule update --init --recursive --force
-      - name: Setup Gradle
-        uses: gradle/actions/setup-gradle@v4
-
       # Run Qodana using Docker Desktop's built-in macOS SSH bridge
       - name: 'Qodana Scan'
         uses: JetBrains/qodana-action@v2025.3
@@ -37,9 +30,9 @@ jobs:
           # Bind mount the special macOS Docker Desktop SSH bridge
           args: |
             --image,registry.jetbrains.team/p/sa/containers/qodana-jvm:2025.3-nightly,
-            -v,/run/host-services/ssh-auth.sock:/run/host-services/ssh-auth.sock,
-            -e,SSH_AUTH_SOCK="/run/host-services/ssh-auth.sock",
-            -e,GIT_SSH_COMMAND="ssh -o StrictHostKeyChecking=no"
+            -v,${{ env.SSH_AUTH_SOCK }}:/tmp/ssh_agent.sock,
+            -e,SSH_AUTH_SOCK=/tmp/ssh_agent.sock,
+            -e,GIT_SSH_COMMAND=ssh -o StrictHostKeyChecking=no
           upload-result: true
           pr-mode: 'true'
         env:
