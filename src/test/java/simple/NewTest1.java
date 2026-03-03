@@ -25,4 +25,8 @@ public class NewTest1 {
     public void newStubMethod() {
         // TODO: implement
     }
+
+    public void anotherStubMethod() {
+        String x = "1";
+    }
 }
