@@ -11,6 +11,8 @@ public class NewTest1 {
         // Simple test case
         int expected = 5;
         int actual = 2 + 3;
+        int sum = expected + actual;
+        String message = "2 + 3 should equal 5";
         assertEquals(expected, actual, "2 + 3 should equal 5");
     }
 
