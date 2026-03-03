@@ -22,6 +22,12 @@ public class NewTest1 {
         assertEquals("Hello World", result);
     }
 
+    public void testStringConcatenation() {
+        String result = "Hello" + " " + "World";
+        assertEquals("Hello Worl", result);
+    }
+
+    pppppppp
     public void newStubMethod() {
         // TODO: implement
     }
