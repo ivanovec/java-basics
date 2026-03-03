@@ -1,0 +1,1185 @@
+{
+    "version": "0.1.0",
+    "id": "392de476-7e4c-4ef8-833f-3511bf5e6f58",
+    "timestamp": "2026-03-03T19:48:27.132206Z",
+    "vcs": {
+        "type": "git",
+        "revision": "652dea2aa892a676f2ded8ce4298a4cfa1f7ed91",
+        "origin": "github",
+        "repository": "https://github.com/ivanovec/java-basics.git"
+    },
+    "tool": {
+        "name": "chatter-cli"
+    },
+    "files": [
+        {
+            "path": "src/main/java/simple/automation/Application.java",
+            "conversations": [
+                {
+                    "contributor": {
+                        "type": "ai",
+                        "model_id": "2.0.0"
+                    },
+                    "ranges": [
+                        {
+                            "start_line": 7,
+                            "end_line": 7
+                        },
+                        {
+                            "start_line": 9,
+                            "end_line": 10
+                        },
+                        {
+                            "start_line": 13,
+                            "end_line": 13
+                        },
+                        {
+                            "start_line": 39,
+                            "end_line": 41
+                        },
+                        {
+                            "start_line": 46,
+                            "end_line": 48
+                        },
+                        {
+                            "start_line": 60,
+                            "end_line": 60
+                        },
+                        {
+                            "start_line": 69,
+                            "end_line": 69
+                        },
+                        {
+                            "start_line": 73,
+                            "end_line": 73
+                        },
+                        {
+                            "start_line": 78,
+                            "end_line": 78
+                        },
+                        {
+                            "start_line": 83,
+                            "end_line": 83
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "path": "src/main/java/simple/automation/AuthenticationManager.java",
+            "conversations": [
+                {
+                    "contributor": {
+                        "type": "ai",
+                        "model_id": "2.0.0"
+                    },
+                    "ranges": [
+                        {
+                            "start_line": 13,
+                            "end_line": 14
+                        },
+                        {
+                            "start_line": 21,
+                            "end_line": 21
+                        },
+                        {
+                            "start_line": 23,
+                            "end_line": 23
+                        },
+                        {
+                            "start_line": 41,
+                            "end_line": 41
+                        },
+                        {
+                            "start_line": 56,
+                            "end_line": 56
+                        },
+                        {
+                            "start_line": 64,
+                            "end_line": 64
+                        },
+                        {
+                            "start_line": 75,
+                            "end_line": 75
+                        },
+                        {
+                            "start_line": 82,
+                            "end_line": 82
+                        },
+                        {
+                            "start_line": 102,
+                            "end_line": 103
+                        },
+                        {
+                            "start_line": 140,
+                            "end_line": 140
+                        },
+                        {
+                            "start_line": 164,
+                            "end_line": 164
+                        },
+                        {
+                            "start_line": 169,
+                            "end_line": 169
+                        },
+                        {
+                            "start_line": 190,
+                            "end_line": 190
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "path": "src/main/java/simple/automation/CircuitBreaker.java",
+            "conversations": [
+                {
+                    "contributor": {
+                        "type": "ai",
+                        "model_id": "2.0.0"
+                    },
+                    "ranges": [
+                        {
+                            "start_line": 6,
+                            "end_line": 6
+                        },
+                        {
+                            "start_line": 18,
+                            "end_line": 18
+                        },
+                        {
+                            "start_line": 57,
+                            "end_line": 57
+                        },
+                        {
+                            "start_line": 71,
+                            "end_line": 71
+                        },
+                        {
+                            "start_line": 112,
+                            "end_line": 112
+                        },
+                        {
+                            "start_line": 115,
+                            "end_line": 115
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "path": "src/main/java/simple/automation/CommandExecutor.java",
+            "conversations": [
+                {
+                    "contributor": {
+                        "type": "ai",
+                        "model_id": "2.0.0"
+                    },
+                    "ranges": [
+                        {
+                            "start_line": 9,
+                            "end_line": 9
+                        },
+                        {
+                            "start_line": 11,
+                            "end_line": 11
+                        },
+                        {
+                            "start_line": 15,
+                            "end_line": 15
+                        },
+                        {
+                            "start_line": 44,
+                            "end_line": 44
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "path": "src/main/java/simple/automation/ConfigLoader.java",
+            "conversations": [
+                {
+                    "contributor": {
+                        "type": "ai",
+                        "model_id": "2.0.0"
+                    },
+                    "ranges": [
+                        {
+                            "start_line": 8,
+                            "end_line": 8
+                        },
+                        {
+                            "start_line": 11,
+                            "end_line": 11
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "path": "src/main/java/simple/automation/ConfigurationManager.java",
+            "conversations": [
+                {
+                    "url": "git+CLAUDE_CODE:blob:49faf6c38d7151cd5ae19b822c199c09a9590617",
+                    "contributor": {
+                        "type": "ai",
+                        "model_id": "2.0.0"
+                    },
+                    "ranges": [
+                        {
+                            "start_line": 11,
+                            "end_line": 12
+                        },
+                        {
+                            "start_line": 15,
+                            "end_line": 15
+                        },
+                        {
+                            "start_line": 17,
+                            "end_line": 17
+                        },
+                        {
+                            "start_line": 23,
+                            "end_line": 23
+                        },
+                        {
+                            "start_line": 25,
+                            "end_line": 25
+                        },
+                        {
+                            "start_line": 27,
+                            "end_line": 27
+                        },
+                        {
+                            "start_line": 29,
+                            "end_line": 29
+                        },
+                        {
+                            "start_line": 38,
+                            "end_line": 38
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "path": "src/main/java/simple/automation/CsvReader.java",
+            "conversations": [
+                {
+                    "contributor": {
+                        "type": "ai",
+                        "model_id": "2.0.0"
+                    },
+                    "ranges": [
+                        {
+                            "start_line": 9,
+                            "end_line": 9
+                        },
+                        {
+                            "start_line": 13,
+                            "end_line": 13
+                        },
+                        {
+                            "start_line": 17,
+                            "end_line": 17
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "path": "src/main/java/simple/automation/DataCache.java",
+            "conversations": [
+                {
+                    "contributor": {
+                        "type": "ai",
+                        "model_id": "2.0.0"
+                    },
+                    "ranges": [
+                        {
+                            "start_line": 9,
+                            "end_line": 9
+                        },
+                        {
+                            "start_line": 13,
+                            "end_line": 13
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "path": "src/main/java/simple/automation/DataProcessor.java",
+            "conversations": [
+                {
+                    "url": "git+CLAUDE_CODE:blob:49faf6c38d7151cd5ae19b822c199c09a9590617",
+                    "contributor": {
+                        "type": "ai",
+                        "model_id": "2.0.0"
+                    },
+                    "ranges": [
+                        {
+                            "start_line": 10,
+                            "end_line": 11
+                        },
+                        {
+                            "start_line": 15,
+                            "end_line": 15
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "path": "src/main/java/simple/automation/DatabaseConnection.java",
+            "conversations": [
+                {
+                    "contributor": {
+                        "type": "ai",
+                        "model_id": "2.0.0"
+                    },
+                    "ranges": [
+                        {
+                            "start_line": 7,
+                            "end_line": 7
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "path": "src/main/java/simple/automation/DateUtils.java",
+            "conversations": [
+                {
+                    "contributor": {
+                        "type": "ai",
+                        "model_id": "2.0.0"
+                    },
+                    "ranges": [
+                        {
+                            "start_line": 8,
+                            "end_line": 8
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "path": "src/main/java/simple/automation/EmailService.java",
+            "conversations": [
+                {
+                    "contributor": {
+                        "type": "ai",
+                        "model_id": "2.0.0"
+                    },
+                    "ranges": [
+                        {
+                            "start_line": 9,
+                            "end_line": 10
+                        },
+                        {
+                            "start_line": 15,
+                            "end_line": 15
+                        },
+                        {
+                            "start_line": 20,
+                            "end_line": 20
+                        },
+                        {
+                            "start_line": 40,
+                            "end_line": 40
+                        },
+                        {
+                            "start_line": 59,
+                            "end_line": 59
+                        },
+                        {
+                            "start_line": 77,
+                            "end_line": 77
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "path": "src/main/java/simple/automation/EmailValidator.java",
+            "conversations": [
+                {
+                    "contributor": {
+                        "type": "ai",
+                        "model_id": "2.0.0"
+                    },
+                    "ranges": [
+                        {
+                            "start_line": 5,
+                            "end_line": 5
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "path": "src/main/java/simple/automation/EventBus.java",
+            "conversations": [
+                {
+                    "contributor": {
+                        "type": "ai",
+                        "model_id": "2.0.0"
+                    },
+                    "ranges": [
+                        {
+                            "start_line": 10,
+                            "end_line": 10
+                        },
+                        {
+                            "start_line": 13,
+                            "end_line": 13
+                        },
+                        {
+                            "start_line": 40,
+                            "end_line": 40
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "path": "src/main/java/simple/automation/FileProcessor.java",
+            "conversations": [
+                {
+                    "contributor": {
+                        "type": "ai",
+                        "model_id": "2.0.0"
+                    },
+                    "ranges": [
+                        {
+                            "start_line": 11,
+                            "end_line": 11
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "path": "src/main/java/simple/automation/HashGenerator.java",
+            "conversations": [
+                {
+                    "contributor": {
+                        "type": "ai",
+                        "model_id": "2.0.0"
+                    },
+                    "ranges": [
+                        {
+                            "start_line": 8,
+                            "end_line": 8
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "path": "src/main/java/simple/automation/HttpClient.java",
+            "conversations": [
+                {
+                    "contributor": {
+                        "type": "ai",
+                        "model_id": "2.0.0"
+                    },
+                    "ranges": [
+                        {
+                            "start_line": 10,
+                            "end_line": 10
+                        },
+                        {
+                            "start_line": 13,
+                            "end_line": 13
+                        },
+                        {
+                            "start_line": 23,
+                            "end_line": 23
+                        },
+                        {
+                            "start_line": 39,
+                            "end_line": 39
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "path": "src/main/java/simple/automation/JsonParser.java",
+            "conversations": [
+                {
+                    "contributor": {
+                        "type": "ai",
+                        "model_id": "2.0.0"
+                    },
+                    "ranges": [
+                        {
+                            "start_line": 8,
+                            "end_line": 8
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "path": "src/main/java/simple/automation/Logger.java",
+            "conversations": [
+                {
+                    "contributor": {
+                        "type": "ai",
+                        "model_id": "2.0.0"
+                    },
+                    "ranges": [
+                        {
+                            "start_line": 9,
+                            "end_line": 9
+                        },
+                        {
+                            "start_line": 18,
+                            "end_line": 18
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "path": "src/main/java/simple/automation/MemoryMonitor.java",
+            "conversations": [
+                {
+                    "contributor": {
+                        "type": "ai",
+                        "model_id": "2.0.0"
+                    },
+                    "ranges": [
+                        {
+                            "start_line": 3,
+                            "end_line": 3
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "path": "src/main/java/simple/automation/MessageQueue.java",
+            "conversations": [
+                {
+                    "contributor": {
+                        "type": "ai",
+                        "model_id": "2.0.0"
+                    },
+                    "ranges": [
+                        {
+                            "start_line": 7,
+                            "end_line": 7
+                        },
+                        {
+                            "start_line": 11,
+                            "end_line": 11
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "path": "src/main/java/simple/automation/MetricsCollector.java",
+            "conversations": [
+                {
+                    "contributor": {
+                        "type": "ai",
+                        "model_id": "2.0.0"
+                    },
+                    "ranges": [
+                        {
+                            "start_line": 8,
+                            "end_line": 8
+                        },
+                        {
+                            "start_line": 13,
+                            "end_line": 13
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "path": "src/main/java/simple/automation/Paginator.java",
+            "conversations": [
+                {
+                    "contributor": {
+                        "type": "ai",
+                        "model_id": "2.0.0"
+                    },
+                    "ranges": [
+                        {
+                            "start_line": 6,
+                            "end_line": 6
+                        },
+                        {
+                            "start_line": 10,
+                            "end_line": 10
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "path": "src/main/java/simple/automation/RandomGenerator.java",
+            "conversations": [
+                {
+                    "contributor": {
+                        "type": "ai",
+                        "model_id": "2.0.0"
+                    },
+                    "ranges": [
+                        {
+                            "start_line": 7,
+                            "end_line": 7
+                        },
+                        {
+                            "start_line": 13,
+                            "end_line": 13
+                        },
+                        {
+                            "start_line": 17,
+                            "end_line": 17
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "path": "src/main/java/simple/automation/RateLimiter.java",
+            "conversations": [
+                {
+                    "contributor": {
+                        "type": "ai",
+                        "model_id": "2.0.0"
+                    },
+                    "ranges": [
+                        {
+                            "start_line": 6,
+                            "end_line": 6
+                        },
+                        {
+                            "start_line": 11,
+                            "end_line": 11
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "path": "src/main/java/simple/automation/RetryHandler.java",
+            "conversations": [
+                {
+                    "contributor": {
+                        "type": "ai",
+                        "model_id": "2.0.0"
+                    },
+                    "ranges": [
+                        {
+                            "start_line": 5,
+                            "end_line": 5
+                        },
+                        {
+                            "start_line": 9,
+                            "end_line": 9
+                        },
+                        {
+                            "start_line": 14,
+                            "end_line": 15
+                        },
+                        {
+                            "start_line": 20,
+                            "end_line": 20
+                        },
+                        {
+                            "start_line": 28,
+                            "end_line": 28
+                        },
+                        {
+                            "start_line": 31,
+                            "end_line": 31
+                        },
+                        {
+                            "start_line": 38,
+                            "end_line": 39
+                        },
+                        {
+                            "start_line": 44,
+                            "end_line": 44
+                        },
+                        {
+                            "start_line": 53,
+                            "end_line": 53
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "path": "src/main/java/simple/automation/StopWatch.java",
+            "conversations": [
+                {
+                    "contributor": {
+                        "type": "ai",
+                        "model_id": "2.0.0"
+                    },
+                    "ranges": [
+                        {
+                            "start_line": 5,
+                            "end_line": 5
+                        },
+                        {
+                            "start_line": 10,
+                            "end_line": 10
+                        },
+                        {
+                            "start_line": 16,
+                            "end_line": 16
+                        },
+                        {
+                            "start_line": 24,
+                            "end_line": 24
+                        },
+                        {
+                            "start_line": 67,
+                            "end_line": 68
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "path": "src/main/java/simple/automation/StringUtils.java",
+            "conversations": [
+                {
+                    "contributor": {
+                        "type": "ai",
+                        "model_id": "2.0.0"
+                    },
+                    "ranges": [
+                        {
+                            "start_line": 6,
+                            "end_line": 6
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "path": "src/main/java/simple/automation/TaskScheduler.java",
+            "conversations": [
+                {
+                    "contributor": {
+                        "type": "ai",
+                        "model_id": "2.0.0"
+                    },
+                    "ranges": [
+                        {
+                            "start_line": 7,
+                            "end_line": 7
+                        },
+                        {
+                            "start_line": 11,
+                            "end_line": 11
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "path": "src/main/java/simple/automation/TemplateEngine.java",
+            "conversations": [
+                {
+                    "contributor": {
+                        "type": "ai",
+                        "model_id": "2.0.0"
+                    },
+                    "ranges": [
+                        {
+                            "start_line": 7,
+                            "end_line": 7
+                        },
+                        {
+                            "start_line": 11,
+                            "end_line": 11
+                        },
+                        {
+                            "start_line": 31,
+                            "end_line": 31
+                        },
+                        {
+                            "start_line": 54,
+                            "end_line": 54
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "path": "src/main/java/simple/automation/ThreadPoolManager.java",
+            "conversations": [
+                {
+                    "contributor": {
+                        "type": "ai",
+                        "model_id": "2.0.0"
+                    },
+                    "ranges": [
+                        {
+                            "start_line": 7,
+                            "end_line": 7
+                        },
+                        {
+                            "start_line": 12,
+                            "end_line": 12
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "path": "src/main/java/simple/automation/UrlBuilder.java",
+            "conversations": [
+                {
+                    "contributor": {
+                        "type": "ai",
+                        "model_id": "2.0.0"
+                    },
+                    "ranges": [
+                        {
+                            "start_line": 9,
+                            "end_line": 9
+                        },
+                        {
+                            "start_line": 14,
+                            "end_line": 14
+                        },
+                        {
+                            "start_line": 19,
+                            "end_line": 19
+                        },
+                        {
+                            "start_line": 24,
+                            "end_line": 24
+                        },
+                        {
+                            "start_line": 28,
+                            "end_line": 28
+                        },
+                        {
+                            "start_line": 32,
+                            "end_line": 32
+                        },
+                        {
+                            "start_line": 37,
+                            "end_line": 37
+                        },
+                        {
+                            "start_line": 75,
+                            "end_line": 76
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "path": "src/main/java/simple/automation/User.java",
+            "conversations": [
+                {
+                    "contributor": {
+                        "type": "ai",
+                        "model_id": "2.0.0"
+                    },
+                    "ranges": [
+                        {
+                            "start_line": 6,
+                            "end_line": 6
+                        },
+                        {
+                            "start_line": 13,
+                            "end_line": 13
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "path": "src/main/java/simple/automation/UserRepository.java",
+            "conversations": [
+                {
+                    "contributor": {
+                        "type": "ai",
+                        "model_id": "2.0.0"
+                    },
+                    "ranges": [
+                        {
+                            "start_line": 10,
+                            "end_line": 13
+                        },
+                        {
+                            "start_line": 15,
+                            "end_line": 15
+                        },
+                        {
+                            "start_line": 21,
+                            "end_line": 21
+                        },
+                        {
+                            "start_line": 23,
+                            "end_line": 23
+                        },
+                        {
+                            "start_line": 41,
+                            "end_line": 41
+                        },
+                        {
+                            "start_line": 45,
+                            "end_line": 45
+                        },
+                        {
+                            "start_line": 49,
+                            "end_line": 49
+                        },
+                        {
+                            "start_line": 53,
+                            "end_line": 53
+                        },
+                        {
+                            "start_line": 57,
+                            "end_line": 57
+                        },
+                        {
+                            "start_line": 59,
+                            "end_line": 59
+                        },
+                        {
+                            "start_line": 63,
+                            "end_line": 63
+                        },
+                        {
+                            "start_line": 70,
+                            "end_line": 70
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "path": "src/main/java/simple/automation/UserRole.java",
+            "conversations": [
+                {
+                    "contributor": {
+                        "type": "ai",
+                        "model_id": "2.0.0"
+                    },
+                    "ranges": [
+                        {
+                            "start_line": 6,
+                            "end_line": 6
+                        },
+                        {
+                            "start_line": 13,
+                            "end_line": 13
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "path": "src/main/java/simple/automation/UserService.java",
+            "conversations": [
+                {
+                    "contributor": {
+                        "type": "ai",
+                        "model_id": "2.0.0"
+                    },
+                    "ranges": [
+                        {
+                            "start_line": 10,
+                            "end_line": 11
+                        },
+                        {
+                            "start_line": 13,
+                            "end_line": 14
+                        },
+                        {
+                            "start_line": 16,
+                            "end_line": 16
+                        },
+                        {
+                            "start_line": 21,
+                            "end_line": 21
+                        },
+                        {
+                            "start_line": 29,
+                            "end_line": 29
+                        },
+                        {
+                            "start_line": 31,
+                            "end_line": 31
+                        },
+                        {
+                            "start_line": 36,
+                            "end_line": 36
+                        },
+                        {
+                            "start_line": 41,
+                            "end_line": 41
+                        },
+                        {
+                            "start_line": 48,
+                            "end_line": 48
+                        },
+                        {
+                            "start_line": 59,
+                            "end_line": 59
+                        },
+                        {
+                            "start_line": 68,
+                            "end_line": 69
+                        },
+                        {
+                            "start_line": 74,
+                            "end_line": 74
+                        },
+                        {
+                            "start_line": 78,
+                            "end_line": 79
+                        },
+                        {
+                            "start_line": 82,
+                            "end_line": 82
+                        },
+                        {
+                            "start_line": 84,
+                            "end_line": 84
+                        },
+                        {
+                            "start_line": 87,
+                            "end_line": 87
+                        },
+                        {
+                            "start_line": 91,
+                            "end_line": 91
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "path": "src/main/java/simple/automation/XmlParser.java",
+            "conversations": [
+                {
+                    "contributor": {
+                        "type": "ai",
+                        "model_id": "2.0.0"
+                    },
+                    "ranges": [
+                        {
+                            "start_line": 15,
+                            "end_line": 15
+                        },
+                        {
+                            "start_line": 17,
+                            "end_line": 17
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "path": "src/test/java/com/example/CalculatorTest.java",
+            "conversations": [
+                {
+                    "url": "git+CLAUDE_CODE:blob:02ef3c444a78f332a75ef0b4b289589922dbd299",
+                    "contributor": {
+                        "type": "ai",
+                        "model_id": "2.0.0"
+                    },
+                    "ranges": [
+                        {
+                            "start_line": 7,
+                            "end_line": 7
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "path": "src/test/java/simple/automation/BasicTest.java",
+            "conversations": [
+                {
+                    "url": "git+CLAUDE_CODE:blob:195c8684a08ed73bcda73113006951b010104fb7",
+                    "contributor": {
+                        "type": "ai",
+                        "model_id": "2.0.0"
+                    },
+                    "ranges": [
+                        {
+                            "start_line": 7,
+                            "end_line": 7
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "path": "src/test/java/simple/automation/CalculatorTest.java",
+            "conversations": [
+                {
+                    "url": "git+CLAUDE_CODE:blob:2e2bc5c2db10f1d3150b10e9884a034c60054274",
+                    "contributor": {
+                        "type": "ai",
+                        "model_id": "2.0.0"
+                    },
+                    "ranges": [
+                        {
+                            "start_line": 7,
+                            "end_line": 7
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "path": "src/test/java/simple/automation/DataProcessorTest.java",
+            "conversations": [
+                {
+                    "url": "git+CLAUDE_CODE:blob:2e2bc5c2db10f1d3150b10e9884a034c60054274",
+                    "contributor": {
+                        "type": "ai",
+                        "model_id": "2.0.0"
+                    },
+                    "ranges": [
+                        {
+                            "start_line": 7,
+                            "end_line": 7
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "path": "src/test/java/simple/automation/ExampleTest.java",
+            "conversations": [
+                {
+                    "url": "git+CLAUDE_CODE:blob:f490182a6f15ee43c8f1727e07006d2a895f647e",
+                    "contributor": {
+                        "type": "ai",
+                        "model_id": "2.0.0"
+                    },
+                    "ranges": [
+                        {
+                            "start_line": 7,
+                            "end_line": 7
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
