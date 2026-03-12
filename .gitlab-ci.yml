@@ -10,6 +10,7 @@ qodana:
     QODANA_ARGS: "--fail-threshold,0"
     QODANA_UPLOAD_RESULT: "false"
     QODANA_PUSH_FIXES: "branch"
+    QODANA_USE_CACHES: "false"
   before_script:
     - echo "=== Checking remote.origin.url ==="
     - git config --get remote.origin.url
