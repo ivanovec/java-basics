@@ -11,6 +11,8 @@ qodana:
     QODANA_UPLOAD_RESULT: "false"
     QODANA_PUSH_FIXES: "branch"
     QODANA_USE_CACHES: "false"
+    QODANA_CACHE_DIR: "$CI_PROJECT_DIR/.qodana/cache"
+    QODANA_RESULTS_DIR: "$CI_PROJECT_DIR/.qodana/results"
   before_script:
     - echo "=== Checking remote.origin.url ==="
     - git config --get remote.origin.url
