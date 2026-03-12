@@ -1,9 +1,8 @@
-# Test configuration for QD-13302 - HTTPS URL parsing in quick-fixes
+# Test configuration for QD-13302 on local GitLab
 include:
-  - component: $CI_SERVER_FQDN/qodana/qodana/qodana-gitlab-ci@v2025.3
+  - component: gitlab.com/qodana/qodana/qodana-gitlab-ci@v2025.3
     inputs:
-      upload-result: true
-      artifact-name: Qodana report
+      upload-result: false
       push-fixes: branch
       args: --baseline,qodana.sarif.json,--fail-threshold,0,--image,jetbrains/qodana-jvm:2025.3,--cleanup
 
@@ -13,9 +12,10 @@ qodana:
     QODANA_TOKEN: $qodana_token
     QODANA_GITLAB_TOKEN: $GITLAB_TOKEN
   before_script:
-    - echo "qodana_token first 30 chars - ${qodana_token:0:30}"
-    - echo "qodana_token length - ${#qodana_token}"
+    - echo "=== Checking remote.origin.url ==="
+    - git config --get remote.origin.url
+    - echo "=== End check ==="
   rules:
     - if: ($CI_PIPELINE_SOURCE == 'merge_request_event')
-    - if: ($CI_COMMIT_MESSAGE =~ /runqodana/)
+    - if: ($CI_PIPELINE_SOURCE == 'push')
   allow_failure: true
