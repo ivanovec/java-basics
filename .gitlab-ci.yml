@@ -11,13 +11,11 @@ qodana:
     QODANA_UPLOAD_RESULT: "false"
     QODANA_PUSH_FIXES: "branch"
     QODANA_USE_CACHES: "false"
-    QODANA_CACHE_DIR: "./cache"
-    QODANA_RESULTS_DIR: "./results"
+    CI_BUILDS_DIR: ""
   before_script:
     - echo "=== Checking remote.origin.url ==="
     - git config --get remote.origin.url
     - echo "=== End check ==="
-    - mkdir -p ./cache ./results
   rules:
     - if: ($CI_PIPELINE_SOURCE == 'merge_request_event')
     - if: ($CI_PIPELINE_SOURCE == 'push')
