@@ -17,6 +17,7 @@ qodana:
     - echo "=== Checking remote.origin.url ==="
     - git config --get remote.origin.url
     - echo "=== End check ==="
+    - mkdir -p "$CI_PROJECT_DIR/.qodana/cache" "$CI_PROJECT_DIR/.qodana/results"
   rules:
     - if: ($CI_PIPELINE_SOURCE == 'merge_request_event')
     - if: ($CI_PIPELINE_SOURCE == 'push')
