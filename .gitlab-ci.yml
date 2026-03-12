@@ -16,6 +16,9 @@ qodana:
   variables:
     QODANA_TOKEN: $qodana_token
     QODANA_GITLAB_TOKEN: $GITLAB_TOKEN
+  before_script:
+    - echo "QODANA_TOKEN is set: ${QODANA_TOKEN:0:20}...${QODANA_TOKEN: -10}"
+    - echo "Token length: ${#QODANA_TOKEN}"
   rules:
     - if: ($CI_PIPELINE_SOURCE == 'merge_request_event')
     - if: ($CI_COMMIT_MESSAGE =~ /runqodana/)
