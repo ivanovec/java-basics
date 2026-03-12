@@ -1,0 +1,10 @@
+{
+  "cloud" : {
+    "url" : "https://qodana.cloud/projects/p45aW/reports/409q6n",
+    "reportId" : "409q6n",
+    "projectId" : "p45aW",
+    "projectName" : "java-basics",
+    "host" : "https://qodana.cloud"
+  },
+  "vcs" : { }
+}

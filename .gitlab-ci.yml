@@ -7,13 +7,16 @@ qodana:
   variables:
     QODANA_TOKEN: $qodana_token
     QODANA_GITLAB_TOKEN: $GITLAB_TOKEN
-    QODANA_ARGS: "--baseline,qodana.sarif.json,--fail-threshold,0"
+    QODANA_ARGS: "--fail-threshold,0"
     QODANA_UPLOAD_RESULT: "false"
     QODANA_PUSH_FIXES: "branch"
+    INPUT_CACHE_DIR: "$CI_PROJECT_DIR/.qodana/cache"
+    INPUT_RESULTS_DIR: "$CI_PROJECT_DIR/.qodana/results"
   before_script:
     - echo "=== Checking remote.origin.url ==="
     - git config --get remote.origin.url
     - echo "=== End check ==="
+    - mkdir -p "$CI_PROJECT_DIR/.qodana/cache" "$CI_PROJECT_DIR/.qodana/results"
   rules:
     - if: ($CI_PIPELINE_SOURCE == 'merge_request_event')
     - if: ($CI_PIPELINE_SOURCE == 'push')

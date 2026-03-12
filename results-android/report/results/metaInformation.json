@@ -1,0 +1,20 @@
+{
+  "version": "1.0",
+  "total": 235,
+  "tools inspection": {
+    "Code Inspection": 235
+  },
+  "linter": "QDJVM",
+  "attributes": {
+    "deviceId": "200820300000000-5bdb-7ee4-9f5d-6bfcda02bf94",
+    "jobUrl": "",
+    "vcs": {
+      "sarifIdea": {
+        "revisionId": "d3e2e41d9aece3f64ccca3f2ea6465dce3fd84cb",
+        "branch": "prov"
+      }
+    },
+    "repoUrl": ""
+  },
+  "linterVersion": "253.30432"
+}

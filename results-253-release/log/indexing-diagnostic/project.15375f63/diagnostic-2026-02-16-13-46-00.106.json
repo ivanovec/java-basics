@@ -1,0 +1,94 @@
+{
+  "appInfo" : {
+    "build" : "253.29648",
+    "buildDate" : "2026-02-16T13:45:21.367Z[Etc/UTC]",
+    "productCode" : "QDJVM",
+    "generated" : "2026-02-16T13:46:00.106418511Z",
+    "os" : "Linux 6.10.14-linuxkit",
+    "runtime" : "JetBrains s.r.o. 21.0.9 21.0.9+10-b1163.88"
+  },
+  "runtimeInfo" : {
+    "maxMemory" : 28840034304,
+    "numberOfProcessors" : 8,
+    "maxNumberOfIndexingThreads" : 8,
+    "maxSizeOfFileForIntelliSense" : 2560000,
+    "maxSizeOfFileForContentLoading" : 20971520
+  },
+  "type" : "Scanning",
+  "projectIndexingActivityHistory" : {
+    "projectName" : "java-basics",
+    "times" : {
+      "scanningReason" : "Merged changes in: \"Module 'java-basics.test' (all roots)\", \"Module 'java-basics.main' (all roots)\" with changes in: \"Module 'java-basics.main' (main)\"",
+      "scanningType" : "PARTIAL",
+      "scanningId" : 3,
+      "creatingIteratorsTime" : 0,
+      "concurrentHandlingWallTimeWithoutPauses" : 0,
+      "concurrentHandlingWallTimeWithPauses" : 0,
+      "concurrentHandlingSumOfThreadTimesWithPauses" : 23115750,
+      "concurrentIterationAndScannersApplicationSumOfThreadTimesWithPauses" : 5238874,
+      "concurrentFileCheckSumOfThreadTimesWithPauses" : 17348125,
+      "delayedPushPropertiesStageTime" : 0,
+      "indexExtensionsTime" : 8167,
+      "dumbWallTimeWithPauses" : 0,
+      "dumbWallTimeWithoutPauses" : 0,
+      "updatingStart" : "2026-02-16T13:46:00.089598928Z",
+      "updatingEnd" : "2026-02-16T13:46:00.105395928Z",
+      "totalWallTimeWithPauses" : 15797000,
+      "wallTimeOnPause" : 387334,
+      "isCancelled" : false,
+      "totalWallTimeWithoutPauses" : 15409666
+    },
+    "fileCount" : {
+      "numberOfFileProviders" : 3,
+      "numberOfScannedFiles" : 136,
+      "numberOfFilesIndexedByInfrastructureExtensionsDuringScan" : 0,
+      "numberOfFilesScheduledForIndexingAfterScan" : 4
+    },
+    "scanningStatistics" : [ {
+      "providerName" : "Module 'java-basics.test' (all roots)",
+      "numberOfScannedFiles" : 69,
+      "numberOfSkippedFiles" : 0,
+      "numberOfFilesForIndexing" : 0,
+      "numberOfFilesFullyIndexedByInfrastructureExtensions" : 0,
+      "filesFullyIndexedByInfrastructureExtensions" : [ ],
+      "statusTime" : 2263667,
+      "totalOneThreadTimeWithPauses" : 12974167,
+      "iterationAndScannersApplicationTime" : 2434916,
+      "filesCheckTime" : 10404417,
+      "timeProcessingUpToDateFiles" : 244500,
+      "timeUpdatingContentLessIndexes" : 3376,
+      "timeIndexingWithoutContentViaInfrastructureExtension" : 0,
+      "roots" : [ ]
+    }, {
+      "providerName" : "Module 'java-basics.main' (all roots)",
+      "numberOfScannedFiles" : 67,
+      "numberOfSkippedFiles" : 1,
+      "numberOfFilesForIndexing" : 4,
+      "numberOfFilesFullyIndexedByInfrastructureExtensions" : 0,
+      "filesFullyIndexedByInfrastructureExtensions" : [ ],
+      "statusTime" : 2348625,
+      "totalOneThreadTimeWithPauses" : 8826375,
+      "iterationAndScannersApplicationTime" : 2116083,
+      "filesCheckTime" : 6494125,
+      "timeProcessingUpToDateFiles" : 165898,
+      "timeUpdatingContentLessIndexes" : 0,
+      "timeIndexingWithoutContentViaInfrastructureExtension" : 8167,
+      "roots" : [ ]
+    }, {
+      "providerName" : "Module 'java-basics.main' (main)",
+      "numberOfScannedFiles" : 0,
+      "numberOfSkippedFiles" : 0,
+      "numberOfFilesForIndexing" : 0,
+      "numberOfFilesFullyIndexedByInfrastructureExtensions" : 0,
+      "filesFullyIndexedByInfrastructureExtensions" : [ ],
+      "statusTime" : 0,
+      "totalOneThreadTimeWithPauses" : 1315208,
+      "iterationAndScannersApplicationTime" : 687875,
+      "filesCheckTime" : 449583,
+      "timeProcessingUpToDateFiles" : 0,
+      "timeUpdatingContentLessIndexes" : 0,
+      "timeIndexingWithoutContentViaInfrastructureExtension" : 0,
+      "roots" : [ ]
+    } ]
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "languages": [
+    "Plain text",
+    "Java",
+    "Properties",
+    ".gitignore (GitIgnore)",
+    "Groovy",
+    "JSON",
+    "XML",
+    "HTML",
+    "Lombok.Config"
+  ]
+}

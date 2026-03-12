@@ -1,0 +1,205 @@
+{
+  "version": "3",
+  "listProblem": [
+    {
+      "tool": "Code Inspection",
+      "category": "General",
+      "categoryPath": [
+        {
+          "id": "General",
+          "name": "General"
+        }
+      ],
+      "type": "Java sanity",
+      "tags": [
+        "JAVA",
+        "Sanity"
+      ],
+      "severity": "Critical",
+      "comment": "Unresolved reference T",
+      "detailsInfo": "Reports unresolved references in Java code.\n\nInspection ID: QodanaJavaSanity",
+      "sources": [
+        {
+          "type": "file",
+          "path": "src/main/java/simple/automation/OneClass1.java",
+          "language": "JAVA",
+          "line": 24,
+          "offset": 12,
+          "length": 1,
+          "code": {
+            "startLine": 22,
+            "length": 1,
+            "offset": 18,
+            "surroundingCode": "    }\n\n    public T dequeue() throws InterruptedException {\n        return queue.take();\n    }"
+          }
+        }
+      ],
+      "attributes": {
+        "module": "java-basics.main",
+        "inspectionName": "QodanaJavaSanity"
+      },
+      "hash": "02c44990b19138141c6cc5ee2ab347f9d0df99c08c924acc9268d87f500ec364",
+      "problemType": "REGULAR"
+    },
+    {
+      "tool": "Code Inspection",
+      "category": "General",
+      "categoryPath": [
+        {
+          "id": "General",
+          "name": "General"
+        }
+      ],
+      "type": "Java sanity",
+      "tags": [
+        "JAVA",
+        "Sanity"
+      ],
+      "severity": "Critical",
+      "comment": "Unresolved reference T",
+      "detailsInfo": "Reports unresolved references in Java code.\n\nInspection ID: QodanaJavaSanity",
+      "sources": [
+        {
+          "type": "file",
+          "path": "src/main/java/simple/automation/OneClass1.java",
+          "language": "JAVA",
+          "line": 16,
+          "offset": 28,
+          "length": 1,
+          "code": {
+            "startLine": 14,
+            "length": 1,
+            "offset": 34,
+            "surroundingCode": "    }\n\n    public boolean enqueue(T message) {\n        return queue.offer(message);\n    }"
+          }
+        }
+      ],
+      "attributes": {
+        "module": "java-basics.main",
+        "inspectionName": "QodanaJavaSanity"
+      },
+      "hash": "203fbc9c7b9f0b6e87adc9848a85881393ecbcd9cdfd83112201e7dfceb157cc",
+      "problemType": "REGULAR"
+    },
+    {
+      "tool": "Code Inspection",
+      "category": "General",
+      "categoryPath": [
+        {
+          "id": "General",
+          "name": "General"
+        }
+      ],
+      "type": "Java sanity",
+      "tags": [
+        "JAVA",
+        "Sanity"
+      ],
+      "severity": "Critical",
+      "comment": "Unresolved reference T",
+      "detailsInfo": "Reports unresolved references in Java code.\n\nInspection ID: QodanaJavaSanity",
+      "sources": [
+        {
+          "type": "file",
+          "path": "src/main/java/simple/automation/OneClass1.java",
+          "language": "JAVA",
+          "line": 28,
+          "offset": 12,
+          "length": 1,
+          "code": {
+            "startLine": 26,
+            "length": 1,
+            "offset": 18,
+            "surroundingCode": "    }\n\n    public T dequeue(long timeoutMillis) throws InterruptedException {\n        return queue.poll(timeoutMillis, TimeUnit.MILLISECONDS);\n    }"
+          }
+        }
+      ],
+      "attributes": {
+        "module": "java-basics.main",
+        "inspectionName": "QodanaJavaSanity"
+      },
+      "hash": "88f4f2aba28510eae9b09498ff713fb946a9dc875d374c31b54a37f8a9fe6f28",
+      "problemType": "REGULAR"
+    },
+    {
+      "tool": "Code Inspection",
+      "category": "General",
+      "categoryPath": [
+        {
+          "id": "General",
+          "name": "General"
+        }
+      ],
+      "type": "Java sanity",
+      "tags": [
+        "JAVA",
+        "Sanity"
+      ],
+      "severity": "Critical",
+      "comment": "Unresolved reference T",
+      "detailsInfo": "Reports unresolved references in Java code.\n\nInspection ID: QodanaJavaSanity",
+      "sources": [
+        {
+          "type": "file",
+          "path": "src/main/java/simple/automation/OneClass1.java",
+          "language": "JAVA",
+          "line": 8,
+          "offset": 33,
+          "length": 1,
+          "code": {
+            "startLine": 6,
+            "length": 1,
+            "offset": 58,
+            "surroundingCode": "\npublic class OneClass1 {\n    private final BlockingQueue<T> queue;\n    private final int capacity;\n"
+          }
+        }
+      ],
+      "attributes": {
+        "module": "java-basics.main",
+        "inspectionName": "QodanaJavaSanity"
+      },
+      "hash": "945c592f37d1d1d4d37fb405f0496807955bd65016cbc65f62681e6cd1a15a0c",
+      "problemType": "REGULAR"
+    },
+    {
+      "tool": "Code Inspection",
+      "category": "General",
+      "categoryPath": [
+        {
+          "id": "General",
+          "name": "General"
+        }
+      ],
+      "type": "Java sanity",
+      "tags": [
+        "JAVA",
+        "Sanity"
+      ],
+      "severity": "Critical",
+      "comment": "Unresolved reference ооооооооооо",
+      "detailsInfo": "Reports unresolved references in Java code.\n\nInspection ID: QodanaJavaSanity",
+      "sources": [
+        {
+          "type": "file",
+          "path": "src/main/java/simple/automation/оооооо1.java",
+          "language": "JAVA",
+          "line": 4,
+          "offset": 5,
+          "length": 11,
+          "code": {
+            "startLine": 2,
+            "length": 11,
+            "offset": 28,
+            "surroundingCode": "\npublic class оооооо1 {\n    ооооооооооо\n\n    public void newStubMethod() {"
+          }
+        }
+      ],
+      "attributes": {
+        "module": "java-basics.main",
+        "inspectionName": "QodanaJavaSanity"
+      },
+      "hash": "afa352edfce5d82e375ecbfefcb9c103762a571cef7a9c65e7060871505df6f3",
+      "problemType": "REGULAR"
+    }
+  ]
+}
