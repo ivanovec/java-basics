@@ -14,7 +14,6 @@ include:
 qodana:
   stage: test
   variables:
-    QODANA_TOKEN: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJvcmdhbml6YXRpb24iOiIzam94cSIsInByb2plY3QiOiJ6RVdRYSIsInRva2VuIjoiMzFXMWEifQ.pzWQAOWoUROyv9Sv3UacNlU9UUFsVdAVXzBn3dxEvJY
     QODANA_GITLAB_TOKEN: $GITLAB_TOKEN
   rules:
     - if: ($CI_PIPELINE_SOURCE == 'merge_request_event')
