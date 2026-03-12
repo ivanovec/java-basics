@@ -15,6 +15,7 @@ qodana:
   before_script:
     - echo "=== Checking remote.origin.url ==="
     - git config --get remote.origin.url
+    - pwd
     - echo "=== End check ==="
   rules:
     - if: ($CI_PIPELINE_SOURCE == 'merge_request_event')
