@@ -5,11 +5,7 @@ include:
       upload-result: true
       artifact-name: Qodana report
       push-fixes: branch
-      args: |
-        --baseline,qodana.sarif.json
-        --fail-threshold,0
-        --image,jetbrains/qodana-jvm:2025.3
-        --cleanup
+      args: --baseline,qodana.sarif.json,--fail-threshold,0,--image,jetbrains/qodana-jvm:2025.3,--cleanup
 
 qodana:
   stage: test
