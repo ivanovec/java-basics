@@ -1,2 +1,0 @@
-time="2026-02-16T13:54:14Z" level=info msg="Executing command: [git rev-parse --show-toplevel]"
-time="2026-02-16T13:54:14Z" level=info msg="/data/project\n"
