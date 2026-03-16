@@ -1,0 +1,37 @@
+{
+    "version": "0.1.0",
+    "id": "2c70e6e0-e777-4883-ae8a-139f9a8e494d",
+    "timestamp": "2026-03-16T16:30:01.966752Z",
+    "vcs": {
+        "type": "git",
+        "revision": "4bb4c5c59b47474cb50dcc303a2819270a957377",
+        "origin": "github",
+        "repository": "https://github.com/ivanovec/java-basics.git"
+    },
+    "tool": {
+        "name": "chatter-cli"
+    },
+    "files": [
+        {
+            "path": "src/main/java/simple/automation/StopWatch.java",
+            "conversations": [
+                {
+                    "contributor": {
+                        "type": "ai",
+                        "model_id": "2.0.0"
+                    },
+                    "ranges": [
+                        {
+                            "start_line": 28,
+                            "end_line": 28
+                        },
+                        {
+                            "start_line": 35,
+                            "end_line": 35
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
