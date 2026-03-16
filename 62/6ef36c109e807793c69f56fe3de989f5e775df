@@ -1,0 +1,158 @@
+{
+    "version": "0.1.0",
+    "id": "6beceb7a-9ce5-4c50-bc21-aa97342d38ef",
+    "timestamp": "2026-03-16T16:30:13.217201Z",
+    "vcs": {
+        "type": "git",
+        "revision": "626ef36c109e807793c69f56fe3de989f5e775df",
+        "origin": "github",
+        "repository": "https://github.com/ivanovec/java-basics.git"
+    },
+    "tool": {
+        "name": "chatter-cli"
+    },
+    "files": [
+        {
+            "path": "src/main/java/simple/automation/ConfigurationManager.java",
+            "conversations": [
+                {
+                    "contributor": {
+                        "type": "ai",
+                        "model_id": "2.0.0"
+                    },
+                    "ranges": [
+                        {
+                            "start_line": 1,
+                            "end_line": 6
+                        },
+                        {
+                            "start_line": 8,
+                            "end_line": 9
+                        },
+                        {
+                            "start_line": 11,
+                            "end_line": 19
+                        },
+                        {
+                            "start_line": 22,
+                            "end_line": 23
+                        },
+                        {
+                            "start_line": 25,
+                            "end_line": 25
+                        },
+                        {
+                            "start_line": 27,
+                            "end_line": 31
+                        },
+                        {
+                            "start_line": 34,
+                            "end_line": 35
+                        },
+                        {
+                            "start_line": 37,
+                            "end_line": 41
+                        },
+                        {
+                            "start_line": 44,
+                            "end_line": 45
+                        },
+                        {
+                            "start_line": 47,
+                            "end_line": 48
+                        },
+                        {
+                            "start_line": 50,
+                            "end_line": 51
+                        },
+                        {
+                            "start_line": 54,
+                            "end_line": 55
+                        },
+                        {
+                            "start_line": 57,
+                            "end_line": 58
+                        },
+                        {
+                            "start_line": 60,
+                            "end_line": 62
+                        },
+                        {
+                            "start_line": 65,
+                            "end_line": 66
+                        },
+                        {
+                            "start_line": 68,
+                            "end_line": 68
+                        },
+                        {
+                            "start_line": 70,
+                            "end_line": 71
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "path": "src/main/java/simple/automation/DataProcessor.java",
+            "conversations": [
+                {
+                    "contributor": {
+                        "type": "ai",
+                        "model_id": "2.0.0"
+                    },
+                    "ranges": [
+                        {
+                            "start_line": 1,
+                            "end_line": 5
+                        },
+                        {
+                            "start_line": 7,
+                            "end_line": 8
+                        },
+                        {
+                            "start_line": 10,
+                            "end_line": 13
+                        },
+                        {
+                            "start_line": 16,
+                            "end_line": 16
+                        },
+                        {
+                            "start_line": 19,
+                            "end_line": 20
+                        },
+                        {
+                            "start_line": 22,
+                            "end_line": 23
+                        },
+                        {
+                            "start_line": 25,
+                            "end_line": 33
+                        },
+                        {
+                            "start_line": 37,
+                            "end_line": 38
+                        },
+                        {
+                            "start_line": 40,
+                            "end_line": 40
+                        },
+                        {
+                            "start_line": 42,
+                            "end_line": 43
+                        },
+                        {
+                            "start_line": 46,
+                            "end_line": 47
+                        },
+                        {
+                            "start_line": 49,
+                            "end_line": 51
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
