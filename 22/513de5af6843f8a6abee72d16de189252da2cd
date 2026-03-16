@@ -1,0 +1,1796 @@
+{
+    "version": "0.1.0",
+    "id": "517229cc-88d6-4fce-af3d-b89db62b686f",
+    "timestamp": "2026-03-16T16:30:37.116615Z",
+    "vcs": {
+        "type": "git",
+        "revision": "22513de5af6843f8a6abee72d16de189252da2cd",
+        "origin": "github",
+        "repository": "https://github.com/ivanovec/java-basics.git"
+    },
+    "tool": {
+        "name": "chatter-cli"
+    },
+    "files": [
+        {
+            "path": "Main1.java",
+            "conversations": [
+                {
+                    "url": "git+CLAUDE_CODE:blob:1123952a8bcb4d5460cb154fffabcd050fcdd69f",
+                    "contributor": {
+                        "type": "ai",
+                        "model_id": "2.0.0"
+                    },
+                    "ranges": [
+                        {
+                            "start_line": 6,
+                            "end_line": 7
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "path": "src/main/java/simple/ReportPrinter1.java",
+            "conversations": [
+                {
+                    "url": "git+CLAUDE_CODE:blob:1123952a8bcb4d5460cb154fffabcd050fcdd69f",
+                    "contributor": {
+                        "type": "ai",
+                        "model_id": "2.0.0"
+                    },
+                    "ranges": [
+                        {
+                            "start_line": 81,
+                            "end_line": 82
+                        },
+                        {
+                            "start_line": 86,
+                            "end_line": 87
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "path": "src/main/java/simple/automation/Application1.java",
+            "conversations": [
+                {
+                    "url": "git+CLAUDE_CODE:blob:1123952a8bcb4d5460cb154fffabcd050fcdd69f",
+                    "contributor": {
+                        "type": "ai",
+                        "model_id": "2.0.0"
+                    },
+                    "ranges": [
+                        {
+                            "start_line": 99,
+                            "end_line": 100
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "path": "src/main/java/simple/automation/AuditLogService1.java",
+            "conversations": [
+                {
+                    "url": "git+CLAUDE_CODE:blob:1123952a8bcb4d5460cb154fffabcd050fcdd69f",
+                    "contributor": {
+                        "type": "ai",
+                        "model_id": "2.0.0"
+                    },
+                    "ranges": [
+                        {
+                            "start_line": 50,
+                            "end_line": 51
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "path": "src/main/java/simple/automation/AuthenticationManager1.java",
+            "conversations": [
+                {
+                    "url": "git+CLAUDE_CODE:blob:1123952a8bcb4d5460cb154fffabcd050fcdd69f",
+                    "contributor": {
+                        "type": "ai",
+                        "model_id": "2.0.0"
+                    },
+                    "ranges": [
+                        {
+                            "start_line": 251,
+                            "end_line": 252
+                        },
+                        {
+                            "start_line": 256,
+                            "end_line": 257
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "path": "src/main/java/simple/automation/BaseTestWithAuthorization1.java",
+            "conversations": [
+                {
+                    "url": "git+CLAUDE_CODE:blob:1123952a8bcb4d5460cb154fffabcd050fcdd69f",
+                    "contributor": {
+                        "type": "ai",
+                        "model_id": "2.0.0"
+                    },
+                    "ranges": [
+                        {
+                            "start_line": 9,
+                            "end_line": 10
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "path": "src/main/java/simple/automation/BaseTestWithOrder1.java",
+            "conversations": [
+                {
+                    "url": "git+CLAUDE_CODE:blob:1123952a8bcb4d5460cb154fffabcd050fcdd69f",
+                    "contributor": {
+                        "type": "ai",
+                        "model_id": "2.0.0"
+                    },
+                    "ranges": [
+                        {
+                            "start_line": 9,
+                            "end_line": 10
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "path": "src/main/java/simple/automation/CircuitBreaker1.java",
+            "conversations": [
+                {
+                    "url": "git+CLAUDE_CODE:blob:1123952a8bcb4d5460cb154fffabcd050fcdd69f",
+                    "contributor": {
+                        "type": "ai",
+                        "model_id": "2.0.0"
+                    },
+                    "ranges": [
+                        {
+                            "start_line": 120,
+                            "end_line": 121
+                        },
+                        {
+                            "start_line": 125,
+                            "end_line": 126
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "path": "src/main/java/simple/automation/CommandExecutor1.java",
+            "conversations": [
+                {
+                    "url": "git+CLAUDE_CODE:blob:1123952a8bcb4d5460cb154fffabcd050fcdd69f",
+                    "contributor": {
+                        "type": "ai",
+                        "model_id": "2.0.0"
+                    },
+                    "ranges": [
+                        {
+                            "start_line": 76,
+                            "end_line": 77
+                        },
+                        {
+                            "start_line": 81,
+                            "end_line": 82
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "path": "src/main/java/simple/automation/ConfigLoader1.java",
+            "conversations": [
+                {
+                    "url": "git+CLAUDE_CODE:blob:1123952a8bcb4d5460cb154fffabcd050fcdd69f",
+                    "contributor": {
+                        "type": "ai",
+                        "model_id": "2.0.0"
+                    },
+                    "ranges": [
+                        {
+                            "start_line": 47,
+                            "end_line": 48
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "path": "src/main/java/simple/automation/ConfigurationManager1.java",
+            "conversations": [
+                {
+                    "url": "git+CLAUDE_CODE:blob:1123952a8bcb4d5460cb154fffabcd050fcdd69f",
+                    "contributor": {
+                        "type": "ai",
+                        "model_id": "2.0.0"
+                    },
+                    "ranges": [
+                        {
+                            "start_line": 74,
+                            "end_line": 75
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "path": "src/main/java/simple/automation/CsvReader1.java",
+            "conversations": [
+                {
+                    "url": "git+CLAUDE_CODE:blob:1123952a8bcb4d5460cb154fffabcd050fcdd69f",
+                    "contributor": {
+                        "type": "ai",
+                        "model_id": "2.0.0"
+                    },
+                    "ranges": [
+                        {
+                            "start_line": 68,
+                            "end_line": 69
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "path": "src/main/java/simple/automation/CsvWriter1.java",
+            "conversations": [
+                {
+                    "url": "git+CLAUDE_CODE:blob:1123952a8bcb4d5460cb154fffabcd050fcdd69f",
+                    "contributor": {
+                        "type": "ai",
+                        "model_id": "2.0.0"
+                    },
+                    "ranges": [
+                        {
+                            "start_line": 101,
+                            "end_line": 102
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "path": "src/main/java/simple/automation/DataCache1.java",
+            "conversations": [
+                {
+                    "url": "git+CLAUDE_CODE:blob:1123952a8bcb4d5460cb154fffabcd050fcdd69f",
+                    "contributor": {
+                        "type": "ai",
+                        "model_id": "2.0.0"
+                    },
+                    "ranges": [
+                        {
+                            "start_line": 66,
+                            "end_line": 67
+                        },
+                        {
+                            "start_line": 71,
+                            "end_line": 72
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "path": "src/main/java/simple/automation/DataProcessor1.java",
+            "conversations": [
+                {
+                    "url": "git+CLAUDE_CODE:blob:1123952a8bcb4d5460cb154fffabcd050fcdd69f",
+                    "contributor": {
+                        "type": "ai",
+                        "model_id": "2.0.0"
+                    },
+                    "ranges": [
+                        {
+                            "start_line": 54,
+                            "end_line": 55
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "path": "src/main/java/simple/automation/DatabaseConnection1.java",
+            "conversations": [
+                {
+                    "url": "git+CLAUDE_CODE:blob:1123952a8bcb4d5460cb154fffabcd050fcdd69f",
+                    "contributor": {
+                        "type": "ai",
+                        "model_id": "2.0.0"
+                    },
+                    "ranges": [
+                        {
+                            "start_line": 30,
+                            "end_line": 31
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "path": "src/main/java/simple/automation/DateUtils1.java",
+            "conversations": [
+                {
+                    "url": "git+CLAUDE_CODE:blob:1123952a8bcb4d5460cb154fffabcd050fcdd69f",
+                    "contributor": {
+                        "type": "ai",
+                        "model_id": "2.0.0"
+                    },
+                    "ranges": [
+                        {
+                            "start_line": 62,
+                            "end_line": 63
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "path": "src/main/java/simple/automation/EmailService1.java",
+            "conversations": [
+                {
+                    "url": "git+CLAUDE_CODE:blob:1123952a8bcb4d5460cb154fffabcd050fcdd69f",
+                    "contributor": {
+                        "type": "ai",
+                        "model_id": "2.0.0"
+                    },
+                    "ranges": [
+                        {
+                            "start_line": 108,
+                            "end_line": 109
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "path": "src/main/java/simple/automation/EmailValidator1.java",
+            "conversations": [
+                {
+                    "url": "git+CLAUDE_CODE:blob:1123952a8bcb4d5460cb154fffabcd050fcdd69f",
+                    "contributor": {
+                        "type": "ai",
+                        "model_id": "2.0.0"
+                    },
+                    "ranges": [
+                        {
+                            "start_line": 52,
+                            "end_line": 53
+                        },
+                        {
+                            "start_line": 57,
+                            "end_line": 58
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "path": "src/main/java/simple/automation/EventBus1.java",
+            "conversations": [
+                {
+                    "url": "git+CLAUDE_CODE:blob:1123952a8bcb4d5460cb154fffabcd050fcdd69f",
+                    "contributor": {
+                        "type": "ai",
+                        "model_id": "2.0.0"
+                    },
+                    "ranges": [
+                        {
+                            "start_line": 67,
+                            "end_line": 68
+                        },
+                        {
+                            "start_line": 72,
+                            "end_line": 73
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "path": "src/main/java/simple/automation/Exception1.java",
+            "conversations": [
+                {
+                    "url": "git+CLAUDE_CODE:blob:1123952a8bcb4d5460cb154fffabcd050fcdd69f",
+                    "contributor": {
+                        "type": "ai",
+                        "model_id": "2.0.0"
+                    },
+                    "ranges": [
+                        {
+                            "start_line": 21,
+                            "end_line": 22
+                        },
+                        {
+                            "start_line": 26,
+                            "end_line": 27
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "path": "src/main/java/simple/automation/FileProcessor1.java",
+            "conversations": [
+                {
+                    "url": "git+CLAUDE_CODE:blob:1123952a8bcb4d5460cb154fffabcd050fcdd69f",
+                    "contributor": {
+                        "type": "ai",
+                        "model_id": "2.0.0"
+                    },
+                    "ranges": [
+                        {
+                            "start_line": 42,
+                            "end_line": 43
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "path": "src/main/java/simple/automation/HashGenerator1.java",
+            "conversations": [
+                {
+                    "url": "git+CLAUDE_CODE:blob:1123952a8bcb4d5460cb154fffabcd050fcdd69f",
+                    "contributor": {
+                        "type": "ai",
+                        "model_id": "2.0.0"
+                    },
+                    "ranges": [
+                        {
+                            "start_line": 55,
+                            "end_line": 56
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "path": "src/main/java/simple/automation/HttpClient1.java",
+            "conversations": [
+                {
+                    "url": "git+CLAUDE_CODE:blob:1123952a8bcb4d5460cb154fffabcd050fcdd69f",
+                    "contributor": {
+                        "type": "ai",
+                        "model_id": "2.0.0"
+                    },
+                    "ranges": [
+                        {
+                            "start_line": 55,
+                            "end_line": 56
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "path": "src/main/java/simple/automation/JsonParser1.java",
+            "conversations": [
+                {
+                    "url": "git+CLAUDE_CODE:blob:1123952a8bcb4d5460cb154fffabcd050fcdd69f",
+                    "contributor": {
+                        "type": "ai",
+                        "model_id": "2.0.0"
+                    },
+                    "ranges": [
+                        {
+                            "start_line": 49,
+                            "end_line": 50
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "path": "src/main/java/simple/automation/Logger1.java",
+            "conversations": [
+                {
+                    "url": "git+CLAUDE_CODE:blob:1123952a8bcb4d5460cb154fffabcd050fcdd69f",
+                    "contributor": {
+                        "type": "ai",
+                        "model_id": "2.0.0"
+                    },
+                    "ranges": [
+                        {
+                            "start_line": 58,
+                            "end_line": 59
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "path": "src/main/java/simple/automation/Main1.java",
+            "conversations": [
+                {
+                    "url": "git+CLAUDE_CODE:blob:1123952a8bcb4d5460cb154fffabcd050fcdd69f",
+                    "contributor": {
+                        "type": "ai",
+                        "model_id": "2.0.0"
+                    },
+                    "ranges": [
+                        {
+                            "start_line": 30,
+                            "end_line": 31
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "path": "src/main/java/simple/automation/MemoryMonitor1.java",
+            "conversations": [
+                {
+                    "url": "git+CLAUDE_CODE:blob:1123952a8bcb4d5460cb154fffabcd050fcdd69f",
+                    "contributor": {
+                        "type": "ai",
+                        "model_id": "2.0.0"
+                    },
+                    "ranges": [
+                        {
+                            "start_line": 86,
+                            "end_line": 87
+                        },
+                        {
+                            "start_line": 91,
+                            "end_line": 92
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "path": "src/main/java/simple/automation/MessageQueue1.java",
+            "conversations": [
+                {
+                    "url": "git+CLAUDE_CODE:blob:1123952a8bcb4d5460cb154fffabcd050fcdd69f",
+                    "contributor": {
+                        "type": "ai",
+                        "model_id": "2.0.0"
+                    },
+                    "ranges": [
+                        {
+                            "start_line": 56,
+                            "end_line": 57
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "path": "src/main/java/simple/automation/MetricsCollector1.java",
+            "conversations": [
+                {
+                    "url": "git+CLAUDE_CODE:blob:1123952a8bcb4d5460cb154fffabcd050fcdd69f",
+                    "contributor": {
+                        "type": "ai",
+                        "model_id": "2.0.0"
+                    },
+                    "ranges": [
+                        {
+                            "start_line": 155,
+                            "end_line": 156
+                        },
+                        {
+                            "start_line": 160,
+                            "end_line": 161
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "path": "src/main/java/simple/automation/OneClass1.java",
+            "conversations": [
+                {
+                    "url": "git+CLAUDE_CODE:blob:1123952a8bcb4d5460cb154fffabcd050fcdd69f",
+                    "contributor": {
+                        "type": "ai",
+                        "model_id": "2.0.0"
+                    },
+                    "ranges": [
+                        {
+                            "start_line": 56,
+                            "end_line": 57
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "path": "src/main/java/simple/automation/OrderTests1.java",
+            "conversations": [
+                {
+                    "url": "git+CLAUDE_CODE:blob:1123952a8bcb4d5460cb154fffabcd050fcdd69f",
+                    "contributor": {
+                        "type": "ai",
+                        "model_id": "2.0.0"
+                    },
+                    "ranges": [
+                        {
+                            "start_line": 47,
+                            "end_line": 48
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "path": "src/main/java/simple/automation/Paginator1.java",
+            "conversations": [
+                {
+                    "url": "git+CLAUDE_CODE:blob:1123952a8bcb4d5460cb154fffabcd050fcdd69f",
+                    "contributor": {
+                        "type": "ai",
+                        "model_id": "2.0.0"
+                    },
+                    "ranges": [
+                        {
+                            "start_line": 87,
+                            "end_line": 88
+                        },
+                        {
+                            "start_line": 92,
+                            "end_line": 93
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "path": "src/main/java/simple/automation/RandomGenerator1.java",
+            "conversations": [
+                {
+                    "url": "git+CLAUDE_CODE:blob:1123952a8bcb4d5460cb154fffabcd050fcdd69f",
+                    "contributor": {
+                        "type": "ai",
+                        "model_id": "2.0.0"
+                    },
+                    "ranges": [
+                        {
+                            "start_line": 72,
+                            "end_line": 73
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "path": "src/main/java/simple/automation/RateLimiter1.java",
+            "conversations": [
+                {
+                    "url": "git+CLAUDE_CODE:blob:1123952a8bcb4d5460cb154fffabcd050fcdd69f",
+                    "contributor": {
+                        "type": "ai",
+                        "model_id": "2.0.0"
+                    },
+                    "ranges": [
+                        {
+                            "start_line": 73,
+                            "end_line": 74
+                        },
+                        {
+                            "start_line": 78,
+                            "end_line": 79
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "path": "src/main/java/simple/automation/RetryHandler1.java",
+            "conversations": [
+                {
+                    "url": "git+CLAUDE_CODE:blob:1123952a8bcb4d5460cb154fffabcd050fcdd69f",
+                    "contributor": {
+                        "type": "ai",
+                        "model_id": "2.0.0"
+                    },
+                    "ranges": [
+                        {
+                            "start_line": 56,
+                            "end_line": 57
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "path": "src/main/java/simple/automation/Roles1.java",
+            "conversations": [
+                {
+                    "url": "git+CLAUDE_CODE:blob:1123952a8bcb4d5460cb154fffabcd050fcdd69f",
+                    "contributor": {
+                        "type": "ai",
+                        "model_id": "2.0.0"
+                    },
+                    "ranges": [
+                        {
+                            "start_line": 22,
+                            "end_line": 23
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "path": "src/main/java/simple/automation/Smoke1.java",
+            "conversations": [
+                {
+                    "url": "git+CLAUDE_CODE:blob:1123952a8bcb4d5460cb154fffabcd050fcdd69f",
+                    "contributor": {
+                        "type": "ai",
+                        "model_id": "2.0.0"
+                    },
+                    "ranges": [
+                        {
+                            "start_line": 13,
+                            "end_line": 14
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "path": "src/main/java/simple/automation/StopWatch1.java",
+            "conversations": [
+                {
+                    "url": "git+CLAUDE_CODE:blob:1123952a8bcb4d5460cb154fffabcd050fcdd69f",
+                    "contributor": {
+                        "type": "ai",
+                        "model_id": "2.0.0"
+                    },
+                    "ranges": [
+                        {
+                            "start_line": 73,
+                            "end_line": 74
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "path": "src/main/java/simple/automation/StringUtils1.java",
+            "conversations": [
+                {
+                    "url": "git+CLAUDE_CODE:blob:1123952a8bcb4d5460cb154fffabcd050fcdd69f",
+                    "contributor": {
+                        "type": "ai",
+                        "model_id": "2.0.0"
+                    },
+                    "ranges": [
+                        {
+                            "start_line": 71,
+                            "end_line": 72
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "path": "src/main/java/simple/automation/TaskScheduler1.java",
+            "conversations": [
+                {
+                    "url": "git+CLAUDE_CODE:blob:1123952a8bcb4d5460cb154fffabcd050fcdd69f",
+                    "contributor": {
+                        "type": "ai",
+                        "model_id": "2.0.0"
+                    },
+                    "ranges": [
+                        {
+                            "start_line": 52,
+                            "end_line": 53
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "path": "src/main/java/simple/automation/TemplateEngine1.java",
+            "conversations": [
+                {
+                    "url": "git+CLAUDE_CODE:blob:1123952a8bcb4d5460cb154fffabcd050fcdd69f",
+                    "contributor": {
+                        "type": "ai",
+                        "model_id": "2.0.0"
+                    },
+                    "ranges": [
+                        {
+                            "start_line": 57,
+                            "end_line": 58
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "path": "src/main/java/simple/automation/Test1.java",
+            "conversations": [
+                {
+                    "url": "git+CLAUDE_CODE:blob:1123952a8bcb4d5460cb154fffabcd050fcdd69f",
+                    "contributor": {
+                        "type": "ai",
+                        "model_id": "2.0.0"
+                    },
+                    "ranges": [
+                        {
+                            "start_line": 6,
+                            "end_line": 7
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "path": "src/main/java/simple/automation/TestClass1.java",
+            "conversations": [
+                {
+                    "url": "git+CLAUDE_CODE:blob:1123952a8bcb4d5460cb154fffabcd050fcdd69f",
+                    "contributor": {
+                        "type": "ai",
+                        "model_id": "2.0.0"
+                    },
+                    "ranges": [
+                        {
+                            "start_line": 9,
+                            "end_line": 10
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "path": "src/main/java/simple/automation/TestSandbox1.java",
+            "conversations": [
+                {
+                    "url": "git+CLAUDE_CODE:blob:1123952a8bcb4d5460cb154fffabcd050fcdd69f",
+                    "contributor": {
+                        "type": "ai",
+                        "model_id": "2.0.0"
+                    },
+                    "ranges": [
+                        {
+                            "start_line": 8,
+                            "end_line": 9
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "path": "src/main/java/simple/automation/ThreadPoolManager1.java",
+            "conversations": [
+                {
+                    "url": "git+CLAUDE_CODE:blob:1123952a8bcb4d5460cb154fffabcd050fcdd69f",
+                    "contributor": {
+                        "type": "ai",
+                        "model_id": "2.0.0"
+                    },
+                    "ranges": [
+                        {
+                            "start_line": 76,
+                            "end_line": 77
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "path": "src/main/java/simple/automation/UrlBuilder1.java",
+            "conversations": [
+                {
+                    "url": "git+CLAUDE_CODE:blob:1123952a8bcb4d5460cb154fffabcd050fcdd69f",
+                    "contributor": {
+                        "type": "ai",
+                        "model_id": "2.0.0"
+                    },
+                    "ranges": [
+                        {
+                            "start_line": 79,
+                            "end_line": 80
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "path": "src/main/java/simple/automation/User1.java",
+            "conversations": [
+                {
+                    "url": "git+CLAUDE_CODE:blob:1123952a8bcb4d5460cb154fffabcd050fcdd69f",
+                    "contributor": {
+                        "type": "ai",
+                        "model_id": "2.0.0"
+                    },
+                    "ranges": [
+                        {
+                            "start_line": 53,
+                            "end_line": 54
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "path": "src/main/java/simple/automation/UserRepository1.java",
+            "conversations": [
+                {
+                    "url": "git+CLAUDE_CODE:blob:1123952a8bcb4d5460cb154fffabcd050fcdd69f",
+                    "contributor": {
+                        "type": "ai",
+                        "model_id": "2.0.0"
+                    },
+                    "ranges": [
+                        {
+                            "start_line": 93,
+                            "end_line": 94
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "path": "src/main/java/simple/automation/UserRole1.java",
+            "conversations": [
+                {
+                    "url": "git+CLAUDE_CODE:blob:1123952a8bcb4d5460cb154fffabcd050fcdd69f",
+                    "contributor": {
+                        "type": "ai",
+                        "model_id": "2.0.0"
+                    },
+                    "ranges": [
+                        {
+                            "start_line": 41,
+                            "end_line": 44
+                        },
+                        {
+                            "start_line": 48,
+                            "end_line": 49
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "path": "src/main/java/simple/automation/UserService1.java",
+            "conversations": [
+                {
+                    "url": "git+CLAUDE_CODE:blob:1123952a8bcb4d5460cb154fffabcd050fcdd69f",
+                    "contributor": {
+                        "type": "ai",
+                        "model_id": "2.0.0"
+                    },
+                    "ranges": [
+                        {
+                            "start_line": 124,
+                            "end_line": 125
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "path": "src/main/java/simple/automation/XmlParser1.java",
+            "conversations": [
+                {
+                    "url": "git+CLAUDE_CODE:blob:1123952a8bcb4d5460cb154fffabcd050fcdd69f",
+                    "contributor": {
+                        "type": "ai",
+                        "model_id": "2.0.0"
+                    },
+                    "ranges": [
+                        {
+                            "start_line": 68,
+                            "end_line": 69
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "path": "src/main/java/simple/automation/оооооо1.java",
+            "conversations": [
+                {
+                    "url": "git+CLAUDE_CODE:blob:1123952a8bcb4d5460cb154fffabcd050fcdd69f",
+                    "contributor": {
+                        "type": "ai",
+                        "model_id": "2.0.0"
+                    },
+                    "ranges": [
+                        {
+                            "start_line": 6,
+                            "end_line": 7
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "path": "src/main/resources/kuberapp/rest-test/src/main/java/simple/auto/resttest/RestTestApplication1.java",
+            "conversations": [
+                {
+                    "url": "git+CLAUDE_CODE:blob:1123952a8bcb4d5460cb154fffabcd050fcdd69f",
+                    "contributor": {
+                        "type": "ai",
+                        "model_id": "2.0.0"
+                    },
+                    "ranges": [
+                        {
+                            "start_line": 27,
+                            "end_line": 28
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "path": "src/main/resources/kuberapp/rest-test/src/test/java/simple/auto/resttest/RestTestApplicationTests1.java",
+            "conversations": [
+                {
+                    "url": "git+CLAUDE_CODE:blob:1123952a8bcb4d5460cb154fffabcd050fcdd69f",
+                    "contributor": {
+                        "type": "ai",
+                        "model_id": "2.0.0"
+                    },
+                    "ranges": [
+                        {
+                            "start_line": 13,
+                            "end_line": 14
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "path": "src/test/java/com/example/CalculatorTest1.java",
+            "conversations": [
+                {
+                    "url": "git+CLAUDE_CODE:blob:1123952a8bcb4d5460cb154fffabcd050fcdd69f",
+                    "contributor": {
+                        "type": "ai",
+                        "model_id": "2.0.0"
+                    },
+                    "ranges": [
+                        {
+                            "start_line": 40,
+                            "end_line": 41
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "path": "src/test/java/rest/KuberTest1.java",
+            "conversations": [
+                {
+                    "url": "git+CLAUDE_CODE:blob:1123952a8bcb4d5460cb154fffabcd050fcdd69f",
+                    "contributor": {
+                        "type": "ai",
+                        "model_id": "2.0.0"
+                    },
+                    "ranges": [
+                        {
+                            "start_line": 15,
+                            "end_line": 16
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "path": "src/test/java/rest/RestResponse1.java",
+            "conversations": [
+                {
+                    "url": "git+CLAUDE_CODE:blob:1123952a8bcb4d5460cb154fffabcd050fcdd69f",
+                    "contributor": {
+                        "type": "ai",
+                        "model_id": "2.0.0"
+                    },
+                    "ranges": [
+                        {
+                            "start_line": 26,
+                            "end_line": 27
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "path": "src/test/java/rest/RestTest1.java",
+            "conversations": [
+                {
+                    "url": "git+CLAUDE_CODE:blob:1123952a8bcb4d5460cb154fffabcd050fcdd69f",
+                    "contributor": {
+                        "type": "ai",
+                        "model_id": "2.0.0"
+                    },
+                    "ranges": [
+                        {
+                            "start_line": 59,
+                            "end_line": 60
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "path": "src/test/java/rest/pojos/CreateUserResponse1.java",
+            "conversations": [
+                {
+                    "url": "git+CLAUDE_CODE:blob:1123952a8bcb4d5460cb154fffabcd050fcdd69f",
+                    "contributor": {
+                        "type": "ai",
+                        "model_id": "2.0.0"
+                    },
+                    "ranges": [
+                        {
+                            "start_line": 17,
+                            "end_line": 18
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "path": "src/test/java/rest/pojos/UserLogin1.java",
+            "conversations": [
+                {
+                    "url": "git+CLAUDE_CODE:blob:1123952a8bcb4d5460cb154fffabcd050fcdd69f",
+                    "contributor": {
+                        "type": "ai",
+                        "model_id": "2.0.0"
+                    },
+                    "ranges": [
+                        {
+                            "start_line": 12,
+                            "end_line": 13
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "path": "src/test/java/rest/pojos/UserPojo1.java",
+            "conversations": [
+                {
+                    "url": "git+CLAUDE_CODE:blob:1123952a8bcb4d5460cb154fffabcd050fcdd69f",
+                    "contributor": {
+                        "type": "ai",
+                        "model_id": "2.0.0"
+                    },
+                    "ranges": [
+                        {
+                            "start_line": 26,
+                            "end_line": 27
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "path": "src/test/java/rest/pojos/UserPojoFull1.java",
+            "conversations": [
+                {
+                    "url": "git+CLAUDE_CODE:blob:1123952a8bcb4d5460cb154fffabcd050fcdd69f",
+                    "contributor": {
+                        "type": "ai",
+                        "model_id": "2.0.0"
+                    },
+                    "ranges": [
+                        {
+                            "start_line": 26,
+                            "end_line": 27
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "path": "src/test/java/rest/pojos/UserRequest1.java",
+            "conversations": [
+                {
+                    "url": "git+CLAUDE_CODE:blob:1123952a8bcb4d5460cb154fffabcd050fcdd69f",
+                    "contributor": {
+                        "type": "ai",
+                        "model_id": "2.0.0"
+                    },
+                    "ranges": [
+                        {
+                            "start_line": 16,
+                            "end_line": 17
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "path": "src/test/java/rest/steps/UsersSteps1.java",
+            "conversations": [
+                {
+                    "url": "git+CLAUDE_CODE:blob:1123952a8bcb4d5460cb154fffabcd050fcdd69f",
+                    "contributor": {
+                        "type": "ai",
+                        "model_id": "2.0.0"
+                    },
+                    "ranges": [
+                        {
+                            "start_line": 45,
+                            "end_line": 46
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "path": "src/test/java/simple/NewTest1.java",
+            "conversations": [
+                {
+                    "url": "git+CLAUDE_CODE:blob:1123952a8bcb4d5460cb154fffabcd050fcdd69f",
+                    "contributor": {
+                        "type": "ai",
+                        "model_id": "2.0.0"
+                    },
+                    "ranges": [
+                        {
+                            "start_line": 23,
+                            "end_line": 24
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "path": "src/test/java/simple/automation/AnotherGeneratedTest1.java",
+            "conversations": [
+                {
+                    "url": "git+CLAUDE_CODE:blob:1123952a8bcb4d5460cb154fffabcd050fcdd69f",
+                    "contributor": {
+                        "type": "ai",
+                        "model_id": "2.0.0"
+                    },
+                    "ranges": [
+                        {
+                            "start_line": 9,
+                            "end_line": 10
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "path": "src/test/java/simple/automation/BasicTest1.java",
+            "conversations": [
+                {
+                    "url": "git+CLAUDE_CODE:blob:1123952a8bcb4d5460cb154fffabcd050fcdd69f",
+                    "contributor": {
+                        "type": "ai",
+                        "model_id": "2.0.0"
+                    },
+                    "ranges": [
+                        {
+                            "start_line": 26,
+                            "end_line": 27
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "path": "src/test/java/simple/automation/CalculatorTest1.java",
+            "conversations": [
+                {
+                    "url": "git+CLAUDE_CODE:blob:1123952a8bcb4d5460cb154fffabcd050fcdd69f",
+                    "contributor": {
+                        "type": "ai",
+                        "model_id": "2.0.0"
+                    },
+                    "ranges": [
+                        {
+                            "start_line": 19,
+                            "end_line": 20
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "path": "src/test/java/simple/automation/DataProcessorTest1.java",
+            "conversations": [
+                {
+                    "url": "git+CLAUDE_CODE:blob:1123952a8bcb4d5460cb154fffabcd050fcdd69f",
+                    "contributor": {
+                        "type": "ai",
+                        "model_id": "2.0.0"
+                    },
+                    "ranges": [
+                        {
+                            "start_line": 22,
+                            "end_line": 23
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "path": "src/test/java/simple/automation/EmailValidatorTest1.java",
+            "conversations": [
+                {
+                    "url": "git+CLAUDE_CODE:blob:1123952a8bcb4d5460cb154fffabcd050fcdd69f",
+                    "contributor": {
+                        "type": "ai",
+                        "model_id": "2.0.0"
+                    },
+                    "ranges": [
+                        {
+                            "start_line": 69,
+                            "end_line": 70
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "path": "src/test/java/simple/automation/ExampleTest1.java",
+            "conversations": [
+                {
+                    "url": "git+CLAUDE_CODE:blob:1123952a8bcb4d5460cb154fffabcd050fcdd69f",
+                    "contributor": {
+                        "type": "ai",
+                        "model_id": "2.0.0"
+                    },
+                    "ranges": [
+                        {
+                            "start_line": 14,
+                            "end_line": 15
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "path": "src/test/java/simple/automation/GeneratedTest1.java",
+            "conversations": [
+                {
+                    "url": "git+CLAUDE_CODE:blob:1123952a8bcb4d5460cb154fffabcd050fcdd69f",
+                    "contributor": {
+                        "type": "ai",
+                        "model_id": "2.0.0"
+                    },
+                    "ranges": [
+                        {
+                            "start_line": 9,
+                            "end_line": 10
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "path": "src/test/java/simple/automation/MainTest1.java",
+            "conversations": [
+                {
+                    "url": "git+CLAUDE_CODE:blob:1123952a8bcb4d5460cb154fffabcd050fcdd69f",
+                    "contributor": {
+                        "type": "ai",
+                        "model_id": "2.0.0"
+                    },
+                    "ranges": [
+                        {
+                            "start_line": 19,
+                            "end_line": 20
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "path": "src/test/java/simple/automation/SampleTest1.java",
+            "conversations": [
+                {
+                    "url": "git+CLAUDE_CODE:blob:1123952a8bcb4d5460cb154fffabcd050fcdd69f",
+                    "contributor": {
+                        "type": "ai",
+                        "model_id": "2.0.0"
+                    },
+                    "ranges": [
+                        {
+                            "start_line": 14,
+                            "end_line": 15
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "path": "src/test/java/simple/automation/SmokeTest1.java",
+            "conversations": [
+                {
+                    "url": "git+CLAUDE_CODE:blob:1123952a8bcb4d5460cb154fffabcd050fcdd69f",
+                    "contributor": {
+                        "type": "ai",
+                        "model_id": "2.0.0"
+                    },
+                    "ranges": [
+                        {
+                            "start_line": 13,
+                            "end_line": 14
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "path": "src/test/java/simple/automation/StringUtilsTest1.java",
+            "conversations": [
+                {
+                    "url": "git+CLAUDE_CODE:blob:1123952a8bcb4d5460cb154fffabcd050fcdd69f",
+                    "contributor": {
+                        "type": "ai",
+                        "model_id": "2.0.0"
+                    },
+                    "ranges": [
+                        {
+                            "start_line": 61,
+                            "end_line": 62
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "path": "src/test/java/simple/automation/TemplateEngineTest1.java",
+            "conversations": [
+                {
+                    "url": "git+CLAUDE_CODE:blob:1123952a8bcb4d5460cb154fffabcd050fcdd69f",
+                    "contributor": {
+                        "type": "ai",
+                        "model_id": "2.0.0"
+                    },
+                    "ranges": [
+                        {
+                            "start_line": 46,
+                            "end_line": 47
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "path": "src/test/java/simple/automation/ThirdGeneratedTest1.java",
+            "conversations": [
+                {
+                    "url": "git+CLAUDE_CODE:blob:1123952a8bcb4d5460cb154fffabcd050fcdd69f",
+                    "contributor": {
+                        "type": "ai",
+                        "model_id": "2.0.0"
+                    },
+                    "ranges": [
+                        {
+                            "start_line": 9,
+                            "end_line": 10
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "path": "src/test/java/utils/DateDeserializer1.java",
+            "conversations": [
+                {
+                    "url": "git+CLAUDE_CODE:blob:1123952a8bcb4d5460cb154fffabcd050fcdd69f",
+                    "contributor": {
+                        "type": "ai",
+                        "model_id": "2.0.0"
+                    },
+                    "ranges": [
+                        {
+                            "start_line": 19,
+                            "end_line": 20
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "path": "src/test/java/utils/RestWrapper1.java",
+            "conversations": [
+                {
+                    "url": "git+CLAUDE_CODE:blob:1123952a8bcb4d5460cb154fffabcd050fcdd69f",
+                    "contributor": {
+                        "type": "ai",
+                        "model_id": "2.0.0"
+                    },
+                    "ranges": [
+                        {
+                            "start_line": 37,
+                            "end_line": 38
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "path": "src/test/java/utils/UserGenerator1.java",
+            "conversations": [
+                {
+                    "url": "git+CLAUDE_CODE:blob:1123952a8bcb4d5460cb154fffabcd050fcdd69f",
+                    "contributor": {
+                        "type": "ai",
+                        "model_id": "2.0.0"
+                    },
+                    "ranges": [
+                        {
+                            "start_line": 14,
+                            "end_line": 15
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "path": "src/test/java/utils/services/OrderService1.java",
+            "conversations": [
+                {
+                    "url": "git+CLAUDE_CODE:blob:1123952a8bcb4d5460cb154fffabcd050fcdd69f",
+                    "contributor": {
+                        "type": "ai",
+                        "model_id": "2.0.0"
+                    },
+                    "ranges": [
+                        {
+                            "start_line": 35,
+                            "end_line": 36
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "path": "src/test/java/utils/services/RestService1.java",
+            "conversations": [
+                {
+                    "url": "git+CLAUDE_CODE:blob:1123952a8bcb4d5460cb154fffabcd050fcdd69f",
+                    "contributor": {
+                        "type": "ai",
+                        "model_id": "2.0.0"
+                    },
+                    "ranges": [
+                        {
+                            "start_line": 28,
+                            "end_line": 29
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "path": "src/test/java/utils/services/UserService1.java",
+            "conversations": [
+                {
+                    "url": "git+CLAUDE_CODE:blob:1123952a8bcb4d5460cb154fffabcd050fcdd69f",
+                    "contributor": {
+                        "type": "ai",
+                        "model_id": "2.0.0"
+                    },
+                    "ranges": [
+                        {
+                            "start_line": 41,
+                            "end_line": 42
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "path": "src/test/java/web/WebDriverLogger1.java",
+            "conversations": [
+                {
+                    "url": "git+CLAUDE_CODE:blob:1123952a8bcb4d5460cb154fffabcd050fcdd69f",
+                    "contributor": {
+                        "type": "ai",
+                        "model_id": "2.0.0"
+                    },
+                    "ranges": [
+                        {
+                            "start_line": 62,
+                            "end_line": 63
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "path": "src/test/java/web/findby/JSExecutor1.java",
+            "conversations": [
+                {
+                    "url": "git+CLAUDE_CODE:blob:1123952a8bcb4d5460cb154fffabcd050fcdd69f",
+                    "contributor": {
+                        "type": "ai",
+                        "model_id": "2.0.0"
+                    },
+                    "ranges": [
+                        {
+                            "start_line": 19,
+                            "end_line": 20
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "path": "src/test/java/web/findby/RamblerTest1.java",
+            "conversations": [
+                {
+                    "url": "git+CLAUDE_CODE:blob:1123952a8bcb4d5460cb154fffabcd050fcdd69f",
+                    "contributor": {
+                        "type": "ai",
+                        "model_id": "2.0.0"
+                    },
+                    "ranges": [
+                        {
+                            "start_line": 48,
+                            "end_line": 49
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "path": "src/test/java/web/findby/WebDriverFactory1.java",
+            "conversations": [
+                {
+                    "url": "git+CLAUDE_CODE:blob:1123952a8bcb4d5460cb154fffabcd050fcdd69f",
+                    "contributor": {
+                        "type": "ai",
+                        "model_id": "2.0.0"
+                    },
+                    "ranges": [
+                        {
+                            "start_line": 43,
+                            "end_line": 44
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "path": "src/test/java/web/findby/config/TestConfigFactory1.java",
+            "conversations": [
+                {
+                    "url": "git+CLAUDE_CODE:blob:1123952a8bcb4d5460cb154fffabcd050fcdd69f",
+                    "contributor": {
+                        "type": "ai",
+                        "model_id": "2.0.0"
+                    },
+                    "ranges": [
+                        {
+                            "start_line": 28,
+                            "end_line": 29
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "path": "src/test/java/web/findby/config/WebConfig1.java",
+            "conversations": [
+                {
+                    "url": "git+CLAUDE_CODE:blob:1123952a8bcb4d5460cb154fffabcd050fcdd69f",
+                    "contributor": {
+                        "type": "ai",
+                        "model_id": "2.0.0"
+                    },
+                    "ranges": [
+                        {
+                            "start_line": 11,
+                            "end_line": 12
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "path": "src/test/java/web/findby/elements/Button1.java",
+            "conversations": [
+                {
+                    "url": "git+CLAUDE_CODE:blob:1123952a8bcb4d5460cb154fffabcd050fcdd69f",
+                    "contributor": {
+                        "type": "ai",
+                        "model_id": "2.0.0"
+                    },
+                    "ranges": [
+                        {
+                            "start_line": 15,
+                            "end_line": 16
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "path": "src/test/java/web/findby/elements/CustomElement1.java",
+            "conversations": [
+                {
+                    "url": "git+CLAUDE_CODE:blob:1123952a8bcb4d5460cb154fffabcd050fcdd69f",
+                    "contributor": {
+                        "type": "ai",
+                        "model_id": "2.0.0"
+                    },
+                    "ranges": [
+                        {
+                            "start_line": 38,
+                            "end_line": 39
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "path": "src/test/java/web/findby/elements/EditBox1.java",
+            "conversations": [
+                {
+                    "url": "git+CLAUDE_CODE:blob:1123952a8bcb4d5460cb154fffabcd050fcdd69f",
+                    "contributor": {
+                        "type": "ai",
+                        "model_id": "2.0.0"
+                    },
+                    "ranges": [
+                        {
+                            "start_line": 16,
+                            "end_line": 17
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "path": "src/test/java/web/findby/elements/ElementsDecorator1.java",
+            "conversations": [
+                {
+                    "url": "git+CLAUDE_CODE:blob:1123952a8bcb4d5460cb154fffabcd050fcdd69f",
+                    "contributor": {
+                        "type": "ai",
+                        "model_id": "2.0.0"
+                    },
+                    "ranges": [
+                        {
+                            "start_line": 44,
+                            "end_line": 45
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "path": "src/test/java/web/findby/elements/IFrame1.java",
+            "conversations": [
+                {
+                    "url": "git+CLAUDE_CODE:blob:1123952a8bcb4d5460cb154fffabcd050fcdd69f",
+                    "contributor": {
+                        "type": "ai",
+                        "model_id": "2.0.0"
+                    },
+                    "ranges": [
+                        {
+                            "start_line": 16,
+                            "end_line": 17
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
