@@ -26,7 +26,7 @@ dependencies {
 }
 
 
-test{
+test {
     useJUnitPlatform()
     enabled = false
 }
@@ -37,32 +37,32 @@ tasks.withType(Test).configureEach {
     finalizedBy(tasks.koverXmlReport)
 }
 
-tasks.register('webtests', Test).configure(){
-    filter{
+tasks.register('webtests', Test).configure() {
+    filter {
         includeTestsMatching("simpleautomation.web.simple*")
     }
 }
 
-tasks.register('resttests', Test).configure(){
-    filter{
+tasks.register('resttests', Test).configure() {
+    filter {
         includeTestsMatching("rest*")
     }
     finalizedBy tasks.koverXmlReport
 }
 
-tasks.register('kubertest', Test).configure(){
-    filter{
+tasks.register('kubertest', Test).configure() {
+    filter {
         includeTestsMatching("rest.KuberTest*")
     }
 }
 
-tasks.register('unit', Test).configure(){
-    filter{
+tasks.register('unit', Test).configure() {
+    filter {
         includeTestsMatching("simple.automation.*")
     }
 }
 
-tasks.register('regress', Test){
+tasks.register('regress', Test) {
     dependsOn 'resttests'
     dependsOn 'webtests'
     webtests.mustRunAfter(resttests)
@@ -92,7 +92,7 @@ tasks.register('regress', Test){
 //}
 
 def ourTask = tasks.register('grtest', customTask)
-ourTask.configure(){
+ourTask.configure() {
     println 'from task root'
     testInput = "custom input"
     inputs
@@ -104,7 +104,7 @@ ourTask.configure(){
     }
 }
 
-tasks.register("2", customTask){
+tasks.register("2", customTask) {
     println "from 2"
 }
 
@@ -113,42 +113,44 @@ def printFiles(String header, FileCollection files) {
     files.forEach { f -> logger.lifecycle(" -> $f") }
 }
 
-class customTask extends DefaultTask{
+class customTask extends DefaultTask {
     @Input
     String testInput = "defaultInput"
 
     @TaskAction
-    def action1(){
+    def action1() {
         println "custom action1 with input $testInput"
     }
+
     @TaskAction
-    def action2(){
+    def action2() {
         println 'custom action2'
     }
 }
+
 println 'from build root'
 
 //jar {
 //    manifest{
-//        attributes 'Main-Class':'simpleautomation.Main'
+//        attributes 'Main1-Class':'simpleautomation.Main1'
 //    }
 //    from {
 //        configurations.compile.collect { it.isDirectory() ? it : zipTree(it) }
 //    }
 //}
 
-tasks.register('zipReport', Zip).configure(){
+tasks.register('zipReport', Zip).configure() {
     archiveFileName = 'reports.zip'
     destinationDirectory = file("$buildDir/reports")
     from "$buildDir/reports/tests"
 }
 
-tasks.register('copyReport', Copy).configure{
+tasks.register('copyReport', Copy).configure {
     from file("$buildDir/reports/reports.zip")
     into file("out")
 }
 
-allure{
+allure {
     autoconfigure = true
     aspectjweaver = true
 }
