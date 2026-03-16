@@ -1,0 +1,88 @@
+{
+    "version": "0.1.0",
+    "id": "525c46e9-ad1c-4828-9f60-2a26ed87424a",
+    "timestamp": "2026-03-16T16:30:35.559471Z",
+    "vcs": {
+        "type": "git",
+        "revision": "179075cadb9c29e8e5c80e4ef9b7b34eb4223c1d",
+        "origin": "github",
+        "repository": "https://github.com/ivanovec/java-basics.git"
+    },
+    "tool": {
+        "name": "chatter-cli"
+    },
+    "files": [
+        {
+            "path": "src/test/java/simple/automation/AnotherGeneratedTest1.java",
+            "conversations": [
+                {
+                    "url": "git+CLAUDE_CODE:blob:1123952a8bcb4d5460cb154fffabcd050fcdd69f",
+                    "contributor": {
+                        "type": "ai",
+                        "model_id": "2.0.0"
+                    },
+                    "ranges": [
+                        {
+                            "start_line": 3,
+                            "end_line": 3
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "path": "src/test/java/simple/automation/GeneratedTest1.java",
+            "conversations": [
+                {
+                    "url": "git+CLAUDE_CODE:blob:1123952a8bcb4d5460cb154fffabcd050fcdd69f",
+                    "contributor": {
+                        "type": "ai",
+                        "model_id": "2.0.0"
+                    },
+                    "ranges": [
+                        {
+                            "start_line": 3,
+                            "end_line": 3
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "path": "src/test/java/simple/automation/SmokeTest1.java",
+            "conversations": [
+                {
+                    "url": "git+CLAUDE_CODE:blob:1123952a8bcb4d5460cb154fffabcd050fcdd69f",
+                    "contributor": {
+                        "type": "ai",
+                        "model_id": "2.0.0"
+                    },
+                    "ranges": [
+                        {
+                            "start_line": 7,
+                            "end_line": 7
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "path": "src/test/java/simple/automation/ThirdGeneratedTest1.java",
+            "conversations": [
+                {
+                    "url": "git+CLAUDE_CODE:blob:1123952a8bcb4d5460cb154fffabcd050fcdd69f",
+                    "contributor": {
+                        "type": "ai",
+                        "model_id": "2.0.0"
+                    },
+                    "ranges": [
+                        {
+                            "start_line": 3,
+                            "end_line": 3
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
