@@ -1,0 +1,37 @@
+{
+    "version": "0.1.0",
+    "id": "626fc2aa-1b3b-4ab8-aee0-7fc8718d3ead",
+    "timestamp": "2026-03-16T16:30:29.281478Z",
+    "vcs": {
+        "type": "git",
+        "revision": "97a86f1cab9cb4cd40fcc73c3256d0be2996b011",
+        "origin": "github",
+        "repository": "https://github.com/ivanovec/java-basics.git"
+    },
+    "tool": {
+        "name": "chatter-cli"
+    },
+    "files": [
+        {
+            "path": "src/test/java/simple/automation/DataProcessorTest.java",
+            "conversations": [
+                {
+                    "contributor": {
+                        "type": "ai",
+                        "model_id": "2.0.0"
+                    },
+                    "ranges": [
+                        {
+                            "start_line": 1,
+                            "end_line": 11
+                        },
+                        {
+                            "start_line": 16,
+                            "end_line": 18
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
