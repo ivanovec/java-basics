@@ -1,0 +1,15 @@
+{
+    "version": "0.1.0",
+    "id": "3f7e1106-06bf-4b98-a8d4-8892cce29db8",
+    "timestamp": "2026-03-16T16:30:39.750269Z",
+    "vcs": {
+        "type": "git",
+        "revision": "7225059853c9b814c7cfa43ba5a0de7106f6e1a8",
+        "origin": "github",
+        "repository": "https://github.com/ivanovec/java-basics.git"
+    },
+    "tool": {
+        "name": "chatter-cli"
+    },
+    "files": []
+}
