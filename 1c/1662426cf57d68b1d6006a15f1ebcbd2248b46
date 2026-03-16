@@ -1,0 +1,33 @@
+{
+    "version": "0.1.0",
+    "id": "31e9d936-35cd-42b9-8e84-6b2ad9ebfe56",
+    "timestamp": "2026-03-16T16:30:05.727272Z",
+    "vcs": {
+        "type": "git",
+        "revision": "1c1662426cf57d68b1d6006a15f1ebcbd2248b46",
+        "origin": "github",
+        "repository": "https://github.com/ivanovec/java-basics.git"
+    },
+    "tool": {
+        "name": "chatter-cli"
+    },
+    "files": [
+        {
+            "path": "src/main/java/simple/automation/CircuitBreaker.java",
+            "conversations": [
+                {
+                    "contributor": {
+                        "type": "ai",
+                        "model_id": "2.0.0"
+                    },
+                    "ranges": [
+                        {
+                            "start_line": 73,
+                            "end_line": 73
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
