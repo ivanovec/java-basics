@@ -1,0 +1,33 @@
+{
+    "version": "0.1.0",
+    "id": "5c9a91ba-99b5-4ecf-9874-5a91bd1b373a",
+    "timestamp": "2026-03-16T16:29:51.754882Z",
+    "vcs": {
+        "type": "git",
+        "revision": "b96e6b99a4577db94e93046a6c7854fbd7e7f686",
+        "origin": "github",
+        "repository": "https://github.com/ivanovec/java-basics.git"
+    },
+    "tool": {
+        "name": "chatter-cli"
+    },
+    "files": [
+        {
+            "path": "src/main/java/simple/automation/User.java",
+            "conversations": [
+                {
+                    "contributor": {
+                        "type": "ai",
+                        "model_id": "2.0.0"
+                    },
+                    "ranges": [
+                        {
+                            "start_line": 21,
+                            "end_line": 22
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
