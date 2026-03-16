@@ -1,0 +1,33 @@
+{
+    "version": "0.1.0",
+    "id": "fd45b184-f479-49df-8e89-3d8934405d18",
+    "timestamp": "2026-03-16T16:30:00.486147Z",
+    "vcs": {
+        "type": "git",
+        "revision": "ed49492d5220e1c3f527dfc4010a6bc2a2b8a1fc",
+        "origin": "github",
+        "repository": "https://github.com/ivanovec/java-basics.git"
+    },
+    "tool": {
+        "name": "chatter-cli"
+    },
+    "files": [
+        {
+            "path": "src/main/java/simple/automation/MetricsCollector.java",
+            "conversations": [
+                {
+                    "contributor": {
+                        "type": "ai",
+                        "model_id": "2.0.0"
+                    },
+                    "ranges": [
+                        {
+                            "start_line": 1,
+                            "end_line": 151
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
