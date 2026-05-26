@@ -35,8 +35,8 @@ jobs:
           upload-result: true
           pr-mode: false
           use-caches: true
-          primary-cache-key: qodana-jvm-cache
-          args: | # 123
+          cache-default-branch-only: false
+          args: |
             --linter,qodana-jvm,
             --within-docker,false
         env:
