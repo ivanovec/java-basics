@@ -32,7 +32,7 @@ jobs:
           upload-result: true
           pr-mode: false
           use-caches: true
-          cache-default-branch-only: false #334
+          cache-default-branch-only: false #33
           args: |
             --linter,qodana-jvm,
             --within-docker,false,
