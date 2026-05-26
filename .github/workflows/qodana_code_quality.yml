@@ -33,7 +33,6 @@ jobs:
           pr-mode: false
           use-caches: true
           cache-default-branch-only: false
-          additional-cache-hash: maven
           args: |
             --linter,qodana-jvm,
             --within-docker,false,
