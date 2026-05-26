@@ -33,7 +33,7 @@ jobs:
           pr-mode: false
           use-caches: true
           cache-default-branch-only: false
-          primary-cache-key: qodana-2025.2-maven-${{ github.ref }}
+          additional-cache-hash: maven
           args: |
             --linter,qodana-jvm,
             --within-docker,false,
