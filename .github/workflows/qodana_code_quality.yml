@@ -35,9 +35,10 @@ jobs:
           upload-result: true
           pr-mode: false
           use-caches: true
-          cache-default-branch-only: false #test2
+          cache-default-branch-only: false
           args: |
             --linter,qodana-jvm,
-            --within-docker,false
+            --within-docker,false,
+            --property=idea.project.build.system=maven
         env:
           QODANA_TOKEN:  ${{ secrets.QODANA_TOKEN }}
