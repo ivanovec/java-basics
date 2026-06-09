@@ -1,0 +1,93 @@
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<project version=\"4\">\n  <component name=\"AnalysisUIOptions\">\n    <option name=\"SPLITTER_PROPORTION\" value=\"0.34767643\" />\n  </component>\n  <component name=\"AutoImportSettings\">\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\n  </component>\n  <component name=\"ChangeListManager\">\n    <list default=\"true\" id=\"d9a6b539-6ba9-4727-b5dd-1a3b99523ef7\" name=\"Changes\" comment=\"123\">\n      <change afterPath=\"$PROJECT_DIR$/.qodana/plugins/stupid_inspection-2.0.0.jar\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/qodana.yaml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/qodana.yaml\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/rep/Example.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/rep/Example.java\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/simple/automation/Main.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/java/simple/automation/Main.java\" afterDir=\"false\" />\n    </list>\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\n  </component>\n  <component name=\"ComposerSettings\">\n    <execution />\n  </component>\n  <component name=\"ExternalProjectsData\">\n    <projectState path=\"$PROJECT_DIR$\">\n      <ProjectState />\n    </projectState>\n  </component>\n  <component name=\"ExternalProjectsManager\">\n    <system id=\"GRADLE\">\n      <state>\n        <projects_view>\n          <tree_state>\n            <expand>\n              <path>\n                <item name=\"\" type=\"6a2764b6:ExternalProjectsStructure$RootNode\" />\n                <item name=\"java-basics\" type=\"f1a62948:ProjectNode\" />\n              </path>\n            </expand>\n            <select />\n          </tree_state>\n        </projects_view>\n      </state>\n    </system>\n  </component>\n  <component name=\"Git.Settings\">\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\n  </component>\n  <component name=\"GitHubPullRequestSearchHistory\">{\n  &quot;lastFilter&quot;: {\n    &quot;state&quot;: &quot;OPEN&quot;,\n    &quot;assignee&quot;: &quot;ivanovec&quot;\n  }\n}</component>\n  <component name=\"GithubPullRequestsUISettings\">{\n  &quot;selectedUrlAndAccountId&quot;: {\n    &quot;url&quot;: &quot;git@github.com:ivanovec/java-basics.git&quot;,\n    &quot;accountId&quot;: &quot;f14ddf3e-b995-470c-ad5f-21ba01eff331&quot;\n  }\n}</component>\n  <component name=\"KubernetesApiPersistence\">{}</component>\n  <component name=\"KubernetesApiProvider\">{\n  &quot;isMigrated&quot;: true\n}</component>\n  <component name=\"ProblemsViewState\">\n    <option name=\"selectedTabId\" value=\"CurrentFile\" />\n  </component>\n  <component name=\"ProjectColorInfo\">{\n  &quot;customColor&quot;: &quot;&quot;,\n  &quot;associatedIndex&quot;: 1\n}</component>\n  <component name=\"ProjectId\" id=\"2vRFGQwkoEbLtfLYL1YM1ZeW13C\" />\n  <component name=\"ProjectViewState\">\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\n    <option name=\"showLibraryContents\" value=\"true\" />\n  </component>\n  <component name=\"PropertiesComponent\"><![CDATA[{\n  \"keyToString\": {\n    \"RunOnceActivity.git.unshallow\": \"true\",\n    \"RunOnceActivity.go.formatter.settings.were.checked\": \"true\",\n    \"RunOnceActivity.go.migrated.go.modules.settings\": \"true\",\n    \"RunOnceActivity.restore.workspace.module\": \"true\",\n    \"git-widget-placeholder\": \"ast\",\n    \"go.import.settings.migrated\": \"true\",\n    \"kotlin-language-version-configured\": \"true\",\n    \"node.js.detected.package.eslint\": \"true\",\n    \"node.js.selected.package.eslint\": \"(autodetect)\",\n    \"node.js.selected.package.tslint\": \"(autodetect)\",\n    \"nodejs_package_manager_path\": \"npm\",\n    \"project.structure.last.edited\": \"Modules\",\n    \"project.structure.proportion\": \"0.15\",\n    \"project.structure.side.proportion\": \"0.35517243\",\n    \"settings.editor.selected.configurable\": \"reference.settingsdialog.project.gradle\",\n    \"vue.rearranger.settings.migration\": \"true\"\n  }\n}]]></component>\n  <component name=\"RubyModuleManagerSettings\">\n    <option name=\"blackListedRootsPaths\">\n      <list>\n        <option value=\"$PROJECT_DIR$/src/main\" />\n        <option value=\"$PROJECT_DIR$/src/test\" />\n        <option value=\"$PROJECT_DIR$/build/generated/sources/annotationProcessor/java/main\" />\n      </list>\n    </option>\n  </component>\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\n  <component name=\"TaskManager\">\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\n      <changelist id=\"d9a6b539-6ba9-4727-b5dd-1a3b99523ef7\" name=\"Changes\" comment=\"\" />\n      <created>1744100884243</created>\n      <option name=\"number\" value=\"Default\" />\n      <option name=\"presentableId\" value=\"Default\" />\n      <updated>1744100884243</updated>\n      <workItem from=\"1749213939168\" duration=\"22000\" />\n      <workItem from=\"1749218163064\" duration=\"20000\" />\n      <workItem from=\"1749218210907\" duration=\"24000\" />\n      <workItem from=\"1749223489981\" duration=\"60000\" />\n      <workItem from=\"1749225309747\" duration=\"37000\" />\n      <workItem from=\"1749551990838\" duration=\"1852000\" />\n      <workItem from=\"1749635663581\" duration=\"16000\" />\n      <workItem from=\"1749646061893\" duration=\"41000\" />\n    </task>\n    <task id=\"LOCAL-00001\" summary=\"123\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1749552257382</created>\n      <option name=\"number\" value=\"00001\" />\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1749552257382</updated>\n    </task>\n    <task id=\"LOCAL-00002\" summary=\"123\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1749552324929</created>\n      <option name=\"number\" value=\"00002\" />\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1749552324929</updated>\n    </task>\n    <task id=\"LOCAL-00003\" summary=\"123\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1749552380123</created>\n      <option name=\"number\" value=\"00003\" />\n      <option name=\"presentableId\" value=\"LOCAL-00003\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1749552380123</updated>\n    </task>\n    <task id=\"LOCAL-00004\" summary=\"123\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1749552557240</created>\n      <option name=\"number\" value=\"00004\" />\n      <option name=\"presentableId\" value=\"LOCAL-00004\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1749552557240</updated>\n    </task>\n    <task id=\"LOCAL-00005\" summary=\"123\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1749552762742</created>\n      <option name=\"number\" value=\"00005\" />\n      <option name=\"presentableId\" value=\"LOCAL-00005\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1749552762742</updated>\n    </task>\n    <task id=\"LOCAL-00006\" summary=\"123\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1749727842273</created>\n      <option name=\"number\" value=\"00006\" />\n      <option name=\"presentableId\" value=\"LOCAL-00006\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1749727842273</updated>\n    </task>\n    <task id=\"LOCAL-00007\" summary=\"123\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1749727938395</created>\n      <option name=\"number\" value=\"00007\" />\n      <option name=\"presentableId\" value=\"LOCAL-00007\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1749727938395</updated>\n    </task>\n    <task id=\"LOCAL-00008\" summary=\"123\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1749728835414</created>\n      <option name=\"number\" value=\"00008\" />\n      <option name=\"presentableId\" value=\"LOCAL-00008\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1749728835414</updated>\n    </task>\n    <task id=\"LOCAL-00009\" summary=\"123\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1749729605598</created>\n      <option name=\"number\" value=\"00009\" />\n      <option name=\"presentableId\" value=\"LOCAL-00009\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1749729605598</updated>\n    </task>\n    <task id=\"LOCAL-00010\" summary=\"123\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1749730962105</created>\n      <option name=\"number\" value=\"00010\" />\n      <option name=\"presentableId\" value=\"LOCAL-00010\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1749730962105</updated>\n    </task>\n    <task id=\"LOCAL-00011\" summary=\"123\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1749731544226</created>\n      <option name=\"number\" value=\"00011\" />\n      <option name=\"presentableId\" value=\"LOCAL-00011\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1749731544226</updated>\n    </task>\n    <option name=\"localTasksCounter\" value=\"12\" />\n    <servers />\n  </component>\n  <component name=\"TypeScriptGeneratedFilesManager\">\n    <option name=\"version\" value=\"3\" />\n  </component>\n  <component name=\"Vcs.Log.Tabs.Properties\">\n    <option name=\"TAB_STATES\">\n      <map>\n        <entry key=\"MAIN\">\n          <value>\n            <State />\n          </value>\n        </entry>\n      </map>\n    </option>\n  </component>\n  <component name=\"VcsManagerConfiguration\">\n    <MESSAGE value=\"123\" />\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"123\" />\n  </component>\n  <component name=\"VgoProject\">\n    <settings-migrated>true</settings-migrated>\n  </component>\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision 36ff9d55cf8a8a09e6e29717dc2354794bad4765)
++++ b/.idea/workspace.xml	(date 1757510377780)
+@@ -8,12 +8,8 @@
+   </component>
+   <component name="ChangeListManager">
+     <list default="true" id="d9a6b539-6ba9-4727-b5dd-1a3b99523ef7" name="Changes" comment="123">
+-      <change afterPath="$PROJECT_DIR$/.qodana/plugins/stupid_inspection-2.0.0.jar" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/qodana.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/qodana.yaml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/rep/Example.java" beforeDir="false" afterPath="$PROJECT_DIR$/rep/Example.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/simple/automation/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/simple/automation/Main.java" afterDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+@@ -37,6 +33,11 @@
+               <path>
+                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                 <item name="java-basics" type="f1a62948:ProjectNode" />
++              </path>
++              <path>
++                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
++                <item name="java-basics" type="f1a62948:ProjectNode" />
++                <item name="Tasks" type="e4a08cd1:TasksNode" />
+               </path>
+             </expand>
+             <select />
+@@ -47,6 +48,7 @@
+   </component>
+   <component name="Git.Settings">
+     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
++    <option name="ROOT_SYNC" value="DONT_SYNC" />
+   </component>
+   <component name="GitHubPullRequestSearchHistory">{
+   &quot;lastFilter&quot;: {
+@@ -96,6 +98,15 @@
+     "vue.rearranger.settings.migration": "true"
+   }
+ }]]></component>
++  <component name="QodanaHighlightedReportService">
++    <option name="localRunNotPublishedPersistedInfo">
++      <LocalReportPersistedInfo>
++        <option name="path" value="/private/var/folders/fr/3j083z617nb3tlntb9mndkfc0000kt/T/qodana_output6/qodana.sarif.json" />
++        <option name="reportGuid" value="3721d337-ca41-4516-84de-e66735b6e028" />
++        <option name="reportName" value="java-basics/qodana/2025-09-08" />
++      </LocalReportPersistedInfo>
++    </option>
++  </component>
+   <component name="RubyModuleManagerSettings">
+     <option name="blackListedRootsPaths">
+       <list>
+@@ -104,6 +115,14 @@
+         <option value="$PROJECT_DIR$/build/generated/sources/annotationProcessor/java/main" />
+       </list>
+     </option>
++  </component>
++  <component name="SharedIndexes">
++    <attachedChunks>
++      <set>
++        <option value="bundled-jdk-9823dce3aa75-bf35d07a577b-intellij.indexing.shared.core-QDJVM-252.26413" />
++        <option value="bundled-js-predefined-d6986cc7102b-9c94529fcfe0-JavaScript-QDJVM-252.26413" />
++      </set>
++    </attachedChunks>
+   </component>
+   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+   <component name="TaskManager">
+Index: .idea/vcs.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<project version=\"4\">\n  <component name=\"VcsDirectoryMappings\">\n    <mapping directory=\"\" vcs=\"Git\" />\n  </component>\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/vcs.xml b/.idea/vcs.xml
+--- a/.idea/vcs.xml	(revision 36ff9d55cf8a8a09e6e29717dc2354794bad4765)
++++ b/.idea/vcs.xml	(date 1757505424408)
+@@ -2,5 +2,6 @@
+ <project version="4">
+   <component name="VcsDirectoryMappings">
+     <mapping directory="" vcs="Git" />
++    <mapping directory="$PROJECT_DIR$/codeql" vcs="Git" />
+   </component>
+ </project>
+\ No newline at end of file

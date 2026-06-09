@@ -68,7 +68,7 @@ jobs:
 
           # Run Qodana via CLI (mimics TestAllCommandsWithContainer)
           qodana scan \
-            -i jetbrains/${IMAGE} \
+            -i ${IMAGE} \
             --cache-dir $(pwd)/.qodana-cache \
             --results-dir $(pwd)/results \
             --fail-threshold 5 \

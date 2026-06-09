@@ -1,0 +1,51 @@
+{
+  "appInfo" : {
+    "build" : "253.32835",
+    "buildDate" : "2026-04-07T15:31:38.886Z[Etc/UTC]",
+    "productCode" : "QDJVM",
+    "generated" : "2026-04-07T15:32:02.796948833Z",
+    "os" : "Linux 6.10.14-linuxkit",
+    "runtime" : "JetBrains s.r.o. 21.0.10 21.0.10+7-b1163.112"
+  },
+  "runtimeInfo" : {
+    "maxMemory" : 28840034304,
+    "numberOfProcessors" : 8,
+    "maxNumberOfIndexingThreads" : 8,
+    "maxSizeOfFileForIntelliSense" : 2560000,
+    "maxSizeOfFileForContentLoading" : 20971520
+  },
+  "type" : "DumbIndexing",
+  "projectIndexingActivityHistory" : {
+    "projectName" : "java-basics",
+    "times" : {
+      "scanningIds" : [ ],
+      "contentLoadingVisibleTime" : 0,
+      "retrievingChangedDuringIndexingFilesTime" : 20750,
+      "separateApplyingIndexesVisibleTime" : 0,
+      "updatingStart" : "2026-04-07T15:32:02.654225042Z",
+      "updatingEnd" : "2026-04-07T15:32:02.654445751Z",
+      "totalWallTimeWithPauses" : 220709,
+      "wallTimeOnPause" : 0,
+      "isCancelled" : false,
+      "dumbModeStart" : "2026-04-07T15:32:02.654225042Z",
+      "dumbWallTimeWithPauses" : 220709,
+      "dumbWallTimeWithoutPauses" : 220709,
+      "totalWallTimeWithoutPauses" : 220709
+    },
+    "fileCount" : {
+      "numberOfChangedDuringIndexingFiles" : 0,
+      "numberOfFilesIndexedByInfrastructureExtensionsDuringIndexingStage" : 0,
+      "numberOfFilesIndexedWithLoadingContent" : 0,
+      "numberOfNothingToWriteFiles" : 0
+    },
+    "totalStatsPerFileType" : [ ],
+    "totalStatsPerBaseLanguage" : [ ],
+    "totalStatsPerIndexer" : [ ],
+    "statisticsOfChangedDuringIndexingFiles" : {
+      "numberOfFiles" : 0,
+      "retrievingTime" : 20750
+    },
+    "fileProviderStatistics" : [ ],
+    "visibleTimeToAllThreadTimeRatio" : 0.0
+  }
+}
