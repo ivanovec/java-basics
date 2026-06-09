@@ -41,7 +41,16 @@ jobs:
           echo "Architecture: $(uname -m)"
           echo "Runner: ${{ runner.os }} / ${{ runner.arch }}"
 
-      - name: Test qodana-dotnet with license
+      - name: Install Qodana CLI
+        run: |
+          curl -fsSL https://jb.gg/qodana-cli/install | bash
+          echo "$HOME/.local/bin" >> $GITHUB_PATH
+
+      - name: Verify Qodana CLI installation
+        run: |
+          qodana --version
+
+      - name: Run Qodana scan with CLI
         env:
           QODANA_TOKEN: ${{ secrets.QODANA_TOKEN || secrets.QODANA_LICENSE_ONLY_TOKEN }}
         run: |
@@ -53,17 +62,17 @@ jobs:
             IMAGE="jetbrains/qodana-dotnet:latest"
           fi
 
-          echo "Testing with image: $IMAGE"
+          echo "Testing with image: $IMAGE via qodana CLI"
 
           mkdir -p results
 
-          # Run Qodana
-          docker run --rm \
-            -v $(pwd):/data/project \
-            -v $(pwd)/results:/data/results \
-            -e QODANA_TOKEN="${QODANA_TOKEN}" \
-            ${IMAGE} \
-            --save-report
+          # Run Qodana via CLI (mimics TestAllCommandsWithContainer)
+          qodana scan \
+            -i jetbrains/${IMAGE} \
+            --cache-dir $(pwd)/.qodana-cache \
+            --results-dir $(pwd)/results \
+            --fail-threshold 5 \
+            --print-problems
 
           echo "✓ Scan completed successfully"
 
