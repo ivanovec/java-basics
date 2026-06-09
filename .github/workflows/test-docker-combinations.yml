@@ -1,0 +1,78 @@
+name: Test Docker Combinations
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [ test-docker-* ]
+
+jobs:
+  test-matrix:
+    name: "Test (⚙️ ${{ matrix.os }}, 🐳 ${{ matrix.docker-version }})"
+    runs-on: ${{ matrix.os }}
+    timeout-minutes: 30
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          # This combination FAILS in qodana-cli dependabot PRs
+          - os: ubuntu-latest
+            docker-version: latest
+          # This combination WORKS
+          - os: ubuntu-latest
+            docker-version: v25.0
+          # This combination WORKS
+          - os: ubuntu-24.04-arm
+            docker-version: latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Docker version
+        if: matrix.docker-version != 'latest'
+        run: |
+          # Install specific Docker version
+          curl -fsSL https://get.docker.com | VERSION=${{ matrix.docker-version }} sh
+          docker --version
+
+      - name: Show environment
+        run: |
+          echo "OS: $(uname -a)"
+          echo "Docker version: $(docker --version)"
+          echo "Architecture: $(uname -m)"
+          echo "Runner: ${{ runner.os }} / ${{ runner.arch }}"
+
+      - name: Test qodana-dotnet with license
+        env:
+          QODANA_TOKEN: ${{ secrets.QODANA_TOKEN || secrets.QODANA_LICENSE_ONLY_TOKEN }}
+        run: |
+          if [ -z "$QODANA_TOKEN" ]; then
+            echo "⚠️  No QODANA_TOKEN available, using free linter"
+            IMAGE="jetbrains/qodana-jvm-community:latest"
+          else
+            echo "✓ QODANA_TOKEN available, using paid linter"
+            IMAGE="jetbrains/qodana-dotnet:latest"
+          fi
+
+          echo "Testing with image: $IMAGE"
+
+          mkdir -p results
+
+          # Run Qodana
+          docker run --rm \
+            -v $(pwd):/data/project \
+            -v $(pwd)/results:/data/results \
+            -e QODANA_TOKEN="${QODANA_TOKEN}" \
+            ${IMAGE} \
+            --save-report
+
+          echo "✓ Scan completed successfully"
+
+      - name: Check results
+        run: |
+          if [ -f results/qodana.sarif.json ]; then
+            echo "✓ SARIF report generated"
+            ls -lh results/
+          else
+            echo "❌ SARIF report NOT generated"
+            exit 1
+          fi
