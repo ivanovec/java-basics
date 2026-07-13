@@ -1,0 +1,34 @@
+{
+    "version": "0.1",
+    "id": "04e6c1cc-95e1-44d9-814e-aaa5b3b6015e",
+    "timestamp": "2026-07-13T21:01:22.792550Z",
+    "vcs": {
+        "type": "git",
+        "revision": "f1581c9682c442899fce3cdf392070a36388b843"
+    },
+    "tool": {
+        "name": "chatter",
+        "version": "0.1"
+    },
+    "files": [
+        {
+            "path": "src/main/java/com/example/StringUtils.java",
+            "conversations": [
+                {
+                    "url": "f7498596-4046-4ec1-89dd-f412bd7c2316",
+                    "agent": "claude",
+                    "contributor": {
+                        "type": "ai",
+                        "model_id": "claude-sonnet-4-6"
+                    },
+                    "ranges": [
+                        {
+                            "start_line": 1,
+                            "end_line": 38
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
