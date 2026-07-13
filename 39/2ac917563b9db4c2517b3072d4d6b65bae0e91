@@ -1,0 +1,53 @@
+{
+    "version": "0.1",
+    "id": "4fe3d61a-0767-42fa-8648-04deb9c65e9b",
+    "timestamp": "2026-07-13T21:08:06.143939Z",
+    "vcs": {
+        "type": "git",
+        "revision": "392ac917563b9db4c2517b3072d4d6b65bae0e91"
+    },
+    "tool": {
+        "name": "chatter",
+        "version": "0.1"
+    },
+    "files": [
+        {
+            "path": "src/main/java/com/example/Calculator.java",
+            "conversations": [
+                {
+                    "url": "f5501d3b-dc01-441f-8a64-0510b20f7cde",
+                    "agent": "claude",
+                    "contributor": {
+                        "type": "ai",
+                        "model_id": "claude-sonnet-4-6"
+                    },
+                    "ranges": [
+                        {
+                            "start_line": 1,
+                            "end_line": 21
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "path": "src/main/java/com/example/MathUtils.java",
+            "conversations": [
+                {
+                    "url": "83dc5b78-c9d1-4f6e-8a35-5d023f9e37c2",
+                    "agent": "claude",
+                    "contributor": {
+                        "type": "ai",
+                        "model_id": "claude-sonnet-4-6"
+                    },
+                    "ranges": [
+                        {
+                            "start_line": 1,
+                            "end_line": 43
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
