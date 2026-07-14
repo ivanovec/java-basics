@@ -1,0 +1,34 @@
+{
+    "version": "0.1",
+    "id": "39c0dfd7-5e4b-4740-89e0-4d8b13eeee44",
+    "timestamp": "2026-07-14T08:43:24.502650Z",
+    "vcs": {
+        "type": "git",
+        "revision": "fd55f2d08f146aaa6bd4ff940ff9f5757ec2e7cc"
+    },
+    "tool": {
+        "name": "chatter",
+        "version": "0.1"
+    },
+    "files": [
+        {
+            "path": "newfile.txt",
+            "conversations": [
+                {
+                    "url": "2e1f1065-e844-40ff-8b2c-0cc4d352a067",
+                    "agent": "claude",
+                    "contributor": {
+                        "type": "ai",
+                        "model_id": "claude-sonnet-4-6"
+                    },
+                    "ranges": [
+                        {
+                            "start_line": 1,
+                            "end_line": 1
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
