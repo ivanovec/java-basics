@@ -1,14 +1,1 @@
-{
-    "version": "0.1",
-    "id": "db300e3b-487a-4f2e-9844-c17f9ff33627",
-    "timestamp": "2026-07-15T20:16:12.455724Z",
-    "vcs": {
-        "type": "git",
-        "revision": "b59f830cdbe1781355f67ee420a130598013fe34"
-    },
-    "tool": {
-        "name": "chatter",
-        "version": "0.1"
-    },
-    "files": []
-}
+chatter:gzip:H4sIAAAAAAAAA1XPQWrDMBBG4bv8aymMNJIl6xxZpXQh26NWEMfGFoYSfPdi6KYXeB/vjUO2vS4vJNDNQKFOSJgGJhIetIsha1es6D46p0cTSl8Kc2cDFFqdZW95XpFgyXaagjb+bimZLhl7c94H6x5QOMYd6Y32swoSvmqDwiZH/aMH35fINE6DmBANe1+6IOIsZcPk+0iGi7DDqdCW5Xm1Xnm+WuN3bk22y/h3ciqU+pQd6ePz/AX+R0RD5wAAAA==
