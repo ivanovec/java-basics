@@ -1,15 +1,1 @@
-{
-    "version": "0.1.0",
-    "id": "609b08ff-0042-4768-9f11-568279e078fd",
-    "timestamp": "2026-02-25T13:29:18.322580Z",
-    "vcs": {
-        "type": "git",
-        "revision": "0db5be94b19875f86a4088aaefc5b8099285fdac",
-        "origin": "github",
-        "repository": "git@github.com:ivanovec/java-basics.git"
-    },
-    "tool": {
-        "name": "chatter-cli"
-    },
-    "files": []
-}
+chatter:gzip:H4sIAAAAAAAAAzWOQW7DIBBF7zJrcAdi7IFVDtFVqy4AQ0JlG8tQpCjK3SvX6vY/6b3/hBb2kvIKBrATHQKDNIGBAbVDipEj9pL340BcRyG4GkiOOuBIcQIGNS2hVLtsYECiHDhKLtW7uBipjaDuIqUi/AAGzRcwT6iPLYCBW6rAYA8t/ccnp1zQvROaRhVpsD0SWRuiV45Qa0kqTtYDg7ynW1pPyf3H/Xm2XFLN++NcryfpfF5ManbNLfi3b9ssd7YkX7oj/2JQc56PU6tdjlP+bmsNO/dzOmhMcyhgPr9evzf6CjImAQAA
