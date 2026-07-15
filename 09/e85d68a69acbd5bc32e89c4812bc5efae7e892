@@ -1,1 +1,56 @@
-chatter:gzip:H4sIAAAAAAAA/81SwY7bIBC95ytWPpcEsDGQa8+99dRqtRrDJMvKxpaNo1ar/HuxXaebXbtqVFVdbgxv3nszvOfNXTzJCdvO1T7Z3yV0y5IPU9XZoSCMpSlXmqAQlGQgBNHaGEINyy1ICbk+zB3BVdgFqJqhkVOeEyoJE5+Z3ot0T9VWKp5q+mXGn0wXkc/jZSL43uDQe3ThJ2Yst3hyF4MalbC5irpgCisKk3JU2mSK8cIIPADKeOfJ2H6endV1eS3loRqlzCOEgO1LuVfruCI6uBIH018v8F+cI6CB8Dh0dq3ZVeD87glOsOtc1ZS4+wShdd8+Qmn6EkLdbofHF9Ijg6n94ABC9HAttSx5aezbYcak0Dq1heVEWCVJpgQSBWlBwBqGWgtFqXmleaGAI/owrqWE3uIaLFqMgxR9HOFqq2+A84eCW6EaUVVtsXyY8jYJk672HgPJiCAxSIJqrpNFgvOKxRb8EZfXN5913yNDTHIbHkrnhwkUW/c/otHbC5avQlfc3uwmu8GNWHez+HL/prrg+vcRtBwUomIk41qTLLeaAMsZgfiPhWVSSLmarXcTwbrpuxhA9V9zd0PspPrXsdP8z90IJv8+d5vl96l+vzn/AJwepcvABgAA
+{
+    "version": "0.1",
+    "id": "a74f4296-fd1e-4d07-a1f7-b846a99366b8",
+    "timestamp": "2026-07-15T19:53:45.527068Z",
+    "vcs": {
+        "type": "git",
+        "revision": "09e85d68a69acbd5bc32e89c4812bc5efae7e892"
+    },
+    "tool": {
+        "name": "chatter",
+        "version": "0.1"
+    },
+    "files": [
+        {
+            "path": "src/main/java/simple/MatrixCalculator.java",
+            "conversations": [
+                {
+                    "url": "b993dbd2-5d87-485e-8a3b-adc1e995800c",
+                    "agent": "claude",
+                    "contributor": {
+                        "type": "ai",
+                        "model_id": "claude-sonnet-4-5-20250929"
+                    },
+                    "ranges": [
+                        {
+                            "start_line": 81,
+                            "end_line": 82
+                        },
+                        {
+                            "start_line": 84,
+                            "end_line": 85
+                        }
+                    ]
+                },
+                {
+                    "url": "d2a8ee81-4299-46d9-a161-a092bd17577e",
+                    "agent": "claude",
+                    "contributor": {
+                        "type": "ai",
+                        "model_id": "claude-opus-4-8"
+                    },
+                    "ranges": [
+                        {
+                            "start_line": 1,
+                            "end_line": 78
+                        },
+                        {
+                            "start_line": 92,
+                            "end_line": 517
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
