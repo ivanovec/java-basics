@@ -21,9 +21,3 @@ jobs:
           fetch-depth: 0
 
       - uses: qodana/chatter-action@fdfb827dd94039037d62d0998ea9d4ecc096afe8
-        with:
-          github-token: ${{ github.token }}
-          filter: rollout
-          comment: true
-          check: true
-          push-notes: true
