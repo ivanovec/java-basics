@@ -1,0 +1,31 @@
+name: Chatter Attribution
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened, closed]
+  push:
+    branches:
+      - qodana
+
+permissions:
+  checks: write         # publish the detailed Chatter attribution Check
+  contents: write       # publish mainline refs/notes/chatter
+  pull-requests: write  # update the optional PR report
+
+jobs:
+  chatter:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0  # Required: mapping and blame need full history
+
+      - name: Run Chatter Attribution
+        uses: qodana/chatter-action@main
+        with:
+          github-token: ${{ github.token }}
+          filter: rollout
+          comment: true
+          check: true
+          push-notes: true
