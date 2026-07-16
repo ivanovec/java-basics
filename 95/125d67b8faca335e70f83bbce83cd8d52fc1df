@@ -1,1 +1,34 @@
-chatter:gzip:H4sIAAAAAAAA/3WSzW7rIBCF932KyusS82NsnG1foXdzr6pqgHFKZeMIk0hXVd69Nq7Tuo3ZMXxzzmHg/e5+XNkZw+B6n+3vM7pj2cNcdXYqVFAaLbghpSgUKSpKidJCkEJzXnLkAKpeOqLrcIjQHadGTnlJaEVY+USrPS/2VO4qJrmq/y782Qwj+Z42s8D/I069Bxc/mVQOeHZLwFoyLm1ZadWAASEkVrRRQmuDShirrOSNYbbJUvtlSdb37drKQ5eszCvEiOG73Y9xrIQa1+IU+t8V/9JMwBHi69Q5BJN34Hz+BmfITd/lBlpzaiH2If/TxgCP1/1uYr4lSEKm91MQiGOUteNt52vjKUxXzRjYRlPkxDIJpFC1IlqYmjQMNeVFiaIqf3heJeCAPqbptHCyuIWNEWNw+jReYTXcX+DyruA2pBLV9Rbbl/nbzcZk6L3HSAoiyfifJK15nd0UuGxEDOAPeHt8y9rOnRTGDx3iS+v8dAO2HT/B6O2CKlFsspebJ8+/qmvu63yuP99dPgCEbqdewQMAAA==
+{
+    "version": "0.1",
+    "id": "83b6af49-2d17-4545-a79b-a56d7d388d66",
+    "timestamp": "2026-07-16T07:24:41.781414Z",
+    "vcs": {
+        "type": "git",
+        "revision": "95125d67b8faca335e70f83bbce83cd8d52fc1df"
+    },
+    "tool": {
+        "name": "chatter",
+        "version": "0.1"
+    },
+    "files": [
+        {
+            "path": "src/main/java/com/calculator/UltraCalculator.java",
+            "conversations": [
+                {
+                    "url": "1adfb0e2-d15a-4898-b3c9-f1eb0246e376",
+                    "agent": "claude",
+                    "contributor": {
+                        "type": "ai",
+                        "model_id": "claude-sonnet-4-5-20250929"
+                    },
+                    "ranges": [
+                        {
+                            "start_line": 1,
+                            "end_line": 834
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
