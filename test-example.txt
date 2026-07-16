@@ -1,0 +1,7 @@
+Hello, this is a test file!
+Created on 2026-03-17
+
+Sample content:
+- Line 1
+- Line 2
+- Line 3

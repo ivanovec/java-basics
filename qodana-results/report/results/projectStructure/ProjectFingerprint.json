@@ -1,0 +1,21 @@
+{
+  "languages": [
+    "Plain text",
+    "Java",
+    "textmate",
+    "YAML",
+    "Properties",
+    "Shell Script",
+    ".gitignore (GitIgnore)",
+    "Groovy",
+    "JSON",
+    "XML",
+    "HTML",
+    "JavaScript",
+    "SVG",
+    "CSS",
+    "Markdown",
+    "Lombok.Config",
+    "JSON Lines"
+  ]
+}

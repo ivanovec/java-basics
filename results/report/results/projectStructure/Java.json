@@ -1,0 +1,8 @@
+{
+  "modules": [
+    {
+      "name": "java-basics",
+      "languageLevel": 17
+    }
+  ]
+}
