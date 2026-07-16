@@ -1,0 +1,3 @@
+[submodule "dot"]
+	path = dot
+	url = git@github.com:ivanovec/dot.git

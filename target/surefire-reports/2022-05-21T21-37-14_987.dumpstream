@@ -1,5 +1,5 @@
 # Created at 2022-05-21T21:37:17.173
-[AppClassLoader@18b4aac2] error Cannot register 'web.WebDriverLogger' because the type found with that name is not an aspect
+[AppClassLoader@18b4aac2] error Cannot register 'web.WebDriverLogger1' because the type found with that name is not an aspect
 
 # Created at 2022-05-21T21:37:17.754
 SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
@@ -80,13 +80,13 @@ WARNING: Discovered 2 'junit-platform.properties' configuration files in the cla
 May 21, 2022 9:37:20 PM org.junit.jupiter.engine.descriptor.MethodBasedTestDescriptor lambda$invokeTestWatchers$3
 
 # Created at 2022-05-21T21:37:20.651
-WARNING: Failed to invoke TestWatcher [web.simple.ScreenshotExtension] for method [web.simple.RamblerTest#openProfile()] with display name [Открытие профиля]
+WARNING: Failed to invoke TestWatcher [web.simple.ScreenshotExtension1] for method [web.simple.RamblerTest1#openProfile()] with display name [Открытие профиля]
 
 # Created at 2022-05-21T21:37:20.652
 java.lang.NullPointerException
 
 # Created at 2022-05-21T21:37:20.652
-	at web.simple.ScreenshotExtension.testFailed(ScreenshotExtension.java:24)
+	at web.simple.ScreenshotExtension1.testFailed(ScreenshotExtension.java:24)
 
 # Created at 2022-05-21T21:37:20.653
 	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$nodeFinished$14(TestMethodTestDescriptor.java:299)
@@ -227,13 +227,13 @@ java.lang.NullPointerException
 May 21, 2022 9:37:20 PM org.junit.jupiter.engine.descriptor.MethodBasedTestDescriptor lambda$invokeTestWatchers$3
 
 # Created at 2022-05-21T21:37:20.699
-WARNING: Failed to invoke TestWatcher [web.simple.ScreenshotExtension] for method [web.simple.RamblerTest#login()] with display name [Проверка логина]
+WARNING: Failed to invoke TestWatcher [web.simple.ScreenshotExtension1] for method [web.simple.RamblerTest1#login()] with display name [Проверка логина]
 
 # Created at 2022-05-21T21:37:20.699
 java.lang.NullPointerException
 
 # Created at 2022-05-21T21:37:20.700
-	at web.simple.ScreenshotExtension.testFailed(ScreenshotExtension.java:24)
+	at web.simple.ScreenshotExtension1.testFailed(ScreenshotExtension.java:24)
 
 # Created at 2022-05-21T21:37:20.700
 	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$nodeFinished$14(TestMethodTestDescriptor.java:299)

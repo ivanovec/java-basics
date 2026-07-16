@@ -3,6 +3,6 @@
         <include within="web.*"/>
     </weaver>
     <aspects>
-        <aspect name = "web.WebDriverLogger"></aspect>
+        <aspect name="web.WebDriverLogger1"></aspect>
     </aspects>
 </aspectj>

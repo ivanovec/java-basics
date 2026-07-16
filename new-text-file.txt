@@ -1,0 +1,3 @@
+This is a new text file.
+
+Created for demonstration purposes.
