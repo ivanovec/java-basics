@@ -1,0 +1,10 @@
+.gradle
+build/
+results/
+qodana-results/
+.qodana-cache/
+.qodana-test-cache/
+.DS_Store
+*.log
+fastagent.jsonl
+gradle.properties

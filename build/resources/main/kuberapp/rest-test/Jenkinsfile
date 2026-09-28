@@ -1,0 +1,22 @@
+podTemplate(
+    containers: [
+        containerTemplate(name: 'app', image: 'rest-img:v1', command: 'java', args: '-jar app.jar')
+    ],
+    volumes: [
+        hostPathVolume(hostPath: '/var/run/docker.sock', mountPath: '/var/run/docker.sock')
+    ]
+) {
+    node(POD_LABEL) {
+        stage('Get rest service') {
+            container('app') {
+                stage('Start app') {
+                    sh 'curl --retry 1000 --retry-connrefused --retry-delay 1 http://127.0.0.1:8083/dontworry'
+                }
+            }
+        }
+        stage('Run tests'){
+            git credentialsId: 'jenkins', url: 'git@github.com:ivanovec/java-basics.git', branch: 'develop'
+	        sh './gradlew kubertest'
+        }
+    }
+}

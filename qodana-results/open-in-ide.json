@@ -1,0 +1,12 @@
+{
+  "cloud" : {
+    "url" : "https://qodana.cloud/projects/p45aW/reports/kwZXD2",
+    "reportId" : "kwZXD2",
+    "projectId" : "p45aW",
+    "projectName" : "java-basics",
+    "host" : "https://qodana.cloud"
+  },
+  "vcs" : {
+    "origin" : "https://github.com/ivanovec/java-basics.git"
+  }
+}
