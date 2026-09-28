@@ -26,16 +26,18 @@ jobs:
           ref: ${{ github.event.pull_request.head.sha }}  # to check out the actual pull request commit, not the merge commit
           fetch-depth: 0  # a full history is required for pull request analysis
 
+      - name: Setup Gradle
+        uses: gradle/actions/setup-gradle@v4
+
       - name: 'Qodana Scan'
-        uses: JetBrains/qodana-action@v2025.2
+        uses: JetBrains/qodana-action@next
         with:
           upload-result: true
-          pr-mode: false
-          use-caches: true
-          cache-default-branch-only: false #33
-          args: |
-            --linter,qodana-jvm,
-            --within-docker,false,
-            --property=idea.project.build.system=maven
+          pr-mode: 'true'
+          env-vars-to-linter: "SUPER_ENV"
+        #        with:
+#          primary-cache-key: qodana-2024.3-${{ github.event.repository.default_branch }}
+#          use-caches: ${{ (github.ref_name == github.event.repository.default_branch) && 'true' || 'false' }}
         env:
           QODANA_TOKEN:  ${{ secrets.QODANA_TOKEN }}
+          SUPER_ENV: "testttttt"
