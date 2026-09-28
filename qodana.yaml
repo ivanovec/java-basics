@@ -8,7 +8,7 @@ version: "1.0"
 profile:
   name: qodana.recommended
 
-bootstrap: echo "SUPER_ENV=[$SUPER_ENV]"
+bootstrap: echo "SUPER_ENV=[$SUPER_ENV]" && echo "NON_EXISTENT_VAR=[$NON_EXISTENT_VAR]"
 #  cd /opt/idea/plugins/ && ls -l && mkdir ../backup && mv java ../backup/ && mv java-ide-customization ../backup/ && mv json ../backup/ && mv qodana ../backup && mv vcs-git ../backup && mv maven ../backup && rm -rf * &&  mv ../backup/* ./ && rm -rf ../backup && cd /data/project
 #Enable inspections
 include:
