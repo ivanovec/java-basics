@@ -1,0 +1,19 @@
+package rest.pojos;
+
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Data
+@Builder
+@NoArgsConstructor
+@AllArgsConstructor
+public class UserRequest1 {
+    private String name;
+    private String job;
+
+    public void newStubMethod() {
+        // TODO: implement
+    }
+}

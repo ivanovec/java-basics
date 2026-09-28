@@ -1,0 +1,21 @@
+{
+  "version": "1.0",
+  "total": 247,
+  "tools inspection": {
+    "Code Inspection": 247
+  },
+  "linter": "QDJVM",
+  "attributes": {
+    "deviceId": "200820300000000-5bdb-7ee4-9f5d-6bfcda02bf94",
+    "jobUrl": "",
+    "vcs": {
+      "sarifIdea": {
+        "repositoryUri": "https://github.com/ivanovec/java-basics.git",
+        "revisionId": "47b75c9ddc82bdecd90da48fe3f104ee21a6d49c",
+        "branch": "qodana"
+      }
+    },
+    "repoUrl": "https://github.com/ivanovec/java-basics.git"
+  },
+  "linterVersion": "261.23028"
+}

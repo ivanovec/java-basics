@@ -1,0 +1,12 @@
+{
+  "cloud" : {
+    "url" : "https://web.cloud.sssa-qa.aws.intellij.net/projects/LnZ6b/reports/K7mpr",
+    "reportId" : "K7mpr",
+    "projectId" : "LnZ6b",
+    "projectName" : "jvm",
+    "host" : "https://web.cloud.sssa-qa.aws.intellij.net"
+  },
+  "vcs" : {
+    "origin" : "https://github.com/ivanovec/java-basics.git"
+  }
+}

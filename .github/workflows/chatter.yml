@@ -1,0 +1,23 @@
+name: Chatter attribution
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened, closed]
+  push:
+    branches:
+      - qodana
+
+permissions:
+  checks: write
+  contents: write
+  pull-requests: write
+
+jobs:
+  attribution:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: qodana/chatter-action@main

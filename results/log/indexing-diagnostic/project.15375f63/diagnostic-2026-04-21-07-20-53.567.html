@@ -1,0 +1,1200 @@
+<html>
+  <head>
+    <title>Indexing diagnostics of 'project'</title>
+    <style>body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+}
+
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+table {
+  width: 80%;
+}
+
+table.activity-table {
+  width: 100%;
+}
+
+table.metrics-table {
+  width: auto;
+}
+
+.red-text {
+  color: red;
+}
+
+table.narrow-activity-table {
+  width: 80%;
+}
+
+table.two-columns td {
+  width: 50%;
+}
+
+th, td {
+  padding: 3px;
+}
+
+th {
+  background: lightgrey;
+}
+
+td {
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+.stats-content {
+  margin-left: 20%;
+}
+
+.stats-activity-content {
+  margin-left: 20%;
+  margin-right: 5%;
+}
+
+.aggregate-report-content {
+  margin-left: 10%;
+}
+
+.aggregate-activity-report-content {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.aggregate-header {
+  padding-top: 1em;
+  padding-bottom: 1em;
+  margin-bottom: 0;
+}
+
+.table-with-margin{
+  margin-top: 1em;
+  margin-bottom: 2em;
+}
+
+.navigation-bar {
+  width: 15%;
+  background-color: lightgrey;
+  position: fixed;
+  height: 100%;
+}
+
+div.navigation-bar ul {
+  list-style-type: none;
+  overflow: auto;
+  margin: 0;
+  padding: 0;
+  font-size: 24px;
+}
+
+div.navigation-bar ul li a, label {
+  display: block;
+  color: #000;
+  padding: 8px 20px;
+  text-decoration: none;
+}
+
+label input {
+  margin-left: 10px;
+  width: 20px;
+  height: 20px;
+}
+
+div.navigation-bar ul li a:hover {
+  background-color: #555;
+  color: white;
+}
+
+.minor-data {}
+
+.invisible {
+  display: none;
+}
+
+.jetbrains-logo {
+  width: 50%;
+  bottom: 5%;
+  position: absolute;
+  left: 20%;
+}
+
+.centered-text {
+  text-align: center;
+}
+
+.linkable-table-row:hover {
+  background: #f2f3ff;
+  outline: none;
+  cursor: pointer;
+}
+
+.scanning-table-row {
+  background-color: aliceblue;
+}
+
+.not-applicable-data{
+  color: darkgrey;
+}</style>
+    <script>function hideElementsHavingClass(className, hideOrShow) {
+  const elements = document.getElementsByClassName(className)
+  const displayType = hideOrShow ? 'none' : 'initial'
+  for (const element of elements) {
+    element.classList.toggle('invisible', hideOrShow)
+  }
+}</script>
+  </head>
+  <body>
+    <div class="navigation-bar">
+      <ul>
+        <li><a href="#id-project-name">Project name</a></li>
+        <li><a href="#id-app-info">Application info</a></li>
+        <li><a href="#id-runtime-info">Runtime</a></li>
+        <li><a href="#id-indexing-info">Overview</a></li>
+        <li><a href="#id-slow-files">Slowly indexed files</a></li>
+        <li><a href="#id-stats-per-file-type">Statistics per file type</a></li>
+        <li><a href="#id-stats-per-indexer">Statistics per indexer</a></li>
+        <li><a href="#id-indexing">Indexing</a></li>
+      </ul>
+      <hr class="solid">
+      <ul>
+        <li><label for="id-hide-minor-data-checkbox">Hide minor data<input checked="checked" id="id-hide-minor-data-checkbox" type="checkbox" onclick="hideElementsHavingClass('minor-data', this.checked)">
+              <style>padding-left: 10px</style>
+            </label></li>
+      </ul>
+      <div class="jetbrains-logo"><svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120.21407 130.10375">
+  <title>logo-grey</title>
+  <g>
+    <path d="M120.2,68.6a4.99684,4.99684,0,0,0-1.4-3.5L55.191,2.68736a7.86372,7.86372,0,0,0-3.36731-2.261c-.03467-.012-.06812-.02612-.103-.03766-.19336-.06323-.3913-.11511-.591-.16327-.06689-.0163-.13177-.0368-.1994-.05133-.18744-.04-.37909-.06738-.57117-.09363-.0788-.0108-.15527-.0274-.23492-.03589A7.83914,7.83914,0,0,0,49.3,0a7.73961,7.73961,0,0,0-1.21088.10413c-.0235.00391-.04694.00671-.07037.0108a7.62573,7.62573,0,0,0-3.092,1.24969c-.07343.04773-.155.08575-.22668.13538L4.9,28.3c-.08221.08221-.15106.10632-.17773.16437L4.67218,28.5H4.6A11.11647,11.11647,0,0,0,.15875,39.45683l.00854.04449c.05176.28589.11011.56958.18372.84973.03052.119.06964.235.104.35284.054.181.10278.3634.16571.5412A11.15109,11.15109,0,0,0,5.3,47.1a8.82025,8.82025,0,0,0,2,.9c.4.2,45.4,18.8,45.4,18.8a4.291,4.291,0,0,0,4.4-7.3c-.06525,0-16.839-13.21332-28.69928-22.52606l21.105-19.03113,57.91815,49.58282L28.6,110.7a9.82332,9.82332,0,0,0-4.7,4.1,10.0662,10.0662,0,0,0,3.6,13.9,10.28689,10.28689,0,0,0,10.7-.2c.2-.2.5-.3.7-.5L116.9,73.2a18.32,18.32,0,0,0,1.58612-1.2663A4.74573,4.74573,0,0,0,120.2,68.6Z" transform="translate(0.01406 0.00002)" fill="#cdcdcd"/>
+    <g id="_Group_" data-name="&lt;Group&gt;">
+      <rect id="_Path_" data-name="&lt;Path&gt;" x="34.61406" y="37.40002" width="51" height="51"/>
+      <rect id="_Path_2" data-name="&lt;Path&gt;" x="39.01406" y="78.80002" width="19.1" height="3.2" fill="#fff"/>
+      <g id="_Group_2" data-name="&lt;Group&gt;">
+        <path id="_Path_3" data-name="&lt;Path&gt;" d="M38.8,50.8l1.5-1.4a1.70271,1.70271,0,0,0,1.3.8q.9,0,.9-1.2V43.7h2.3V49a2.79543,2.79543,0,0,1-3.1,3.1A3.026,3.026,0,0,1,38.8,50.8Z" transform="translate(0.01406 0.00002)" fill="#fff"/>
+        <path id="_Path_4" data-name="&lt;Path&gt;" d="M45.3,43.8H52v1.9H47.6V47h4v1.8h-4v1.3h4.5v2H45.4Z" transform="translate(0.01406 0.00002)" fill="#fff"/>
+        <path id="_Path_5" data-name="&lt;Path&gt;" d="M55,45.8H52.5v-2h7.3v2H57.3v6.3H55Z" transform="translate(0.01406 0.00002)" fill="#fff"/>
+        <path id="_Compound_Path_" data-name="&lt;Compound Path&gt;" d="M39,54h4.3a3.7023,3.7023,0,0,1,2.3.7,1.97822,1.97822,0,0,1,.5,1.4h0A1.95538,1.95538,0,0,1,44.8,58a1.94762,1.94762,0,0,1,1.6,2h0c0,1.4-1.2,2.3-3.1,2.3H39Zm4.8,2.6c0-.5-.4-.7-1-.7H41.3v1.5h1.4c.7-.1,1.1-.3,1.1-.8ZM43,59H41.2v1.5H43c.7,0,1.1-.3,1.1-.8h0C44.1,59.2,43.7,59,43,59Z" transform="translate(0.01406 0.00002)" fill="#fff"/>
+        <path id="_Compound_Path_2" data-name="&lt;Compound Path&gt;" d="M46.8,54h3.9a3.51463,3.51463,0,0,1,2.7.9,2.48948,2.48948,0,0,1,.7,1.9h0a2.76053,2.76053,0,0,1-1.7,2.6l2,2.9H51.8l-1.7-2.5h-1v2.5H46.8Zm3.8,4c.8,0,1.2-.4,1.2-1h0c0-.7-.5-1-1.2-1H49.1v2Z" transform="translate(0.01406 0.00002)" fill="#fff"/>
+        <path id="_Compound_Path_3" data-name="&lt;Compound Path&gt;" d="M56.8,54H59l3.5,8.4H60l-.6-1.5H56.2l-.6,1.5H53.2Zm2,5-.9-2.3L57,59Z" transform="translate(0.01406 0.00002)" fill="#fff"/>
+        <path id="_Path_6" data-name="&lt;Path&gt;" d="M62.8,54h2.3v8.3H62.8Z" transform="translate(0.01406 0.00002)" fill="#fff"/>
+        <path id="_Path_7" data-name="&lt;Path&gt;" d="M65.7,54h2.1l3.4,4.4V54h2.3v8.3h-2L68,57.8v4.6H65.7Z" transform="translate(0.01406 0.00002)" fill="#fff"/>
+        <path id="_Path_8" data-name="&lt;Path&gt;" d="M73.7,61.1,75,59.6a3.94219,3.94219,0,0,0,2.7,1c.6,0,1-.2,1-.6h0c0-.4-.3-.5-1.4-.8-1.8-.4-3.1-.9-3.1-2.6h0c0-1.5,1.2-2.7,3.2-2.7A5.33072,5.33072,0,0,1,80.8,55l-1.2,1.6a4.55346,4.55346,0,0,0-2.3-.8c-.6,0-.8.2-.8.5h0c0,.4.3.5,1.4.8,1.9.4,3.1,1,3.1,2.6h0c0,1.7-1.3,2.7-3.4,2.7A5.29336,5.29336,0,0,1,73.7,61.1Z" transform="translate(0.01406 0.00002)" fill="#fff"/>
+      </g>
+    </g>
+  </g>
+</svg></div>
+    </div>
+    <div class="stats-activity-content">
+      <div id="id-project-name">
+        <h1 class="aggregate-header">project</h1>
+      </div>
+All durations are wall time; they include pauses unless specified otherwise
+      <div id="id-app-info">
+        <table class="two-columns table-with-margin narrow-activity-table">
+          <thead>
+            <tr>
+              <th colspan="2">Application info</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Build</td>
+              <td>261.24125</td>
+            </tr>
+            <tr>
+              <td>Build date</td>
+              <td>07:20:13 21 Apr</td>
+            </tr>
+            <tr>
+              <td>Product code</td>
+              <td>QDJVM</td>
+            </tr>
+            <tr>
+              <td>Generated</td>
+              <td>07:20:53 21 Apr</td>
+            </tr>
+            <tr>
+              <td>OS</td>
+              <td>Linux 6.10.14-linuxkit</td>
+            </tr>
+            <tr>
+              <td>Runtime</td>
+              <td>JetBrains s.r.o. 25.0.2 25.0.2+10-b329.111</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div id="id-runtime-info">
+        <table class="two-columns table-with-margin narrow-activity-table">
+          <thead>
+            <tr>
+              <th colspan="2">Runtime</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Max memory</td>
+              <td>28.84 GB</td>
+            </tr>
+            <tr>
+              <td>Number of processors</td>
+              <td>8</td>
+            </tr>
+            <tr>
+              <td>Max number of indexing threads</td>
+              <td>8</td>
+            </tr>
+            <tr>
+              <td>Max size of file for analysis</td>
+              <td>2.56 MB</td>
+            </tr>
+            <tr>
+              <td>Max size of file for content loading</td>
+              <td>20.97 MB</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div id="id-indexing-info">
+        <table class="two-columns table-with-margin narrow-activity-table">
+          <thead>
+            <tr>
+              <th colspan="2">Overview</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Activity</td>
+              <td>Dumb indexing</td>
+            </tr>
+            <tr>
+              <td>Indexed files from scanning sessions with IDs</td>
+              <td>0, 1 (and refreshed files)</td>
+            </tr>
+            <tr>
+              <td>Started at</td>
+              <td>07:20:43 21 Apr</td>
+            </tr>
+            <tr>
+              <td>Finished at</td>
+              <td>07:20:53 21 Apr</td>
+            </tr>
+            <tr>
+              <td>Is cancelled</td>
+              <td>false</td>
+            </tr>
+            <tr>
+              <td>Cancellation reason</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Total time with pauses</td>
+              <td>9 s 679 ms</td>
+            </tr>
+            <tr>
+              <td>Pauses time</td>
+              <td>0</td>
+            </tr>
+            <tr>
+              <td>Time of retrieving list of the files changed in VFS<br><small>Indexing handles both files found by scanning(s) and files reported as changed by VFS</small></td>
+              <td>331 ms</td>
+            </tr>
+            <tr>
+              <td>Content loading time</td>
+              <td>959 ms</td>
+            </tr>
+            <tr>
+              <td>Index writing time</td>
+              <td>1 s 557 ms</td>
+            </tr>
+            <tr>
+              <td>Number of files indexed by shared indexes during the indexing stage (with loading content)</td>
+              <td>0</td>
+            </tr>
+            <tr>
+              <td>Number of files for which there was nothing to write (indexes were already up-to-date)</td>
+              <td>0</td>
+            </tr>
+            <tr>
+              <td>Number of files indexed during the indexing stage with loading content (including indexed by shared indexes)</td>
+              <td>44814</td>
+            </tr>
+            <tr>
+              <td>Number of too large for indexing files</td>
+              <td>0</td>
+            </tr>
+            <tr>
+              <td>Number of files changed in VFS</td>
+              <td>6</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div id="id-slow-files">
+        <table class="table-with-margin activity-table">
+          <thead>
+            <tr>
+              <th colspan="5">Slowly indexed files (&gt; 500 ms)</th>
+            </tr>
+            <tr>
+              <th>Provider name</th>
+              <th>File</th>
+              <th>Content loading time</th>
+              <th>Indexes values evaluation time</th>
+              <th>Total processing time</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>&lt;indexing queue&gt;</td>
+              <td>lib.dom.d.ts</td>
+              <td>7 ms</td>
+              <td>1 s 656 ms</td>
+              <td>1 s 881 ms</td>
+            </tr>
+            <tr>
+              <td>^</td>
+              <td>lib.webworker.d.ts</td>
+              <td>2 ms</td>
+              <td>869 ms</td>
+              <td>990 ms</td>
+            </tr>
+            <tr>
+              <td>^</td>
+              <td>QD-TaintGraphModal-TgKU_2YO.js</td>
+              <td>5 ms</td>
+              <td>976 ms</td>
+              <td>984 ms</td>
+            </tr>
+            <tr>
+              <td>^</td>
+              <td>QD-main.js</td>
+              <td>5 ms</td>
+              <td>653 ms</td>
+              <td>677 ms</td>
+            </tr>
+            <tr>
+              <td>^</td>
+              <td>QD-QodanaUI-D6Go8z5u.css</td>
+              <td>4 ms</td>
+              <td>555 ms</td>
+              <td>598 ms</td>
+            </tr>
+            <tr>
+              <td>^</td>
+              <td>QD-TaintGraphModal-TgKU_2YO.js</td>
+              <td>12 ms</td>
+              <td>520 ms</td>
+              <td>537 ms</td>
+            </tr>
+            <tr>
+              <td>^</td>
+              <td>QD-Code-D9TtTA9K.js</td>
+              <td>10 ms</td>
+              <td>487 ms</td>
+              <td>509 ms</td>
+            </tr>
+            <tr>
+              <td>^</td>
+              <td>react.d.ts</td>
+              <td>3 ms</td>
+              <td>458 ms</td>
+              <td>507 ms</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div id="id-stats-per-file-type">
+        <table class="table-with-margin activity-table">
+          <thead>
+            <tr>
+              <th colspan="7">Statistics per file type</th>
+            </tr>
+            <tr>
+              <th>File type</th>
+              <th>Number of files</th>
+              <th>Total processing time (% of total processing time)</th>
+              <th>Content loading time (% of total content loading time)</th>
+              <th>Total files size</th>
+              <th>Total processing speed (relative to the sum of wall times of all threads)</th>
+              <th>The biggest contributors</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="">
+              <td>CLASS</td>
+              <td>27891</td>
+              <td>2 s 356 ms (24.3%)</td>
+              <td>199 ms (20.8%)</td>
+              <td>134.47 MB</td>
+              <td>8.28 MB/s</td>
+              <td>100.0%: &lt;indexing queue&gt; 27891 files of total size 134.47 MB</td>
+            </tr>
+            <tr class="">
+              <td>JAVA</td>
+              <td>15659</td>
+              <td>2 s 321 ms (24.0%)</td>
+              <td>369 ms (38.5%)</td>
+              <td>216 MB</td>
+              <td>13.5 MB/s</td>
+              <td>100.0%: &lt;indexing queue&gt; 15659 files of total size 216 MB</td>
+            </tr>
+            <tr class="">
+              <td>XML</td>
+              <td>137</td>
+              <td>941 ms (9.7%)</td>
+              <td>65 ms (6.8%)</td>
+              <td>7.63 MB</td>
+              <td>1.18 MB/s</td>
+              <td>100.0%: &lt;indexing queue&gt; 137 files of total size 7.63 MB</td>
+            </tr>
+            <tr class="">
+              <td>TypeScript</td>
+              <td>115</td>
+              <td>833 ms (8.6%)</td>
+              <td>17 ms (1.8%)</td>
+              <td>3.38 MB</td>
+              <td>587.74 kB/s</td>
+              <td>100.0%: &lt;indexing queue&gt; 115 files of total size 3.38 MB</td>
+            </tr>
+            <tr class="">
+              <td>HTML</td>
+              <td>81</td>
+              <td>738 ms (7.6%)</td>
+              <td>43 ms (4.5%)</td>
+              <td>2.87 MB</td>
+              <td>562.77 kB/s</td>
+              <td>100.0%: &lt;indexing queue&gt; 81 files of total size 2.87 MB</td>
+            </tr>
+            <tr class="">
+              <td>JavaScript</td>
+              <td>26</td>
+              <td>692 ms (7.2%)</td>
+              <td>14 ms (1.6%)</td>
+              <td>11.06 MB</td>
+              <td>2.31 MB/s</td>
+              <td>100.0%: &lt;indexing queue&gt; 26 files of total size 11.06 MB</td>
+            </tr>
+            <tr class="">
+              <td>JSON</td>
+              <td>204</td>
+              <td>540 ms (5.6%)</td>
+              <td>144 ms (15.0%)</td>
+              <td>12.96 MB</td>
+              <td>3.48 MB/s</td>
+              <td>100.0%: &lt;indexing queue&gt; 204 files of total size 12.96 MB</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>CSS</td>
+              <td>16</td>
+              <td>348 ms (3.6%)</td>
+              <td>3 ms (&lt; 1%)</td>
+              <td>2.88 MB</td>
+              <td>1.2 MB/s</td>
+              <td>68.8%: &lt;indexing queue&gt; 10 files of total size 1.46 MB
+31.2%: Refreshed files 6 files of total size 1.42 MB</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Flow</td>
+              <td>11</td>
+              <td>188 ms (2.0%)</td>
+              <td>&lt; 1 ms (&lt; 1%)</td>
+              <td>140.17 kB</td>
+              <td>107.73 kB/s</td>
+              <td>100.0%: &lt;indexing queue&gt; 11 files of total size 140.17 kB</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>SCSS</td>
+              <td>8</td>
+              <td>188 ms (1.9%)</td>
+              <td>2 ms (&lt; 1%)</td>
+              <td>10.66 kB</td>
+              <td>8.2 kB/s</td>
+              <td>100.0%: &lt;indexing queue&gt; 8 files of total size 10.66 kB</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Properties</td>
+              <td>217</td>
+              <td>124 ms (1.3%)</td>
+              <td>13 ms (1.4%)</td>
+              <td>2.04 MB</td>
+              <td>2.37 MB/s</td>
+              <td>100.0%: &lt;indexing queue&gt; 217 files of total size 2.04 MB</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>kotlin_builtins</td>
+              <td>8</td>
+              <td>79 ms (&lt; 1%)</td>
+              <td>&lt; 1 ms (&lt; 1%)</td>
+              <td>53.4 kB</td>
+              <td>96.89 kB/s</td>
+              <td>100.0%: &lt;indexing queue&gt; 8 files of total size 53.4 kB</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Markdown</td>
+              <td>5</td>
+              <td>66 ms (&lt; 1%)</td>
+              <td>3 ms (&lt; 1%)</td>
+              <td>64.67 kB</td>
+              <td>141.26 kB/s</td>
+              <td>100.0%: &lt;indexing queue&gt; 5 files of total size 64.67 kB</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>DTD</td>
+              <td>81</td>
+              <td>52 ms (&lt; 1%)</td>
+              <td>9 ms (1.0%)</td>
+              <td>951.83 kB</td>
+              <td>2.61 MB/s</td>
+              <td>100.0%: &lt;indexing queue&gt; 81 files of total size 951.83 kB</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>PLAIN_TEXT</td>
+              <td>89</td>
+              <td>42 ms (&lt; 1%)</td>
+              <td>23 ms (2.4%)</td>
+              <td>2.45 MB</td>
+              <td>8.32 MB/s</td>
+              <td>100.0%: &lt;indexing queue&gt; 89 files of total size 2.45 MB</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Gradle</td>
+              <td>6</td>
+              <td>40 ms (&lt; 1%)</td>
+              <td>&lt; 1 ms (&lt; 1%)</td>
+              <td>5.09 kB</td>
+              <td>18.09 kB/s</td>
+              <td>100.0%: &lt;indexing queue&gt; 6 files of total size 5.09 kB</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>RNG Compact</td>
+              <td>98</td>
+              <td>33 ms (&lt; 1%)</td>
+              <td>5 ms (&lt; 1%)</td>
+              <td>490.51 kB</td>
+              <td>2.14 MB/s</td>
+              <td>100.0%: &lt;indexing queue&gt; 98 files of total size 490.51 kB</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>textmate</td>
+              <td>27</td>
+              <td>31 ms (&lt; 1%)</td>
+              <td>18 ms (1.9%)</td>
+              <td>2.05 MB</td>
+              <td>9.3 MB/s</td>
+              <td>100.0%: &lt;indexing queue&gt; 27 files of total size 2.05 MB</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>YAML</td>
+              <td>22</td>
+              <td>21 ms (&lt; 1%)</td>
+              <td>7 ms (&lt; 1%)</td>
+              <td>10.95 kB</td>
+              <td>73.82 kB/s</td>
+              <td>100.0%: &lt;indexing queue&gt; 22 files of total size 10.95 kB</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>CSV/TSV</td>
+              <td>16</td>
+              <td>13 ms (&lt; 1%)</td>
+              <td>7 ms (&lt; 1%)</td>
+              <td>703.18 kB</td>
+              <td>7.78 MB/s</td>
+              <td>100.0%: &lt;indexing queue&gt; 16 files of total size 703.18 kB</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Java module</td>
+              <td>69</td>
+              <td>9 ms (&lt; 1%)</td>
+              <td>1 ms (&lt; 1%)</td>
+              <td>248.95 kB</td>
+              <td>3.82 MB/s</td>
+              <td>100.0%: &lt;indexing queue&gt; 69 files of total size 248.95 kB</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>SARIF</td>
+              <td>3</td>
+              <td>4 ms (&lt; 1%)</td>
+              <td>3 ms (&lt; 1%)</td>
+              <td>14.67 kB</td>
+              <td>474.64 kB/s</td>
+              <td>100.0%: &lt;indexing queue&gt; 3 files of total size 14.67 kB</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Shell Script</td>
+              <td>10</td>
+              <td>2 ms (&lt; 1%)</td>
+              <td>&lt; 1 ms (&lt; 1%)</td>
+              <td>35.32 kB</td>
+              <td>1.94 MB/s</td>
+              <td>100.0%: &lt;indexing queue&gt; 10 files of total size 35.32 kB</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>LOMBOK_CONFIG</td>
+              <td>1</td>
+              <td>2 ms (&lt; 1%)</td>
+              <td>1 ms (&lt; 1%)</td>
+              <td>137 B</td>
+              <td>7.91 kB/s</td>
+              <td>100.0%: &lt;indexing queue&gt; 1 files of total size 137 B</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>SVG</td>
+              <td>5</td>
+              <td>1 ms (&lt; 1%)</td>
+              <td>&lt; 1 ms (&lt; 1%)</td>
+              <td>23.44 kB</td>
+              <td>3.39 MB/s</td>
+              <td>100.0%: &lt;indexing queue&gt; 5 files of total size 23.44 kB</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>JSON-lines</td>
+              <td>1</td>
+              <td>&lt; 1 ms (&lt; 1%)</td>
+              <td>&lt; 1 ms (&lt; 1%)</td>
+              <td>456 B</td>
+              <td>78.67 kB/s</td>
+              <td>100.0%: &lt;indexing queue&gt; 1 files of total size 456 B</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>AUTO_DETECTED</td>
+              <td>2</td>
+              <td>&lt; 1 ms (&lt; 1%)</td>
+              <td>&lt; 1 ms (&lt; 1%)</td>
+              <td>0 B</td>
+              <td>0 B/s</td>
+              <td>100.0%: &lt;indexing queue&gt; 2 files of total size 0 B</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>PATCH</td>
+              <td>4</td>
+              <td>&lt; 1 ms (&lt; 1%)</td>
+              <td>&lt; 1 ms (&lt; 1%)</td>
+              <td>7.18 kB</td>
+              <td>2.82 MB/s</td>
+              <td>100.0%: &lt;indexing queue&gt; 4 files of total size 7.18 kB</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>GitIgnore file</td>
+              <td>1</td>
+              <td>&lt; 1 ms (&lt; 1%)</td>
+              <td>&lt; 1 ms (&lt; 1%)</td>
+              <td>444 B</td>
+              <td>721.75 kB/s</td>
+              <td>100.0%: &lt;indexing queue&gt; 1 files of total size 444 B</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>SPI</td>
+              <td>1</td>
+              <td>&lt; 1 ms (&lt; 1%)</td>
+              <td>&lt; 1 ms (&lt; 1%)</td>
+              <td>41 B</td>
+              <td>155.08 kB/s</td>
+              <td>100.0%: &lt;indexing queue&gt; 1 files of total size 41 B</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div id="id-stats-per-indexer">
+        <table class="table-with-margin activity-table">
+          <thead>
+            <tr>
+              <th colspan="7">Statistics per indexer</th>
+            </tr>
+            <tr>
+              <th>Index</th>
+              <th>shards #</th>
+              <th>Number of files</th>
+              <th>Part of total indexing time</th>
+              <th>Total number of files indexed by shared indexes</th>
+              <th>Total files size</th>
+              <th>Indexing speed (relative to the sum of wall times on multiple threads)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="">
+              <td>Stubs</td>
+              <td>1</td>
+              <td>28503</td>
+              <td>38.6%</td>
+              <td>0</td>
+              <td>153.95 MB</td>
+              <td>8.9 MB/s</td>
+            </tr>
+            <tr class="">
+              <td>IdIndex</td>
+              <td>1</td>
+              <td>16909</td>
+              <td>25.4%</td>
+              <td>0</td>
+              <td>266.01 MB</td>
+              <td>23.4 MB/s</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>js.test.names</td>
+              <td>1</td>
+              <td>27</td>
+              <td>7.3%</td>
+              <td>0</td>
+              <td>4.01 MB</td>
+              <td>1.22 MB/s</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>XmlTagNames</td>
+              <td>1</td>
+              <td>96</td>
+              <td>3.5%</td>
+              <td>0</td>
+              <td>3.62 MB</td>
+              <td>2.28 MB/s</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>XmlNamespaces</td>
+              <td>1</td>
+              <td>115</td>
+              <td>3.3%</td>
+              <td>0</td>
+              <td>4.39 MB</td>
+              <td>3 MB/s</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>fileIncludes</td>
+              <td>1</td>
+              <td>136</td>
+              <td>3.2%</td>
+              <td>0</td>
+              <td>19.8 MB</td>
+              <td>13.62 MB/s</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>SchemaTypeInheritance</td>
+              <td>1</td>
+              <td>96</td>
+              <td>2.6%</td>
+              <td>0</td>
+              <td>3.62 MB</td>
+              <td>3.11 MB/s</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>CssIndex</td>
+              <td>1</td>
+              <td>93</td>
+              <td>2.3%</td>
+              <td>0</td>
+              <td>5.71 MB</td>
+              <td>5.6 MB/s</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Trigram.Index</td>
+              <td>1</td>
+              <td>1376</td>
+              <td>1.9%</td>
+              <td>0</td>
+              <td>50.17 MB</td>
+              <td>59.63 MB/s</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>html5.custom.attributes.index</td>
+              <td>1</td>
+              <td>81</td>
+              <td>1.7%</td>
+              <td>0</td>
+              <td>2.87 MB</td>
+              <td>3.69 MB/s</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>org.jetbrains.kotlin.idea.vfilefinder.KotlinClassFileIndex</td>
+              <td>1</td>
+              <td>27891</td>
+              <td>1.4%</td>
+              <td>0</td>
+              <td>134.47 MB</td>
+              <td>214.06 MB/s</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>json.file.root.values</td>
+              <td>1</td>
+              <td>208</td>
+              <td>1.2%</td>
+              <td>0</td>
+              <td>12.98 MB</td>
+              <td>23.75 MB/s</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>js.string.literal.words.index</td>
+              <td>1</td>
+              <td>150</td>
+              <td>&lt; 1%</td>
+              <td>0</td>
+              <td>14.45 MB</td>
+              <td>34.78 MB/s</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>js.implicit.elements.index</td>
+              <td>1</td>
+              <td>81</td>
+              <td>&lt; 1%</td>
+              <td>0</td>
+              <td>2.87 MB</td>
+              <td>8.53 MB/s</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>bytecodeAnalysis</td>
+              <td>1</td>
+              <td>27891</td>
+              <td>&lt; 1%</td>
+              <td>0</td>
+              <td>134.47 MB</td>
+              <td>419.54 MB/s</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>css.template.selectors</td>
+              <td>1</td>
+              <td>81</td>
+              <td>&lt; 1%</td>
+              <td>0</td>
+              <td>2.87 MB</td>
+              <td>9.13 MB/s</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>js.test.names.extensible</td>
+              <td>1</td>
+              <td>27</td>
+              <td>&lt; 1%</td>
+              <td>0</td>
+              <td>4.01 MB</td>
+              <td>16.1 MB/s</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>com.intellij.jpa.jpb.model.EntityRegisterFileIndex</td>
+              <td>1</td>
+              <td>137</td>
+              <td>&lt; 1%</td>
+              <td>0</td>
+              <td>7.63 MB</td>
+              <td>31.47 MB/s</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>HashFragmentIndex</td>
+              <td>1</td>
+              <td>15</td>
+              <td>&lt; 1%</td>
+              <td>0</td>
+              <td>240.96 kB</td>
+              <td>1.16 MB/s</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>org.jetbrains.kotlin.idea.vfilefinder.KotlinMetadataFilePackageIndex</td>
+              <td>1</td>
+              <td>8</td>
+              <td>&lt; 1%</td>
+              <td>0</td>
+              <td>53.4 kB</td>
+              <td>325.93 kB/s</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>org.jetbrains.kotlin.idea.versions.KotlinJvmMetadataVersionIndex</td>
+              <td>1</td>
+              <td>27891</td>
+              <td>&lt; 1%</td>
+              <td>0</td>
+              <td>134.47 MB</td>
+              <td>842.91 MB/s</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>DomFileIndex</td>
+              <td>1</td>
+              <td>137</td>
+              <td>&lt; 1%</td>
+              <td>0</td>
+              <td>7.63 MB</td>
+              <td>64.52 MB/s</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>HtmlTagIdIndex</td>
+              <td>1</td>
+              <td>81</td>
+              <td>&lt; 1%</td>
+              <td>0</td>
+              <td>2.87 MB</td>
+              <td>25.79 MB/s</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>HtmlScriptSrcIndex</td>
+              <td>1</td>
+              <td>81</td>
+              <td>&lt; 1%</td>
+              <td>0</td>
+              <td>2.87 MB</td>
+              <td>27.62 MB/s</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>SpringXmlBeansIndex</td>
+              <td>1</td>
+              <td>137</td>
+              <td>&lt; 1%</td>
+              <td>0</td>
+              <td>7.63 MB</td>
+              <td>76.61 MB/s</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>WebComponentsIndex</td>
+              <td>1</td>
+              <td>81</td>
+              <td>&lt; 1%</td>
+              <td>0</td>
+              <td>2.87 MB</td>
+              <td>28.85 MB/s</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>http.request.execution.environment</td>
+              <td>1</td>
+              <td>2</td>
+              <td>&lt; 1%</td>
+              <td>0</td>
+              <td>503 B</td>
+              <td>5.96 kB/s</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>SpringBootYamlImports</td>
+              <td>1</td>
+              <td>22</td>
+              <td>&lt; 1%</td>
+              <td>0</td>
+              <td>10.95 kB</td>
+              <td>132.26 kB/s</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>KotlinBinaryRootToPackageIndex</td>
+              <td>1</td>
+              <td>27899</td>
+              <td>&lt; 1%</td>
+              <td>0</td>
+              <td>134.52 MB</td>
+              <td>2.63 GB/s</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>org.jetbrains.kotlin.idea.vfilefinder.KotlinPartialPackageNamesIndex</td>
+              <td>1</td>
+              <td>27899</td>
+              <td>&lt; 1%</td>
+              <td>0</td>
+              <td>134.52 MB</td>
+              <td>2.85 GB/s</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>KotlinTopLevelCallableByPackageShortNameIndex</td>
+              <td>1</td>
+              <td>27899</td>
+              <td>&lt; 1%</td>
+              <td>0</td>
+              <td>134.52 MB</td>
+              <td>3.81 GB/s</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>xmlProperties</td>
+              <td>1</td>
+              <td>18</td>
+              <td>&lt; 1%</td>
+              <td>0</td>
+              <td>3.15 MB</td>
+              <td>107.78 MB/s</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>KotlinTopLevelClassLikeDeclarationByPackageShortNameIndex</td>
+              <td>1</td>
+              <td>27899</td>
+              <td>&lt; 1%</td>
+              <td>0</td>
+              <td>134.52 MB</td>
+              <td>4.78 GB/s</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>org.jetbrains.kotlin.idea.versions.KotlinJsMetadataVersionIndex</td>
+              <td>1</td>
+              <td>37</td>
+              <td>&lt; 1%</td>
+              <td>0</td>
+              <td>11.2 MB</td>
+              <td>504.68 MB/s</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>org.jetbrains.kotlin.idea.vfilefinder.KotlinMetadataFileIndex</td>
+              <td>1</td>
+              <td>8</td>
+              <td>&lt; 1%</td>
+              <td>0</td>
+              <td>53.4 kB</td>
+              <td>2.46 MB/s</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>RelaxSymbolIndex</td>
+              <td>1</td>
+              <td>19</td>
+              <td>&lt; 1%</td>
+              <td>0</td>
+              <td>3.15 MB</td>
+              <td>244.33 MB/s</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>SpringBootPropertiesImports</td>
+              <td>1</td>
+              <td>217</td>
+              <td>&lt; 1%</td>
+              <td>0</td>
+              <td>2.04 MB</td>
+              <td>216.51 MB/s</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>org.jetbrains.kotlin.idea.vfilefinder.KotlinBuiltInsMetadataIndex</td>
+              <td>1</td>
+              <td>8</td>
+              <td>&lt; 1%</td>
+              <td>0</td>
+              <td>53.4 kB</td>
+              <td>5.85 MB/s</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>taglibUris</td>
+              <td>1</td>
+              <td>19</td>
+              <td>&lt; 1%</td>
+              <td>0</td>
+              <td>3.17 MB</td>
+              <td>370.69 MB/s</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>FrameworkDetectionIndex</td>
+              <td>1</td>
+              <td>16</td>
+              <td>&lt; 1%</td>
+              <td>0</td>
+              <td>3.1 MB</td>
+              <td>486.46 MB/s</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>XsltSymbolIndex</td>
+              <td>1</td>
+              <td>19</td>
+              <td>&lt; 1%</td>
+              <td>0</td>
+              <td>3.15 MB</td>
+              <td>528.73 MB/s</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>devkit.ExtensionPointIndex</td>
+              <td>1</td>
+              <td>137</td>
+              <td>&lt; 1%</td>
+              <td>0</td>
+              <td>7.63 MB</td>
+              <td>1.51 GB/s</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>LombokConfigIndex</td>
+              <td>1</td>
+              <td>1</td>
+              <td>&lt; 1%</td>
+              <td>0</td>
+              <td>137 B</td>
+              <td>30.28 kB/s</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>js.custom.single.entry.index</td>
+              <td>1</td>
+              <td>231</td>
+              <td>&lt; 1%</td>
+              <td>0</td>
+              <td>17.32 MB</td>
+              <td>4.71 GB/s</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>PluginIdModuleIndex</td>
+              <td>1</td>
+              <td>137</td>
+              <td>&lt; 1%</td>
+              <td>0</td>
+              <td>7.63 MB</td>
+              <td>4.7 GB/s</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>IdeaPluginRegistrationIndex</td>
+              <td>1</td>
+              <td>137</td>
+              <td>&lt; 1%</td>
+              <td>0</td>
+              <td>7.63 MB</td>
+              <td>13.7 GB/s</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>PluginIdDependenciesIndex</td>
+              <td>1</td>
+              <td>137</td>
+              <td>&lt; 1%</td>
+              <td>0</td>
+              <td>7.63 MB</td>
+              <td>14.99 GB/s</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>devkit.ExtensionPointClassIndex</td>
+              <td>1</td>
+              <td>137</td>
+              <td>&lt; 1%</td>
+              <td>0</td>
+              <td>7.63 MB</td>
+              <td>15.61 GB/s</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>org.jetbrains.kotlin.idea.vfilefinder.KotlinStdlibIndex</td>
+              <td>1</td>
+              <td>89</td>
+              <td>&lt; 1%</td>
+              <td>0</td>
+              <td>2.45 MB</td>
+              <td>5.66 GB/s</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div id="id-indexing">
+        <table class="table-with-margin activity-table">
+          <thead>
+            <tr>
+              <th colspan="6">Indexing</th>
+            </tr>
+            <tr>
+              <th>Provider name</th>
+              <th>Total processing time</th>
+              <th>Content loading time</th>
+              <th>Number of indexed files</th>
+              <th>Number of files indexed by shared indexes</th>
+              <th>Number of too large for indexing files</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="">
+              <td>&lt;indexing queue&gt;</td>
+              <td>9 s 77 ms</td>
+              <td>956 ms</td>
+              <td>44808</td>
+              <td>0</td>
+              <td>0</td>
+            </tr>
+            <tr class="">
+              <td>Refreshed files</td>
+              <td>263 ms</td>
+              <td>2 ms</td>
+              <td>6</td>
+              <td>0</td>
+              <td>0</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>
