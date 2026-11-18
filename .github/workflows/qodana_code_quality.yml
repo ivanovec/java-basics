@@ -30,7 +30,7 @@ jobs:
         uses: gradle/actions/setup-gradle@v4
 
       - name: 'Qodana Scan'
-        uses: JetBrains/qodana-action@next
+        uses: JetBrains/qodana-action@v2026.2.2
         with:
           upload-result: true
           pr-mode: 'true'
