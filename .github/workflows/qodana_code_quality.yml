@@ -17,7 +17,9 @@ jobs:
           path: qa
           fetch-depth: 0
       - name: Use JDK 17 instead of 11
-        run: sed -i 's/^projectJDK: "11"/projectJDK: "17"/' qa/.github/qodana.yaml && grep -n projectJDK qa/.github/qodana.yaml
+        run: |
+          sed -i 's/^projectJDK: "11"/projectJDK: "17"/' qa/.github/qodana.yaml
+          grep -n projectJDK qa/.github/qodana.yaml
       - name: 'Qodana Scan (qodana-action@next on qodana-action sources)'
         uses: JetBrains/qodana-action@next
         with:
